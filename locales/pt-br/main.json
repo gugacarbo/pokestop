@@ -1,0 +1,19 @@
+{
+  "language": {
+    "name": "Português",
+    "toggle": "Alternar idioma"
+  },
+  "menu": {
+    "rankings": "Classificações"
+  },
+  "metadata": {
+    "description": "Este é um exemplo simples de mensagem localizada.",
+    "title": "Pokéstop"
+  },
+  "theme": {
+    "dark": "Escuro",
+    "light": "Luz",
+    "system": "Sistema",
+    "toggle": "Alternar tema"
+  }
+}

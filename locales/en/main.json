@@ -1,0 +1,19 @@
+{
+  "language": {
+    "name": "English",
+    "toggle": "Toggle language"
+  },
+  "metadata": {
+    "title": "Pokestop",
+    "description": "This is a simple example of a localized message."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "menu": {
+    "rankings": "Rankings"
+  }
+}

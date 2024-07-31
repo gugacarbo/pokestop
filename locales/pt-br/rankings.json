@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Classificações!",
+    "description": "Explore os melhores Pokémon para Pokémon GO PvP da liga. \nAs classificações incluem os principais movimentos, confrontos e contadores para cada Pokémon, bem como classificações para diferentes funções."
+  },
+  "rankings": {
+    "great": "Grande Liga",
+    "little": "Copinha",
+    "master": "Liga Mestre",
+    "master-classic": "Clássico da Liga Master",
+    "ultra": "Ultraliga"
+  },
+  "coupLeagues": {
+    "battlefrontiergreat": "Fronteira de Batalha (Mestre)",
+    "battlefrontiermaster": "Fronteira de Batalha (Mestre)",
+    "battlefrontierultra": "Fronteira de Batalha (Mestre)",
+    "catch": "Copo de captura",
+    "classic": "Clássico da Liga Master",
+    "devonchampionship": "Campeonato Devon",
+    "evolution": "Copa Evolução",
+    "fantasy": "Copa Fantasia",
+    "fossil": "Copa Fóssil",
+    "little": "Copinha",
+    "littlecatch": "Copinha de captura",
+    "mega": "Liga Mega Master",
+    "polaris": "Fronteira de Batalha (Polaris)",
+    "premier": "Primeiro-ministro",
+    "premierclassic": "Clássico Premier",
+    "remix": "Remixar",
+    "retro": "Copa retrô",
+    "sovereign": "Taça Soberana de Devon",
+    "summer": "Copa de Verão",
+    "tundra": "Taça Devon Tundra",
+    "ufc-untapped-master": "UFC Invirado (Mestre)",
+    "wasteland": "Fronteira de Batalha (Wasteland)",
+    "zodiac": "Taça Zodíaco Devon"
+  },
+  "cpLeagues": {
+    "great": "Grande Liga",
+    "little": "Copinha",
+    "master": "Liga Mestre",
+    "master-classic": "Clássico da Liga Master",
+    "ultra": "Ultraliga"
+  },
+  "cupLeagues": {
+    "catch": "Copo de captura",
+    "classic": "Clássico da Liga Master",
+    "devonchampionship": "Campeonato Devon",
+    "evolution": "Copa Evolução",
+    "fantasy": "Copa Fantasia",
+    "battlefrontiergreat": "Fronteira de Batalha (Mestre)",
+    "battlefrontiermaster": "Fronteira de Batalha (Mestre)",
+    "battlefrontierultra": "Fronteira de Batalha (Mestre)",
+    "fossil": "Copa Fóssil",
+    "little": "Copozinho",
+    "littlecatch": "Copozinho de captura",
+    "mega": "Liga Mega Master",
+    "polaris": "Fronteira de Batalha (Polaris)",
+    "premier": "Primeiro-ministro",
+    "premierclassic": "Clássico Premier",
+    "remix": "Remixar",
+    "retro": "Copa retrô",
+    "sovereign": "Taça Soberana de Devon",
+    "summer": "Copa de Verão",
+    "tundra": "Taça Devon Tundra",
+    "ufc-untapped-master": "UFC Invirado (Mestre)",
+    "wasteland": "Fronteira de Batalha (Wasteland)",
+    "zodiac": "Taça Zodíaco Devon"
+  }
+}
