@@ -1,0 +1,9 @@
+{
+    "short-name": "filter",
+    "filter-by": "Filter by",
+    "ivs": {
+        "attack": "attack",
+        "defense": "defense",
+        "hp": "hp"
+    }
+}

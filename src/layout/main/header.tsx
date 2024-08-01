@@ -7,7 +7,7 @@ export function Header() {
   const t = useTranslations("main");
 
   return (
-    <header className="flex justify-between items-center px-8 py-4 w-full">
+    <header className="flex justify-between items-center shadow mb-2 px-6 py-3 border-b border-border w-full">
       <div className="flex items-center gap-2">
         <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
         <h1 className="font-bold text-xl">{t("metadata.title")}</h1>

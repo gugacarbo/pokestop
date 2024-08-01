@@ -1,0 +1,9 @@
+{
+  "short-name": "Filtro",
+  "filter-by": "Filtrar por",
+  "ivs": {
+    "attack": "ataque",
+    "defense": "defesa",
+    "hp": "ps"
+  }
+}
