@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-
-import { Layout } from "@/layout/main";
 
 export const runtime = "edge";
 
@@ -40,12 +37,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen antialiased",
-          inter.className
-        )}
-      >
+      <body className={cn("min-h-screen antialiased", inter.className)}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -53,7 +45,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Layout>{children}</Layout>
+            {children}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

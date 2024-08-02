@@ -15,5 +15,9 @@
   },
   "menu": {
     "rankings": "Rankings"
+  },
+  "common": {
+    "confirm": "confirm",
+    "cancel": "cancel"
   }
 }

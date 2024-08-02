@@ -1,12 +1,14 @@
 import React from "react";
-import { IvFilter } from "@/features/search-filter/iv-filter";
 import { FilterFormContext } from "@/features/search-filter";
+import { IvRange } from "@/features/search-filter/iv-filter";
+import { StarsFilter } from "@/features/search-filter/iv-filter";
 
 export default function Filter() {
   return (
-    <main className="flex flex-col justify-between items-center">
+    <main className="flex flex-col justify-between items-center w-full">
       <FilterFormContext>
-        <IvFilter />
+        <IvRange />
+        <StarsFilter />
       </FilterFormContext>
     </main>
   );

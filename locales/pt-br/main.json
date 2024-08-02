@@ -15,5 +15,9 @@
     "light": "Claro",
     "system": "Sistema",
     "toggle": "Alternar tema"
+  },
+  "common": {
+    "cancel": "cancelar",
+    "confirm": "confirmar"
   }
 }

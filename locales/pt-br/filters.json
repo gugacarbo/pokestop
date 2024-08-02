@@ -1,9 +1,33 @@
 {
-  "short-name": "Filtro",
-  "filter-by": "Filtrar por",
+  "short-name": "filtros",
+  "filter-by": "filtrar por",
+  "copy-to-clipboard": "Copiar para a área de transferência",
+  "copy": "copiar",
+  "copied": "copiado",
+  "filter-results": "Resultados do filtro",
+  "reset": "Reiniciar",
+  "reset-description": "Redefinir todos os filtros",
+  "preset": "preset",
   "ivs": {
     "attack": "ataque",
     "defense": "defesa",
     "hp": "ps"
+  },
+  "regions": {
+    "kanto": "kanto",
+    "johto": "johto",
+    "hoenn": "hoenn",
+    "sinnoh": "sinnoh",
+    "unova": "unova",
+    "kalos": "kalos",
+    "alola": "alola",
+    "galar": "galar",
+    "hisui": "hisui",
+    "paldea": "paldea"
+  },
+  "stars": {
+    "name": "estrelas",
+    "title": "Filtrar por estrelas",
+    "subtitle": "Intervalo de IV"
   }
 }

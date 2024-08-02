@@ -1,9 +1,33 @@
 {
-    "short-name": "filter",
-    "filter-by": "Filter by",
+    "short-name": "filters",
+    "filter-by": "filter by",
+    "copy-to-clipboard": "Copy to clipboard",
+    "copy": "copy",
+    "copied": "copied",
+    "filter-results": "Filter results",
+    "reset": "reset",
+    "reset-description": "Reset all filters",
+    "preset": "preset",
     "ivs": {
         "attack": "attack",
         "defense": "defense",
         "hp": "hp"
+    },
+    "regions": {
+        "kanto": "kanto",
+        "johto": "johto",
+        "hoenn": "hoenn",
+        "sinnoh": "sinnoh",
+        "unova": "unova",
+        "kalos": "kalos",
+        "alola": "alola",
+        "galar": "galar",
+        "hisui": "hisui",
+        "paldea": "paldea"
+    },
+    "stars": {
+        "name": "stars",
+        "title": "Filter by stars",
+        "subtitle": "IV Range"
     }
 }
