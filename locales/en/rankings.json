@@ -1,38 +1,70 @@
- {
-    "metadata": {
-        "title": "Rankings!",
-        "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
-    },
-    "cpLeagues": {
-        "little": "Little Cup",
-        "great": "Great League",
-        "ultra": "Ultra League",
-        "master": "Master League",
-        "master-classic": "Master League Classic"
-    },
-    "cupLeagues": {
-        "premier": " Premier",
-        "premierclassic": "Premier Classic",
-        "classic": "Master League Classic",
-        "mega": "Mega Master League",
-        "retro": "Retro Cup",
-        "fossil": "Fossil Cup",
-        "summer": "Summer Cup",
-        "zodiac": "Devon Zodiac Cup",
-        "sovereign": "Devon Sovereign Cup",
-        "devonchampionship": "devonchampionship",
-        "tundra": "Devon Tundra Cup",
-        "ufc-untapped-master": "UFC Untapped (Master)",
-        "catch": "Catch Cup",
-        "little": "Little Cup",
-        "polaris": "Battle Frontier (Polaris)",
-        "wasteland": "Battle Frontier (Wasteland)",
-        "battlefrontiergreat": "Battle Frontier (Master)",
-        "battlefrontierultra": "Battle Frontier (Master)",
-        "battlefrontiermaster": "Battle Frontier (Master)",
-        "littlecatch": "Little Catch Cup",
-        "evolution": "Evolution Cup",
-        "fantasy": "Fantasy Cup",
-        "remix": " Remix"
-    }
+{
+  "metadata": {
+    "title": "Rankings!",
+    "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
+  },
+  "cpLeagues": {
+    "little": "Little Cup",
+    "great": "Great League",
+    "ultra": "Ultra League",
+    "master": "Master League",
+    "master-classic": "Master League Classic"
+  },
+  "cupLeagues": {
+    "premier": " Premier",
+    "premierclassic": "Premier Classic",
+    "classic": "Master League Classic",
+    "mega": "Mega Master League",
+    "retro": "Retro Cup",
+    "fossil": "Fossil Cup",
+    "summer": "Summer Cup",
+    "zodiac": "Devon Zodiac Cup",
+    "sovereign": "Devon Sovereign Cup",
+    "devonchampionship": "devonchampionship",
+    "tundra": "Devon Tundra Cup",
+    "ufc-untapped-master": "UFC Untapped (Master)",
+    "catch": "Catch Cup",
+    "little": "Little Cup",
+    "polaris": "Battle Frontier (Polaris)",
+    "wasteland": "Battle Frontier (Wasteland)",
+    "battlefrontiergreat": "Battle Frontier (Master)",
+    "battlefrontierultra": "Battle Frontier (Master)",
+    "battlefrontiermaster": "Battle Frontier (Master)",
+    "littlecatch": "Little Catch Cup",
+    "evolution": "Evolution Cup",
+    "fantasy": "Fantasy Cup",
+    "remix": " Remix"
+  },
+  "coupLeagues": {
+    "battlefrontiergreat": "",
+    "battlefrontiermaster": "",
+    "battlefrontierultra": "",
+    "catch": "",
+    "classic": "",
+    "devonchampionship": "",
+    "evolution": "",
+    "fantasy": "",
+    "fossil": "",
+    "little": "",
+    "littlecatch": "",
+    "mega": "",
+    "polaris": "",
+    "premier": "",
+    "premierclassic": "",
+    "remix": "",
+    "retro": "",
+    "sovereign": "",
+    "summer": "",
+    "tundra": "",
+    "ufc-untapped-master": "",
+    "wasteland": "",
+    "zodiac": ""
+  },
+  "rankings": {
+    "great": "",
+    "little": "",
+    "master": "",
+    "master-classic": "",
+    "ultra": ""
+  }
 }

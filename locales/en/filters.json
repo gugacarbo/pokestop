@@ -9,9 +9,20 @@
     "reset-description": "Reset all filters",
     "preset": "preset",
     "ivs": {
-        "attack": "attack",
-        "defense": "defense",
-        "hp": "hp"
+        "title": "IVs",
+        "subtitle": "IV Iv",
+        "attack": {
+            "name": "attack",
+            "value": "attack"
+        },
+        "defense": {
+            "name": "defense",
+            "value": "defense"
+        },
+        "hp": {
+            "name": "hp",
+            "value": "hp"
+        }
     },
     "regions": {
         "kanto": "kanto",
@@ -28,6 +39,42 @@
     "stars": {
         "name": "stars",
         "title": "Filter by stars",
-        "subtitle": "IV Range"
+        "subtitle": "IV Iv"
+    },
+    "tags": {
+        "title": "Tags",
+        "subtitle": "Filter by tags",
+        "acquirement": {
+            "title": "Acquirement",
+            "subtitle": "Filter by acquirement",
+            "eggsonly": {
+                "name": "Eggs Only",
+                "value": "eggsonly"
+            },
+            "gbl": {
+                "name": "Go League",
+                "value": "gbl"
+            },
+            "hatched": {
+                "name": "hatched",
+                "value": "hatched"
+            },
+            "raid": {
+                "name": "raid",
+                "value": "raid"
+            },
+            "research": {
+                "name": "research",
+                "value": "research"
+            },
+            "rocket": {
+                "name": "rocket",
+                "value": "rocket"
+            },
+            "traded": {
+                "name": "traded",
+                "value": "traded"
+            }
+        }
     }
 }

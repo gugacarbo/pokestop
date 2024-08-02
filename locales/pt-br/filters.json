@@ -9,9 +9,20 @@
   "reset-description": "Redefinir todos os filtros",
   "preset": "preset",
   "ivs": {
-    "attack": "ataque",
-    "defense": "defesa",
-    "hp": "ps"
+    "title": "IVs",
+    "subtitle": "Intervalo de IV",
+    "attack": {
+      "name": "ataque",
+      "value": "ataque"
+    },
+    "defense": {
+      "name": "defesa",
+      "value": "defesa"
+    },
+    "hp": {
+      "name": "Saúde",
+      "value": "ps"
+    }
   },
   "regions": {
     "kanto": "kanto",
@@ -29,5 +40,41 @@
     "name": "estrelas",
     "title": "Filtrar por estrelas",
     "subtitle": "Intervalo de IV"
+  },
+  "tags": {
+    "acquirement": {
+      "subtitle": "Filtrar por origem",
+      "title": "Captura",
+      "eggsonly": {
+        "name": "Somente em ovos",
+        "value": "apenasovos"
+      },
+      "gbl": {
+        "name": "Vá Liga",
+        "value": "lbg"
+      },
+      "hatched": {
+        "name": "chocado",
+        "value": "chocado"
+      },
+      "raid": {
+        "name": "raid",
+        "value": "raid"
+      },
+      "research": {
+        "name": "pesquisa",
+        "value": "pesquisa"
+      },
+      "rocket": {
+        "name": "rocket",
+        "value": "rocket"
+      },
+      "traded": {
+        "name": "trocado",
+        "value": "trocado"
+      }
+    },
+    "subtitle": "Filtrar por tags",
+    "title": "Tag"
   }
 }

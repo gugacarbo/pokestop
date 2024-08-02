@@ -2,7 +2,7 @@ import { FormLabel } from "@/components/ui/form";
 import { Switch } from "@/components/ui/switch";
 import { useTranslations } from "next-intl";
 
-function EnableRange({
+function EnableFilter({
   name,
   checked,
   onCheckedChange,
@@ -14,14 +14,14 @@ function EnableRange({
   const t = useTranslations("filters");
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 w-full">
       <Switch checked={checked} onCheckedChange={onCheckedChange} />
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
-        {t(`ivs.${name}`)}
+        {t(`ivs.${name}.name`)}
       </FormLabel>
     </div>
   );
 }
 
-export { EnableRange };
+export { EnableFilter };
