@@ -27,18 +27,6 @@
       "value": "ps"
     }
   },
-  "regions": {
-    "kanto": "kanto",
-    "johto": "johto",
-    "hoenn": "hoenn",
-    "sinnoh": "sinnoh",
-    "unova": "unova",
-    "kalos": "kalos",
-    "alola": "alola",
-    "galar": "galar",
-    "hisui": "hisui",
-    "paldea": "paldea"
-  },
   "stars": {
     "name": "estrelas",
     "title": "Filtrar por estrelas",
@@ -78,6 +66,86 @@
       }
     },
     "subtitle": "Filtrar por tags",
-    "title": "Tag"
+    "title": "Tag",
+    "region": {
+      "subtitle": "Por Geração Pokémon",
+      "title": "Filtrar por região",
+      "alola": {
+        "name": "Alola",
+        "value": "Alola"
+      },
+      "galar": {
+        "name": "galar",
+        "value": "galar"
+      },
+      "hisui": {
+        "name": "hisui",
+        "value": "hisui"
+      },
+      "hoenn": {
+        "name": "Hoenn",
+        "value": "hoenn"
+      },
+      "johto": {
+        "name": "johto",
+        "value": "johto"
+      },
+      "kalos": {
+        "name": "kalos",
+        "value": "kalos"
+      },
+      "kanto": {
+        "name": "kanto",
+        "value": "kanto"
+      },
+      "paldea": {
+        "name": "paldea",
+        "value": "paldea"
+      },
+      "sinnoh": {
+        "name": "sinnoh",
+        "value": "sinnoh"
+      },
+      "unova": {
+        "name": "unova",
+        "value": "unova"
+      }
+    },
+    "rarity": {
+      "title": "Filtrar por Raridade",
+      "subtitle": "Pokemons raros",
+      "costume": {
+        "name": "Evento",
+        "value": "fantasia"
+      },
+      "legendary": {
+        "name": "Lendário",
+        "value": "lendário"
+      },
+      "lucky": {
+        "name": "Sortudo",
+        "value": "sortudo"
+      },
+      "mythical": {
+        "name": "Mítico",
+        "value": "mítico"
+      },
+      "purified": {
+        "name": "Purificado",
+        "value": "purificado"
+      },
+      "shadow": {
+        "name": "Sombra",
+        "value": "sombra"
+      },
+      "shiny": {
+        "name": "Brilhante",
+        "value": "brilhante"
+      },
+      "ultrabeasts": {
+        "name": "Ultrabestas",
+        "value": "ultrabestas"
+      }
+    }
   }
 }

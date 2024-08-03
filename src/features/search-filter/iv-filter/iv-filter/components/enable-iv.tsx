@@ -17,11 +17,12 @@ function EnableFilter({
   return (
     <div className="flex items-center gap-2 w-full">
       <Switch checked={checked} onCheckedChange={onCheckedChange} />
-      <NotInput valueKey="active" name={`ivs.${name}`} />
+
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
         {t(`ivs.${name}.name`)}
       </FormLabel>
+      <NotInput className="ml-auto" valueKey="active" name={`ivs.${name}`} />
     </div>
   );
 }

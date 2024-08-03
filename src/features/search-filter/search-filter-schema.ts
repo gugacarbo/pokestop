@@ -44,34 +44,34 @@ export const acquirementFilterSchema = z.object({
   traded: zBool,
 });
 
-export const regionsFilterSchema = z.object({
-  kanto: booleanSchema,
-  johto: booleanSchema,
-  hoenn: booleanSchema,
-  sinnoh: booleanSchema,
-  unova: booleanSchema,
-  kalos: booleanSchema,
-  alola: booleanSchema,
-  galar: booleanSchema,
-  hisui: booleanSchema,
-  paldea: booleanSchema,
+export const regionFilterSchema = z.object({
+  kanto: zBool,
+  johto: zBool,
+  hoenn: zBool,
+  sinnoh: zBool,
+  unova: zBool,
+  kalos: zBool,
+  alola: zBool,
+  galar: zBool,
+  hisui: zBool,
+  paldea: zBool,
 });
 
-export const raritiesFilterSchema = z.object({
-  lucky: booleanSchema,
-  legendary: booleanSchema,
-  mythical: booleanSchema,
-  purified: booleanSchema,
-  shadow: booleanSchema,
-  shiny: booleanSchema,
-  costume: booleanSchema,
-  ultrabeasts: booleanSchema,
+export const rarityFilterSchema = z.object({
+  lucky: zBool,
+  legendary: zBool,
+  mythical: zBool,
+  purified: zBool,
+  shadow: zBool,
+  shiny: zBool,
+  costume: zBool,
+  ultrabeasts: zBool,
 });
 
 export const tagsFilterSchema = z.object({
-  regions: regionsFilterSchema,
+  region: regionFilterSchema,
   acquirement: acquirementFilterSchema,
-  rarities: raritiesFilterSchema,
+  rarity: rarityFilterSchema,
 });
 
 // ? All Filters
@@ -124,17 +124,47 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
     },
   },
   tags: {
-    regions: {
-      kanto: false,
-      johto: false,
-      hoenn: false,
-      sinnoh: false,
-      unova: false,
-      kalos: false,
-      alola: false,
-      galar: false,
-      hisui: false,
-      paldea: false,
+    region: {
+      kanto: {
+        value: false,
+        not: false,
+      },
+      johto: {
+        value: false,
+        not: false,
+      },
+      hoenn: {
+        value: false,
+        not: false,
+      },
+      sinnoh: {
+        value: false,
+        not: false,
+      },
+      unova: {
+        value: false,
+        not: false,
+      },
+      kalos: {
+        value: false,
+        not: false,
+      },
+      alola: {
+        value: false,
+        not: false,
+      },
+      galar: {
+        value: false,
+        not: false,
+      },
+      hisui: {
+        value: false,
+        not: false,
+      },
+      paldea: {
+        value: false,
+        not: false,
+      },
     },
     acquirement: {
       eggsonly: {
@@ -166,15 +196,39 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         not: false,
       },
     },
-    rarities: {
-      lucky: false,
-      legendary: false,
-      mythical: false,
-      purified: false,
-      shadow: false,
-      shiny: false,
-      costume: false,
-      ultrabeasts: false,
+    rarity: {
+      lucky: {
+        value: false,
+        not: false,
+      },
+      legendary: {
+        value: false,
+        not: false,
+      },
+      mythical: {
+        value: false,
+        not: false,
+      },
+      purified: {
+        value: false,
+        not: false,
+      },
+      shadow: {
+        value: false,
+        not: false,
+      },
+      shiny: {
+        value: false,
+        not: false,
+      },
+      costume: {
+        value: false,
+        not: false,
+      },
+      ultrabeasts: {
+        value: false,
+        not: false,
+      },
     },
   },
 });

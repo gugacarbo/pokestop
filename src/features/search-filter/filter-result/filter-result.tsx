@@ -35,11 +35,9 @@ export function FilterResult({
         </div>
       </CardHeader>
       <CardContent>
-        <textarea
-          onChange={() => {}}
-          className="bg-popover shadow-sm p-3 border border-border rounded-md w-full h-16 outline-none resize-none"
-          value={value}
-        />
+        <p className="bg-popover shadow-sm p-3 border border-border rounded-md w-full h-16 outline-none resize-none">
+          {value}
+        </p>
       </CardContent>
     </Card>
   );

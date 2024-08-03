@@ -10,9 +10,11 @@ import { NotButton } from "./NotButton";
 function NotInput({
   name,
   valueKey = "value",
+  className,
 }: {
   name: string;
   valueKey?: string;
+  className?: string;
 }) {
   const { control } = useFormContext();
 
@@ -21,7 +23,7 @@ function NotInput({
       control={control}
       name={name}
       render={({ field }) => (
-        <FormItem>
+        <FormItem className={className}>
           <FormControl>
             <NotButton
               value={field.value.not}

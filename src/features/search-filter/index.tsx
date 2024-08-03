@@ -1,5 +1,5 @@
 import { FilterFormContext } from "./filter-form-context";
 import { IvFilter } from "./iv-filter";
-import { AcquirementFilter } from "./tag-filter";
+import { AcquirementFilter, RarityFilter } from "./tag-filter";
 
-export { FilterFormContext, AcquirementFilter,IvFilter };
+export { FilterFormContext, AcquirementFilter, IvFilter, RarityFilter };

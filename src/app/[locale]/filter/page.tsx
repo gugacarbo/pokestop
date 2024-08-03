@@ -1,6 +1,11 @@
 import React from "react";
-import { AcquirementFilter, FilterFormContext } from "@/features/search-filter";
+import {
+  AcquirementFilter,
+  FilterFormContext,
+  RarityFilter,
+} from "@/features/search-filter";
 import { IvFilter, StarsFilter } from "@/features/search-filter/iv-filter";
+import { RegionFilter } from "@/features/search-filter/tag-filter/region-filter/region-filter";
 
 export default function Filter() {
   return (
@@ -9,6 +14,8 @@ export default function Filter() {
         <IvFilter />
         <StarsFilter />
         <AcquirementFilter />
+        <RegionFilter />
+        <RarityFilter />
       </FilterFormContext>
     </main>
   );

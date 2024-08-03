@@ -8,7 +8,7 @@
     "reset": "reset",
     "reset-description": "Reset all filters",
     "preset": "preset",
-    "invert-filter":{
+    "invert-filter": {
         "title": "Inverts filter selectivity"
     },
     "ivs": {
@@ -26,18 +26,6 @@
             "name": "health",
             "value": "hp"
         }
-    },
-    "regions": {
-        "kanto": "kanto",
-        "johto": "johto",
-        "hoenn": "hoenn",
-        "sinnoh": "sinnoh",
-        "unova": "unova",
-        "kalos": "kalos",
-        "alola": "alola",
-        "galar": "galar",
-        "hisui": "hisui",
-        "paldea": "paldea"
     },
     "stars": {
         "name": "stars",
@@ -77,6 +65,86 @@
             "traded": {
                 "name": "traded",
                 "value": "traded"
+            }
+        },
+        "region": {
+            "title": "Filter by region",
+            "subtitle": "By Pokemon Generation ",
+            "kanto": {
+                "name": "kanto",
+                "value": "kanto"
+            },
+            "johto": {
+                "name": "johto",
+                "value": "johto"
+            },
+            "hoenn": {
+                "name": "hoenn",
+                "value": "hoenn"
+            },
+            "sinnoh": {
+                "name": "sinnoh",
+                "value": "sinnoh"
+            },
+            "unova": {
+                "name": "unova",
+                "value": "unova"
+            },
+            "kalos": {
+                "name": "kalos",
+                "value": "kalos"
+            },
+            "alola": {
+                "name": "alola",
+                "value": "alola"
+            },
+            "galar": {
+                "name": "galar",
+                "value": "galar"
+            },
+            "hisui": {
+                "name": "hisui",
+                "value": "hisui"
+            },
+            "paldea": {
+                "name": "paldea",
+                "value": "paldea"
+            }
+        },
+        "rarity": {
+            "title": "Filter by Rarity",
+            "subtitle": "Rare pokemons",
+            "lucky": {
+                "name": "Lucky",
+                "value": "lucky"
+            },
+            "legendary": {
+                "name": "Legendary",
+                "value": "legendary"
+            },
+            "mythical": {
+                "name": "Mythical",
+                "value": "mythical"
+            },
+            "purified": {
+                "name": "Purified",
+                "value": "purified"
+            },
+            "shadow": {
+                "name": "Shadow",
+                "value": "shadow"
+            },
+            "shiny": {
+                "name": "Shiny",
+                "value": "shiny"
+            },
+            "costume": {
+                "name": "Event",
+                "value": "costume"
+            },
+            "ultrabeasts": {
+                "name": "Ultra Beasts",
+                "value": "ultrabeasts"
             }
         }
     }
