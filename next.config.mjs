@@ -11,6 +11,8 @@ if (process.env.NODE_ENV === "development") {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  fastRefresh: true,
+  concurrentFeatures: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,

@@ -11,29 +11,35 @@ import {
 
 import { Form } from "@/components/ui/form";
 import { FilterResult } from "./filter-result";
-import { useLocalStorage } from "usehooks-ts";
+import { persistHookForm } from "@/hooks/persist-hook-form";
 
 export function FilterFormContext({ children }: { children: React.ReactNode }) {
-  const [value, setValue, resetValue] = useLocalStorage(
-    "test-key",
-    defaultValues,
-    {
-      initializeWithValue: true,
-    }
-  );
-
   const form = useForm<SearchFilter>({
     resolver: zodResolver(searchFilterSchema),
     defaultValues,
-    values: value,
-    mode: "all",
+    resetOptions: {
+      keepDirtyValues: true,
+    },
+  });
+
+  const { reset } = persistHookForm<SearchFilter>({
+    localKey: "test-key",
+    watch: form.watch,
+    setValue: form.setValue,
+    reset: form.reset,
   });
 
   return (
     <Form {...form}>
       <div className="flex flex-col gap-2 w-full">
-        <FilterResult result={form.getValues()} reset={resetValue} />
-        <form onSubmit={form.handleSubmit(setValue)}>
+        <FilterResult
+          result={form.getValues()}
+          reset={() => {
+            reset();
+            form.reset(defaultValues);
+          }}
+        />
+        <form onSubmit={form.handleSubmit(() => {})}>
           <div className="flex gap-2">{children}</div>
           <button>send</button>
         </form>

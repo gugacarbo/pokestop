@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useLocale, useTranslations } from "next-intl";
+import {  useTranslations } from "next-intl";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -27,7 +27,6 @@ const aqFilter = {
 
 function AcquirementFilter() {
   const t = useTranslations("filters");
-  const locale = useLocale();
   const { control } = useFormContext();
 
   return (
