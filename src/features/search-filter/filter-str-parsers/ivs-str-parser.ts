@@ -1,5 +1,6 @@
 import { useMessages } from "next-intl";
 import { SearchFilter } from "../search-filter-schema";
+import { applyNot } from ".";
 
 function ivsStrParser({ ivs }: SearchFilter) {
   const { filters } = useMessages() as IntlMessages;
@@ -7,9 +8,12 @@ function ivsStrParser({ ivs }: SearchFilter) {
   return Object.entries(ivs)
     .filter(([_, value]) => value.active)
     .map(([key, value]) => {
-      return `${value.mode === "lt" ? "-" : ""}${value.value}${
-        value.mode === "gt" ? "-" : ""
-      }${filters?.ivs[key as keyof SearchFilter["ivs"]].value}`;
+      return applyNot(
+        `${value.mode === "lt" ? "-" : ""}${value.value}${
+          value.mode === "gt" ? "-" : ""
+        }${filters?.ivs[key as keyof SearchFilter["ivs"]].value}`,
+        value.not
+      );
     })
     .join("&");
 }

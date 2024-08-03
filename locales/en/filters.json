@@ -8,9 +8,12 @@
     "reset": "reset",
     "reset-description": "Reset all filters",
     "preset": "preset",
+    "invert-filter":{
+        "title": "Inverts filter selectivity"
+    },
     "ivs": {
         "title": "IVs",
-        "subtitle": "IV Iv",
+        "subtitle": "Individual IV",
         "attack": {
             "name": "attack",
             "value": "attack"
@@ -20,7 +23,7 @@
             "value": "defense"
         },
         "hp": {
-            "name": "hp",
+            "name": "health",
             "value": "hp"
         }
     },
@@ -39,13 +42,13 @@
     "stars": {
         "name": "stars",
         "title": "Filter by stars",
-        "subtitle": "IV Iv"
+        "subtitle": "IV Range"
     },
     "tags": {
         "title": "Tags",
         "subtitle": "Filter by tags",
         "acquirement": {
-            "title": "Acquirement",
+            "title": "Encounter",
             "subtitle": "Filter by acquirement",
             "eggsonly": {
                 "name": "Eggs Only",

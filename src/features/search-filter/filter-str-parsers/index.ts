@@ -18,4 +18,8 @@ function parseFilters(filters: SearchFilter) {
   };
 }
 
-export { starsStrParser, parseFilters };
+function applyNot(filter: string, not: boolean) {
+  return (not ? "!" : "") + filter;
+}
+
+export { parseFilters, applyNot };

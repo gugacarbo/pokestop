@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {  useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -14,6 +14,7 @@ import {
 import { useFormContext } from "react-hook-form";
 import { Switch } from "@/components/ui/switch";
 import { firstUpper } from "@/lib/text";
+import { NotInput } from "../../components/NotInput";
 
 const aqFilter = {
   eggsonly: false,
@@ -41,26 +42,33 @@ function AcquirementFilter() {
       </CardHeader>
       <CardContent className="flex flex-col gap-2 pt-0">
         {Object.entries(aqFilter).map(([name, value]) => (
-          <FormField
-            key={name}
-            control={control}
-            name={`tags.acquirement.${name}`}
-            render={({ field }) => (
-              <FormItem className="flex justify-between items-center gap-2 capitalize">
-                <FormLabel htmlFor={name} className="text-sm">
-                  {/*@ts-ignore */}
-                  {t(`tags.acquirement.${name}.name`)}
-                </FormLabel>
-                <FormControl>
-                  <Switch
-                    checked={field.value}
-                    onCheckedChange={(value) => field.onChange(value)}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          <div className="flex flex-1 items-center gap-1" key={name}>
+            <FormField
+              control={control}
+              name={`tags.acquirement.${name}`}
+              render={({ field }) => (
+                <FormItem className="flex flex-1 justify-between items-center gap-2 space-y-0 capitalize">
+                  <FormLabel htmlFor={name} className="text-sm">
+                    {/*@ts-ignore */}
+                    {t(`tags.acquirement.${name}.name`)}
+                  </FormLabel>
+                  <FormControl>
+                    <Switch
+                      checked={field.value.value}
+                      onCheckedChange={(value) =>
+                        field.onChange({
+                          ...field.value,
+                          value: !field.value.value,
+                        })
+                      }
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <NotInput name={`tags.acquirement.${name}`} />
+          </div>
         ))}
       </CardContent>
     </Card>

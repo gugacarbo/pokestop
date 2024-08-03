@@ -8,9 +8,12 @@
   "reset": "Reiniciar",
   "reset-description": "Redefinir todos os filtros",
   "preset": "preset",
+  "invert-filter": {
+    "title": "Inverte a seletividade do filtro"
+  },
   "ivs": {
     "title": "IVs",
-    "subtitle": "Intervalo de IV",
+    "subtitle": "IV Individual",
     "attack": {
       "name": "ataque",
       "value": "ataque"

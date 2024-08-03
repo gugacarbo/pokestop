@@ -27,6 +27,7 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
     watch: form.watch,
     setValue: form.setValue,
     reset: form.reset,
+    schema: searchFilterSchema,
   });
 
   return (
@@ -41,7 +42,6 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
         />
         <form onSubmit={form.handleSubmit(() => {})}>
           <div className="flex gap-2">{children}</div>
-          <button>send</button>
         </form>
       </div>
     </Form>

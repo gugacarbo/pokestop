@@ -13,10 +13,10 @@ import {
 
 import { firstUpper } from "@/lib/text";
 import { ToggleFilterMode } from "./toggle-filter-mode";
-import { cn } from "@/lib/utils";
 import { EnableFilter } from "./components/enable-iv";
 import { StarIconFilter } from "./components/star-icon-iv";
 import { FilterDescription } from "./components/iv-description";
+import { IvBar } from "@/features/pokemon/components/iv-bar";
 
 const ivs = ["attack", "defense", "hp"];
 
@@ -65,23 +65,32 @@ export function IvFilter() {
                         })
                       }
                     />
-                    <StarIconFilter value={field.value?.value || 0} />
-                    <Slider
+                    <StarIconFilter
                       disabled={!field.value?.active}
-                      className="flex-1 min-w-32"
-                      defaultValue={[field.value?.value || 0]}
-                      value={[field.value?.value || 0]}
-                      onValueChange={(value) => {
-                        field.onChange({
-                          target: {
-                            value: { ...field.value, value: value[0] },
-                          },
-                        });
-                        trigger();
-                      }}
-                      max={4}
-                      step={1}
+                      value={field.value?.value || 0}
                     />
+                    <div className="flex flex-col items-center gap-2">
+                      <Slider
+                        disabled={!field.value?.active}
+                        className="flex-1 min-w-32"
+                        defaultValue={[field.value?.value || 0]}
+                        value={[field.value?.value || 0]}
+                        onValueChange={(value) => {
+                          field.onChange({
+                            target: {
+                              value: { ...field.value, value: value[0] },
+                            },
+                          });
+                          trigger();
+                        }}
+                        max={4}
+                        step={1}
+                      />
+                      <IvBar
+                        disabled={!field.value?.active}
+                        value={field.value.value * 5}
+                      />
+                    </div>
                   </div>
                 </FormControl>
                 <FilterDescription name={name} />

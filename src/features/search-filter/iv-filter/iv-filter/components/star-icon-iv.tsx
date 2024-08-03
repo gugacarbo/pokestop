@@ -1,7 +1,13 @@
 import { cn } from "@/lib/utils";
 import { StarIcon } from "lucide-react";
 
-function StarIconFilter({ value }: { value: number }) {
+function StarIconFilter({
+  value,
+  disabled,
+}: {
+  value: number;
+  disabled?: boolean;
+}) {
   const fade = [
     "opacity-15 fill-transparent",
     "opacity-30 stroke-transparent",
@@ -11,7 +17,9 @@ function StarIconFilter({ value }: { value: number }) {
   ];
 
   return (
-    <div className="flex items-center">
+    <div className={cn("flex items-center",
+      disabled && "opacity-75"
+    )}>
       <span className="w-3">{value}</span>
       <StarIcon
         className={cn(

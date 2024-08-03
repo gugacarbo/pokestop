@@ -4,14 +4,19 @@ import { z } from "zod";
 // * Star Filter
 const booleanSchema = z.coerce.boolean().default(false);
 
+const zBool = z.object({
+  value: booleanSchema,
+  not: booleanSchema,
+});
+
 export type IvFilterMode = "eq" | "gt" | "lt";
 
 const starsFilterSchema = z.object({
-  0: booleanSchema,
-  1: booleanSchema,
-  2: booleanSchema,
-  3: booleanSchema,
-  4: booleanSchema,
+  0: zBool,
+  1: zBool,
+  2: zBool,
+  3: zBool,
+  4: zBool,
 });
 
 // ? Iv Filter
@@ -19,12 +24,24 @@ export const ivFilterSchema = z.object({
   value: z.number().min(0).max(4).default(2),
   mode: z.enum(["eq", "gt", "lt"]).default("eq"),
   active: z.coerce.boolean().default(false),
+  not: booleanSchema,
 });
 
 const ivsFilterSchema = z.object({
   attack: ivFilterSchema,
   defense: ivFilterSchema,
   hp: ivFilterSchema,
+});
+
+// ? Filter by Acquirement
+export const acquirementFilterSchema = z.object({
+  eggsonly: zBool,
+  gbl: zBool,
+  hatched: zBool,
+  raid: zBool,
+  research: zBool,
+  rocket: zBool,
+  traded: zBool,
 });
 
 export const regionsFilterSchema = z.object({
@@ -40,16 +57,6 @@ export const regionsFilterSchema = z.object({
   paldea: booleanSchema,
 });
 
-export const acquirementFilterSchema = z.object({
-  eggsonly: booleanSchema,
-  gbl: booleanSchema,
-  hatched: booleanSchema,
-  raid: booleanSchema,
-  research: booleanSchema,
-  rocket: booleanSchema,
-  traded: booleanSchema,
-});
-
 export const raritiesFilterSchema = z.object({
   lucky: booleanSchema,
   legendary: booleanSchema,
@@ -58,7 +65,7 @@ export const raritiesFilterSchema = z.object({
   shadow: booleanSchema,
   shiny: booleanSchema,
   costume: booleanSchema,
-  ultracreature: booleanSchema,
+  ultrabeasts: booleanSchema,
 });
 
 export const tagsFilterSchema = z.object({
@@ -78,11 +85,26 @@ export type SearchFilter = z.infer<typeof searchFilterSchema>;
 
 export const defaultValues: SearchFilter = searchFilterSchema.parse({
   stars: {
-    0: false,
-    1: false,
-    2: false,
-    3: false,
-    4: false,
+    0: {
+      value: false,
+      not: false,
+    },
+    1: {
+      value: false,
+      not: false,
+    },
+    2: {
+      value: false,
+      not: false,
+    },
+    3: {
+      value: false,
+      not: false,
+    },
+    4: {
+      value: false,
+      not: false,
+    },
   },
   ivs: {
     attack: {
@@ -115,13 +137,34 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
       paldea: false,
     },
     acquirement: {
-      eggsonly: false,
-      gbl: false,
-      hatched: false,
-      raid: false,
-      research: false,
-      rocket: false,
-      traded: false,
+      eggsonly: {
+        value: false,
+        not: false,
+      },
+      gbl: {
+        value: false,
+        not: false,
+      },
+      hatched: {
+        value: false,
+        not: false,
+      },
+      raid: {
+        value: false,
+        not: false,
+      },
+      research: {
+        value: false,
+        not: false,
+      },
+      rocket: {
+        value: false,
+        not: false,
+      },
+      traded: {
+        value: false,
+        not: false,
+      },
     },
     rarities: {
       lucky: false,
@@ -131,7 +174,7 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
       shadow: false,
       shiny: false,
       costume: false,
-      ultracreature: false,
+      ultrabeasts: false,
     },
   },
 });

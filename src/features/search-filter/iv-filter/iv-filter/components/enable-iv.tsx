@@ -1,5 +1,6 @@
 import { FormLabel } from "@/components/ui/form";
 import { Switch } from "@/components/ui/switch";
+import { NotInput } from "@/features/search-filter/components/NotInput";
 import { useTranslations } from "next-intl";
 
 function EnableFilter({
@@ -16,6 +17,7 @@ function EnableFilter({
   return (
     <div className="flex items-center gap-2 w-full">
       <Switch checked={checked} onCheckedChange={onCheckedChange} />
+      <NotInput valueKey="active" name={`ivs.${name}`} />
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
         {t(`ivs.${name}.name`)}
