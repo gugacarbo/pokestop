@@ -12,12 +12,12 @@ import {
 } from "@/components/ui/form";
 
 import { firstUpper } from "@/lib/text";
-import { ToggleFilterMode } from "./toggle-filter-mode";
+import { ToggleFilterMode } from "../../components/toggle-filter-mode";
 import { EnableFilter } from "./components/enable-iv";
 import { StarIconFilter } from "./components/star-icon-iv";
 import { FilterDescription } from "./components/iv-description";
 import { IvBar } from "@/features/pokemon/components/iv-bar";
-import { CpFilter } from "./cp-filter";
+import { CpFilter } from "../cp-filter";
 
 const ivs = ["attack", "defense", "hp"];
 
@@ -34,6 +34,7 @@ export function IvFilter() {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
+        <CpFilter />
         {ivs.map((name) => (
           <FormField
             key={name}
@@ -49,7 +50,7 @@ export function IvFilter() {
                   }
                 />
                 <FormControl>
-                  <div className="flex items-center gap-1">
+                  <div className="flex flex-1 items-center gap-1">
                     <ToggleFilterMode
                       value={field.value?.value}
                       disabled={!field.value?.active}
@@ -62,7 +63,7 @@ export function IvFilter() {
                       disabled={!field.value?.active}
                       value={field.value?.value || 0}
                     />
-                    <div className="flex flex-col items-center gap-2">
+                    <div className="flex flex-col flex-1 items-center gap-2">
                       <Slider
                         disabled={!field.value?.active}
                         className="flex-1 min-w-32"
@@ -88,7 +89,6 @@ export function IvFilter() {
             )}
           />
         ))}
-        <CpFilter />
       </CardContent>
     </Card>
   );

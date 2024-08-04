@@ -1,4 +1,5 @@
 import { SearchFilter } from "../../schemas/search-filter-schema";
+import { useCpStrParser } from "./cp-str-parser";
 
 import { useIvsStrParser } from "./ivs-str-parser";
 import { useStarsStrParser } from "./stars-str-parser";
@@ -20,6 +21,7 @@ function useParseFilters(filters: SearchFilter) {
   const stats = {
     stars: useStarsStrParser(filters),
     ivs: useIvsStrParser(filters),
+    cp:useCpStrParser(filters)
   };
 
   return {

@@ -20,16 +20,16 @@ function EnableFilter({
 
   return (
     <div className="flex items-center gap-2 w-full">
-      <NotInput
-        
-        valueKey="active"
-        name={`stats.${category}.${name ?? ""}`}
-      />
+      <NotInput valueKey="active" name={`stats.${category}.${name ?? ""}`} />
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
         {t(`${category}.${name ? `${name}.${nameKey}` : `${nameKey}`}`)}
       </FormLabel>
-      <Switch className="ml-auto" checked={checked} onCheckedChange={onCheckedChange} />
+      <Switch
+        className="ml-auto"
+        checked={checked}
+        onCheckedChange={onCheckedChange}
+      />
     </div>
   );
 }

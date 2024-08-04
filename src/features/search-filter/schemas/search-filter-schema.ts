@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { booleanSchema, zBool } from "./";
 
-export type IvFilterMode = "eq" | "gt" | "lt";
+export type RangeFilterMode = "eq" | "gt" | "lt" | "int";
 
 const starsFilterSchema = z.object({
   0: booleanSchema,
@@ -26,8 +26,8 @@ const ivsFilterSchema = z.object({
 });
 
 const cpFilterSchema = z.object({
-  value: z.number().min(0).default(0),
-  mode: z.enum(["eq", "gt", "lt"]).default("eq"),
+  value: z.array(z.coerce.number().min(0).default(1500)).max(2).min(1),
+  mode: z.enum(["eq", "gt", "lt", "int"]).default("eq"),
   active: z.coerce.boolean().default(false),
   not: zBool,
 });
@@ -144,7 +144,7 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
       },
     },
     cp: {
-      value: 2,
+      value: [1500],
       mode: "eq",
       active: false,
       not: false,

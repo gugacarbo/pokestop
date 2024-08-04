@@ -27,7 +27,10 @@ export function FilterResult({
 }) {
   const t = useTranslations("filters");
   const parsed = useParseFilters(result);
-  const p = useMemo(() => concatObjectValues(parsed), [parsed]);
+  const p = useMemo(
+    () => concatObjectValues(parsed).replace(/\&$/, ""),
+    [parsed]
+  );
 
   return (
     <Card className="w-full">

@@ -12,9 +12,9 @@ export default function Filter() {
         <TagFilter tagKey="acquirement" />
         <TagFilter tagKey="region" />
         <TagFilter tagKey="rarity" />
-        <TagFilter tagKey="gender" />
         <StarsFilter />
         <IvFilter />
+        <TagFilter tagKey="gender" />
       </FilterFormContext>
     </main>
   );

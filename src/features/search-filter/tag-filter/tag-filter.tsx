@@ -38,6 +38,8 @@ function TagFilter({
       <CardContent className="flex flex-col gap-2 pt-0">
         {Object.entries(defaultValues.tags[tagKey]).map(([name, value]) => (
           <div className="flex flex-1 items-center gap-1" key={name}>
+            <NotInput name={`tags.${tagKey}.${name}`} />
+
             <FormField
               control={control}
               name={`tags.${tagKey}.${name}`}
@@ -62,7 +64,6 @@ function TagFilter({
                 </FormItem>
               )}
             />
-            <NotInput name={`tags.${tagKey}.${name}`} />
           </div>
         ))}
       </CardContent>
