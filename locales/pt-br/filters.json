@@ -116,7 +116,7 @@
       "subtitle": "Pokemons raros",
       "costume": {
         "name": "Evento",
-        "value": "fantasia"
+        "value": "traje"
       },
       "legendary": {
         "name": "Lendário",
@@ -135,16 +135,16 @@
         "value": "purificado"
       },
       "shadow": {
-        "name": "Sombra",
-        "value": "sombra"
+        "name": "Sombroso",
+        "value": "sombroso"
       },
       "shiny": {
         "name": "Brilhante",
         "value": "brilhante"
       },
       "ultrabeasts": {
-        "name": "Ultrabestas",
-        "value": "ultrabestas"
+        "name": "Ultra Criaturas",
+        "value": "ultracriaturas"
       }
     }
   }
