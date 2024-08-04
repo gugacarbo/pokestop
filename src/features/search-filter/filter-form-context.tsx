@@ -11,7 +11,7 @@ import {
 
 import { Form } from "@/components/ui/form";
 import { FilterResult } from "./filter-result";
-import { persistHookForm } from "@/hooks/persist-hook-form";
+import { usePersistHookForm } from "@/hooks/use-persist-hook-form";
 
 export function FilterFormContext({ children }: { children: React.ReactNode }) {
   const form = useForm<SearchFilter>({
@@ -22,7 +22,7 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
     },
   });
 
-  const { reset } = persistHookForm<SearchFilter>({
+  const { reset } = usePersistHookForm<SearchFilter>({
     localKey: "test-key",
     watch: form.watch,
     setValue: form.setValue,
@@ -32,7 +32,7 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
 
   return (
     <Form {...form}>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full f">
         <FilterResult
           result={form.getValues()}
           reset={() => {
@@ -41,7 +41,7 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
           }}
         />
         <form onSubmit={form.handleSubmit(() => {})}>
-          <div className="flex gap-2">{children}</div>
+          <div className="flex flex-wrap gap-2">{children}</div>
         </form>
       </div>
     </Form>

@@ -44,38 +44,24 @@ export function StarsFilter() {
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         {Object.entries(starsLabel).map(([value, label]) => (
-          <div className="flex items-center gap-1" key={`${value}.not`}>
-            <FormField
-              control={control}
-              name={`stars.${value}`}
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <NotButton
-                      aria-label={label}
-                      value={field.value.not}
-                      disabled={!field.value.value}
-                      onClick={() => {
-                        field.onChange({
-                          target: {
-                            value: {
-                              ...field.value,
-                              not: !field.value.not,
-                            },
-                          },
-                        });
-                      }}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={control}
-              name={`stars.${value}`}
-              render={({ field }) => (
-                <FormItem>
+          <FormField
+            key={`${value}.not`}
+            control={control}
+            name={`stats.stars.${value}`}
+            render={({ field }) => (
+              <FormItem className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <NotButton
+                    aria-label={label}
+                    value={field.value.not}
+                    disabled={!field.value.value}
+                    onClick={() => {
+                      field.onChange({
+                        ...field.value,
+                        not: !field.value.not,
+                      });
+                    }}
+                  />
                   <FormControl>
                     <TooltipProvider
                       delayDuration={300}
@@ -89,18 +75,14 @@ export function StarsFilter() {
                             variant="outline"
                             className={cn(
                               "flex items-center",
-                              field.value.value
+                              field.value?.value
                                 ? "border-primary "
                                 : "opacity-55 hover:opacity-80"
                             )}
                             onClick={() => {
                               field.onChange({
-                                target: {
-                                  value: {
-                                    ...field.value,
-                                    value: !field.value.value,
-                                  },
-                                },
+                                ...field.value,
+                                value: !field.value?.value,
                               });
                             }}
                           >
@@ -109,7 +91,7 @@ export function StarsFilter() {
                                 key={`${i}-a`}
                                 className={cn(
                                   "transition text-yellow-500 size-5",
-                                  field.value.value ? "" : "opacity-35"
+                                  field.value?.value ? "" : "opacity-35"
                                 )}
                               />
                             ))}
@@ -120,7 +102,7 @@ export function StarsFilter() {
                                   key={`${i}-b`}
                                   className={cn(
                                     "transition size-5",
-                                    field.value.value ? "" : "opacity-35"
+                                    field.value?.value ? "" : "opacity-35"
                                   )}
                                 />
                               )
@@ -135,11 +117,11 @@ export function StarsFilter() {
                       </Tooltip>
                     </TooltipProvider>
                   </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
+                </div>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         ))}
       </CardContent>
     </Card>

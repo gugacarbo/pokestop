@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "antfu.i18n-ally",
+    "aaron-bond.better-comments",
+    "dejmedus.tailwind-sorter",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "esbenp.prettier-vscode"
+  ]
+}

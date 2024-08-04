@@ -12,7 +12,7 @@
         "title": "Inverts filter selectivity"
     },
     "stats": {
-        "pc": {
+        "cp": {
             "name": "Cp",
             "value": "cp"
         },
@@ -151,6 +151,22 @@
             "ultrabeasts": {
                 "name": "Ultra Beasts",
                 "value": "ultrabeasts"
+            }
+        },
+        "gender": {
+            "title": "Gender",
+            "subtitle": "Pokémon gender",
+            "male": {
+                "name": "Male",
+                "value": "male"
+            },
+            "female": {
+                "name": "female",
+                "value": "female"
+            },
+            "genderunknown": {
+                "name": "Gender Unknown",
+                "value": "genderunknown"
             }
         }
     }

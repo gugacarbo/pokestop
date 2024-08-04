@@ -26,16 +26,12 @@ function NotInput({
         <FormItem className={className}>
           <FormControl>
             <NotButton
-              value={field.value.not}
+              value={field.value?.not}
               disabled={!field.value[valueKey]}
               onClick={() => {
                 field.onChange({
-                  target: {
-                    value: {
-                      ...field.value,
-                      not: !field.value.not,
-                    },
-                  },
+                  ...field.value,
+                  not: !field.value.not,
                 });
               }}
             />

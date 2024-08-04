@@ -17,6 +17,7 @@ import { EnableFilter } from "./components/enable-iv";
 import { StarIconFilter } from "./components/star-icon-iv";
 import { FilterDescription } from "./components/iv-description";
 import { IvBar } from "@/features/pokemon/components/iv-bar";
+import { CpFilter } from "./cp-filter";
 
 const ivs = ["attack", "defense", "hp"];
 
@@ -32,23 +33,19 @@ export function IvFilter() {
           {firstUpper(t("ivs.subtitle"))}
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-4 pt-4">
+      <CardContent className="flex flex-col gap-2">
         {ivs.map((name) => (
           <FormField
             key={name}
             control={control}
-            name={`ivs.${name}`}
+            name={`stats.ivs.${name}`}
             render={({ field }) => (
-              <FormItem className="space-y-2">
+              <FormItem className="space-y-1">
                 <EnableFilter
                   name={name}
                   checked={field.value?.active}
                   onCheckedChange={(active) =>
-                    field.onChange({
-                      target: {
-                        value: { ...field.value, active },
-                      },
-                    })
+                    field.onChange({ ...field.value, active })
                   }
                 />
                 <FormControl>
@@ -58,11 +55,7 @@ export function IvFilter() {
                       disabled={!field.value?.active}
                       mode={field?.value?.mode}
                       onModeChange={(mode) =>
-                        field.onChange({
-                          target: {
-                            value: { ...field.value, mode },
-                          },
-                        })
+                        field.onChange({ ...field.value, mode })
                       }
                     />
                     <StarIconFilter
@@ -76,11 +69,7 @@ export function IvFilter() {
                         defaultValue={[field.value?.value || 0]}
                         value={[field.value?.value || 0]}
                         onValueChange={(value) => {
-                          field.onChange({
-                            target: {
-                              value: { ...field.value, value: value[0] },
-                            },
-                          });
+                          field.onChange({ ...field.value, value: value[0] });
                           trigger();
                         }}
                         max={4}
@@ -99,6 +88,7 @@ export function IvFilter() {
             )}
           />
         ))}
+        <CpFilter />
       </CardContent>
     </Card>
   );

@@ -5,12 +5,15 @@ import * as ProgressPrimitive from "@radix-ui/react-progress";
 
 import { cn } from "@/lib/utils";
 
+interface ProgressProps
+  extends React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root> {
+  barClassName?: string;
+  disabled?: boolean;
+}
+
 const Progress = React.forwardRef<
-  React.ElementRef<typeof ProgressPrimitive.Root> & {
-    barClassName?: string;
-    disabled?: boolean;
-  },
-  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
+  React.ElementRef<typeof ProgressPrimitive.Root>,
+  ProgressProps
 >(({ className, value, barClassName, disabled, ...props }, ref) => (
   <ProgressPrimitive.Root
     ref={ref}

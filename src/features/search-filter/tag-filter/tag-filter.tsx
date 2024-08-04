@@ -14,10 +14,14 @@ import {
 import { useFormContext } from "react-hook-form";
 import { Switch } from "@/components/ui/switch";
 import { firstUpper } from "@/lib/text";
-import { NotInput } from "../../components/NotInput";
-import { defaultValues } from "../../schemas/search-filter-schema";
+import { NotInput } from "../components/NotInput";
+import { defaultValues } from "../schemas/search-filter-schema";
 
-function RarityFilter() {
+function TagFilter({
+  tagKey,
+}: {
+  tagKey: keyof (typeof defaultValues)["tags"];
+}) {
   const t = useTranslations("filters");
   const { control } = useFormContext();
 
@@ -25,23 +29,23 @@ function RarityFilter() {
     <Card>
       <CardHeader className="flex-col space-y-0 pb-2">
         <CardTitle className="text-sm">
-          {firstUpper(t("tags.rarity.title"))}
+          {firstUpper(t(`tags.${tagKey}.title`))}
         </CardTitle>
         <CardTitle className="text-muted-foreground text-xs">
-          {firstUpper(t("tags.rarity.subtitle"))}
+          {firstUpper(t(`tags.${tagKey}.subtitle`))}
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2 pt-0">
-        {Object.entries(defaultValues.tags.rarity).map(([name, value]) => (
+        {Object.entries(defaultValues.tags[tagKey]).map(([name, value]) => (
           <div className="flex flex-1 items-center gap-1" key={name}>
             <FormField
               control={control}
-              name={`tags.rarity.${name}`}
+              name={`tags.${tagKey}.${name}`}
               render={({ field }) => (
                 <FormItem className="flex flex-1 justify-between items-center gap-2 space-y-0 capitalize">
                   <FormLabel htmlFor={name} className="text-sm">
                     {/*@ts-ignore */}
-                    {t(`tags.rarity.${name}.name`)}
+                    {t(`tags.${tagKey}.${name}.name`)}
                   </FormLabel>
                   <FormControl>
                     <Switch
@@ -58,7 +62,7 @@ function RarityFilter() {
                 </FormItem>
               )}
             />
-            <NotInput name={`tags.rarity.${name}`} />
+            <NotInput name={`tags.${tagKey}.${name}`} />
           </div>
         ))}
       </CardContent>
@@ -66,4 +70,4 @@ function RarityFilter() {
   );
 }
 
-export { RarityFilter };
+export { TagFilter };

@@ -12,7 +12,7 @@ const starsFilterSchema = z.object({
 });
 
 // ? Iv Filter
-export const ivFilterSchema = z.object({
+const ivFilterSchema = z.object({
   value: z.number().min(0).max(4).default(2),
   mode: z.enum(["eq", "gt", "lt"]).default("eq"),
   active: z.coerce.boolean().default(false),
@@ -23,16 +23,24 @@ const ivsFilterSchema = z.object({
   attack: ivFilterSchema,
   defense: ivFilterSchema,
   hp: ivFilterSchema,
-  cp: z.object({
-    value: z.number().min(0).default(0),
-    mode: z.enum(["eq", "gt", "lt"]).default("eq"),
-    active: z.coerce.boolean().default(false),
-    not: zBool,
-  }),
+});
+
+const cpFilterSchema = z.object({
+  value: z.number().min(0).default(0),
+  mode: z.enum(["eq", "gt", "lt"]).default("eq"),
+  active: z.coerce.boolean().default(false),
+  not: zBool,
+});
+
+//| Stats Filter
+const statsFilterSchema = z.object({
+  stars: starsFilterSchema,
+  ivs: ivsFilterSchema,
+  cp: cpFilterSchema,
 });
 
 // ? Filter by Acquirement
-export const acquirementFilterSchema = z.object({
+const acquirementFilterSchema = z.object({
   eggsonly: booleanSchema,
   gbl: booleanSchema,
   hatched: booleanSchema,
@@ -43,7 +51,7 @@ export const acquirementFilterSchema = z.object({
 });
 
 // ? Region Filter
-export const regionFilterSchema = z.object({
+const regionFilterSchema = z.object({
   kanto: booleanSchema,
   johto: booleanSchema,
   hoenn: booleanSchema,
@@ -57,7 +65,7 @@ export const regionFilterSchema = z.object({
 });
 
 // ? Rarity Filter
-export const rarityFilterSchema = z.object({
+const rarityFilterSchema = z.object({
   lucky: booleanSchema,
   legendary: booleanSchema,
   mythical: booleanSchema,
@@ -68,63 +76,72 @@ export const rarityFilterSchema = z.object({
   ultrabeasts: booleanSchema,
 });
 
-//* Tags Filter
-export const tagsFilterSchema = z.object({
+// ? Gender Filter
+const genderFilterSchema = z.object({
+  male: booleanSchema,
+  female: booleanSchema,
+  genderunknown: booleanSchema,
+});
+
+//| Tags Filter
+const tagsFilterSchema = z.object({
   region: regionFilterSchema,
   acquirement: acquirementFilterSchema,
   rarity: rarityFilterSchema,
+  gender: genderFilterSchema,
 });
 
 // * All Filters
 export const searchFilterSchema = z.object({
-  stars: starsFilterSchema,
-  ivs: ivsFilterSchema,
+  stats: statsFilterSchema,
   tags: tagsFilterSchema,
 });
 
 export type SearchFilter = z.infer<typeof searchFilterSchema>;
 
 export const defaultValues: SearchFilter = searchFilterSchema.parse({
-  stars: {
-    0: {
-      value: false,
-      not: false,
+  stats: {
+    stars: {
+      0: {
+        value: false,
+        not: false,
+      },
+      1: {
+        value: false,
+        not: false,
+      },
+      2: {
+        value: false,
+        not: false,
+      },
+      3: {
+        value: false,
+        not: false,
+      },
+      4: {
+        value: false,
+        not: false,
+      },
     },
-    1: {
-      value: false,
-      not: false,
-    },
-    2: {
-      value: false,
-      not: false,
-    },
-    3: {
-      value: false,
-      not: false,
-    },
-    4: {
-      value: false,
-      not: false,
-    },
-  },
-  ivs: {
-    attack: {
-      value: 2,
-      mode: "eq",
-      active: false,
-      not: false,
-    },
-    defense: {
-      value: 2,
-      mode: "eq",
-      active: false,
-      not: false,
-    },
-    hp: {
-      value: 2,
-      mode: "eq",
-      active: false,
-      not: false,
+    ivs: {
+      attack: {
+        value: 2,
+        mode: "eq",
+        active: false,
+        not: false,
+      },
+      defense: {
+        value: 2,
+        mode: "eq",
+        active: false,
+        not: false,
+      },
+      hp: {
+        value: 2,
+        mode: "eq",
+        active: false,
+        not: false,
+      },
     },
     cp: {
       value: 2,
@@ -236,6 +253,20 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         not: false,
       },
       ultrabeasts: {
+        value: false,
+        not: false,
+      },
+    },
+    gender: {
+      male: {
+        value: false,
+        not: false,
+      },
+      female: {
+        value: false,
+        not: false,
+      },
+      genderunknown: {
         value: false,
         not: false,
       },

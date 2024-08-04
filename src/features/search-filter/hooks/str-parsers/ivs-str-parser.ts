@@ -1,8 +1,8 @@
 import { useMessages } from "next-intl";
-import { SearchFilter } from "../schemas/search-filter-schema";
 import { applyNot } from ".";
+import { SearchFilter } from "../../schemas/search-filter-schema";
 
-function ivsStrParser({ ivs }: SearchFilter) {
+function useIvsStrParser({ stats: { ivs } }: SearchFilter) {
   const { filters } = useMessages() as IntlMessages;
 
   return Object.entries(ivs)
@@ -19,4 +19,4 @@ function ivsStrParser({ ivs }: SearchFilter) {
     .join("&");
 }
 
-export { ivsStrParser };
+export { useIvsStrParser };

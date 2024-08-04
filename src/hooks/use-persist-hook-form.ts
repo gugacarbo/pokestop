@@ -14,7 +14,7 @@ interface PersistHookFormProps<T extends FieldValues> {
   schema?: ZodObject<any>;
 }
 
-function persistHookForm<T extends FieldValues>({
+function usePersistHookForm<T extends FieldValues>({
   watch,
   setValue,
   localKey,
@@ -39,7 +39,7 @@ function persistHookForm<T extends FieldValues>({
         }
       } catch (_) {}
     }
-  }, [localKey, setValue]);
+  }, [localKey, setValue, reset, schema]);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -58,4 +58,4 @@ function persistHookForm<T extends FieldValues>({
   };
 }
 
-export { persistHookForm };
+export { usePersistHookForm };

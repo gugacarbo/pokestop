@@ -1,14 +1,14 @@
 import { useMessages } from "next-intl";
-import { SearchFilter } from "../schemas/search-filter-schema";
-import { applyNot } from ".";
 import {
   accessNestedKey,
   LastNestedKeysOfType,
   NestedKeyOf,
   NestedObject,
 } from "@/lib/nested";
+import { SearchFilter } from "../../schemas/search-filter-schema";
+import { applyNot } from ".";
 
-function booleanStrParser(
+function useBooleanStrParser(
   current_filter: SearchFilter,
   filterKey: NestedKeyOf<SearchFilter>,
   valueKey: string,
@@ -45,4 +45,4 @@ function booleanStrParser(
     .join(",");
 }
 
-export { booleanStrParser };
+export { useBooleanStrParser };

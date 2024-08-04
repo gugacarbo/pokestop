@@ -7,22 +7,29 @@ function EnableFilter({
   name,
   checked,
   onCheckedChange,
+  category = "ivs",
+  nameKey = "name",
 }: {
-  name: string;
+  name?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+  category?: string;
+  nameKey?: string;
 }) {
   const t = useTranslations("filters.stats");
 
   return (
     <div className="flex items-center gap-2 w-full">
-      <Switch checked={checked} onCheckedChange={onCheckedChange} />
-
+      <NotInput
+        
+        valueKey="active"
+        name={`stats.${category}.${name ?? ""}`}
+      />
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
-        {t(`ivs.${name}.name`)}
+        {t(`${category}.${name ? `${name}.${nameKey}` : `${nameKey}`}`)}
       </FormLabel>
-      <NotInput className="ml-auto" valueKey="active" name={`ivs.${name}`} />
+      <Switch className="ml-auto" checked={checked} onCheckedChange={onCheckedChange} />
     </div>
   );
 }

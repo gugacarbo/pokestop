@@ -152,6 +152,22 @@
         "name": "Ultra Criaturas",
         "value": "ultracriaturas"
       }
+    },
+    "gender": {
+      "female": {
+        "name": "fêmea",
+        "value": "fêmea"
+      },
+      "genderunknown": {
+        "name": "Gênero desconhecido",
+        "value": "gênerodesconhecido"
+      },
+      "male": {
+        "name": "Macho",
+        "value": "macho"
+      },
+      "subtitle": "Gênero Pokémon",
+      "title": "Gênero"
     }
   }
 }
