@@ -1,4 +1,4 @@
-import { defaultValues, SearchFilter } from "../search-filter-schema";
+import { defaultValues, SearchFilter } from "../schemas/search-filter-schema";
 
 export const nullPreset: SearchFilter = {
   ...defaultValues,

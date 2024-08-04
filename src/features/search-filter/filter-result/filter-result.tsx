@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { SearchFilter } from "../search-filter-schema";
+import { SearchFilter } from "../schemas/search-filter-schema";
 import { parseFilters } from "../filter-str-parsers";
 
 import { CopyToClipboardButton } from "./copy-to-clipboard-button";

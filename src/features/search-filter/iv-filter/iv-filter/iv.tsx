@@ -22,7 +22,7 @@ const ivs = ["attack", "defense", "hp"];
 
 export function IvFilter() {
   const { control, trigger } = useFormContext();
-  const t = useTranslations("filters");
+  const t = useTranslations("filters.stats");
 
   return (
     <Card>

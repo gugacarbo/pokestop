@@ -32,7 +32,7 @@ const starsLabel: Record<string, string> = {
 
 export function StarsFilter() {
   const { control } = useFormContext();
-  const t = useTranslations("filters.stars");
+  const t = useTranslations("filters.stats.stars");
 
   return (
     <Card>

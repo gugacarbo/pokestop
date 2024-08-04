@@ -1,22 +1,14 @@
-"use client";
 import { z } from "zod";
-
-// * Star Filter
-const booleanSchema = z.coerce.boolean().default(false);
-
-const zBool = z.object({
-  value: booleanSchema,
-  not: booleanSchema,
-});
+import { booleanSchema, zBool } from "./";
 
 export type IvFilterMode = "eq" | "gt" | "lt";
 
 const starsFilterSchema = z.object({
-  0: zBool,
-  1: zBool,
-  2: zBool,
-  3: zBool,
-  4: zBool,
+  0: booleanSchema,
+  1: booleanSchema,
+  2: booleanSchema,
+  3: booleanSchema,
+  4: booleanSchema,
 });
 
 // ? Iv Filter
@@ -24,57 +16,66 @@ export const ivFilterSchema = z.object({
   value: z.number().min(0).max(4).default(2),
   mode: z.enum(["eq", "gt", "lt"]).default("eq"),
   active: z.coerce.boolean().default(false),
-  not: booleanSchema,
+  not: zBool,
 });
 
 const ivsFilterSchema = z.object({
   attack: ivFilterSchema,
   defense: ivFilterSchema,
   hp: ivFilterSchema,
+  cp: z.object({
+    value: z.number().min(0).default(0),
+    mode: z.enum(["eq", "gt", "lt"]).default("eq"),
+    active: z.coerce.boolean().default(false),
+    not: zBool,
+  }),
 });
 
 // ? Filter by Acquirement
 export const acquirementFilterSchema = z.object({
-  eggsonly: zBool,
-  gbl: zBool,
-  hatched: zBool,
-  raid: zBool,
-  research: zBool,
-  rocket: zBool,
-  traded: zBool,
+  eggsonly: booleanSchema,
+  gbl: booleanSchema,
+  hatched: booleanSchema,
+  raid: booleanSchema,
+  research: booleanSchema,
+  rocket: booleanSchema,
+  traded: booleanSchema,
 });
 
+// ? Region Filter
 export const regionFilterSchema = z.object({
-  kanto: zBool,
-  johto: zBool,
-  hoenn: zBool,
-  sinnoh: zBool,
-  unova: zBool,
-  kalos: zBool,
-  alola: zBool,
-  galar: zBool,
-  hisui: zBool,
-  paldea: zBool,
+  kanto: booleanSchema,
+  johto: booleanSchema,
+  hoenn: booleanSchema,
+  sinnoh: booleanSchema,
+  unova: booleanSchema,
+  kalos: booleanSchema,
+  alola: booleanSchema,
+  galar: booleanSchema,
+  hisui: booleanSchema,
+  paldea: booleanSchema,
 });
 
+// ? Rarity Filter
 export const rarityFilterSchema = z.object({
-  lucky: zBool,
-  legendary: zBool,
-  mythical: zBool,
-  purified: zBool,
-  shadow: zBool,
-  shiny: zBool,
-  costume: zBool,
-  ultrabeasts: zBool,
+  lucky: booleanSchema,
+  legendary: booleanSchema,
+  mythical: booleanSchema,
+  purified: booleanSchema,
+  shadow: booleanSchema,
+  shiny: booleanSchema,
+  costume: booleanSchema,
+  ultrabeasts: booleanSchema,
 });
 
+//* Tags Filter
 export const tagsFilterSchema = z.object({
   region: regionFilterSchema,
   acquirement: acquirementFilterSchema,
   rarity: rarityFilterSchema,
 });
 
-// ? All Filters
+// * All Filters
 export const searchFilterSchema = z.object({
   stars: starsFilterSchema,
   ivs: ivsFilterSchema,
@@ -111,16 +112,25 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
       value: 2,
       mode: "eq",
       active: false,
+      not: false,
     },
     defense: {
       value: 2,
       mode: "eq",
       active: false,
+      not: false,
     },
     hp: {
       value: 2,
       mode: "eq",
       active: false,
+      not: false,
+    },
+    cp: {
+      value: 2,
+      mode: "eq",
+      active: false,
+      not: false,
     },
   },
   tags: {

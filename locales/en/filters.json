@@ -11,26 +11,32 @@
     "invert-filter": {
         "title": "Inverts filter selectivity"
     },
-    "ivs": {
-        "title": "IVs",
-        "subtitle": "Individual IV",
-        "attack": {
-            "name": "attack",
-            "value": "attack"
+    "stats": {
+        "pc": {
+            "name": "Cp",
+            "value": "cp"
         },
-        "defense": {
-            "name": "defense",
-            "value": "defense"
+        "ivs": {
+            "title": "IVs",
+            "subtitle": "Individual IV",
+            "attack": {
+                "name": "attack",
+                "value": "attack"
+            },
+            "defense": {
+                "name": "defense",
+                "value": "defense"
+            },
+            "hp": {
+                "name": "health",
+                "value": "hp"
+            }
         },
-        "hp": {
-            "name": "health",
-            "value": "hp"
+        "stars": {
+            "name": "stars",
+            "title": "Filter by stars",
+            "subtitle": "IV Range"
         }
-    },
-    "stars": {
-        "name": "stars",
-        "title": "Filter by stars",
-        "subtitle": "IV Range"
     },
     "tags": {
         "title": "Tags",

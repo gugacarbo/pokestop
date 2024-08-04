@@ -1,4 +1,4 @@
-import { IvFilterMode } from "../../search-filter-schema";
+import { IvFilterMode } from "../../schemas/search-filter-schema";
 
 import { Button } from "@/components/ui/button";
 import { Equal } from "lucide-react";

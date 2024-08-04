@@ -15,7 +15,7 @@ import { useFormContext } from "react-hook-form";
 import { Switch } from "@/components/ui/switch";
 import { firstUpper } from "@/lib/text";
 import { NotInput } from "../../components/NotInput";
-import { defaultValues } from "../../search-filter-schema";
+import { defaultValues } from "../../schemas/search-filter-schema";
 
 function RarityFilter() {
   const t = useTranslations("filters");

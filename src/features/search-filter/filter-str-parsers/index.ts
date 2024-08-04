@@ -1,4 +1,4 @@
-import type { SearchFilter } from "../search-filter-schema";
+import type { SearchFilter } from "../schemas/search-filter-schema";
 import { booleanStrParser } from "./boolean-str-parser";
 
 import { ivsStrParser } from "./ivs-str-parser";

@@ -1,5 +1,5 @@
 import { useMessages } from "next-intl";
-import { SearchFilter } from "../search-filter-schema";
+import { SearchFilter } from "../schemas/search-filter-schema";
 import { applyNot } from ".";
 
 function ivsStrParser({ ivs }: SearchFilter) {
@@ -11,7 +11,8 @@ function ivsStrParser({ ivs }: SearchFilter) {
       return applyNot(
         `${value.mode === "lt" ? "-" : ""}${value.value}${
           value.mode === "gt" ? "-" : ""
-        }${filters?.ivs[key as keyof SearchFilter["ivs"]].value}`,
+          // @ts-ignore
+        }${filters?.stats.ivs[key as keyof SearchFilter["ivs"]].value}`,
         value.not
       );
     })

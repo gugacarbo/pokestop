@@ -8,7 +8,7 @@ function FilterDescription({ name }: { name: string }) {
   return (
     <FormDescription>
       {firstUpper(t("filter-by"))} {/*@ts-ignore */}
-      <b>{t(`ivs.${name}.name`)}</b>.
+      <b>{t(`stats.ivs.${name}.name`)}</b>.
     </FormDescription>
   );
 }

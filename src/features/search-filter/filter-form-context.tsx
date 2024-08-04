@@ -7,7 +7,7 @@ import {
   defaultValues,
   SearchFilter,
   searchFilterSchema,
-} from "./search-filter-schema";
+} from "./schemas/search-filter-schema";
 
 import { Form } from "@/components/ui/form";
 import { FilterResult } from "./filter-result";

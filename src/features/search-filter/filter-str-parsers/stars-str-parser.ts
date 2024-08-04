@@ -1,5 +1,5 @@
 import { applyNot } from ".";
-import { SearchFilter } from "../search-filter-schema";
+import { SearchFilter } from "../schemas/search-filter-schema";
 
 interface StarsStrParserProps {
   stars: SearchFilter["stars"];

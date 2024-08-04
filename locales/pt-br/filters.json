@@ -11,26 +11,32 @@
   "invert-filter": {
     "title": "Inverte a seletividade do filtro"
   },
-  "ivs": {
-    "title": "IVs",
-    "subtitle": "IV Individual",
-    "attack": {
-      "name": "ataque",
-      "value": "ataque"
+  "stats": {
+    "cp": {
+      "name": "Pc",
+      "value": "pc"
     },
-    "defense": {
-      "name": "defesa",
-      "value": "defesa"
+    "ivs": {
+      "title": "IVs",
+      "subtitle": "IV Individual",
+      "attack": {
+        "name": "ataque",
+        "value": "ataque"
+      },
+      "defense": {
+        "name": "defesa",
+        "value": "defesa"
+      },
+      "hp": {
+        "name": "Saúde",
+        "value": "ps"
+      }
     },
-    "hp": {
-      "name": "Saúde",
-      "value": "ps"
+    "stars": {
+      "name": "estrelas",
+      "title": "Filtrar por estrelas",
+      "subtitle": "Intervalo de IV"
     }
-  },
-  "stars": {
-    "name": "estrelas",
-    "title": "Filtrar por estrelas",
-    "subtitle": "Intervalo de IV"
   },
   "tags": {
     "acquirement": {

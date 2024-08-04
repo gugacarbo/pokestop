@@ -12,7 +12,7 @@ function EnableFilter({
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
 }) {
-  const t = useTranslations("filters");
+  const t = useTranslations("filters.stats");
 
   return (
     <div className="flex items-center gap-2 w-full">

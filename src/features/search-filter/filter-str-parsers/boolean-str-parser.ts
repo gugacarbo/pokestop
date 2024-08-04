@@ -1,5 +1,5 @@
 import { useMessages } from "next-intl";
-import { SearchFilter } from "../search-filter-schema";
+import { SearchFilter } from "../schemas/search-filter-schema";
 import { applyNot } from ".";
 import {
   accessNestedKey,
