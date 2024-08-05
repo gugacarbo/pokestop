@@ -1,272 +1,373 @@
 {
-    "short-name": "filters",
-    "filter-by": "filter by",
-    "copy-to-clipboard": "Copy to clipboard",
-    "copy": "copy",
-    "copied": "copied",
-    "filter-results": "Filter results",
-    "reset": "reset",
-    "reset-description": "Reset all filters",
-    "preset": "preset",
-    "invert-filter": {
-        "title": "Inverts filter selectivity"
+  "short-name": "filters",
+  "filter-by": "filter by",
+  "copy-to-clipboard": "Copy to clipboard",
+  "copy": "copy",
+  "copied": "copied",
+  "filter-results": "Filter results",
+  "reset": "reset",
+  "reset-description": "Reset all filters",
+  "preset": "preset",
+  "invert-filter": {
+    "title": "Inverts filter selectivity"
+  },
+  "buttons": {
+    "equal": {
+      "description": "Equal to",
+      "title": "Equal"
     },
-    "buttons": {
-        "equal": {
-            "description": "Equal to",
-            "title": "Equal"
-        },
-        "greater-than": {
-            "description": "Greater than",
-            "title": "Greater than"
-        },
-        "interval": {
-            "description": "Interval",
-            "title": "Interval"
-        },
-        "less-than": {
-            "description": "Less than",
-            "title": "Less than"
-        }
+    "greater-than": {
+      "description": "Greater than",
+      "title": "Greater than"
     },
-    "stats": {
-        "cp": {
-            "name": "Cp",
-            "value": "cp"
-        },
-        "ivs": {
-            "title": "IV",
-            "subtitle": "By Individual IV",
-            "attack": {
-                "name": "attack",
-                "value": "attack"
-            },
-            "defense": {
-                "name": "defense",
-                "value": "defense"
-            },
-            "hp": {
-                "name": "health",
-                "value": "hp"
-            }
-        },
-        "stars": {
-            "name": "stars",
-            "title": "Filter by stars",
-            "subtitle": "IV Range"
-        },
-        "buddy": {
-            "name": "buddy",
-            "title": "Buddy",
-            "subtitle": "Filter by buddy friendship",
-            "value": "buddy"
-        }
+    "interval": {
+      "description": "Interval",
+      "title": "Interval"
     },
-    "tags": {
-        "title": "Tags",
-        "subtitle": "Filter by tags",
-        "acquirement": {
-            "title": "Encounter",
-            "subtitle": "Filter by acquirement",
-            "eggsonly": {
-                "name": "Eggs Only",
-                "value": "eggsonly"
-            },
-            "gbl": {
-                "name": "Go League",
-                "value": "gbl"
-            },
-            "hatched": {
-                "name": "hatched",
-                "value": "hatched"
-            },
-            "raid": {
-                "name": "raid",
-                "value": "raid"
-            },
-            "research": {
-                "name": "research",
-                "value": "research"
-            },
-            "rocket": {
-                "name": "rocket",
-                "value": "rocket"
-            },
-            "traded": {
-                "name": "traded",
-                "value": "traded"
-            }
-        },
-        "region": {
-            "title": "Filter by region",
-            "subtitle": "By Pokemon Generation ",
-            "kanto": {
-                "name": "kanto",
-                "value": "kanto"
-            },
-            "johto": {
-                "name": "johto",
-                "value": "johto"
-            },
-            "hoenn": {
-                "name": "hoenn",
-                "value": "hoenn"
-            },
-            "sinnoh": {
-                "name": "sinnoh",
-                "value": "sinnoh"
-            },
-            "unova": {
-                "name": "unova",
-                "value": "unova"
-            },
-            "kalos": {
-                "name": "kalos",
-                "value": "kalos"
-            },
-            "alola": {
-                "name": "alola",
-                "value": "alola"
-            },
-            "galar": {
-                "name": "galar",
-                "value": "galar"
-            },
-            "hisui": {
-                "name": "hisui",
-                "value": "hisui"
-            },
-            "paldea": {
-                "name": "paldea",
-                "value": "paldea"
-            }
-        },
-        "rarity": {
-            "title": "Filter by Rarity",
-            "subtitle": "Rare pokemons",
-            "lucky": {
-                "name": "Lucky",
-                "value": "lucky"
-            },
-            "legendary": {
-                "name": "Legendary",
-                "value": "legendary"
-            },
-            "mythical": {
-                "name": "Mythical",
-                "value": "mythical"
-            },
-            "purified": {
-                "name": "Purified",
-                "value": "purified"
-            },
-            "shadow": {
-                "name": "Shadow",
-                "value": "shadow"
-            },
-            "shiny": {
-                "name": "Shiny",
-                "value": "shiny"
-            },
-            "costume": {
-                "name": "Event",
-                "value": "costume"
-            },
-            "ultrabeasts": {
-                "name": "Ultra Beasts",
-                "value": "ultrabeasts"
-            },
-            "adventureeffect": {
-                "name": "Adventure Effect",
-                "value": "adventureeffect"
-            },
-            "background": {
-                "name": "Background",
-                "value": "background"
-            },
-            "specialbackground": {
-                "name": "Special Background",
-                "value": "specialbackground"
-            },
-            "locationbackground": {
-                "name": "Location Background",
-                "value": "locationbackground"
-            },
-            "defender": {
-                "name": "Gym Defender",
-                "value": "defender"
-            },
-            "xl": {
-                "name": "XL",
-                "value": "xl"
-            },
-            "xxl": {
-                "name": "XXL",
-                "value": "xxl"
-            },
-            "xs": {
-                "name": "XS",
-                "value": "xs"
-            },
-            "xxs": {
-                "name": "XXS",
-                "value": "xxs"
-            }
-        },
-        "gender": {
-            "title": "Gender",
-            "subtitle": "Pokémon gender",
-            "male": {
-                "name": "Male",
-                "value": "male",
-                "note": false
-            },
-            "female": {
-                "name": "female",
-                "value": "female",
-                "note": false
-            },
-            "genderunknown": {
-                "name": "Unknown",
-                "value": "genderunknown",
-                "note": false
-            }
-        },
-        "evolution": {
-            "title": "Evolution",
-            "subtitle": "Filter by evolution",
-            "evolve": {
-                "name": "Evolve",
-                "value": "evolve"
-            },
-            "evolvenew": {
-                "name": "Evolve New",
-                "value": "evolvenew"
-            },
-            "item": {
-                "name": "Item",
-                "value": "item"
-            },
-            "tradeevolve": {
-                "name": "Trade Evolve",
-                "value": "tradeevolve"
-            },
-            "evolvequest": {
-                "name": "Evolve Quest",
-                "value": "evolvequest"
-            },
-            "fusion": {
-                "name": "Fusion",
-                "value": "fusion"
-            },
-            "megaevolve": {
-                "name": "Mega Evolve",
-                "value": "megaevolve"
-            },
-            "megaevolve2": {
-                "name": "Mega Evolve 2",
-                "value": "megaevolve2"
-            }
-        }
+    "less-than": {
+      "description": "Less than",
+      "title": "Less than"
     }
+  },
+  "stats": {
+    "cp": {
+      "name": "Cp",
+      "value": "cp"
+    },
+    "ivs": {
+      "title": "IV",
+      "subtitle": "By Individual IV",
+      "attack": {
+        "name": "attack",
+        "value": "attack"
+      },
+      "defense": {
+        "name": "defense",
+        "value": "defense"
+      },
+      "hp": {
+        "name": "health",
+        "value": "hp"
+      }
+    },
+    "stars": {
+      "name": "stars",
+      "title": "Filter by stars",
+      "subtitle": "IV Range"
+    },
+    "buddy": {
+      "name": "buddy",
+      "title": "Buddy",
+      "subtitle": "Filter by buddy friendship",
+      "value": "buddy"
+    },
+    "catch": {
+      "name": "catch",
+      "title": "Catch",
+      "subtitle": "Filter by catch",
+      "distance": {
+        "name": "distance",
+        "value": "distance"
+      },
+      "age": {
+        "name": "age",
+        "value": "age"
+      },
+      "year": {
+        "name": "year",
+        "value": "year"
+      }
+    }
+  },
+  "tags": {
+    "title": "Tags",
+    "subtitle": "Filter by tags",
+    "acquirement": {
+      "title": "Encounter",
+      "subtitle": "Filter by acquirement",
+      "eggsonly": {
+        "name": "Eggs Only",
+        "value": "eggsonly"
+      },
+      "gbl": {
+        "name": "Go League",
+        "value": "gbl"
+      },
+      "hatched": {
+        "name": "hatched",
+        "value": "hatched"
+      },
+      "raid": {
+        "name": "raid",
+        "value": "raid"
+      },
+      "research": {
+        "name": "research",
+        "value": "research"
+      },
+      "rocket": {
+        "name": "rocket",
+        "value": "rocket"
+      },
+      "traded": {
+        "name": "traded",
+        "value": "traded"
+      }
+    },
+    "region": {
+      "title": "Filter by region",
+      "subtitle": "By Pokemon Generation ",
+      "kanto": {
+        "name": "kanto",
+        "value": "kanto"
+      },
+      "johto": {
+        "name": "johto",
+        "value": "johto"
+      },
+      "hoenn": {
+        "name": "hoenn",
+        "value": "hoenn"
+      },
+      "sinnoh": {
+        "name": "sinnoh",
+        "value": "sinnoh"
+      },
+      "unova": {
+        "name": "unova",
+        "value": "unova"
+      },
+      "kalos": {
+        "name": "kalos",
+        "value": "kalos"
+      },
+      "alola": {
+        "name": "alola",
+        "value": "alola"
+      },
+      "galar": {
+        "name": "galar",
+        "value": "galar"
+      },
+      "hisui": {
+        "name": "hisui",
+        "value": "hisui"
+      },
+      "paldea": {
+        "name": "paldea",
+        "value": "paldea"
+      }
+    },
+    "rarity": {
+      "title": "Filter by Rarity",
+      "subtitle": "Rare pokemons",
+      "lucky": {
+        "name": "Lucky",
+        "value": "lucky"
+      },
+      "legendary": {
+        "name": "Legendary",
+        "value": "legendary"
+      },
+      "mythical": {
+        "name": "Mythical",
+        "value": "mythical"
+      },
+      "purified": {
+        "name": "Purified",
+        "value": "purified"
+      },
+      "shadow": {
+        "name": "Shadow",
+        "value": "shadow"
+      },
+      "shiny": {
+        "name": "Shiny",
+        "value": "shiny"
+      },
+      "costume": {
+        "name": "Event",
+        "value": "costume"
+      },
+      "ultrabeasts": {
+        "name": "Ultra Beasts",
+        "value": "ultrabeasts"
+      },
+      "adventureeffect": {
+        "name": "Adventure Effect",
+        "value": "adventureeffect"
+      },
+      "background": {
+        "name": "Background",
+        "value": "background"
+      },
+      "specialbackground": {
+        "name": "Special Background",
+        "value": "specialbackground"
+      },
+      "locationbackground": {
+        "name": "Location Background",
+        "value": "locationbackground"
+      },
+      "defender": {
+        "name": "Gym Defender",
+        "value": "defender"
+      },
+      "xl": {
+        "name": "XL",
+        "value": "xl"
+      },
+      "xxl": {
+        "name": "XXL",
+        "value": "xxl"
+      },
+      "xs": {
+        "name": "XS",
+        "value": "xs"
+      },
+      "xxs": {
+        "name": "XXS",
+        "value": "xxs"
+      }
+    },
+    "gender": {
+      "title": "Gender",
+      "subtitle": "Pokémon gender",
+      "male": {
+        "name": "Male",
+        "value": "male",
+        "note": false
+      },
+      "female": {
+        "name": "female",
+        "value": "female",
+        "note": false
+      },
+      "genderunknown": {
+        "name": "Unknown",
+        "value": "genderunknown",
+        "note": false
+      }
+    },
+    "evolution": {
+      "title": "Evolution",
+      "subtitle": "Filter by evolution",
+      "evolve": {
+        "name": "Evolve",
+        "value": "evolve"
+      },
+      "evolvenew": {
+        "name": "Evolve New",
+        "value": "evolvenew"
+      },
+      "item": {
+        "name": "Item",
+        "value": "item"
+      },
+      "tradeevolve": {
+        "name": "Trade Evolve",
+        "value": "tradeevolve"
+      },
+      "evolvequest": {
+        "name": "Evolve Quest",
+        "value": "evolvequest"
+      },
+      "fusion": {
+        "name": "Fusion",
+        "value": "fusion"
+      },
+      "megaevolve": {
+        "name": "Mega Evolve",
+        "value": "megaevolve"
+      },
+      "mega": {
+        "name": "Mega",
+        "value": "mega1"
+      },
+      "mega2": {
+        "name": "Mega 2",
+        "value": "mega2-3"
+      },
+      "megaevolve2": {
+        "name": "",
+        "value": ""
+      }
+    },
+    "type": {
+      "title": "Type",
+      "subtitle": "Filter by pokémon type",
+      "normal": {
+        "name": "Normal",
+        "value": "normal"
+      },
+      "fire": {
+        "name": "Fire",
+        "value": "fire"
+      },
+      "water": {
+        "name": "Water",
+        "value": "water"
+      },
+      "electric": {
+        "name": "Electric",
+        "value": "electric"
+      },
+      "grass": {
+        "name": "Grass",
+        "value": "grass"
+      },
+      "ice": {
+        "name": "Ice",
+        "value": "ice"
+      },
+      "fighting": {
+        "name": "Fighting",
+        "value": "fighting"
+      },
+      "poison": {
+        "name": "Poison",
+        "value": "poison"
+      },
+      "ground": {
+        "name": "Ground",
+        "value": "ground"
+      },
+      "flying": {
+        "name": "Flying",
+        "value": "flying"
+      },
+      "psychic": {
+        "name": "Psychic",
+        "value": "psychic"
+      },
+      "bug": {
+        "name": "Bug",
+        "value": "bug"
+      },
+      "rock": {
+        "name": "Rock",
+        "value": "rock"
+      },
+      "ghost": {
+        "name": "Ghost",
+        "value": "ghost"
+      },
+      "dragon": {
+        "name": "Dragon",
+        "value": "dragon"
+      },
+      "dark": {
+        "name": "Dark",
+        "value": "dark"
+      },
+      "steel": {
+        "name": "Steel",
+        "value": "steel"
+      },
+      "fairy": {
+        "name": "Fairy",
+        "value": "fairy"
+      }
+    }
+  }
 }

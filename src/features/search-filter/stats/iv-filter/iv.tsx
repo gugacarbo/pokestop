@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/form";
 
 import { ToggleFilterMode } from "../../components/toggle-filter-mode";
-import { EnableFilter } from "./components/enable-iv";
+import { EnableFilter } from "../../components/enable-filter";
 import { StarIconFilter } from "./components/star-icon-iv";
 import { FilterDescription } from "./components/iv-description";
 import { IvBar } from "@/features/pokemon/components/iv-bar";
@@ -75,7 +75,6 @@ export function IvFilter() {
                   </div>
                 </div>
               </FormControl>
-              <FilterDescription name={name} />
               <FormMessage />
             </FormItem>
           )}

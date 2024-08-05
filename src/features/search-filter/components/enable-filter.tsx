@@ -9,18 +9,23 @@ function EnableFilter({
   onCheckedChange,
   category = "ivs",
   nameKey = "name",
+  valueKey = "active",
 }: {
   name?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
   category?: string;
   nameKey?: string;
+  valueKey?: string;
 }) {
   const t = useTranslations("filters.stats");
 
   return (
     <div className="flex items-center gap-2 w-full">
-      <NotInput valueKey="active" name={`stats.${category}.${name ?? ""}`} />
+      <NotInput
+        valueKey="active"
+        name={`stats.${category}${name ? `.${name}` : ""}`}
+      />
       <FormLabel className="capitalize">
         {/*@ts-ignore */}
         {t(`${category}.${name ? `${name}.${nameKey}` : `${nameKey}`}`)}

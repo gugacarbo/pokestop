@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/form";
 
 import { ToggleFilterMode } from "../components/toggle-filter-mode";
-import { EnableFilter } from "./iv-filter/components/enable-iv";
+import { EnableFilter } from "../components/enable-filter";
 import { FilterDescription } from "./iv-filter/components/iv-description";
 import { Input } from "@/components/ui/input";
 import { AlignHorizontalSpaceAroundIcon } from "lucide-react";

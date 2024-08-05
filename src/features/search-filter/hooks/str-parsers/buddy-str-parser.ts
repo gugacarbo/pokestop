@@ -5,6 +5,9 @@ import { SearchFilter } from "../../schemas/search-filter-schema";
 function useBuddyStrParser({ stats: { buddy } }: SearchFilter) {
   const { filters } = useMessages() as unknown as IntlMessages;
 
+  console.log({bydd:filters.stats.buddy,buddy})
+
+
   return buddy.active
     ? applyNot(
         `${filters?.stats.buddy.value}${buddy.mode === "lt" ? "-" : ""}${

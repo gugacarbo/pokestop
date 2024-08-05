@@ -11,15 +11,13 @@ import { applyNot } from ".";
 function useBooleanStrParser(
   current_filter: SearchFilter,
   filterKey: NestedKeyOf<SearchFilter>,
-  valueKey: string,
-  translationKey: string
 ): string {
   const { filters } = useMessages() as unknown as IntlMessages;
 
   const category = accessNestedKey(current_filter, filterKey);
 
   const filtered = Object.entries(category).filter(
-    ([_, value]) => value[valueKey as keyof typeof value]
+    ([_, value]) => value["value" as keyof typeof value]
   );
 
   const messages = accessNestedKey(
@@ -35,7 +33,7 @@ function useBooleanStrParser(
         `${
           typeof cur === "string"
             ? cur
-            : cur[translationKey as keyof typeof cur]
+            : cur["value" as keyof typeof cur]
         }`,
 
         //@ts-ignore

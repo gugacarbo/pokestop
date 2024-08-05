@@ -28,6 +28,11 @@ const ivsFilterSchema = z.object({
 
 const cpFilterSchema = rangeNumber;
 const buddyFilterSchema = rangeNumber;
+const catchFilterSchema = z.object({
+  distance: rangeNumber,
+  age: rangeNumber,
+  year: rangeNumber,
+});
 
 //| Stats Filter
 const statsFilterSchema = z.object({
@@ -35,6 +40,7 @@ const statsFilterSchema = z.object({
   ivs: ivsFilterSchema,
   cp: cpFilterSchema,
   buddy: buddyFilterSchema,
+  catch: catchFilterSchema,
 });
 
 // ? Filter by Acquirement
@@ -103,6 +109,28 @@ const evolutionFilterSchema = z.object({
   mega2: booleanSchema,
 });
 
+//? Pokemon Type Filter
+const typeFilterSchema = z.object({
+  normal: booleanSchema,
+  fire: booleanSchema,
+  water: booleanSchema,
+  electric: booleanSchema,
+  grass: booleanSchema,
+  ice: booleanSchema,
+  fighting: booleanSchema,
+  poison: booleanSchema,
+  ground: booleanSchema,
+  flying: booleanSchema,
+  psychic: booleanSchema,
+  bug: booleanSchema,
+  rock: booleanSchema,
+  ghost: booleanSchema,
+  dragon: booleanSchema,
+  dark: booleanSchema,
+  steel: booleanSchema,
+  fairy: booleanSchema,
+});
+
 //| Tags Filter
 const tagsFilterSchema = z.object({
   region: regionFilterSchema,
@@ -110,6 +138,7 @@ const tagsFilterSchema = z.object({
   rarity: rarityFilterSchema,
   gender: genderFilterSchema,
   evolution: evolutionFilterSchema,
+  type: typeFilterSchema,
 });
 
 // * All Filters
@@ -175,6 +204,26 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
       mode: "eq",
       active: false,
       not: false,
+    },
+    catch: {
+      distance: {
+        active: false,
+        value: [1],
+        mode: "eq",
+        not: false,
+      },
+      age: {
+        active: false,
+        value: [1],
+        mode: "eq",
+        not: false,
+      },
+      year: {
+        active: false,
+        value: [1],
+        mode: "eq",
+        not: false,
+      },
     },
   },
   tags: {
@@ -369,6 +418,80 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         not: false,
       },
       mega2: {
+        value: false,
+        not: false,
+      },
+    },
+    type: {
+      normal: {
+        value: false,
+        not: false,
+      },
+      fire: {
+        value: false,
+        not: false,
+      },
+      water: {
+        value: false,
+        not: false,
+      },
+      electric: {
+        value: false,
+        not: false,
+      },
+      grass: {
+        value: false,
+        not: false,
+      },
+      ice: {
+        value: false,
+        not: false,
+      },
+      fighting: {
+        value: false,
+        not: false,
+      },
+      poison: {
+        value: false,
+        not: false,
+      },
+      ground: {
+        value: false,
+        not: false,
+      },
+      flying: {
+        value: false,
+        not: false,
+      },
+      psychic: {
+        value: false,
+        not: false,
+      },
+      bug: {
+        value: false,
+        not: false,
+      },
+      rock: {
+        value: false,
+        not: false,
+      },
+      ghost: {
+        value: false,
+        not: false,
+      },
+      dragon: {
+        value: false,
+        not: false,
+      },
+      dark: {
+        value: false,
+        not: false,
+      },
+      steel: {
+        value: false,
+        not: false,
+      },
+      fairy: {
         value: false,
         not: false,
       },

@@ -17,20 +17,20 @@ import { AlignHorizontalSpaceAroundIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FilterCard } from "../filter-card";
 
-function BuddyFilter() {
+function CatchFilter() {
   const { control } = useFormContext();
 
-  const t = useTranslations("filters.stats.buddy");
+  const t = useTranslations("filters.stats.catch.distance");
 
   return (
-    <FilterCard filterKey="stats.buddy">
+    <FilterCard filterKey="stats.catch">
       <FormField
         control={control}
-        name={`stats.buddy`}
+        name={`stats.catch.distance`}
         render={({ field }) => (
           <FormItem className="space-y-2">
             <EnableFilter
-              category={"buddy"}
+              category={"catch.distance"}
               checked={field.value?.active}
               onCheckedChange={(active) =>
                 field.onChange({ ...field.value, active })
@@ -100,7 +100,6 @@ function BuddyFilter() {
                 )}
               </div>
             </FormControl>
-            <FilterDescription category={"buddy"} />
             <FormMessage />
           </FormItem>
         )}
@@ -109,4 +108,4 @@ function BuddyFilter() {
   );
 }
 
-export { BuddyFilter };
+export { CatchFilter };

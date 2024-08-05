@@ -60,6 +60,23 @@
       "name": "companheiro",
       "subtitle": "Filtrar por amizade",
       "value": "companheiro"
+    },
+    "catch": {
+      "age": {
+        "name": "idade",
+        "value": "idade"
+      },
+      "distance": {
+        "name": "distância",
+        "value": "distância"
+      },
+      "name": "pegar",
+      "subtitle": "Filtrar por captura",
+      "title": "Pegar",
+      "year": {
+        "name": "ano",
+        "value": "ano"
+      }
     }
   },
   "tags": {
@@ -270,7 +287,87 @@
       "tradeevolve": {
         "name": "Evolução de troca",
         "value": "evoluçãotroca"
+      },
+      "megaevolve2": {
+        "name": "Mega Evoluir 2",
+        "value": "megaevolve2"
       }
+    },
+    "type": {
+      "bug": {
+        "name": "Inseto",
+        "value": "inseto"
+      },
+      "dark": {
+        "name": "Sombrio",
+        "value": "sombrio"
+      },
+      "dragon": {
+        "name": "Dragão",
+        "value": "Dragão"
+      },
+      "electric": {
+        "name": "Elétrico",
+        "value": "Elétrico"
+      },
+      "fairy": {
+        "name": "Fada",
+        "value": "Fada"
+      },
+      "fighting": {
+        "name": "Lutador",
+        "value": "lutador"
+      },
+      "fire": {
+        "name": "Fogo",
+        "value": "Fogo"
+      },
+      "flying": {
+        "name": "Voador",
+        "value": "voador"
+      },
+      "ghost": {
+        "name": "fantasma",
+        "value": "fantasma"
+      },
+      "grass": {
+        "name": "grama",
+        "value": "grama"
+      },
+      "ground": {
+        "name": "Terrestre",
+        "value": "terrestre"
+      },
+      "ice": {
+        "name": "Gelo",
+        "value": "gelo"
+      },
+      "normal": {
+        "name": "Normal",
+        "value": "normal"
+      },
+      "poison": {
+        "name": "Venenoso",
+        "value": "venenoso"
+      },
+      "psychic": {
+        "name": "Psíquico",
+        "value": "psíquico"
+      },
+      "rock": {
+        "name": "Pedra",
+        "value": "pedra"
+      },
+      "steel": {
+        "name": "Aço",
+        "value": "aço"
+      },
+      "water": {
+        "name": "Água",
+        "value": "água"
+      },
+      "subtitle": "Filtrar por tipo de pokémon",
+      "title": "Tipo"
     }
   }
 }

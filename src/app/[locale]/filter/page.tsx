@@ -3,6 +3,7 @@ import { FilterFormContext } from "@/features/search-filter";
 import { IvFilter, StarsFilter } from "@/features/search-filter/stats";
 import { TagFilter } from "@/features/search-filter/tag-filter/tag-filter";
 import { BuddyFilter } from "@/features/search-filter/stats/buddy-filter";
+import { CatchFilter } from "@/features/search-filter/stats/catch-filter";
 
 function Column({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function Filter() {
         <Column>
           <TagFilter tagKey="acquirement" />
           <TagFilter tagKey="gender" />
+          <CatchFilter />
         </Column>
         <Column>
           <TagFilter tagKey="region" />
@@ -27,6 +29,8 @@ export default function Filter() {
           <StarsFilter />
           <IvFilter />
         </Column>
+        <TagFilter tagKey="type" />
+
         <TagFilter tagKey="evolution" />
       </FilterFormContext>
     </main>

@@ -26,10 +26,10 @@ function NotButton({
         <TooltipTrigger asChild={true}>
           <Button
             size="xs"
-            variant={"outline"}
+            variant={!disabled ? "secondary" : "outline"}
             onClick={onClick}
             disabled={disabled}
-            className={cn(!disabled ? !!value && "border-red-600" : "")}
+            className={cn(!disabled && !!value ? "border-red-600" : "")}
           >
             <b
               className={cn(
