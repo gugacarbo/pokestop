@@ -8,19 +8,19 @@ export const nullPreset: SearchFilter = {
       attack: {
         active: true,
         mode: "eq",
-        value: 0,
+        value: [0],
         not: false,
       },
       defense: {
         active: true,
         mode: "eq",
-        value: 0,
+        value: [0],
         not: false,
       },
       hp: {
         active: true,
         mode: "eq",
-        value: 0,
+        value: [0],
         not: false,
       },
     },
