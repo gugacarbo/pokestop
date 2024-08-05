@@ -53,16 +53,16 @@ export function IvFilter() {
                   />
                   <StarIconFilter
                     disabled={!field.value?.active}
-                    value={field.value?.value || 0}
+                    value={field.value?.value}
                   />
                   <div className="flex flex-col flex-1 items-center gap-2">
                     <Slider
                       disabled={!field.value?.active}
                       className="flex-1 min-w-32"
-                      defaultValue={[field.value?.value || 0]}
-                      value={[field.value?.value || 0]}
+                      defaultValue={field.value?.value}
+                      value={field.value?.value}
                       onValueChange={(value) => {
-                        field.onChange({ ...field.value, value: value[0] });
+                        field.onChange({ ...field.value, value });
                         trigger();
                       }}
                       max={4}
@@ -70,7 +70,7 @@ export function IvFilter() {
                     />
                     <IvBar
                       disabled={!field.value?.active}
-                      value={field.value.value * 5}
+                      value={field.value.value[0] * 5}
                     />
                   </div>
                 </div>

@@ -1,8 +1,5 @@
 import { SearchFilter } from "../../schemas/search-filter-schema";
-import { useBuddyStrParser } from "./buddy-str-parser";
-import { useCpStrParser } from "./cp-str-parser";
 
-import { useIvsStrParser } from "./ivs-str-parser";
 import { useRangeStrParser } from "./range-str-parser";
 import { useStarsStrParser } from "./stars-str-parser";
 import { useBooleanStrParser } from "./useBooleanStrParser";
@@ -18,19 +15,38 @@ function useParseFilters(filters: SearchFilter) {
 
   const stats = {
     stars: useStarsStrParser(filters),
-    ivs: useIvsStrParser(filters),
+    ivs: {
+      atk: useRangeStrParser(filters, "stats.ivs.attack"),
+      def: useRangeStrParser(filters, "stats.ivs.defense"),
+      hp: useRangeStrParser(filters, "stats.ivs.hp"),
+    },
     cp: useRangeStrParser(filters, "stats.cp"),
     buddy: useRangeStrParser(filters, "stats.buddy"),
+    catch: {
+      age: useRangeStrParser(filters, "stats.catch.age"),
+      distance: useRangeStrParser(filters, "stats.catch.distance"),
+      year: useRangeStrParser(filters, "stats.catch.year"),
+    },
   };
 
-  return {
+  return concatObjectValues({
     stats,
     tags,
-  };
+  });
 }
 
-function applyNot(filter: string, not: boolean) {
+function applyNot(filter: string, not: boolean): string {
   return (not ? "!" : "") + filter;
+}
+
+function concatObjectValues(obj: object) {
+  return Object.values(obj).reduce((acc, value) => {
+    if (typeof value === "string") {
+      if (value === "") return acc;
+      return acc + (acc !== "" ? "&" : "") + value;
+    }
+    return acc + (acc !== "" ? "&" : "") + concatObjectValues(value);
+  }, "");
 }
 
 export { useParseFilters, applyNot };

@@ -6,17 +6,7 @@ import { useTranslations } from "next-intl";
 import { ResetSearchButton } from "./reset-search-button";
 import { PresetSelector } from "../presets/preset-selector";
 import { useParseFilters } from "../hooks/str-parsers";
-import { useMemo } from "react";
 
-function concatObjectValues(obj: object) {
-  return Object.values(obj).reduce((acc, value) => {
-    if (typeof value === "string") {
-      if (value === "") return acc;
-      return acc + (acc !== "" ? "&" : "") + value;
-    }
-    return acc + (acc !== "" ? "&" : "") + concatObjectValues(value);
-  }, "");
-}
 
 export function FilterResult({
   result,
@@ -27,10 +17,7 @@ export function FilterResult({
 }) {
   const t = useTranslations("filters");
   const parsed = useParseFilters(result);
-  const p = useMemo(
-    () => concatObjectValues(parsed).replace(/\&$/, ""),
-    [parsed]
-  );
+
 
   return (
     <Card className="w-full">
@@ -39,7 +26,7 @@ export function FilterResult({
           <div className="font-bold text-lg">{t("filter-results")}</div>
           <div className="flex items-center gap-4">
             <PresetSelector />
-            <CopyToClipboardButton text={p} />
+            <CopyToClipboardButton text={parsed} />
             <ResetSearchButton reset={reset} />
           </div>
         </div>
@@ -48,7 +35,7 @@ export function FilterResult({
         <textarea
           className="bg-popover shadow-sm p-3 border border-border rounded-md w-full h-16 outline-none resize-none"
           readOnly
-          value={p}
+          value={parsed}
         />
       </CardContent>
     </Card>

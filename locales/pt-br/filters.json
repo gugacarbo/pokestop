@@ -62,6 +62,9 @@
       "value": "companheiro"
     },
     "catch": {
+      "name": "captura",
+      "subtitle": "Filtrar por captura",
+      "title": "Captura",
       "age": {
         "name": "idade",
         "value": "idade"
@@ -70,9 +73,6 @@
         "name": "distância",
         "value": "distância"
       },
-      "name": "pegar",
-      "subtitle": "Filtrar por captura",
-      "title": "Pegar",
       "year": {
         "name": "ano",
         "value": "ano"
@@ -82,7 +82,7 @@
   "tags": {
     "acquirement": {
       "subtitle": "Filtrar por origem",
-      "title": "Captura",
+      "title": "Encontro",
       "eggsonly": {
         "name": "Somente em ovos",
         "value": "apenasovos"

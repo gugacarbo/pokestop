@@ -18,11 +18,11 @@ export default function Filter() {
         <Column>
           <TagFilter tagKey="acquirement" />
           <TagFilter tagKey="gender" />
-          <CatchFilter />
+          <BuddyFilter />
         </Column>
         <Column>
           <TagFilter tagKey="region" />
-          <BuddyFilter />
+          <CatchFilter />
         </Column>
         <TagFilter tagKey="rarity" />
         <Column>

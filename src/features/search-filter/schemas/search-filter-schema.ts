@@ -12,18 +12,11 @@ const starsFilterSchema = z.object({
   4: booleanSchema,
 });
 
-// ? Iv Filter
-const ivFilterSchema = z.object({
-  value: z.number().min(0).max(4).default(2),
-  mode: z.enum(["eq", "gt", "lt"]).default("eq"),
-  active: z.coerce.boolean().default(false),
-  not: zBool,
-});
 
 const ivsFilterSchema = z.object({
-  attack: ivFilterSchema,
-  defense: ivFilterSchema,
-  hp: ivFilterSchema,
+  attack: rangeNumber,
+  defense: rangeNumber,
+  hp: rangeNumber,
 });
 
 const cpFilterSchema = rangeNumber;
@@ -175,19 +168,19 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
     },
     ivs: {
       attack: {
-        value: 2,
+        value: [2],
         mode: "eq",
         active: false,
         not: false,
       },
       defense: {
-        value: 2,
+        value: [2],
         mode: "eq",
         active: false,
         not: false,
       },
       hp: {
-        value: 2,
+        value: [2],
         mode: "eq",
         active: false,
         not: false,
