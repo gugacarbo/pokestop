@@ -1,22 +1,33 @@
 import React from "react";
-import {
-  FilterFormContext,
-} from "@/features/search-filter";
+import { FilterFormContext } from "@/features/search-filter";
 import { IvFilter, StarsFilter } from "@/features/search-filter/stats";
 import { TagFilter } from "@/features/search-filter/tag-filter/tag-filter";
 import { BuddyFilter } from "@/features/search-filter/stats/buddy-filter";
+
+function Column({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col items-stretch gap-2 w-full">{children}</div>
+  );
+}
 
 export default function Filter() {
   return (
     <main className="flex flex-col justify-between items-center w-full">
       <FilterFormContext>
-        <TagFilter tagKey="acquirement" />
-        <TagFilter tagKey="region" />
+        <Column>
+          <TagFilter tagKey="acquirement" />
+          <TagFilter tagKey="gender" />
+        </Column>
+        <Column>
+          <TagFilter tagKey="region" />
+          <BuddyFilter />
+        </Column>
         <TagFilter tagKey="rarity" />
-        <StarsFilter />
-        <IvFilter />
-        <BuddyFilter />
-        <TagFilter tagKey="gender" />
+        <Column>
+          <StarsFilter />
+          <IvFilter />
+        </Column>
+        <TagFilter tagKey="evolution" />
       </FilterFormContext>
     </main>
   );

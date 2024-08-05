@@ -17,6 +17,7 @@ function useParseFilters(filters: SearchFilter) {
     region: useBooleanStrParser(filters, "tags.region", "value", "value"),
     rarity: useBooleanStrParser(filters, "tags.rarity", "value", "value"),
     gender: useBooleanStrParser(filters, "tags.gender", "value", "value"),
+    evolution: useBooleanStrParser(filters, "tags.evolution", "value", "value"),
   };
 
   const stats = {

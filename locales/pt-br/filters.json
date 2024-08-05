@@ -216,18 +216,61 @@
     "gender": {
       "female": {
         "name": "fêmea",
-        "value": "fêmea"
+        "value": "fêmea",
+        "note": "falso"
       },
       "genderunknown": {
         "name": "Desconhecido",
-        "value": "gênerodesconhecido"
+        "value": "gênerodesconhecido",
+        "note": "falso"
       },
       "male": {
         "name": "Macho",
-        "value": "macho"
+        "value": "macho",
+        "note": "falso"
       },
       "subtitle": "Gênero Pokémon",
       "title": "Gênero"
+    },
+    "evolution": {
+      "subtitle": "Filtrar por evolução",
+      "title": "Evolução",
+      "evolve": {
+        "name": "Evoluir",
+        "value": "evoluir"
+      },
+      "evolvenew": {
+        "name": "Evoluir Novo",
+        "value": "evoluirnovo"
+      },
+      "evolvequest": {
+        "name": "Evoluir missão",
+        "value": "evoluirmissão"
+      },
+      "fusion": {
+        "name": "Fusão",
+        "value": "fusão"
+      },
+      "item": {
+        "name": "Item",
+        "value": "item"
+      },
+      "megaevolve": {
+        "name": "Megaevoluir",
+        "value": "megaevoluir"
+      },
+      "mega": {
+        "name": "Megaevoluir",
+        "value": "mega1"
+      },
+      "mega2": {
+        "name": "Mega Evoluir 2",
+        "value": "mega2-3"
+      },
+      "tradeevolve": {
+        "name": "Evolução de troca",
+        "value": "evoluçãotroca"
+      }
     }
   }
 }

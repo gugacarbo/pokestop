@@ -3,7 +3,7 @@ import { applyNot } from ".";
 import { SearchFilter } from "../../schemas/search-filter-schema";
 
 function useBuddyStrParser({ stats: { buddy } }: SearchFilter) {
-  const { filters } = useMessages() as IntlMessages;
+  const { filters } = useMessages() as unknown as IntlMessages;
 
   return buddy.active
     ? applyNot(

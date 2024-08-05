@@ -3,7 +3,7 @@ import { applyNot } from ".";
 import { SearchFilter } from "../../schemas/search-filter-schema";
 
 function useIvsStrParser({ stats: { ivs } }: SearchFilter) {
-  const { filters } = useMessages() as IntlMessages;
+  const { filters } = useMessages() as unknown as IntlMessages;
 
   return Object.entries(ivs)
     .filter(([_, value]) => value.active)

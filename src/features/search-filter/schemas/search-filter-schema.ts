@@ -99,7 +99,8 @@ const evolutionFilterSchema = z.object({
   evolvequest: booleanSchema,
   fusion: booleanSchema,
   megaevolve: booleanSchema,
-  megaevolve2: booleanSchema,
+  mega: booleanSchema,
+  mega2: booleanSchema,
 });
 
 //| Tags Filter
@@ -363,7 +364,11 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         value: false,
         not: false,
       },
-      megaevolve2: {
+      mega: {
+        value: false,
+        not: false,
+      },
+      mega2: {
         value: false,
         not: false,
       },

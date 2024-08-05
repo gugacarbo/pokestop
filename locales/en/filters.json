@@ -231,6 +231,42 @@
                 "value": "genderunknown",
                 "note": false
             }
+        },
+        "evolution": {
+            "title": "Evolution",
+            "subtitle": "Filter by evolution",
+            "evolve": {
+                "name": "Evolve",
+                "value": "evolve"
+            },
+            "evolvenew": {
+                "name": "Evolve New",
+                "value": "evolvenew"
+            },
+            "item": {
+                "name": "Item",
+                "value": "item"
+            },
+            "tradeevolve": {
+                "name": "Trade Evolve",
+                "value": "tradeevolve"
+            },
+            "evolvequest": {
+                "name": "Evolve Quest",
+                "value": "evolvequest"
+            },
+            "fusion": {
+                "name": "Fusion",
+                "value": "fusion"
+            },
+            "megaevolve": {
+                "name": "Mega Evolve",
+                "value": "megaevolve"
+            },
+            "megaevolve2": {
+                "name": "Mega Evolve 2",
+                "value": "megaevolve2"
+            }
         }
     }
 }

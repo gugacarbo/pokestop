@@ -14,7 +14,7 @@ function useBooleanStrParser(
   valueKey: string,
   translationKey: string
 ): string {
-  const { filters } = useMessages() as IntlMessages;
+  const { filters } = useMessages() as unknown as IntlMessages;
 
   const category = accessNestedKey(current_filter, filterKey);
 

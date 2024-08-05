@@ -32,7 +32,7 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
 
   return (
     <Form {...form}>
-      <div className="flex flex-col gap-2 w-full f">
+      <div className="flex flex-col gap-2 px-4 w-full">
         <FilterResult
           result={form.getValues()}
           reset={() => {
@@ -41,7 +41,9 @@ export function FilterFormContext({ children }: { children: React.ReactNode }) {
           }}
         />
         <form onSubmit={form.handleSubmit(() => {})}>
-          <div className="flex flex-wrap gap-2">{children}</div>
+          <div className="gap-2 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 pb-16">
+            {children}
+          </div>
         </form>
       </div>
     </Form>
