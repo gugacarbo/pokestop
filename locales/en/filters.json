@@ -175,6 +175,22 @@
             "ultrabeasts": {
                 "name": "Ultra Beasts",
                 "value": "ultrabeasts"
+            },
+            "xl": {
+                "name": "XL",
+                "value": "xl"
+            },
+            "xxl": {
+                "name": "XXL",
+                "value": "xxl"
+            },
+            "xs": {
+                "name": "XS",
+                "value": "xs"
+            },
+            "xxs": {
+                "name": "XXS",
+                "value": "xxs"
             }
         },
         "gender": {

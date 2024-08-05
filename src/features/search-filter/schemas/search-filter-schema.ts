@@ -39,13 +39,13 @@ const statsFilterSchema = z.object({
 
 // ? Filter by Acquirement
 const acquirementFilterSchema = z.object({
-  eggsonly: booleanSchema,
+  rocket: booleanSchema,
+  raid: booleanSchema,
+  traded: booleanSchema,
+  research: booleanSchema,
   gbl: booleanSchema,
   hatched: booleanSchema,
-  raid: booleanSchema,
-  research: booleanSchema,
-  rocket: booleanSchema,
-  traded: booleanSchema,
+  eggsonly: booleanSchema,
 });
 
 // ? Region Filter
@@ -65,13 +65,17 @@ const regionFilterSchema = z.object({
 // ? Rarity Filter
 const rarityFilterSchema = z.object({
   lucky: booleanSchema,
+  shiny: booleanSchema,
   legendary: booleanSchema,
   mythical: booleanSchema,
-  purified: booleanSchema,
-  shadow: booleanSchema,
-  shiny: booleanSchema,
-  costume: booleanSchema,
   ultrabeasts: booleanSchema,
+  costume: booleanSchema,
+  shadow: booleanSchema,
+  purified: booleanSchema,
+  xxl: booleanSchema,
+  xxs: booleanSchema,
+  xl: booleanSchema,
+  xs: booleanSchema,
 });
 
 // ? Gender Filter
@@ -240,6 +244,10 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         value: false,
         not: false,
       },
+      ultrabeasts: {
+        value: false,
+        not: false,
+      },
       purified: {
         value: false,
         not: false,
@@ -256,7 +264,20 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         value: false,
         not: false,
       },
-      ultrabeasts: {
+
+      xxl: {
+        value: false,
+        not: false,
+      },
+      xxs: {
+        value: false,
+        not: false,
+      },
+      xl: {
+        value: false,
+        not: false,
+      },
+      xs: {
         value: false,
         not: false,
       },
