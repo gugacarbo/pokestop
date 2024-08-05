@@ -11,6 +11,24 @@
   "invert-filter": {
     "title": "Inverte a seletividade do filtro"
   },
+  "buttons": {
+    "equal": {
+      "title": "igual",
+      "description": "Igual a"
+    },
+    "less-than": {
+      "title": "menor que",
+      "description": "Menor que"
+    },
+    "greater-than": {
+      "title": "maior que",
+      "description": "Maior que"
+    },
+    "interval": {
+      "title": "intervalo",
+      "description": "Intervalo"
+    }
+  },
   "stats": {
     "cp": {
       "name": "Pc",
@@ -36,6 +54,12 @@
       "name": "estrelas",
       "title": "Filtrar por estrelas",
       "subtitle": "Intervalo de IV"
+    },
+    "buddy": {
+      "title": "Pokémon Companheiro",
+      "name": "companheiro",
+      "subtitle": "Filtrar por amizade",
+      "value": "companheiro"
     }
   },
   "tags": {

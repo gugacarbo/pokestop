@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { AlignHorizontalSpaceAroundIcon, Equal } from "lucide-react";
 import LessThan from "@/assets/less-than-equal.svg";
 import GreaterThan from "@/assets/greater-than-equal.svg";
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip";
+import { useTranslations } from "next-intl";
 
 export function ToggleFilterMode({
   mode,
@@ -39,29 +46,51 @@ export function ToggleFilterMode({
     }
   };
 
+  const t = useTranslations("filters.buttons");
+
+  const nameMap = {
+    eq: t("equal.description"),
+    gt: t("less-than.description"),
+    lt: t("greater-than.description"),
+    int: t("interval.description"),
+  };
+
   return (
-    <Button
-      variant="outline"
-      disabled={disabled}
-      size="xs"
-      onClick={() => {
-        switch (mode) {
-          case "eq":
-            onModeChange(max !== null && value === (max ?? 4) ? "lt" : "gt");
-            break;
-          case "gt":
-            onModeChange(value > min ? "lt" : allowInterval ? "int" : "eq");
-            break;
-          case "lt":
-            onModeChange(allowInterval ? "int" : "eq");
-            break;
-          case "int":
-            onModeChange("eq");
-            break;
-        }
-      }}
-    >
-      {icon(mode)}
-    </Button>
+    <TooltipProvider delayDuration={300} disableHoverableContent={false}>
+      <Tooltip>
+        <TooltipTrigger asChild={true}>
+          <Button
+            variant="outline"
+            disabled={disabled}
+            size="xs"
+            onClick={() => {
+              switch (mode) {
+                case "eq":
+                  onModeChange(
+                    max !== null && value === (max ?? 4) ? "lt" : "gt"
+                  );
+                  break;
+                case "gt":
+                  onModeChange(
+                    value > min ? "lt" : allowInterval ? "int" : "eq"
+                  );
+                  break;
+                case "lt":
+                  onModeChange(allowInterval ? "int" : "eq");
+                  break;
+                case "int":
+                  onModeChange("eq");
+                  break;
+              }
+            }}
+          >
+            {icon(mode)}
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>{nameMap[mode]}</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 }

@@ -20,7 +20,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { firstUpper } from "@/lib/text";
-import { NotButton } from "../../components/NotButton";
+import { NotButton } from "../components/NotButton";
 
 const starsLabel: Record<string, string> = {
   0: "0% - 48.9%",

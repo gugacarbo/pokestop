@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { booleanSchema, zBool } from "./";
+import { rangeNumber } from "./defaults";
 
 export type RangeFilterMode = "eq" | "gt" | "lt" | "int";
 
@@ -25,18 +26,15 @@ const ivsFilterSchema = z.object({
   hp: ivFilterSchema,
 });
 
-const cpFilterSchema = z.object({
-  value: z.array(z.coerce.number().min(0).default(1500)).max(2).min(1),
-  mode: z.enum(["eq", "gt", "lt", "int"]).default("eq"),
-  active: z.coerce.boolean().default(false),
-  not: zBool,
-});
+const cpFilterSchema = rangeNumber;
+const buddyFilterSchema = rangeNumber;
 
 //| Stats Filter
 const statsFilterSchema = z.object({
   stars: starsFilterSchema,
   ivs: ivsFilterSchema,
   cp: cpFilterSchema,
+  buddy: buddyFilterSchema,
 });
 
 // ? Filter by Acquirement
@@ -145,6 +143,12 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
     },
     cp: {
       value: [1500],
+      mode: "eq",
+      active: false,
+      not: false,
+    },
+    buddy: {
+      value: [1],
       mode: "eq",
       active: false,
       not: false,

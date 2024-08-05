@@ -4,6 +4,7 @@ import {
 } from "@/features/search-filter";
 import { IvFilter, StarsFilter } from "@/features/search-filter/stats";
 import { TagFilter } from "@/features/search-filter/tag-filter/tag-filter";
+import { BuddyFilter } from "@/features/search-filter/stats/buddy-filter";
 
 export default function Filter() {
   return (
@@ -14,6 +15,7 @@ export default function Filter() {
         <TagFilter tagKey="rarity" />
         <StarsFilter />
         <IvFilter />
+        <BuddyFilter />
         <TagFilter tagKey="gender" />
       </FilterFormContext>
     </main>

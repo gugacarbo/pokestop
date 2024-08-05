@@ -16,8 +16,7 @@ import { Input } from "@/components/ui/input";
 import { AlignHorizontalSpaceAroundIcon } from "lucide-react";
 
 function CpFilter() {
-  const { control, formState } = useFormContext();
-  console.log("err", formState.errors);
+  const { control } = useFormContext();
   return (
     <FormField
       control={control}

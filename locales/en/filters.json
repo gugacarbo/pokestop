@@ -11,14 +11,32 @@
     "invert-filter": {
         "title": "Inverts filter selectivity"
     },
+    "buttons": {
+        "equal": {
+            "description": "Equal to",
+            "title": "Equal"
+        },
+        "greater-than": {
+            "description": "Greater than",
+            "title": "Greater than"
+        },
+        "interval": {
+            "description": "Interval",
+            "title": "Interval"
+        },
+        "less-than": {
+            "description": "Less than",
+            "title": "Less than"
+        }
+    },
     "stats": {
         "cp": {
             "name": "Cp",
             "value": "cp"
         },
         "ivs": {
-            "title": "IVs",
-            "subtitle": "Individual IV",
+            "title": "IV",
+            "subtitle": "By Individual IV",
             "attack": {
                 "name": "attack",
                 "value": "attack"
@@ -36,6 +54,12 @@
             "name": "stars",
             "title": "Filter by stars",
             "subtitle": "IV Range"
+        },
+        "buddy": {
+            "name": "buddy",
+            "title": "Buddy",
+            "subtitle": "Filter by buddy friendship",
+            "value": "buddy"
         }
     },
     "tags": {
