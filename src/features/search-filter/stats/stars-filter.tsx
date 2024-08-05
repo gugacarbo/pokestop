@@ -11,16 +11,13 @@ import {
 } from "@/components/ui/tooltip";
 import {
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-import { firstUpper } from "@/lib/text";
 import { NotButton } from "../components/NotButton";
+import { FilterCard } from "../filter-card";
 
 const starsLabel: Record<string, string> = {
   0: "0% - 48.9%",
@@ -35,95 +32,84 @@ export function StarsFilter() {
   const t = useTranslations("filters.stats.stars");
 
   return (
-    <Card>
-      <CardHeader className="flex-col space-y-0">
-        <CardTitle className="text-sm">{firstUpper(t("title"))}</CardTitle>
-        <CardTitle className="text-muted-foreground text-xs">
-          {firstUpper(t("subtitle"))}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-2">
-        {Object.entries(starsLabel).map(([value, label]) => (
-          <FormField
-            key={`${value}.not`}
-            control={control}
-            name={`stats.stars.${value}`}
-            render={({ field }) => (
-              <FormItem className="space-y-1">
-                <div className="flex items-center gap-2">
-                  <NotButton
-                    aria-label={label}
-                    value={field.value.not}
-                    disabled={!field.value.value}
-                    onClick={() => {
-                      field.onChange({
-                        ...field.value,
-                        not: !field.value.not,
-                      });
-                    }}
-                  />
-                  <FormControl>
-                    <TooltipProvider
-                      delayDuration={300}
-                      key={value}
-                      disableHoverableContent
-                    >
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <Button
-                            aria-label={label}
-                            variant="outline"
-                            className={cn(
-                              "flex items-center",
-                              field.value?.value
-                                ? "border-primary "
-                                : "opacity-55 hover:opacity-80"
-                            )}
-                            onClick={() => {
-                              field.onChange({
-                                ...field.value,
-                                value: !field.value?.value,
-                              });
-                            }}
-                          >
-                            {Array.from({ length: Number(value) }, (_, i) => (
-                              <Star
-                                key={`${i}-a`}
-                                className={cn(
-                                  "transition text-yellow-500 size-5",
-                                  field.value?.value ? "" : "opacity-35"
-                                )}
-                              />
-                            ))}
-                            {Array.from(
-                              { length: 4 - Number(value) },
-                              (_, i) => (
-                                <Star
-                                  key={`${i}-b`}
-                                  className={cn(
-                                    "transition size-5",
-                                    field.value?.value ? "" : "opacity-35"
-                                  )}
-                                />
-                              )
-                            )}
-                          </Button>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <small className="font-semibold text-sm">
-                            IV {label}
-                          </small>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </FormControl>
-                </div>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        ))}
-      </CardContent>
-    </Card>
+    <FilterCard filterKey="stats.stars">
+      {Object.entries(starsLabel).map(([value, label]) => (
+        <FormField
+          key={`${value}.not`}
+          control={control}
+          name={`stats.stars.${value}`}
+          render={({ field }) => (
+            <FormItem className="space-y-1">
+              <div className="flex items-center gap-2">
+                <NotButton
+                  aria-label={label}
+                  value={field.value.not}
+                  disabled={!field.value.value}
+                  onClick={() => {
+                    field.onChange({
+                      ...field.value,
+                      not: !field.value.not,
+                    });
+                  }}
+                />
+                <FormControl>
+                  <TooltipProvider
+                    delayDuration={300}
+                    key={value}
+                    disableHoverableContent
+                  >
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button
+                          aria-label={label}
+                          variant="outline"
+                          className={cn(
+                            "flex items-center",
+                            field.value?.value
+                              ? "border-primary "
+                              : "opacity-55 hover:opacity-80"
+                          )}
+                          onClick={() => {
+                            field.onChange({
+                              ...field.value,
+                              value: !field.value?.value,
+                            });
+                          }}
+                        >
+                          {Array.from({ length: Number(value) }, (_, i) => (
+                            <Star
+                              key={`${i}-a`}
+                              className={cn(
+                                "transition text-yellow-500 size-5",
+                                field.value?.value ? "" : "opacity-35"
+                              )}
+                            />
+                          ))}
+                          {Array.from({ length: 4 - Number(value) }, (_, i) => (
+                            <Star
+                              key={`${i}-b`}
+                              className={cn(
+                                "transition size-5",
+                                field.value?.value ? "" : "opacity-35"
+                              )}
+                            />
+                          ))}
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <small className="font-semibold text-sm">
+                          IV {label}
+                        </small>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </FormControl>
+              </div>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+      ))}
+    </FilterCard>
   );
 }
