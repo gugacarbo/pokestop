@@ -79,10 +79,10 @@ function BuddyFilter() {
                     })
                   }
                 />
-                {field.value.value?.[1] && (
+                {field.value.value?.[1]>= 0 && (
                   <AlignHorizontalSpaceAroundIcon className="w-4 fill-foreground" />
                 )}
-                {field.value.value?.[1] && (
+                {field.value.value?.[1] >= 0 && (
                   <Input
                     type="number"
                     className="px-0 w-fit max-w-16 text-center"

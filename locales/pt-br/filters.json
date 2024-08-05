@@ -191,6 +191,26 @@
       "xxs": {
         "name": "XXS",
         "value": "xxs"
+      },
+      "adventureeffect": {
+        "name": "Efeito Aventura",
+        "value": "efeitoaventura"
+      },
+      "background": {
+        "name": "Fundo",
+        "value": "fundo"
+      },
+      "defender": {
+        "name": "Defensor do Ginásio",
+        "value": "defensor"
+      },
+      "locationbackground": {
+        "name": "Plano de fundo da localização",
+        "value": "localizaçãofundo"
+      },
+      "specialbackground": {
+        "name": "Antecedentes Especiais",
+        "value": "fundoespecial"
       }
     },
     "gender": {

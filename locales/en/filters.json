@@ -176,6 +176,26 @@
                 "name": "Ultra Beasts",
                 "value": "ultrabeasts"
             },
+            "adventureeffect": {
+                "name": "Adventure Effect",
+                "value": "adventureeffect"
+            },
+            "background": {
+                "name": "Background",
+                "value": "background"
+            },
+            "specialbackground": {
+                "name": "Special Background",
+                "value": "specialbackground"
+            },
+            "locationbackground": {
+                "name": "Location Background",
+                "value": "locationbackground"
+            },
+            "defender": {
+                "name": "Gym Defender",
+                "value": "defender"
+            },
             "xl": {
                 "name": "XL",
                 "value": "xl"
@@ -198,15 +218,18 @@
             "subtitle": "Pokémon gender",
             "male": {
                 "name": "Male",
-                "value": "male"
+                "value": "male",
+                "note": false
             },
             "female": {
                 "name": "female",
-                "value": "female"
+                "value": "female",
+                "note": false
             },
             "genderunknown": {
                 "name": "Unknown",
-                "value": "genderunknown"
+                "value": "genderunknown",
+                "note": false
             }
         }
     }

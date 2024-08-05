@@ -72,10 +72,15 @@ const rarityFilterSchema = z.object({
   costume: booleanSchema,
   shadow: booleanSchema,
   purified: booleanSchema,
-  xxl: booleanSchema,
-  xxs: booleanSchema,
+  adventureeffect: booleanSchema,
+  background: booleanSchema,
+  specialbackground: booleanSchema,
+  locationbackground: booleanSchema,
+  defender: booleanSchema,
   xl: booleanSchema,
+  xxl: booleanSchema,
   xs: booleanSchema,
+  xxs: booleanSchema,
 });
 
 // ? Gender Filter
@@ -85,12 +90,25 @@ const genderFilterSchema = z.object({
   genderunknown: booleanSchema,
 });
 
+//? Evolve Filter
+const evolutionFilterSchema = z.object({
+  evolve: booleanSchema,
+  evolvenew: booleanSchema,
+  item: booleanSchema,
+  tradeevolve: booleanSchema,
+  evolvequest: booleanSchema,
+  fusion: booleanSchema,
+  megaevolve: booleanSchema,
+  megaevolve2: booleanSchema,
+});
+
 //| Tags Filter
 const tagsFilterSchema = z.object({
   region: regionFilterSchema,
   acquirement: acquirementFilterSchema,
   rarity: rarityFilterSchema,
   gender: genderFilterSchema,
+  evolution: evolutionFilterSchema,
 });
 
 // * All Filters
@@ -264,6 +282,26 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         value: false,
         not: false,
       },
+      adventureeffect: {
+        value: false,
+        not: false,
+      },
+      background: {
+        value: false,
+        not: false,
+      },
+      specialbackground: {
+        value: false,
+        not: false,
+      },
+      locationbackground: {
+        value: false,
+        not: false,
+      },
+      defender: {
+        value: false,
+        not: false,
+      },
 
       xxl: {
         value: false,
@@ -292,6 +330,40 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         not: false,
       },
       genderunknown: {
+        value: false,
+        not: false,
+      },
+    },
+    evolution: {
+      evolve: {
+        value: false,
+        not: false,
+      },
+      evolvenew: {
+        value: false,
+        not: false,
+      },
+      item: {
+        value: false,
+        not: false,
+      },
+      tradeevolve: {
+        value: false,
+        not: false,
+      },
+      evolvequest: {
+        value: false,
+        not: false,
+      },
+      fusion: {
+        value: false,
+        not: false,
+      },
+      megaevolve: {
+        value: false,
+        not: false,
+      },
+      megaevolve2: {
         value: false,
         not: false,
       },

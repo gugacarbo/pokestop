@@ -16,7 +16,7 @@ function FilterCard({
   const t = useTranslations("filters");
 
   return (
-    <Card className="flex-1">
+    <Card className="flex-1 min-w-52 max-w-sm">
       <CardHeader className="flex-col space-y-0 pb-3">
         <CardTitle className="text-sm">
           {/* @ts-ignore */}
