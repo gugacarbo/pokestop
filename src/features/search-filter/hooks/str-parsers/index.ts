@@ -43,9 +43,9 @@ function concatObjectValues(obj: object) {
   return Object.values(obj).reduce((acc, value) => {
     if (typeof value === "string") {
       if (value === "") return acc;
-      return acc + (acc !== "" ? "&" : "") + value;
+      return acc + (acc !== "" ? "," : "") + value;
     }
-    return acc + (acc !== "" ? "&" : "") + concatObjectValues(value);
+    return acc + (acc !== "" ? "," : "") + concatObjectValues(value);
   }, "");
 }
 

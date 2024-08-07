@@ -16,7 +16,7 @@ function useIvsStrParser({ stats: { ivs } }: SearchFilter) {
         value.not
       );
     })
-    .join("&");
+    .join(",");
 }
 
 export { useIvsStrParser };
