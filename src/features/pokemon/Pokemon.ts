@@ -2,10 +2,10 @@ import { type Pokemon } from "./@types/pokemon/pokemon";
 import { addMove } from "./actions/add-move";
 import { getPokemonById } from "./actions/get-pokemon";
 
-function pokemon(poke_id: string): Pokemon | undefined {
+async function pokemon(poke_id: string): Promise<Pokemon | undefined> {
   const id = poke_id.replace("_xl", "");
 
-  const data = getPokemonById(poke_id);
+  const data = await getPokemonById(poke_id);
 
   if (!data) {
     console.log(id + " not found");

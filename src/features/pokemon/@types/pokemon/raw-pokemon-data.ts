@@ -21,18 +21,17 @@ export const rawPokemonSchema = z.object({
     def: z.number(),
     hp: z.number(),
   }),
-  legacyMoves: z.array(z.string()).optional(),
-  eliteMoves: z.array(z.string()).optional(),
   fastMoves: z.array(z.string()),
   chargedMoves: z.array(z.string()),
+  legacyMoves: z.array(z.string()).optional(),
+  eliteMoves: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
 
   fastMovePool: z.array(moveSchema).optional(),
   chargedMovePool: z.array(moveSchema).optional(),
+
   shadowEligible: z.boolean().optional(),
-
   nicknames: z.array(z.string()).optional(),
-
   released: z.boolean().optional(),
 });
 

@@ -20,7 +20,7 @@ function addMove(
   }
 
   if (move) {
-    if (!pokemon[pool].find((m) => m.moveId === move.moveId)) {
+    if (pokemon[pool].find((m) => m.moveId === move.moveId)) {
       if (replace) {
         pokemon[pool] = pokemon[pool].filter((m) => m.moveId !== move.moveId);
       } else {
@@ -29,9 +29,7 @@ function addMove(
     }
     move.legacy = (pokemon?.legacyMoves?.indexOf(move.moveId) ?? -1) > -1;
     move.elite = (pokemon?.eliteMoves?.indexOf(move.moveId) ?? -1) > -1;
-    if (move.elite) {
-      move.legacy = false;
-    }
+
     move.displayName = move.name;
     pokemon[pool].push(move);
   }
