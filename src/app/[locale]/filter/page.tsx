@@ -4,6 +4,7 @@ import { IvFilter, StarsFilter } from "@/features/search-filter/stats";
 import { TagFilter } from "@/features/search-filter/tag-filter/tag-filter";
 import { BuddyFilter } from "@/features/search-filter/stats/buddy-filter";
 import { CatchFilter } from "@/features/search-filter/stats/catch-filter";
+import { PokemonNameFilter } from "@/features/search-filter/pokemon/pokemon-name";
 
 function Column({ children }: { children: React.ReactNode }) {
   return (
@@ -17,21 +18,30 @@ export default function Filter() {
       <FilterFormContext>
         <Column>
           <TagFilter tagKey="acquirement" />
-          <TagFilter tagKey="gender" />
           <BuddyFilter />
+          <TagFilter tagKey="evolution" />
         </Column>
+        {/*  */}
         <Column>
-          <TagFilter tagKey="region" />
           <CatchFilter />
-        </Column>
-        <TagFilter tagKey="rarity" />
-        <Column>
-          <StarsFilter />
           <IvFilter />
         </Column>
-        <TagFilter tagKey="type" />
-
-        <TagFilter tagKey="evolution" />
+        {/*  */}
+        <Column>
+          <TagFilter tagKey="region" />
+          <StarsFilter />
+          <TagFilter tagKey="gender" />
+        </Column>
+        {/*  */}
+        <Column>
+          <PokemonNameFilter />
+          <TagFilter tagKey="type" />
+        </Column>
+        {/*  */}
+        <Column>
+          <TagFilter tagKey="rarity" />
+          <TagFilter className="justify-start" tagKey="size" />
+        </Column>
       </FilterFormContext>
     </main>
   );

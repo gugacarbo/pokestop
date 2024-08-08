@@ -193,6 +193,30 @@
         "name": "Ultra Criaturas",
         "value": "ultracriaturas"
       },
+      "adventureeffect": {
+        "name": "Efeito Aventura",
+        "value": "efeitoaventura"
+      },
+      "background": {
+        "name": "Fundo",
+        "value": "fundo"
+      },
+      "defender": {
+        "name": "Defendendo Ginásio",
+        "value": "defensor"
+      },
+      "locationbackground": {
+        "name": "Fundo de localização",
+        "value": "localizaçãofundo"
+      },
+      "specialbackground": {
+        "name": "Fundos Especiais",
+        "value": "fundoespecial"
+      }
+    },
+    "size": {
+      "subtitle": "Filtrar por tamanho",
+      "title": "Tamanho",
       "xl": {
         "name": "XL",
         "value": "xl"
@@ -208,26 +232,6 @@
       "xxs": {
         "name": "XXS",
         "value": "xxs"
-      },
-      "adventureeffect": {
-        "name": "Efeito Aventura",
-        "value": "efeitoaventura"
-      },
-      "background": {
-        "name": "Fundo",
-        "value": "fundo"
-      },
-      "defender": {
-        "name": "Defensor do Ginásio",
-        "value": "defensor"
-      },
-      "locationbackground": {
-        "name": "Plano de fundo da localização",
-        "value": "localizaçãofundo"
-      },
-      "specialbackground": {
-        "name": "Antecedentes Especiais",
-        "value": "fundoespecial"
       }
     },
     "gender": {
@@ -257,11 +261,11 @@
         "value": "evoluir"
       },
       "evolvenew": {
-        "name": "Evoluir Novo",
+        "name": "Nova Evolução",
         "value": "evoluirnovo"
       },
       "evolvequest": {
-        "name": "Evoluir missão",
+        "name": "Evoluir com missão",
         "value": "evoluirmissão"
       },
       "fusion": {
@@ -369,5 +373,17 @@
       "subtitle": "Filtrar por tipo de pokémon",
       "title": "Tipo"
     }
+  },
+  "text": {
+    "pokemon_name": {
+      "subtitle": "Filtrar por nome do Pokémon",
+      "title": "Nome do Pokémon",
+      "select-label": "Selecionar Pokémon",
+      "search-label": "Pesquisar Pokémon",
+      "selected": "Selecionado(s)",
+      "withFamily": "Com a família"
+    },
+    "subtitle": "Filtrar por texto",
+    "title": "Texto"
   }
 }

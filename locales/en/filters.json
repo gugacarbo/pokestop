@@ -212,7 +212,11 @@
       "defender": {
         "name": "Gym Defender",
         "value": "defender"
-      },
+      }
+    },
+    "size": {
+      "title": "Filter by size",
+      "subtitle": "By Pokemon size",
       "xl": {
         "name": "XL",
         "value": "xl"
@@ -368,6 +372,18 @@
         "name": "Fairy",
         "value": "fairy"
       }
+    }
+  },
+  "text": {
+    "title": "Text",
+    "subtitle": "Filter by text",
+    "pokemon_name": {
+      "title": "Pokemon Name",
+      "subtitle": "Filter by Pokemon Name",
+      "select-label": "Select Pokemon",
+      "search-label": "Search Pokemon",
+      "selected": "Selected",
+      "withFamily": "With Family"
     }
   }
 }

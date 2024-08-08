@@ -12,7 +12,6 @@ const starsFilterSchema = z.object({
   4: booleanSchema,
 });
 
-
 const ivsFilterSchema = z.object({
   attack: rangeNumber,
   defense: rangeNumber,
@@ -76,10 +75,13 @@ const rarityFilterSchema = z.object({
   specialbackground: booleanSchema,
   locationbackground: booleanSchema,
   defender: booleanSchema,
-  xl: booleanSchema,
+});
+
+const sizeFilterSchema = z.object({
   xxl: booleanSchema,
-  xs: booleanSchema,
   xxs: booleanSchema,
+  xl: booleanSchema,
+  xs: booleanSchema,
 });
 
 // ? Gender Filter
@@ -132,12 +134,32 @@ const tagsFilterSchema = z.object({
   gender: genderFilterSchema,
   evolution: evolutionFilterSchema,
   type: typeFilterSchema,
+  size: sizeFilterSchema,
+});
+
+//? Pokemon Name Array
+
+export const pokemonNameArray = z
+  .array(
+    z.object({
+      value: z.string(),
+      not: zBool,
+      withFamily: zBool,
+    })
+  )
+  .default([]);
+
+//| Text Filters
+
+export const textFilterSchema = z.object({
+  pokemon_name: pokemonNameArray,
 });
 
 // * All Filters
 export const searchFilterSchema = z.object({
   stats: statsFilterSchema,
   tags: tagsFilterSchema,
+  text: textFilterSchema,
 });
 
 export type SearchFilter = z.infer<typeof searchFilterSchema>;
@@ -345,7 +367,8 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         value: false,
         not: false,
       },
-
+    },
+    size: {
       xxl: {
         value: false,
         not: false,
@@ -489,5 +512,8 @@ export const defaultValues: SearchFilter = searchFilterSchema.parse({
         not: false,
       },
     },
+  },
+  text: {
+    pokemon_name: [],
   },
 });

@@ -1,6 +1,23 @@
 import { type Pokemon } from "./@types/pokemon/pokemon";
 import { addMove } from "./actions/add-move";
-import { getPokemonById } from "./actions/get-pokemon";
+import { getAllPokemon, getPokemonById } from "./actions/get-pokemon";
+
+interface PokemonFactoryInterface {
+  get: (poke_id: string | number) => Promise<Pokemon | undefined>;
+  getAll: () => Promise<Record<string, Pokemon>>;
+}
+
+function pokemonFactory(): PokemonFactoryInterface {
+  function get(poke_id: string | number) {
+    const id = String(poke_id).replace("_xl", "");
+    return pokemon(id);
+  }
+
+  return {
+    get,
+    getAll: () => getAllPokemon(true),
+  };
+}
 
 async function pokemon(poke_id: string): Promise<Pokemon | undefined> {
   const id = poke_id.replace("_xl", "");
@@ -50,4 +67,4 @@ async function pokemon(poke_id: string): Promise<Pokemon | undefined> {
   return data;
 }
 
-export { pokemon };
+export { pokemon, pokemonFactory };

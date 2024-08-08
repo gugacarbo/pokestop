@@ -3,6 +3,7 @@ import { SearchFilter } from "../../schemas/search-filter-schema";
 import { useRangeStrParser } from "./range-str-parser";
 import { useStarsStrParser } from "./stars-str-parser";
 import { useBooleanStrParser } from "./useBooleanStrParser";
+import { usePokemonStrParser } from "./usePokemonStrParser";
 
 function useParseFilters(filters: SearchFilter) {
   const tags = {
@@ -11,6 +12,7 @@ function useParseFilters(filters: SearchFilter) {
     rarity: useBooleanStrParser(filters, "tags.rarity"),
     gender: useBooleanStrParser(filters, "tags.gender"),
     evolution: useBooleanStrParser(filters, "tags.evolution"),
+    size: useBooleanStrParser(filters, "tags.size"),
   };
 
   const stats = {
@@ -29,9 +31,14 @@ function useParseFilters(filters: SearchFilter) {
     },
   };
 
+  const text = {
+    pokemon_name: usePokemonStrParser(filters),
+  };
+
   return concatObjectValues({
     stats,
     tags,
+    text,
   });
 }
 

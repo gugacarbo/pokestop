@@ -11,6 +11,7 @@ export default getRequestConfig(async ({ locale = "en" }) => {
     main: (await import(`../locales/${locale}/main.json`)).default,
     rankings: (await import(`../locales/${locale}/rankings.json`)).default,
     filters: (await import(`../locales/${locale}/filters.json`)).default,
+    pokemons: (await import(`../locales/${locale}/pokemons.json`)).default,
   };
 
   return {

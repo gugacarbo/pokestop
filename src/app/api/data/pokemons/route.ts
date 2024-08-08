@@ -1,11 +1,10 @@
 import type { NextRequest, NextResponse } from "next/server";
-import { getAllPokemon } from "@/features/pokemon/actions/get-pokemon";
+import pokemons from "./data/pokemons";
+import { pokemonSchema } from "@/features/pokemon/@types/pokemon/pokemon";
 
 export const runtime = "edge";
 
 export async function GET(request: NextRequest) {
-  const pokemons = await getAllPokemon(true);
-
   if (!pokemons) {
     return new Response(
       JSON.stringify({
@@ -21,8 +20,13 @@ export async function GET(request: NextRequest) {
     );
   }
 
+  const parsed = Object.fromEntries(
+    Object.entries(pokemons).map(([key, value]) => {
+      return [key, pokemonSchema.parse(value)];
+    })
+  );
 
-  return new Response(JSON.stringify(pokemons), {
+  return new Response(JSON.stringify(parsed), {
     headers: {
       "content-type": "application/json",
     },

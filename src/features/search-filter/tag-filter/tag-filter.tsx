@@ -20,14 +20,16 @@ import { FilterCard } from "../filter-card";
 
 function TagFilter({
   tagKey,
+  className,
 }: {
   tagKey: keyof (typeof defaultValues)["tags"];
+  className?: string;
 }) {
   const t = useTranslations("filters");
   const { control } = useFormContext();
 
   return (
-    <FilterCard filterKey={`tags.${tagKey}`}>
+    <FilterCard className={className} filterKey={`tags.${tagKey}`}>
       {Object.entries(defaultValues.tags[tagKey]).map(([name, value]) => (
         <div className="flex flex-1 items-center gap-1" key={name}>
           <NotInput name={`tags.${tagKey}.${name}`} />
