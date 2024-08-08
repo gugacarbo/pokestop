@@ -1,11 +1,15 @@
-import { Move } from "../@types/move/move";
-import moves from "../data/moves";
+import { api } from "@/app/api/axios";
+import { Move, moveSchema } from "../@types/move/move";
 
-function getMoveById(move_id: string): Move | undefined {
-  if (moves[move_id]) {
-    return {
-      ...moves[move_id],
-    };
+async function getMoveById(
+  poke_id: string | number
+): Promise<Move | undefined> {
+  const moves = (await api.get<Record<string, Move>>("/moves")).data;
+
+  if (moves[poke_id]) {
+    return moveSchema.parse({
+      ...moves[poke_id],
+    });
   }
   return;
 }

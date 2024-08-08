@@ -3,7 +3,7 @@ import { Pokemon } from "../@types/pokemon/pokemon";
 import { getMoveById } from "./get-move";
 
 //push if move exists and not in pool
-function addMove(
+async function addMove(
   move: Move | string | undefined,
   pokemon: Pokemon,
   pool: keyof Pick<Pokemon, "fastMovePool" | "chargedMovePool">,
@@ -12,7 +12,7 @@ function addMove(
   if (!move) return;
 
   if (typeof move === "string") {
-    move = getMoveById(move);
+    move = await getMoveById(move);
   }
 
   if (!pokemon[pool]) {

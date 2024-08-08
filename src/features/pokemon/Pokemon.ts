@@ -17,10 +17,10 @@ async function pokemon(poke_id: string): Promise<Pokemon | undefined> {
   data.chargedMovePool = [];
 
   for (var i = 0; i < data.fastMoves.length; i++) {
-    addMove(data.fastMoves[i], data, "fastMovePool");
+    await addMove(data.fastMoves[i], data, "fastMovePool");
   }
   for (var i = 0; i < data.chargedMoves.length; i++) {
-    addMove(data.chargedMoves[i], data, "chargedMovePool");
+    await addMove(data.chargedMoves[i], data, "chargedMovePool");
   }
 
   // Add Return and Frustration for eligible Pokemon
@@ -28,14 +28,14 @@ async function pokemon(poke_id: string): Promise<Pokemon | undefined> {
     data.shadowEligible = true;
     // if ((data?.level25CP ) <= battle.getCP()) {
     // }
-    addMove("RETURN", data, "chargedMovePool");
+    await addMove("RETURN", data, "chargedMovePool");
     if (!data.legacyMoves) data.legacyMoves = [];
     data.legacyMoves.push("RETURN");
   }
 
   if (data.tags && data.tags.indexOf("shadow") > -1) {
     data.shadowEligible = true;
-    addMove("FRUSTRATION", data, "chargedMovePool");
+    await addMove("FRUSTRATION", data, "chargedMovePool");
     if (!data.legacyMoves) data.legacyMoves = [];
     data.legacyMoves.push("FRUSTRATION");
   }

@@ -26,7 +26,7 @@ export async function GET(
     );
   }
 
-  return new Response(JSON.stringify(id), {
+  return new Response(JSON.stringify(poke), {
     headers: {
       "content-type": "application/json",
     },

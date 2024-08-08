@@ -8,7 +8,7 @@ import {
 async function getPokemonById(
   poke_id: string | number
 ): Promise<Pokemon | undefined> {
-  const pokemons = (await api.get<Record<string, Pokemon>>("/pokemon")).data;
+  const pokemons = (await api.get<Record<string, Pokemon>>("/pokemons")).data;
 
   if (pokemons[poke_id]) {
     return pokemonSchema.parse({
