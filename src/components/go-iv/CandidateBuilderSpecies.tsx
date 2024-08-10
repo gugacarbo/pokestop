@@ -4,8 +4,8 @@ import {
   useCandidate,
   CandidateActionTypes,
   Candidate,
-} from '../hooks/useCandidate';
-import { usePokedex } from '../hooks/usePokedex';
+} from '@/hooks/use-candidate';
+import { usePokedex } from '@/hooks/use-pokedex';
 
 function useInputRef() {
   return useRef<HTMLInputElement | null>(null);
@@ -35,8 +35,8 @@ const CandidateBuilderSpecies: FC = () => {
   useSyncInputToCandidate(input, candidate);
 
   return (
-    <label className='block w-full mb-2 md:mr-6 md:w-auto'>
-      <span className='text-xs text-gray-400 sr-only md:not-sr-only'>
+    <label className='block md:mr-6 mb-2 w-full md:w-auto'>
+      <span className='text-gray-400 text-xs sr-only md:not-sr-only'>
         Pokémon
       </span>
 
@@ -63,7 +63,7 @@ const CandidateBuilderSpecies: FC = () => {
         type='text'
         list='pokemon-list'
         defaultValue={candidate.species.name}
-        className='block w-full mt-1 rounded form-input focus-visible-ring ring-offset-gray-50 dark:ring-offset-gray-900'
+        className='block form-input mt-1 rounded focus-visible-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full'
         placeholder='Pokémon Name'
         ref={input}
       />

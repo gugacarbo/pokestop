@@ -1,7 +1,7 @@
 
 import { FC } from 'react';
 import { League } from '@/data/league';
-import { SettingsActionTypes, useSettings } from '@/hooks/useSettings';
+import { SettingsActionTypes, useSettings } from '@/hooks/use-settings';
 import { ChevronsDown, ChevronsUp } from 'lucide-react';
 
 const SettingsSectionItemLeaguePosition: FC<{ league: League }> = ({

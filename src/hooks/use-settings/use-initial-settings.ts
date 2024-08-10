@@ -1,9 +1,5 @@
-import { NextPageContext } from "next";
-
-import { parseCookies } from "nookies";
-
 import { Settings } from ".";
-import { useLocalSettings } from "./persistSettings";
+import { useLocalSettings } from "./use-local-settings";
 
 export const defaultSettings: Settings = {
   leagues: { great: true, ultra: true, master: true, little: false },
@@ -29,7 +25,7 @@ export const defaultSettings: Settings = {
 
 export function useInitialSettings() {
   try {
-    const [settings] = useLocalSettings(defaultSettings);
+    const [settings] = useLocalSettings();
 
     return {
       ...defaultSettings,

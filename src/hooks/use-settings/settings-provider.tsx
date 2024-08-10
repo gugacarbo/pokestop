@@ -1,10 +1,10 @@
+"use client";
+
 import React, { FC, ReactNode, useReducer, useEffect } from "react";
 
 import { Context, Settings } from ".";
 
-import { settingsReducer } from "./settingsReducer";
-import { useLocalSettings } from "./persistSettings";
-import { defaultSettings } from "./useInitialSettings";
+import { useLocalSettings } from "./use-local-settings";
 
 export const Provider: FC<{
   children: ReactNode;

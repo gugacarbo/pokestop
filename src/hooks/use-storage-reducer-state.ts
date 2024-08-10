@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useReducer } from "react";
 import { useLocalStorage } from "usehooks-ts";
 

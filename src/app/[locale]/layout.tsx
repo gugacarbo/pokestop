@@ -6,9 +6,11 @@ import { getMessages, getTranslations } from "next-intl/server";
 
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Provider as SettingsProvider } from "@/hooks/useSettings";
+import { Provider as SettingsProvider } from "@/hooks/use-settings";
 
 import { PokemonID } from "@/data/pokedex";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 
 export const runtime = "edge";
 
@@ -52,7 +54,15 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <SettingsProvider>{children}</SettingsProvider>
+            <SettingsProvider>
+              <div className="flex flex-col items-center gap-2 w-full">
+                <Header />
+                <div className="flex flex-col mx-auto w-full max-w-screen-xl">
+                  {children}
+                </div>
+                <Footer />
+              </div>
+            </SettingsProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

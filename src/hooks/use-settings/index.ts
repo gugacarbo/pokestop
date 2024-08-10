@@ -1,14 +1,15 @@
 "use client";
+
 import { createContext, useContext } from "react";
 
 import { LeagueKey } from "@/data/league";
 import { LevelCapNumber } from "@/data/levelCap";
 import { OutputDataKey } from "@/data/outputData";
-import { Dispatch } from "./settingsReducer";
+import { Dispatch } from "./settings-reducer";
 
-export { Provider } from "./Provider";
-export { SettingsActionTypes } from "./settingsReducer";
-export { useInitialSettings } from "./useInitialSettings";
+export { Provider } from "./settings-provider";
+export { SettingsActionTypes } from "./settings-reducer";
+export { useInitialSettings, defaultSettings } from "./use-initial-settings";
 
 export const Context = createContext<{
   settings: Settings;
@@ -39,3 +40,5 @@ export function useSettings() {
 
   return value;
 }
+
+export default useSettings;

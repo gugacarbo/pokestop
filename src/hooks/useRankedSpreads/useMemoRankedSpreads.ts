@@ -4,7 +4,7 @@ import { LevelCapNumber } from '../../data/levelCap';
 
 import { useLeague } from '../useLeague';
 import { useCandidate } from '../useCandidate';
-import { useSettings } from '../useSettings';
+import { useSettings } from '../use-settings';
 
 import {
   generateRankedSpreads,

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { Pokemon } from '@/data/pokedex';
 
 import { CandidateActionTypes, useCandidate } from '@/hooks/useCandidate';
-import { usePokedex } from '@/hooks/usePokedex';
+import { usePokedex } from '@/hooks/use-pokedex';
 
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"

@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode } from "react";
 
 const SettingsSection: FC<{
   id: string;
@@ -8,15 +8,15 @@ const SettingsSection: FC<{
   return (
     <section
       id={id}
-      className='w-full px-4 py-6 mb-12 rounded-lg md:bg-white  md:dark:bg-gray-800 md:px-6 md:mb-0 md:shadow-md md:shadow-gray-100 md:dark:shadow-xl md:dark:shadow-gray-900'
+      className="md:bg-white md:dark:bg-gray-800 md:shadow-md md:shadow-gray-100 md:dark:shadow-xl md:dark:shadow-gray-900 mb-12 md:mb-0 px-4 md:px-6 py-6 rounded-lg w-full"
     >
-      <div className='mb-6'>
-        <h3 className='text-2xl leading-none text-left text-gray-900 dark:text-white font-title'>
+      <div className="mb-6">
+        <h3 className="font-title text-2xl text-gray-900 text-left dark:text-white leading-none">
           {title}
         </h3>
       </div>
 
-      <div className='divide-y divide-gray-100 dark:divide-gray-700'>
+      <div className="divide-y divide-gray-100 dark:divide-gray-700">
         {children}
       </div>
     </section>

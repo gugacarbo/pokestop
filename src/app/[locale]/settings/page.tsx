@@ -1,17 +1,20 @@
+"use client";
 import React, { FC } from "react";
 
 import { LEAGUES } from "@/data/league";
 import { LEVEL_CAPS } from "@/data/levelCap";
 import { OUTPUT_DATA } from "@/data/outputData";
 
-import { useSettings, SettingsActionTypes } from "@/hooks/useSettings";
+import { SettingsActionTypes } from "@/hooks/use-settings";
+import useSettings from "@/hooks/use-settings";
 
 import SettingsSection from "@/components/go-iv/SettingsSection";
 import SettingsSectionItem from "@/components/go-iv/SettingsSectionItem";
 import SettingsSectionItemToggle from "@/components/go-iv/SettingsSectionItemToggle";
 import SettingsSectionItemLeaguePosition from "@/components/go-iv/SettingsSectionItemLeaguePosition";
 
-const SettingsPage: FC = () => {
+function Page() {
+  console.log({ useSettings: typeof useSettings });
   const { settings, dispatch } = useSettings();
 
   return (
@@ -150,6 +153,6 @@ const SettingsPage: FC = () => {
       </SettingsSection>
     </div>
   );
-};
+}
 
-export default SettingsPage;
+export default Page;
