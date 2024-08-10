@@ -13,7 +13,7 @@ function useLocalStorageReducerState<T extends object, S>(
 
   useEffect(() => {
     setLocalValue(value);
-  }, [value]);
+  }, [value,setLocalValue]);
 
   return [value, dispatch] as const;
 }

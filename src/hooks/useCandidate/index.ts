@@ -1,8 +1,9 @@
+"use client"
 import { createContext, useContext } from 'react';
-import { Pokemon } from '../../data/pokedex';
-import { IV } from '../../data/iv';
-import { IVFloor } from '../../data/ivFloor';
-import { RankableMetric } from '../../data/stat';
+import { Pokemon } from '@/data/pokedex';
+import { IV } from '@/data/iv';
+import { IVFloor } from '@/data/ivFloor';
+import { RankableMetric } from '@/data/stat';
 import { Dispatch } from './candidateReducer';
 
 export { Provider } from './Provider';

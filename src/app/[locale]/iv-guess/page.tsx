@@ -10,7 +10,7 @@ export default function IVGuessPage() {
 
       <p className="mb-2 px-4 sm:px-0 w-full text-gray-700 text-sm dark:text-gray-300">
         This tool is a work-in-progress and should be used for educational
-        purposes only. Please don't try to use this in an official tournament!
+        purposes only. Please don`t try to use this in an official tournament!
       </p>
 
       <IVGuess />

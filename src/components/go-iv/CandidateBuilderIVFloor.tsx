@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 
-import { useCandidate, CandidateActionTypes } from '../hooks/useCandidate';
+import { useCandidate, CandidateActionTypes } from '@/hooks/useCandidate';
 
-import { IVFloor, IV_FLOORS } from '../data/ivFloor';
-import { useSettings } from '../hooks/useSettings';
+import { IVFloor, IV_FLOORS } from '@/data/ivFloor';
+import { useSettings } from '@/hooks/use-settings';
 
 const CandidateBuilderIVFloor: FC = () => {
   const { candidate, dispatch } = useCandidate();
   const { settings } = useSettings();
 
   return (
-    <label className='block mb-2 mr-6'>
-      <span className='text-xs text-gray-500 dark:text-gray-400'>IV Floor</span>
+    <label className='block mr-6 mb-2'>
+      <span className='text-gray-500 text-xs dark:text-gray-400'>IV Floor</span>
 
       <select
         onChange={(evt) =>
@@ -21,7 +21,7 @@ const CandidateBuilderIVFloor: FC = () => {
           })
         }
         value={candidate.floor}
-        className='block w-full mt-1 rounded form-select focus-ring ring-offset-gray-50 dark:ring-offset-gray-900'
+        className='block form-select mt-1 rounded focus-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full'
       >
         {IV_FLOORS.filter((floor) => {
           if (settings.allowImpossibleFloors) {

@@ -1,7 +1,10 @@
+"use client"
+
+
 import React, { FC, useEffect } from 'react';
 
-import { useCandidate, CandidateActionTypes } from '../hooks/useCandidate';
-import { useSettings } from '../hooks/useSettings';
+import { useCandidate, CandidateActionTypes } from '@/hooks/useCandidate';
+import { useSettings } from '@/hooks/use-settings';
 
 function useSyncCandidateMinimumLevelWithDefault() {
   const { settings } = useSettings();
@@ -24,8 +27,8 @@ const CandidateBuilderMinimumLevel: FC = () => {
   useSyncCandidateMinimumLevelWithDefault();
 
   return settings.showMinimumLevel ? (
-    <label className='block mb-2 mr-6'>
-      <span className='text-xs text-gray-500 dark:text-gray-400'>
+    <label className='block mr-6 mb-2'>
+      <span className='text-gray-500 text-xs dark:text-gray-400'>
         Minimum Level
       </span>
 
@@ -37,7 +40,7 @@ const CandidateBuilderMinimumLevel: FC = () => {
           })
         }
         value={candidate.minimumLevel}
-        className='block w-full mt-1 mr-6 rounded form-select focus-ring ring-offset-gray-50 dark:ring-offset-gray-900'
+        className='block form-select mt-1 mr-6 rounded focus-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full'
       >
         <option value={1}>1</option>
         <option value={15}>15 - Research</option>

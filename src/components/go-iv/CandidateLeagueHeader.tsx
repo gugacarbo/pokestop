@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 
-import { IV_FLOORS } from '../data/ivFloor';
+import { IV_FLOORS } from '@/data/ivFloor';
 
-import { useCandidate } from '../hooks/useCandidate';
-import { useLeague } from '../hooks/useLeague';
+import { useCandidate } from '@/hooks/useCandidate';
+import { useLeague } from '@/hooks/useLeague';
 
-import { ArrowLeftIcon, ChevronUpIcon } from '@heroicons/react/solid';
-import { RANKABLE_METRICS } from '../data/stat';
+import { RANKABLE_METRICS } from '@/data/stat';
+import { ArrowLeftIcon, ChevronUpIcon } from 'lucide-react';
 
 const LEAGUE_COLORS = {
   great: {
@@ -66,7 +66,7 @@ const CandidateLeagueHeader: FC = () => {
         <button
           onClick={() => setInspectedLevelCap(null)}
           title={`Back`}
-          className='p-1 mr-3 rounded focus-visible:ring-2 ring-white'
+          className='mr-3 p-1 rounded ring-white focus-visible:ring-2'
         >
           <ArrowLeftIcon className='w-4 h-4' />
         </button>
@@ -80,14 +80,14 @@ const CandidateLeagueHeader: FC = () => {
               <span key={candidate.species.name}>{candidate.species.name}</span>
             </h2>
 
-            <p className='mt-1 text-xs font-semibold'>
+            <p className='mt-1 font-semibold text-xs'>
               Level: {candidate.minimumLevel} - {inspectedLevelCap.level} (
               {inspectedLevelCap.description})
             </p>
-            <p className='mt-1 text-xs font-semibold'>
+            <p className='mt-1 font-semibold text-xs'>
               IV Floor: {floor.value} ({floor.name})
             </p>
-            <p className='mt-1 text-xs font-semibold'>
+            <p className='mt-1 font-semibold text-xs'>
               Ranked By: {rankingMetric.name}
             </p>
           </>

@@ -1,11 +1,9 @@
 import { Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import useDebounce from "@/hooks/useDebounce";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { SearchIcon, XIcon } from "lucide-react";
-import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 function GlobalFilterInputs<TData>({
@@ -21,20 +19,16 @@ function GlobalFilterInputs<TData>({
   className?: string;
   useQueryValue?: boolean;
 }) {
-  const [searchParams] = useSearchParams();
+  const [filterValue, setFilterValue] = useState("");
 
-  const [filterValue, setFilterValue] = useState(
-    (useQueryValue && searchParams.get("global_search")) || ""
-  );
-
-  useDebounce(
-    () => {
-      table?.setPageIndex(0);
-      table?.setGlobalFilter(filterValue);
-    },
-    300,
-    [filterValue]
-  );
+  // useDebounce(
+  //   () => {
+  //     table?.setPageIndex(0);
+  //     table?.setGlobalFilter(filterValue);
+  //   },
+  //   300,
+  //   [filterValue]
+  // );
 
   return (
     <Label

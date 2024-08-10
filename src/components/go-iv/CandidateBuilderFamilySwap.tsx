@@ -28,7 +28,7 @@ const CandidateBuilderFamilySwap: FC = () => {
         Other family members
       </Label>
 
-      {iterableFamily.map((familyMember) => (
+      {/* {iterableFamily.map((familyMember) => (
         <RadioGroupItem
           key={familyMember.id}
           value={familyMember}
@@ -51,7 +51,7 @@ const CandidateBuilderFamilySwap: FC = () => {
               </Label>
             </div>
         </RadioGroupItem>
-      ))}
+      ))} */}
     </RadioGroup>
   );
 };

@@ -1,20 +1,20 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { getRankedSpreadColors } from '../utils/getRankColors';
+import { getRankedSpreadColors } from "@/utils/getRankColors";
 
-import { xlCount } from '../lib/xlCount';
-import { useSettings } from '../hooks/useSettings';
-import { useCandidate } from '../hooks/useCandidate';
-import { useLeague } from '../hooks/useLeague';
-import { useRankedSpreads } from '../hooks/useRankedSpreads';
-import { formatValue } from '../utils/formatValue';
+import { xlCount } from "@/lib/xlCount";
+import { useSettings } from "@/hooks/use-settings";
+import { useCandidate } from "@/hooks/useCandidate";
+import { useLeague } from "@/hooks/useLeague";
+import { useRankedSpreads } from "@/hooks/useRankedSpreads";
+import { formatValue } from "@/utils/formatValue";
 
-import { IV_FLOORS } from '../data/ivFloor';
-import { LevelCap } from '../data/levelCap';
+import { IV_FLOORS } from "@/data/ivFloor";
+import { LevelCap } from "@/data/levelCap";
 
-import * as CandidateLeagueTableCells from './CandidateLeagueTableCells';
-import CandidateLeagueTableCellsPercentOfMax from './CandidateLeagueTableCellsPercentOfMax';
-import { ViewListIcon } from '@heroicons/react/solid';
+import * as CandidateLeagueTableCells from "./CandidateLeagueTableCells";
+import CandidateLeagueTableCellsPercentOfMax from "./CandidateLeagueTableCellsPercentOfMax";
+import { ListIcon } from "lucide-react";
 
 const CandidateLeagueRankedAtLevelCap: FC<{
   levelCap: LevelCap;
@@ -28,26 +28,26 @@ const CandidateLeagueRankedAtLevelCap: FC<{
     (spread) =>
       spread.ivs.atk === candidate.ivs.atk &&
       spread.ivs.def === candidate.ivs.def &&
-      spread.ivs.sta === candidate.ivs.sta,
+      spread.ivs.sta === candidate.ivs.sta
   );
 
   const floor = IV_FLOORS.find((ivFloor) => ivFloor.value === candidate.floor);
   if (floor === undefined) {
-    throw new Error('No matching IV floor could be found.');
+    throw new Error("No matching IV floor could be found.");
   }
 
   const colors = getRankedSpreadColors(
     candidateAtLevel,
-    candidate.rankingMetric,
+    candidate.rankingMetric
   );
 
   const viewAllSpreadButton = (
     <button
       onClick={() => setInspectedLevelCap(levelCap)}
-      className='focus-visible-ring p-0.5 rounded mr-2'
+      className="mr-2 p-0.5 rounded focus-visible-ring"
       title={`View top ${league.name} IV spreads for ${candidate.species.name}, Level ${candidate.minimumLevel}-${levelCap.level}, ${floor.name}`}
     >
-      <ViewListIcon className='w-4 h-4' />
+      <ListIcon className="w-4 h-4" />
     </button>
   );
 
@@ -73,14 +73,14 @@ const CandidateLeagueRankedAtLevelCap: FC<{
         {settings.outputData.level && (
           <CandidateLeagueTableCells.Body>
             <>
-              ?<span className='text-xs'> /{levelCap.level}</span>
+              ?<span className="text-xs"> /{levelCap.level}</span>
             </>
           </CandidateLeagueTableCells.Body>
         )}
 
         <CandidateLeagueTableCells.Body colSpan={columnCount}>
-          <p className='text-sm'>
-            Could not find a ranked spread matching the candidate's IVs
+          <p className="text-sm">
+            Could not find a ranked spread matching the candidate{"'"}s IVs
           </p>
         </CandidateLeagueTableCells.Body>
 
@@ -115,9 +115,9 @@ const CandidateLeagueRankedAtLevelCap: FC<{
               candidateAtLevel.level,
               Math.floor(candidateAtLevel.level) === candidateAtLevel.level
                 ? undefined
-                : 1,
+                : 1
             )}
-            <span className='text-xs'> /{levelCap.level}</span>
+            <span className="text-xs"> /{levelCap.level}</span>
           </>
         </CandidateLeagueTableCells.Body>
       )}

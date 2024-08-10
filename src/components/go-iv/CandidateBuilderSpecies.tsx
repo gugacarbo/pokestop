@@ -1,10 +1,12 @@
+"use client"
+
 import React, { FC, MutableRefObject, useEffect, useRef } from 'react';
 
 import {
   useCandidate,
   CandidateActionTypes,
   Candidate,
-} from '@/hooks/use-candidate';
+} from '@/hooks/useCandidate';
 import { usePokedex } from '@/hooks/use-pokedex';
 
 function useInputRef() {

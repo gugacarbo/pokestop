@@ -1,6 +1,5 @@
 import { CellContext, ColumnDef } from "@tanstack/react-table";
 import { MousePointer2 } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   Tooltip,
   TooltipContent,
@@ -9,6 +8,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Link } from "@/lib/navigation";
 
 const GoToId = <T,>(
   route: string,
@@ -42,7 +42,7 @@ const Btn = ({
 }) => (
   <TooltipProvider>
     <Tooltip>
-      <Link to={path}>
+      <Link href={path}>
         <TooltipTrigger asChild>
           <Button variant="outline" size="icon" type="button">
             <MousePointer2

@@ -14,9 +14,10 @@ import {
 } from "@/data/pokedex";
 import { useSpeculativePokemon } from "./useSpeculativePokemon";
 
+const speculativePokemon: PokemonID[] = [];
+
 export function usePokedex() {
   const { settings } = useSettings();
-  const speculativePokemon: PokemonID[] = [];
 
   const list = useMemo(
     () =>
@@ -27,7 +28,7 @@ export function usePokedex() {
 
         return speculativePokemon.includes(pokemon.id) === false;
       }),
-    [settings?.showSpeculative, speculativePokemon]
+    [settings?.showSpeculative]
   );
 
   const byName = useCallback(

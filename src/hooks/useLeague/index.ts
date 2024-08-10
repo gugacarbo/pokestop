@@ -1,7 +1,8 @@
+"use client"
 import { createContext, useContext } from 'react';
 
-import { League } from '../../data/league';
-import { LevelCap } from '../../data/levelCap';
+import { League } from '@/data/league';
+import { LevelCap } from '@/data/levelCap';
 import { useCollapsedState } from './Provider';
 
 export { Provider } from './Provider';

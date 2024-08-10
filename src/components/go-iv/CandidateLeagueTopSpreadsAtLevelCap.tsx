@@ -1,15 +1,15 @@
 import React, { FC, ReactChild } from 'react';
-import { RankedSpread } from '../lib/generateRankedSpreads';
-import { useLeague } from '../hooks/useLeague';
-import { useCandidate, Candidate } from '../hooks/useCandidate';
-import { useRankedSpreads } from '../hooks/useRankedSpreads';
+import { RankedSpread } from '@/lib/generateRankedSpreads';
+import { useLeague } from '@/hooks/useLeague';
+import { useCandidate, Candidate } from '@/hooks/useCandidate';
+import { useRankedSpreads } from '@/hooks/useRankedSpreads';
 
-import { getRankedSpreadColors } from '../utils/getRankColors';
+import { getRankedSpreadColors } from '@/utils/getRankColors';
 
 import * as CandidateLeagueTableCells from './CandidateLeagueTableCells';
 import CandidateLeagueTopSpreadsAtLevelCapDownload from './CandidateLeagueTopSpreadsAtLevelCapDownload';
-import { xlCount } from '../lib/xlCount';
-import { formatValue } from '../utils/formatValue';
+import { xlCount } from '@/lib/xlCount';
+import { formatValue } from '@/utils/formatValue';
 
 function useDisplayedSpreads() {
   const { inspectedLevelCap } = useLeague();
@@ -148,7 +148,7 @@ const CandidateLeagueTopSpreadsAtLevelCap: FC = () => {
   return (
     <>
       <section className='w-full overflow-x-scroll'>
-        <table className='w-full border-collapse'>
+        <table className='border-collapse w-full'>
           <thead>
             <tr>
               {columns.map((column) => (

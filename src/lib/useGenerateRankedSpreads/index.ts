@@ -81,7 +81,7 @@ export function useGenerateRankedSpreads(
           }
           return getRankingMetricValue(b) - getRankingMetricValue(a);
         }),
-    [pokemon, maxCP, maxLevel, minLevel, getRankingMetricValue, rankingMetric]
+    [pokemon, maxCP, maxLevel, minLevel, getRankingMetricValue, rankingMetric,floor]
   );
 
   const result = useMemo(() => {

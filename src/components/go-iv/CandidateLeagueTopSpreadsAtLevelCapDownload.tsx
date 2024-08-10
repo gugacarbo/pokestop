@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 
-import { useRankedSpreads } from '../hooks/useRankedSpreads';
-import { useLeague } from '../hooks/useLeague';
-import { useCandidate } from '../hooks/useCandidate';
+import { useRankedSpreads } from '@/hooks/useRankedSpreads';
+import { useLeague } from '@/hooks/useLeague';
+import { useCandidate } from '@/hooks/useCandidate';
 
-import { downloadFile } from '../utils/downloadFile';
-import { DownloadIcon } from '@heroicons/react/solid';
-import { xlCount } from '../lib/xlCount';
+import { downloadFile } from '@/utils/downloadFile';
+import { xlCount } from '@/lib/xlCount';
+import { DownloadIcon } from 'lucide-react';
 
 const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
   const { candidate } = useCandidate();
@@ -42,12 +42,12 @@ const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
   }
 
   return (
-    <footer className='flex items-center justify-center w-full py-2 bg-white border-t border-gray-200'>
+    <footer className='flex justify-center items-center border-gray-200 bg-white py-2 border-t w-full'>
       <button
         onClick={exportToCSV}
-        className='flex items-center justify-start p-1 text-gray-700 rounded-full hover:text-black focus-visible-ring sm:rounded'
+        className='flex justify-start items-center p-1 rounded-full sm:rounded focus-visible-ring text-gray-700 hover:text-black'
       >
-        <span className='mr-2 text-xs font-semibold'>
+        <span className='mr-2 font-semibold text-xs'>
           Export All {rankedSpreads[inspectedLevelCap.level].length} to CSV
         </span>
 

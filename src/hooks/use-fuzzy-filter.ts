@@ -31,12 +31,10 @@ function useFuzzyFilter<T>(
       setInput(searchPattern);
     }, delay);
     return () => clearTimeout(timer);
-  }, [searchPattern]);
+  }, [searchPattern, delay,setInput]);
 
-  
   const fuse = new Fuse(list, { ...fuseOptions, ...options });
   return fuse.search(input);
-
 }
 
 export { useFuzzyFilter };

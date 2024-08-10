@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { useSettings } from '../hooks/useSettings';
-import { formatValue } from '../utils/formatValue';
+import { useSettings } from "@/hooks/use-settings";
+import { formatValue } from "@/utils/formatValue";
 
 const CandidateLeagueTableCellsPercentOfMax: FC<{
   value: number;
@@ -12,9 +12,9 @@ const CandidateLeagueTableCellsPercentOfMax: FC<{
     return null;
   } else {
     return (
-      <span className='block text-xs'>
+      <span className="block text-xs">
         {formatValue(value, value === 1 ? undefined : 2, {
-          style: 'percent',
+          style: "percent",
         })}
       </span>
     );

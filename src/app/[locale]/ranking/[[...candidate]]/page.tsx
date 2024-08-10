@@ -1,9 +1,6 @@
 import React, { FC } from "react";
 
 import { LEAGUES } from "@/data/league";
-import { NextPageContext } from "next";
-
-import { parseCookies } from "nookies";
 
 import {
   Candidate,
@@ -14,13 +11,13 @@ import { useSettings } from "@/hooks/use-settings";
 import CandidateLeague from "@/components/go-iv/CandidateLeague";
 import CandidateBuilder from "@/components/go-iv/CandidateBuilder";
 
-const CandidatePage: FC<{ cachedCandidate: Candidate | null }> = ({
-  cachedCandidate,
-}) => {
+const CandidatePage: FC<{
+  //  cachedCandidate: Candidate | null
+}> = ({}) => {
   const { settings } = useSettings();
 
   return (
-    <CandidateContextProvider cachedCandidate={cachedCandidate}>
+    <CandidateContextProvider cachedCandidate={null}>
       <CandidateBuilder />
 
       <section
@@ -44,16 +41,16 @@ const CandidatePage: FC<{ cachedCandidate: Candidate | null }> = ({
 
 export default CandidatePage;
 
-export const getServerSideProps = async (
-  ctx: NextPageContext
-  // eslint-disable-next-line @typescript-eslint/require-await
-): Promise<{ props: { cachedCandidate: Candidate | null } }> => {
-  try {
-    const cookies = parseCookies(ctx);
-    const cachedCandidate = JSON.parse(cookies.candidate) as Candidate;
+// export const getServerSideProps = async (
+//   ctx: NextPageContext
+//   // eslint-disable-next-line @typescript-eslint/require-await
+// ): Promise<{ props: { cachedCandidate: Candidate | null } }> => {
+//   try {
+//     const cookies = parseCookies(ctx);
+//     const cachedCandidate = JSON.parse(cookies.candidate) as Candidate;
 
-    return { props: { cachedCandidate } };
-  } catch (err) {
-    return { props: { cachedCandidate: null } };
-  }
-};
+//     return { props: { cachedCandidate } };
+//   } catch (err) {
+//     return { props: { cachedCandidate: null } };
+//   }
+// };

@@ -6,6 +6,7 @@ import {
   ChevronFirstIcon,
   CogIcon,
   FileQuestion,
+  Github,
   SearchIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -89,6 +90,12 @@ export function Header() {
 
           <LanguageToggle />
           <ThemeToggle />
+          
+          <a href="#">
+            <Button variant="outline" size="icon">
+              <Github className="size-5" />
+            </Button>
+          </a>
         </div>
       </div>
     </header>

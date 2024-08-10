@@ -1,20 +1,20 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { useCandidate, CandidateActionTypes } from '../hooks/useCandidate';
+import { useCandidate, CandidateActionTypes } from "@/hooks/useCandidate";
 
-import { IV, IV_RANGE } from '../data/iv';
-import { STATS } from '../data/stat';
-import { useSettings } from '../hooks/useSettings';
+import { IV, IV_RANGE } from "@/data/iv";
+import { STATS } from "@/data/stat";
+import { useSettings } from "@/hooks/use-settings";
 
 const CandidateBuilderIVs: FC = () => {
   const { candidate, dispatch } = useCandidate();
   const { settings } = useSettings();
 
   return (
-    <div className='grid grid-cols-3 gap-2 mr-6'>
+    <div className="gap-2 grid grid-cols-3 mr-6">
       {STATS.map((stat) => (
-        <label key={stat.key} className='block mb-2'>
-          <span className='text-xs text-gray-500 dark:text-gray-400'>
+        <label key={stat.key} className="block mb-2">
+          <span className="text-gray-500 text-xs dark:text-gray-400">
             {stat.name} IV
           </span>
 
@@ -29,10 +29,10 @@ const CandidateBuilderIVs: FC = () => {
               })
             }
             value={candidate.ivs[stat.key]}
-            className='block w-full mt-1 rounded form-select focus-ring ring-offset-gray-50 dark:ring-offset-gray-900'
+            className="block form-select mt-1 rounded focus-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full"
           >
             {IV_RANGE.filter((iv) => iv >= candidate.floor)
-              [settings.invertIVDropdown ? 'reverse' : 'concat']()
+              [settings.invertIVDropdown ? "reverse" : "concat"]()
               .map((iv) => (
                 <option key={iv} value={iv}>
                   {iv}

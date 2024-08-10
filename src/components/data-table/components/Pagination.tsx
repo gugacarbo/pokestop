@@ -1,5 +1,4 @@
 import { Table as TableInstance } from "@tanstack/react-table";
-import When from "@/helpers/When";
 
 import {
   Pagination,
@@ -39,7 +38,7 @@ const MyPagination = <TData,>({
           <PaginationItem>
             <PaginationPrevious
               onClick={() => table.previousPage()}
-              disabled={!table.getCanPreviousPage()}
+              // disabled={!table.getCanPreviousPage()}
             />
           </PaginationItem>
           {/* //| Previous */}
@@ -58,60 +57,62 @@ const MyPagination = <TData,>({
             ))}
 
           {/* //* Many Pages */}
-          <When condition={isLarge}>
-            {currentPageIndex > 1 && (
-              <>
-                <PaginationItem>
-                  <PaginationLink onClick={() => table.setPageIndex(0)}>
-                    1
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationEllipsis className="size-3 md:size-4" />
-                </PaginationItem>
-              </>
-            )}
+          {isLarge && (
+            <>
+              {currentPageIndex > 1 && (
+                <>
+                  <PaginationItem>
+                    <PaginationLink onClick={() => table.setPageIndex(0)}>
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationEllipsis className="size-3 md:size-4" />
+                  </PaginationItem>
+                </>
+              )}
 
-            {table
-              .getPageOptions()
-              .slice(
-                currentPageIndex > 1 ? currentPageIndex - 1 : 0,
-                currentPageIndex > 1
-                  ? currentPageIndex + breakPoint - 3
-                  : breakPoint
-              )
-              .map((page) => (
-                <PaginationItem key={page}>
-                  <PaginationLink
-                    onClick={() => table.setPageIndex(page)}
-                    // data-active={table.() === page}
-                    isActive={currentPageIndex === page}
-                  >
-                    {page + 1}
-                  </PaginationLink>
-                </PaginationItem>
-              ))}
+              {table
+                .getPageOptions()
+                .slice(
+                  currentPageIndex > 1 ? currentPageIndex - 1 : 0,
+                  currentPageIndex > 1
+                    ? currentPageIndex + breakPoint - 3
+                    : breakPoint
+                )
+                .map((page) => (
+                  <PaginationItem key={page}>
+                    <PaginationLink
+                      onClick={() => table.setPageIndex(page)}
+                      // data-active={table.() === page}
+                      isActive={currentPageIndex === page}
+                    >
+                      {page + 1}
+                    </PaginationLink>
+                  </PaginationItem>
+                ))}
 
-            {currentPageIndex < pageCount - 2 && (
-              <>
-                <PaginationItem>
-                  <PaginationEllipsis className="size-3 md:size-4" />
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink
-                    onClick={() => table.setPageIndex(pageCount - 1)}
-                  >
-                    {pageCount}
-                  </PaginationLink>
-                </PaginationItem>
-              </>
-            )}
-          </When>
+              {currentPageIndex < pageCount - 2 && (
+                <>
+                  <PaginationItem>
+                    <PaginationEllipsis className="size-3 md:size-4" />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      onClick={() => table.setPageIndex(pageCount - 1)}
+                    >
+                      {pageCount}
+                    </PaginationLink>
+                  </PaginationItem>
+                </>
+              )}
+            </>
+          )}
 
           {/*//| Next  */}
           <PaginationItem>
             <PaginationNext
-              disabled={!table.getCanNextPage()}
+              // disabled={!!!table.getCanNextPage()}
               onClick={() => table.nextPage()}
             />
           </PaginationItem>

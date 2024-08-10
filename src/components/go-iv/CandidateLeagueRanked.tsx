@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
 
-import { LEVEL_CAPS } from '../data/levelCap';
-
-import { useSettings } from '../hooks/useSettings';
-import { useCandidate } from '../hooks/useCandidate';
+import { LEVEL_CAPS } from '@/data/levelCap';
+import { useSettings } from '@/hooks/use-settings';
+import { useCandidate } from '@/hooks/useCandidate';
 
 import * as CandidateLeagueTableCells from './CandidateLeagueTableCells';
 import CandidateLeagueRankedAtLevelCap from './CandidateLeagueRankedAtLevelCap';
@@ -14,7 +13,7 @@ const CandidateLeagueRanked: FC = () => {
 
   return (
     <section className='w-full overflow-x-scroll'>
-      <table className='w-full border-collapse table-fixed'>
+      <table className='table-fixed border-collapse w-full'>
         <thead>
           <tr>
             {settings.outputData.rank && (

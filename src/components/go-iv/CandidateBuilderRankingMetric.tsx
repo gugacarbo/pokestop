@@ -1,9 +1,10 @@
-import React, { FC, useEffect } from 'react';
+"use client"
 
-import { useCandidate, CandidateActionTypes } from '../hooks/useCandidate';
-import { useSettings } from '../hooks/useSettings';
+import React, { FC, useEffect } from "react";
 
-import { RankableMetric, RANKABLE_METRICS } from '../data/stat';
+import { useCandidate, CandidateActionTypes } from "@/hooks/useCandidate";
+import { useSettings } from "@/hooks/use-settings";
+import { RankableMetric, RANKABLE_METRICS } from "@/data/stat";
 
 function useSyncCandidateRankingMetricWithDefault() {
   const { settings } = useSettings();
@@ -13,7 +14,7 @@ function useSyncCandidateRankingMetricWithDefault() {
     if (settings.showRankingMetric === false) {
       dispatch({
         type: CandidateActionTypes.RankingMetric,
-        payload: 'product',
+        payload: "product",
       });
     }
   }, [dispatch, settings.showRankingMetric]);
@@ -26,8 +27,8 @@ const CandidateBuilderRankingMetric: FC = () => {
   useSyncCandidateRankingMetricWithDefault();
 
   return settings.showRankingMetric ? (
-    <label className='block mb-2 mr-6'>
-      <span className='text-xs text-gray-500 dark:text-gray-400'>Rank By</span>
+    <label className="block mr-6 mb-2">
+      <span className="text-gray-500 text-xs dark:text-gray-400">Rank By</span>
 
       <select
         onChange={(evt) =>
@@ -37,7 +38,7 @@ const CandidateBuilderRankingMetric: FC = () => {
           })
         }
         value={candidate.rankingMetric}
-        className='block w-full mt-1 mr-6 rounded form-select focus-ring ring-offset-gray-50 dark:ring-offset-gray-900'
+        className="block form-select mt-1 mr-6 rounded focus-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full"
       >
         {RANKABLE_METRICS.map((rankableMetric) => (
           <option key={rankableMetric.key} value={rankableMetric.key}>
