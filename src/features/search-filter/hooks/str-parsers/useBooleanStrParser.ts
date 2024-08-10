@@ -6,11 +6,11 @@ import {
   NestedObject,
 } from "@/lib/nested";
 import { SearchFilter } from "../../schemas/search-filter-schema";
-import { applyNot } from ".";
+import { applyNot, applyOperator } from ".";
 
 function useBooleanStrParser(
   current_filter: SearchFilter,
-  filterKey: NestedKeyOf<SearchFilter>,
+  filterKey: NestedKeyOf<SearchFilter>
 ): string {
   const { filters } = useMessages() as unknown as IntlMessages;
 
@@ -29,18 +29,17 @@ function useBooleanStrParser(
     .map(([key, value]) => {
       const cur = messages[key as keyof typeof messages];
 
-      return applyNot(
-        `${
-          typeof cur === "string"
-            ? cur
-            : cur["value" as keyof typeof cur]
-        }`,
-
+      return applyOperator(
+        applyNot(
+          `${typeof cur === "string" ? cur : cur["value" as keyof typeof cur]}`,
+          //@ts-ignore
+          typeof cur !== "string" ? value?.not : false
+        ),
         //@ts-ignore
-        typeof cur !== "string" ? value?.not : false
+        value?.operator
       );
     })
-    .join(",");
+    .join("");
 }
 
 export { useBooleanStrParser };

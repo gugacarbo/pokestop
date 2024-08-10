@@ -1,16 +1,13 @@
 import type { NextRequest, NextResponse } from "next/server";
-import { env } from "@/lib/env";
+import pkg from "@/../package.json";
 
 export const runtime = "edge";
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { poke: string } }
-) {
+export async function GET() {
   return new Response(
     JSON.stringify({
-      whoami: env.APP_NAME,
-      "-v": env.APP_VERSION,
+      whoami: pkg.name,
+      "-v": pkg.version,
     }),
     {
       headers: {

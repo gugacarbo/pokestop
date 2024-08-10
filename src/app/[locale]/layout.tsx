@@ -1,9 +1,14 @@
-import { Inter } from "next/font/google";
 import "../globals.css";
-import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
+
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Provider as SettingsProvider } from "@/hooks/useSettings";
+
+import { PokemonID } from "@/data/pokedex";
 
 export const runtime = "edge";
 
@@ -26,13 +31,15 @@ export async function generateMetadata({
   };
 }
 
+interface LayoutProps {
+  children: React.ReactNode;
+  params: { locale: string };
+}
+
 export default async function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+}: LayoutProps) {
   const messages = await getMessages();
 
   return (
@@ -45,7 +52,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <SettingsProvider>{children}</SettingsProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

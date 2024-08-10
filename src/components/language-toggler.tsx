@@ -25,7 +25,7 @@ export function LanguageToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="min-w-32">
+        <Button variant="outline" className="min-w-32">
           {localeNames?.[locale as keyof typeof localeNames]}
           <span className="sr-only">{t("language.toggle")}</span>
           <ChevronDown className="ml-2 size-4" />

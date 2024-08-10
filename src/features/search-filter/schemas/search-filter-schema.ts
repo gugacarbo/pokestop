@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { booleanSchema, zBool } from "./";
-import { rangeNumber } from "./defaults";
+import { rangeNumber, searchOperator } from "./defaults";
 
 export type RangeFilterMode = "eq" | "gt" | "lt" | "int";
 
@@ -145,6 +145,7 @@ export const pokemonNameArray = z
       value: z.string(),
       not: zBool,
       withFamily: zBool,
+      operator: searchOperator,
     })
   )
   .default([]);

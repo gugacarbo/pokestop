@@ -18,23 +18,23 @@ export default function Filter() {
       <FilterFormContext>
         <Column>
           <TagFilter tagKey="acquirement" />
-          <BuddyFilter />
+          <StarsFilter />
+          <PokemonNameFilter />
+        </Column>
+        {/*  */}
+        <Column>
+          <IvFilter />
           <TagFilter tagKey="evolution" />
         </Column>
         {/*  */}
         <Column>
           <CatchFilter />
-          <IvFilter />
-        </Column>
-        {/*  */}
-        <Column>
+          <BuddyFilter />
           <TagFilter tagKey="region" />
-          <StarsFilter />
-          <TagFilter tagKey="gender" />
         </Column>
         {/*  */}
         <Column>
-          <PokemonNameFilter />
+          <TagFilter tagKey="gender" />
           <TagFilter tagKey="type" />
         </Column>
         {/*  */}

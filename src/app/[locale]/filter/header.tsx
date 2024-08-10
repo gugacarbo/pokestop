@@ -1,5 +1,8 @@
 import { LanguageToggle } from "@/components/language-toggler";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Button } from "@/components/ui/button";
+import { Link } from "@/lib/navigation";
+import { CogIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -14,6 +17,12 @@ export function Header() {
       </div>
 
       <div className="flex items-center gap-4">
+        <Link href="/settings">
+          <Button variant="outline" size="icon">
+            <CogIcon className="size-5" />
+          </Button>
+        </Link>
+
         <LanguageToggle />
         <ThemeToggle />
       </div>

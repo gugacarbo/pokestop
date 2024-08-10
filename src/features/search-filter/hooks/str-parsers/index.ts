@@ -1,3 +1,4 @@
+import { SearchOperator } from "../../schemas/defaults";
 import { SearchFilter } from "../../schemas/search-filter-schema";
 
 import { useRangeStrParser } from "./range-str-parser";
@@ -13,6 +14,7 @@ function useParseFilters(filters: SearchFilter) {
     gender: useBooleanStrParser(filters, "tags.gender"),
     evolution: useBooleanStrParser(filters, "tags.evolution"),
     size: useBooleanStrParser(filters, "tags.size"),
+    type: useBooleanStrParser(filters, "tags.type"),
   };
 
   const stats = {
@@ -50,10 +52,15 @@ function concatObjectValues(obj: object) {
   return Object.values(obj).reduce((acc, value) => {
     if (typeof value === "string") {
       if (value === "") return acc;
-      return acc + (acc !== "" ? "," : "") + value;
+      return acc + value;
     }
-    return acc + (acc !== "" ? "," : "") + concatObjectValues(value);
+    return acc + concatObjectValues(value);
   }, "");
 }
 
-export { useParseFilters, applyNot };
+function applyOperator(value: string, operator?: SearchOperator) {
+  const op = operator === "and" ? "&" : ",";
+  return `${op}${value}`;
+}
+
+export { useParseFilters, applyNot, applyOperator };
