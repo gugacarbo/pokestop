@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { LeagueCPCap } from "@/data/league";
 import { LevelCapNumber } from "@/data/levelCap";
 import { Pokemon } from "@/data/pokedex";
@@ -17,6 +17,7 @@ import { LeagueSelector } from "./components/league-selector";
 import { LevelCapSelector } from "./components/level-cap-selector";
 import { ResultTable } from "./result_table/table";
 import { useGenerateRankedSpreads } from "@/lib/useGenerateRankedSpreads";
+import { CompareModes } from "@/@types/compare-modes";
 
 const defaultPokemon = {
   name: "Medicham",
@@ -40,6 +41,10 @@ export function IVGuess() {
   const [anyCp, setAnyCp] = useState<boolean>(true);
   const [cp, setCp] = useState<number>(defaultPokemon.cp);
 
+  const [hpFilterMode, setHpFilterMode] = useState<CompareModes>("eq");
+
+  const [cpFilterMode, setCpFilterMode] = useState<CompareModes>("eq");
+
   const matchingSpreads = useGenerateRankedSpreads(
     pokemon,
     pokemon.floor ?? 0,
@@ -47,13 +52,28 @@ export function IVGuess() {
     levelCap,
     0,
     "product"
-  ).filter(
-    (spread) =>
-      (spread.stats.sta.value === hp || anyHp) && (spread.cp === cp || anyCp)
   );
 
+  const filtered = useMemo(() => {
+    return matchingSpreads.filter((spread) => {
+      const hpMatch =
+        anyHp ||
+        (hpFilterMode === "eq" && spread.stats.sta.value === hp) ||
+        (hpFilterMode === "gt" && spread.stats.sta.value >= hp) ||
+        (hpFilterMode === "lt" && spread.stats.sta.value <= hp);
+
+      const cpMatch =
+        anyCp ||
+        (cpFilterMode === "eq" && spread.cp === cp) ||
+        (cpFilterMode === "gt" && spread.cp >= cp) ||
+        (cpFilterMode === "lt" && spread.cp <= cp);
+
+      return hpMatch && cpMatch;
+    });
+  }, [matchingSpreads, hp, anyHp, cp, anyCp, hpFilterMode, cpFilterMode]);
+
   return (
-    <div className="items-start gap-6 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-0 w-full">
+    <div className="items-start gap-6 space-y-0 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-0 w-full">
       <SpeciesDropdown
         pokemon={pokemon}
         onChange={setPokemon}
@@ -65,18 +85,21 @@ export function IVGuess() {
         league={league}
         anyCp={anyCp}
         setAnyCp={setAnyCp}
+        mode={cpFilterMode}
+        onModeChange={setCpFilterMode}
       />
       <HpSelector
         hp={hp}
         setHp={setHp}
-        league={league}
         anyHp={anyHp}
         setAnyHp={setAnyHp}
+        mode={hpFilterMode}
+        onModeChange={setHpFilterMode}
       />
       <LeagueSelector league={league} setLeague={setLeague} />
       <LevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
-      <ResultTable matchingSpreads={matchingSpreads} />
-      <ScatterPokemonChart matchingSpreads={matchingSpreads} />
+      <ResultTable matchingSpreads={filtered} />
+      <ScatterPokemonChart matchingSpreads={filtered} />
     </div>
   );
 }

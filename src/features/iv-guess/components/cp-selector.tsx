@@ -1,3 +1,6 @@
+import { CompareModes } from "@/@types/compare-modes";
+
+import { ToggleCompareModes } from "@/components/toggle-compare-mode";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,17 +11,27 @@ function CpSelector({
   league,
   anyCp,
   setAnyCp,
+  mode,
+  onModeChange,
 }: {
   setCp: (cp: number) => void;
   cp: number;
   league: number;
   anyCp: boolean;
   setAnyCp: (any: boolean) => void;
+  mode: CompareModes;
+  onModeChange: (mode: CompareModes) => void;
 }) {
   return (
-    <div className="flex flex-col items-end gap-2">
-      <Label>
-        <span className="text-gray-500 text-xs dark:text-gray-400">CP</span>
+    <Label className="flex flex-col w-full">
+      <span className="text-muted-foreground text-xs">CP</span>
+      <div className="flex items-center gap-2">
+        <ToggleCompareModes
+          mode={mode}
+          onModeChange={onModeChange}
+          disabled={anyCp}
+          value={cp}
+        />
         <Input
           onChange={(evt) => {
             const value = Number(evt.target.value);
@@ -26,21 +39,21 @@ function CpSelector({
               setCp(value);
             }
           }}
+          className="flex-1"
           defaultValue={cp}
           max={league}
           type="number"
           disabled={anyCp}
         />
-      </Label>
-
-      <Label className="flex justify-start items-center gap-x-2">
-        <span className="text-gray-500 text-xs dark:text-gray-400">Any CP</span>
-        <Checkbox
-          onCheckedChange={(checked) => setAnyCp(checked === true)}
-          checked={anyCp}
-        />
-      </Label>
-    </div>
+        <Label className="flex flex-col justify-center items-center gap-x-2 leading-none">
+          <Checkbox
+            onCheckedChange={(checked) => setAnyCp(checked === true)}
+            checked={anyCp}
+          />
+          <span className="text-muted-foreground text-xs truncate">Any CP</span>
+        </Label>
+      </div>
+    </Label>
   );
 }
 

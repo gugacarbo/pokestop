@@ -14,7 +14,6 @@ import SettingsSectionItemToggle from "@/components/go-iv/SettingsSectionItemTog
 import SettingsSectionItemLeaguePosition from "@/components/go-iv/SettingsSectionItemLeaguePosition";
 
 function Page() {
-  console.log({ useSettings: typeof useSettings });
   const { settings, dispatch } = useSettings();
 
   return (

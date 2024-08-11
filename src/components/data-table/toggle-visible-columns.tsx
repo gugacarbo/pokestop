@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function DataTableViewOptions<TData>({
+export function ToggleVisibleColumns<TData>({
   table,
   columnsNames,
   className,
@@ -29,12 +29,12 @@ export function DataTableViewOptions<TData>({
           size="sm"
           className={cn("ml-auto h-8", className)}
         >
-          <ChevronDown className="mr-2 w-4 h-4" />
-          Colunas
+          <ChevronDown className="mr-2 size-4" />
+          Columns
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[150px]">
-        <DropdownMenuLabel>Mostrar colunas</DropdownMenuLabel>
+        <DropdownMenuLabel>Show/Hide columns</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {table
           .getAllColumns()

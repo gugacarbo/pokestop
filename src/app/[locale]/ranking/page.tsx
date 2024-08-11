@@ -1,15 +1,11 @@
+"use client";
 import React, { FC } from "react";
-
 import { LEAGUES } from "@/data/league";
-
-import {
-  Candidate,
-  Provider as CandidateContextProvider,
-} from "@/hooks/useCandidate";
+import { Provider as CandidateContextProvider } from "@/hooks/useCandidate";
 import { useSettings } from "@/hooks/use-settings";
 
-import CandidateLeague from "@/components/go-iv/CandidateLeague";
-import CandidateBuilder from "@/components/go-iv/CandidateBuilder";
+import CandidateLeague from "@/components/go-iv/candidate-league/CandidateLeague";
+import CandidateBuilder from "@/components/go-iv/candidate-builder/CandidateBuilder";
 
 const CandidatePage: FC<{
   //  cachedCandidate: Candidate | null
@@ -19,7 +15,6 @@ const CandidatePage: FC<{
   return (
     <CandidateContextProvider cachedCandidate={null}>
       <CandidateBuilder />
-
       <section
         className={`grid items-start w-full grid-cols-1 gap-4 mb-4 sm:mb-8 sm:gap-8${
           settings.layout === "grid" ? " lg:grid-cols-2" : ""

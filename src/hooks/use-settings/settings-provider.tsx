@@ -10,6 +10,7 @@ export const Provider: FC<{
   children: ReactNode;
 }> = ({ children }) => {
   const [settings, dispatch] = useLocalSettings();
+
   return (
     <Context.Provider value={{ settings, dispatch }}>
       {children}

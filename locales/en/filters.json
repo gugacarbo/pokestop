@@ -27,6 +27,10 @@
     "less-than": {
       "description": "Less than",
       "title": "Less than"
+    },
+    "any": {
+      "description": "Any",
+      "title": "Any"
     }
   },
   "stats": {

@@ -1,3 +1,5 @@
+"use client"
+
 import { env } from "@/lib/env";
 import { useLocalStorageReducerState } from "../use-storage-reducer-state";
 import { settingsReducer } from "./settings-reducer";

@@ -1,13 +1,14 @@
-import React, { FC, ReactNode, useState } from 'react';
+"use client"
+import React, { FC, ReactNode, useState } from "react";
 
-import { League } from '../../data/league';
-import { LevelCap } from '../../data/levelCap';
+import { League } from "@/data/league";
+import { LevelCap } from "@/data/levelCap";
 
-import { Context } from '.';
+import { Context } from ".";
 
 function useInspectedLevelCapState() {
   const [inspectedLevelCap, setInspectedLevelCap] = useState<LevelCap | null>(
-    null,
+    null
   );
 
   return [inspectedLevelCap, setInspectedLevelCap] as const;

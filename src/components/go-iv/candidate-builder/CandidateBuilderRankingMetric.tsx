@@ -1,10 +1,18 @@
-"use client"
+"use client";
 
 import React, { FC, useEffect } from "react";
 
 import { useCandidate, CandidateActionTypes } from "@/hooks/useCandidate";
 import { useSettings } from "@/hooks/use-settings";
 import { RankableMetric, RANKABLE_METRICS } from "@/data/stat";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 function useSyncCandidateRankingMetricWithDefault() {
   const { settings } = useSettings();
@@ -27,26 +35,29 @@ const CandidateBuilderRankingMetric: FC = () => {
   useSyncCandidateRankingMetricWithDefault();
 
   return settings.showRankingMetric ? (
-    <label className="block mr-6 mb-2">
-      <span className="text-gray-500 text-xs dark:text-gray-400">Rank By</span>
-
-      <select
-        onChange={(evt) =>
+    <Label>
+      <span className="text-muted-foreground text-xs">Rank By</span>
+      <Select
+        onValueChange={(evt) =>
           dispatch({
             type: CandidateActionTypes.RankingMetric,
-            payload: evt.target.value as RankableMetric,
+            payload: evt as RankableMetric,
           })
         }
         value={candidate.rankingMetric}
-        className="block form-select mt-1 mr-6 rounded focus-ring ring-offset-gray-50 dark:ring-offset-gray-900 w-full"
       >
-        {RANKABLE_METRICS.map((rankableMetric) => (
-          <option key={rankableMetric.key} value={rankableMetric.key}>
-            {rankableMetric.name}
-          </option>
-        ))}
-      </select>
-    </label>
+        <SelectTrigger>
+          <SelectValue placeholder="select" />
+        </SelectTrigger>
+        <SelectContent>
+          {RANKABLE_METRICS.map((rankableMetric) => (
+            <SelectItem key={rankableMetric.key} value={rankableMetric.key}>
+              {rankableMetric.name}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </Label>
   ) : (
     <></>
   );

@@ -137,7 +137,7 @@ function ScatterPokemonChart({
               const spread = payload[0].payload as RankedSpread;
 
               return (
-                <div className="space-y-1 border-gray-200 border-y bg-white dark:bg-gray-800 shadow-gray-100 shadow-md dark:shadow-xl dark:shadow-gray-900 p-2 border dark:border-transparent rounded-lg text-sm">
+                <div className="space-y-1 bg-popover shadow-md dark:shadow-muted p-2 border border-border rounded-md text-sm">
                   <p className="font-semibold">
                     {spread.ivs.atk}-{spread.ivs.def}-{spread.ivs.sta} (Rank{" "}
                     {spread.rank})

@@ -19,5 +19,9 @@
   "common": {
     "cancel": "cancelar",
     "confirm": "confirmar"
+  },
+  "numbers": {
+    "ordinal-symbol": "{num, selectordinal, one {º} two {º} few {º} other {º}}",
+    "ordinal": "{num, selectordinal, one {#º} two {#º} few {#º} other {#º}}"
   }
 }

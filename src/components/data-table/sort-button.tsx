@@ -17,7 +17,7 @@ function SortButton<T>({
   iconType = "number",
   className: cln,
 }: {
-  label: string | React.ReactNode;
+  label: string | React.ReactNode | ((sorted: boolean) => React.ReactNode);
   column: Column<T>;
   position?: "center" | "right" | "left";
   iconType?: "number" | "string";
@@ -26,16 +26,17 @@ function SortButton<T>({
   const UpIcon = iconType === "number" ? ArrowUp10 : ArrowUpZA;
   const DownIcon = iconType === "number" ? ArrowDown01 : ArrowDownAZ;
 
+  const isSorted = column.getIsSorted();
+
   const SortIcon = ({ className }: { className?: string }) => {
-    if (column.getIsSorted() === "asc") {
+    if (isSorted === "asc") {
       return <DownIcon className={className} />;
     }
-    if (column.getIsSorted() === "desc") {
+    if (isSorted === "desc") {
       return <UpIcon className={className} />;
     }
     return <ArrowUpDown className={className} />;
   };
-
   return (
     <div
       className={cn(
@@ -44,16 +45,18 @@ function SortButton<T>({
       )}
     >
       <Button
-        variant={column.getIsSorted() ? "default" : "ghost"}
-        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        variant={isSorted ? "default" : "ghost"}
+        onClick={() => column.toggleSorting(isSorted === "asc")}
         className={cn("h-auto py-1 leading-tight ", cln)}
         size="sm"
       >
-        <span className="">{label}</span>
+        <span>
+          {typeof label === "function" ? label(!(isSorted === false)) : label}
+        </span>
         <SortIcon
           className={cn(
             "ml-2 size-4 md:size-5"
-            // column.getIsSorted() && " stroke-primary"
+            // isSorted && " stroke-primary"
           )}
         />
       </Button>

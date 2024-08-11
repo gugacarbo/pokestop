@@ -2,6 +2,10 @@
   "name": "pokestop",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gugacarbo/pokestop"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,6 +18,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-checkbox": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.1-rc.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",

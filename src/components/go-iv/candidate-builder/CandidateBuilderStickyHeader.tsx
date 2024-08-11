@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { IV_FLOORS } from "@/data/ivFloor";
@@ -6,7 +6,7 @@ import { RANKABLE_METRICS } from "@/data/stat";
 
 import { useCandidate } from "@/hooks/useCandidate";
 import { useSettings } from "@/hooks/use-settings";
-import SpeciesTypeIcons from "./SpeciesTypeIcons";
+import SpeciesTypeIcons from "../SpeciesTypeIcons";
 import { PencilIcon } from "lucide-react";
 
 function useIsScrolled() {
@@ -33,6 +33,7 @@ export default function CandidateBuilderStickyHeader() {
   const { candidate } = useCandidate();
   const { settings } = useSettings();
 
+
   const isScrolled = useIsScrolled();
   if (!isScrolled) return null;
 
@@ -52,9 +53,9 @@ export default function CandidateBuilderStickyHeader() {
     <div className="top-0 z-10 fixed inset-x-0 flex justify-start items-center space-y-0.5 border-gray-100 dark:border-gray-700 sm:hidden bg-white dark:bg-gray-800 px-4 border-b h-14">
       <div className="text-gray-700 dark:text-gray-100 grow">
         <p className="font-title text-gray-700 text-xs dark:text-gray-100">
-          <div className="inline-flex mr-2">
+          <span className="inline-flex mr-2">
             <SpeciesTypeIcons types={candidate.species.types} />
-          </div>
+          </span>
           {candidate.species.name}, {candidate.ivs.atk}-{candidate.ivs.def}-
           {candidate.ivs.sta}{" "}
         </p>

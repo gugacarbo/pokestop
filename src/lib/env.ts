@@ -9,7 +9,8 @@ const envSchema = z.object({
 
 export const env = envSchema.parse({
   APP_NAME: pkg.name,
-  // ...process.env,
-  APP_ENV: "local",
-  API_URL: "http://localhost:3000",
+  APP_VERSION: pkg.version,
+  APP_REPO: pkg.repository.url,
+  APP_ENV: process.env.NODE_ENV,
+  API_URL: process.env.API_URL ?? "http://localhost:3000/api",
 });
