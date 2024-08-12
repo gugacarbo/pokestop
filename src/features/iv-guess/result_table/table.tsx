@@ -1,10 +1,9 @@
 import { RankedSpread } from "@/lib/generateRankedSpreads";
 import { getCoreRowModel } from "@tanstack/react-table";
-import { ivGuessResultColumns } from "./columns";
-import { DataTable } from "@/components/data-table/data-table";
-import useDataTable from "@/components/data-table/hooks/useDataTable";
-import { TablePageSizeSelect } from "@/components/data-table/table-page-size-select";
-import { ToggleVisibleColumns } from "@/components/data-table/toggle-visible-columns";
+import { rankSpreadColumns } from "../../data-table/data-columns/rank-spread-columns";
+import { DataTable } from "@/features/data-table/components/data-table";
+import { TablePageSizeSelect } from "@/features/data-table/components/table-page-size-select";
+import { ToggleVisibleColumns } from "@/features/data-table/components/toggle-visible-columns";
 import {
   Card,
   CardContent,
@@ -12,17 +11,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useDataTable } from "@/features/data-table/useDataTable";
 
 function ResultTable({ matchingSpreads }: { matchingSpreads: RankedSpread[] }) {
   const table = useDataTable({
     data: matchingSpreads,
-    columns: ivGuessResultColumns,
+    columns: rankSpreadColumns,
     getCoreRowModel: getCoreRowModel(),
     initialSorting: "rank",
-    initialVisibility:{
-      level:false,
-      product_percentOfMax:false,
-    }
+    initialVisibility: {
+      level: false,
+      product_percentOfMax: false,
+    },
   });
 
   return (

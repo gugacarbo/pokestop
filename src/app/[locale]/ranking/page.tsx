@@ -2,10 +2,9 @@
 import React, { FC } from "react";
 import { LEAGUES } from "@/data/league";
 import { Provider as CandidateContextProvider } from "@/hooks/useCandidate";
-import { useSettings } from "@/hooks/use-settings";
-
-import CandidateLeague from "@/components/go-iv/candidate-league/CandidateLeague";
-import CandidateBuilder from "@/components/go-iv/candidate-builder/CandidateBuilder";
+import { useSettings } from "@/features/settings/use-settings";
+import { CandidateBuilder } from "@/features/candidate/builder/candidate-builder";
+import CandidateLeague from "@/features/candidate/league/candidate-league";
 
 const CandidatePage: FC<{
   //  cachedCandidate: Candidate | null

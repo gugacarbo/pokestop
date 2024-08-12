@@ -6,7 +6,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Provider as SettingsProvider } from "@/hooks/use-settings";
+import { Provider as SettingsProvider } from "@/features/settings/use-settings";
 
 import { PokemonID } from "@/data/pokedex";
 import { Header } from "@/components/layout/header";

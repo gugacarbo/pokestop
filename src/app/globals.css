@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
@@ -65,7 +64,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -84,8 +82,8 @@
 
   /* Chrome, Edge and Safari */
   *::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
   }
   *::-webkit-scrollbar-track {
     border-radius: 5px;

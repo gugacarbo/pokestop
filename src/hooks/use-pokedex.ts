@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useMemo } from "react";
-import { useSettings } from "./use-settings";
+import { useSettings } from "../features/settings/use-settings";
 
 import {
   POKEDEX,

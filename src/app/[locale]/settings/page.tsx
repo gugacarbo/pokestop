@@ -5,13 +5,13 @@ import { LEAGUES } from "@/data/league";
 import { LEVEL_CAPS } from "@/data/levelCap";
 import { OUTPUT_DATA } from "@/data/outputData";
 
-import { SettingsActionTypes } from "@/hooks/use-settings";
-import useSettings from "@/hooks/use-settings";
+import { SettingsActionTypes } from "@/features/settings/use-settings";
+import useSettings from "@/features/settings/use-settings";
 
-import SettingsSection from "@/components/go-iv/SettingsSection";
-import SettingsSectionItem from "@/components/go-iv/SettingsSectionItem";
-import SettingsSectionItemToggle from "@/components/go-iv/SettingsSectionItemToggle";
-import SettingsSectionItemLeaguePosition from "@/components/go-iv/SettingsSectionItemLeaguePosition";
+import SettingsSection from "@/features/settings/components/SettingsSection";
+import SettingsSectionItem from "@/features/settings/components/SettingsSectionItem";
+import SettingsSectionItemToggle from "@/features/settings/components/SettingsSectionItemToggle";
+import SettingsSectionItemLeaguePosition from "@/features/settings/components/SettingsSectionItemLeaguePosition";
 
 function Page() {
   const { settings, dispatch } = useSettings();
