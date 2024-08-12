@@ -2,7 +2,7 @@
 export const pageview = (url: URL) => {
   if (process.env.NODE_ENV === 'production') {
     // @ts-ignore
-    window.gtag('config', process.env.NEXT_PUBLIC_GA_KEY, {
+    window?.gtag?.('config', process.env.NEXT_PUBLIC_GA_KEY, {
       page_path: url,
     });
   }
@@ -12,6 +12,6 @@ export const pageview = (url: URL) => {
 export const event = (action: string, data: unknown) => {
   if (process.env.NODE_ENV === 'production') {
     // @ts-ignore
-    window.gtag('event', action, data);
+    window?.gtag?.('event', action, data);
   }
 };
