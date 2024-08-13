@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "Settings",
+    "description": "Settings for the application"
+  },
+  "common": {
+    "show-hide": "Show/Hide",
+    "show": "Show",
+    "hide": "Hide"
+  },
+  "leagues": {
+    "title": "Leagues",
+    "description": "Show/Hide "
+  },
+  "level-caps": {
+    "title": "Level Caps",
+    "description": "",
+    "fields": {
+      "40": {
+        "description": "Regular Candy",
+        "value": "Level 40"
+      },
+      "41": {
+        "description": "Regular Candy + Best Buddy",
+        "value": "Level 41"
+      },
+      "50": {
+        "description": "Candy XL",
+        "value": "Level 50"
+      },
+      "51": {
+        "description": "Candy XL + Best Buddy",
+        "value": "Level 51"
+      }
+    }
+  },
+  "output-data": {
+    "title": "Output Fields",
+    "description": "",
+    "fields": {
+      "level": {
+        "value": "Level",
+        "description": ""
+      },
+      "rank": {
+        "value": "Rank",
+        "description": ""
+      },
+      "cp": {
+        "value": "Cap",
+        "description": ""
+      },
+      "xlCandy": {
+        "value": "XL Candy",
+        "description": ""
+      },
+      "stats": {
+        "value": "Stats",
+        "description": "Attack, Defense and Stamina, as calculated in-game."
+      },
+      "statProduct": {
+        "value": "Stat Product",
+        "description": "Standard metric used to rank spreads - calculated by multiplying the generated Attack, Defense and Stamina values together."
+      },
+      "bulkProduct": {
+        "value": "Bulk Product",
+        "description": "Alternative metric to rank spreads - calculated by multiplying the generated Defense and Stamina values together."
+      },
+      "percent": {
+        "value": "% of Rank 1",
+        "description": "Display a percentage under each Stat and the Stat Product comparing the value to that of the Rank 1 spread."
+      }
+    }
+  },
+  "candidate": {
+    "title": "Candidate Creation",
+    "description": "",
+    "fields": {
+      "iv-floor": {
+        "title": "IV Floor",
+        "description": "Minimum IV",
+        "values": {
+          "0": { "value": "0", "name": "Wild Catch" },
+          "1": { "value": "1", "name": "Good Friend Trade" },
+          "2": { "value": "2", "name": "Great Friend Trade" },
+          "3": { "value": "3", "name": "Ultra Friend Trade" },
+          "4": { "value": "4", "name": "Weather Boost" },
+          "5": { "value": "5", "name": "Best Friend Trade" },
+          "6": { "value": "6", "name": "Shadow Raid, Giovanni" },
+          "10": { "value": "10", "name": "Raid, Egg, Research" },
+          "12": { "value": "12", "name": "Lucky Trade" }
+        }
+      }
+    }
+  },
+  "stats": {
+    "atk": {
+      "title": "Attack"
+    },
+    "def": {
+      "title": "Defense"
+    },
+    "sta": {
+      "title": "Stamina"
+    }
+  }
+}

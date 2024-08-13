@@ -1,8 +1,10 @@
+"use client";
+
 import React, { FC, ReactNode, useReducer, useEffect } from "react";
 
 import { SettingsContext } from "./settings-context";
 import { Settings } from "..";
-import { setSettingsCookie } from "./set-settings-cookie";
+import { setSettingsCookie } from "../set-settings-cookie";
 import { settingsReducer } from "../settings-reducer";
 
 function useSyncSettingsCookie(settings: Settings) {

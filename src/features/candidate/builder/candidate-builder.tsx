@@ -1,14 +1,14 @@
-import React, { FC } from "react";
+import {
+  CandidateBuilderStickyHeader,
+  CandidateBuilderIVs,
+  CandidateBuilderIVFloor,
+  CandidateBuilderSpecies,
+  CandidateBuilderFamilySwap,
+  CandidateBuilderMinimumLevel,
+  CandidateBuilderRankingMetric,
+} from "./components";
 
-import { CandidateBuilderStickyHeader } from "./components/candidate-builder-sticky-header";
-import CandidateBuilderSpecies from "./CandidateBuilderSpecies";
-import CandidateBuilderFamilySwap from "./CandidateBuilderFamilySwap";
-import CandidateBuilderIVs from "./CandidateBuilderIVs";
-import CandidateBuilderIVFloor from "./CandidateBuilderIVFloor";
-import CandidateBuilderMinimumLevel from "./CandidateBuilderMinimumLevel";
-import CandidateBuilderRankingMetric from "./CandidateBuilderRankingMetric";
-
-function CandidateBuilder({children}: {children?: React.ReactNode}) {
+function CandidateBuilder({ children }: { children?: React.ReactNode }) {
   return (
     <>
       <CandidateBuilderStickyHeader />
@@ -16,10 +16,10 @@ function CandidateBuilder({children}: {children?: React.ReactNode}) {
         <CandidateBuilderSpecies />
         <CandidateBuilderIVs />
         <CandidateBuilderIVFloor />
+        {children}
         <CandidateBuilderRankingMetric />
         <CandidateBuilderMinimumLevel />
         <CandidateBuilderFamilySwap />
-        {children}
       </section>
     </>
   );

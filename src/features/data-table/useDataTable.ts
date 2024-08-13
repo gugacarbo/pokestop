@@ -11,8 +11,9 @@ import {
   FilterFn,
   TableOptions,
 } from "@tanstack/react-table";
-import { useState } from "react";
+
 import { rankItem } from "@tanstack/match-sorter-utils";
+import { useDataOptions } from "./useDataOptions";
 
 interface useDataTableProps<TData, TValue>
   extends Partial<TableOptions<TData>> {
@@ -33,22 +34,19 @@ function useDataTable<TData, TValue>({
   initialSorting,
   ...props
 }: useDataTableProps<TData, TValue>) {
-  const [sorting, setSorting] = useState<SortingState>(
-    initialSorting
-      ? [
-          {
-            id: initialSorting,
-            desc: false,
-          },
-        ]
-      : []
-  );
-
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  const [globalFilter, setGlobalFilter] = useState("");
-
-  const [columnVisibility, setColumnVisibility] =
-    useState<VisibilityState>(initialVisibility);
+  const {
+    sorting,
+    setSorting,
+    columnFilters,
+    setColumnFilters,
+    globalFilter,
+    setGlobalFilter,
+    columnVisibility,
+    setColumnVisibility,
+  } = useDataOptions({
+    initialSorting,
+    initialVisibility,
+  });
 
   const fuzzyFilter: FilterFn<TData> = (row, columnId, value, addMeta) => {
     // Rank the item

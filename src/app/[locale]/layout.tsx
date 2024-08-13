@@ -16,6 +16,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { parseSettingsCookies } from "@/features/settings/parse-settings-cookies";
 
 export const runtime = "edge";
 
@@ -43,13 +44,17 @@ interface LayoutProps {
   params: { locale: string };
 }
 
+async function getInitialSettings() {
+  const cookieStore = cookies();
+  return await parseSettingsCookies(cookieStore.get("settings")?.value);
+}
+
 export default async function RootLayout({
   children,
   params: { locale },
 }: LayoutProps) {
-  const messages = await getMessages();
-
   const settings = await getInitialSettings();
+  const messages = await getMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -62,9 +67,9 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <SettingsProvider initialSettings={settings}>
-              <div className="flex flex-col items-center gap-2 w-full">
+              <div className="flex flex-col items-center gap-2 w-full min-h-screen">
                 <Header />
-                <div className="flex flex-col mx-auto w-full max-w-screen-xl fle">
+                <div className="flex flex-col flex-1 mx-auto w-full max-w-screen-xl">
                   {children}
                 </div>
                 <Footer />
@@ -75,34 +80,4 @@ export default async function RootLayout({
       </body>
     </html>
   );
-}
-
-async function getInitialSettings() {
-  const cookieStore = cookies();
-
-  try {
-    if (!cookieStore.has("settings")) {
-      throw new Error("No settings cookie");
-    }
-
-    let parsed: Settings | undefined;
-    try {
-      parsed = JSON.parse(
-        cookieStore.get("settings")?.value || "{}"
-      ) as Settings;
-    } catch (err) {
-      parsed = undefined;
-    }
-
-    return {
-      ...defaultSettings,
-      ...parsed,
-      outputData: {
-        ...defaultSettings.outputData,
-        ...(parsed ?? {}).outputData,
-      },
-    };
-  } catch (err) {
-    return defaultSettings;
-  }
 }

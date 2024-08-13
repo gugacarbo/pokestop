@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { env } from "@/lib/env";
+import { ChangeLayoutButton } from "@/features/settings/components/change-layout-button";
 
 export function Header() {
   const t = useTranslations("main");
@@ -67,7 +68,7 @@ export function Header() {
                   <span>IV Guess</span>
                 </Link>
                 <Link
-                  href="/ranking"
+                  href="/individual-ranking"
                   className={cn(
                     navigationMenuTriggerStyle(),
                     "w-auto truncate justify-start"
@@ -79,6 +80,7 @@ export function Header() {
             </NavigationMenuItem>
             <NavigationMenuIndicator />
           </NavigationMenuList>
+          <NavigationMenuViewport />
         </NavigationMenu>
 
         <BackButton />
@@ -88,11 +90,10 @@ export function Header() {
               <CogIcon className="size-5" />
             </Button>
           </Link>
-
           <LanguageToggle />
+          <ChangeLayoutButton />
           <ThemeToggle />
-          
-          <a href={env.APP_REPO}>
+          <a href={env.APP_REPO} target="_blank">
             <Button variant="outline" size="icon">
               <Github className="size-5" />
             </Button>

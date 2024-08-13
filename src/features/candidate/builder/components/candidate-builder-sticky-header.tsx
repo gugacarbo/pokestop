@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { IV_FLOORS } from "@/data/ivFloor";
 import { RANKABLE_METRICS } from "@/data/stat";
 
-import { useCandidate } from "@/hooks/useCandidate";
+import { useCandidate } from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";
 import SpeciesTypeIcons from "@/features/pokemon/components/SpeciesTypeIcons";
 import { PencilIcon } from "lucide-react";

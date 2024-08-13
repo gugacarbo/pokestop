@@ -1,4 +1,5 @@
 "use client";
+
 import { useMemo, useState } from "react";
 import { LeagueCPCap } from "@/data/league";
 import { LevelCapNumber } from "@/data/levelCap";

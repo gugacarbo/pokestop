@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 
 import { LevelCapNumber } from '../../data/levelCap';
 
-import { useLeague } from '../useLeague';
-import { useCandidate } from '../useCandidate';
+import { useLeague } from '../../features/individual-ranking/hooks/useLeague';
+import { useCandidate } from '../../features/candidate/use-candidate';
 import { useSettings } from '../../features/settings/use-settings';
 
 import {

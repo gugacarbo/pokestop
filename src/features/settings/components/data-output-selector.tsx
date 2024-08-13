@@ -1,3 +1,5 @@
+"use client";
+
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 
 import {
@@ -11,7 +13,7 @@ import { Button } from "@/components/ui/button";
 
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import useSettings, { Settings, SettingsActionTypes } from "../use-settings";
+import { useSettings, Settings, SettingsActionTypes } from "../use-settings";
 import { OUTPUT_DATA } from "@/data/outputData";
 import {
   TooltipProvider,
@@ -19,6 +21,8 @@ import {
   TooltipContent,
   Tooltip,
 } from "@/components/ui/tooltip";
+import { Label } from "@/components/ui/label";
+import { useTranslations } from "next-intl";
 
 export function DataOutputSelector({
   className,
@@ -27,19 +31,33 @@ export function DataOutputSelector({
   className?: string;
 }) {
   const { settings, dispatch } = useSettings();
+  const t = useTranslations("settings");
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className={cn("", className)}>
-          <ChevronDown className="mr-2 size-4" />
-          Output Fields
-        </Button>
+        <Label className="flex flex-col">
+          <span className="text-muted-foreground text-xs">
+            {t("output-data.title")}
+          </span>
+
+          <Button variant="outline" className={cn("", className)}>
+            <ChevronDown className="mr-2 size-5" />
+            {t("common.show-hide")}
+          </Button>
+        </Label>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[150px]">
-        <DropdownMenuLabel>Show/Hide columns</DropdownMenuLabel>
+      <DropdownMenuContent align="end" className="">
+        <DropdownMenuLabel>{t("common.show-hide")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {OUTPUT_DATA.map((outData, i) => {
+          // @ts-ignore
+          const description = !t(
+            `output-data.fields.${outData.key}.description`
+          );
+
+          // @ts-ignore
+          const value = t(`output-data.fields.${outData.key}.value`);
           return (
             <DropdownMenuCheckboxItem
               key={outData.key}
@@ -58,16 +76,11 @@ export function DataOutputSelector({
               <TooltipProvider
                 delayDuration={300}
                 disableHoverableContent={false}
-                
               >
-                <Tooltip >
-                  <TooltipTrigger 
-                    asChild={false}
-                  >
-                    {outData.name}
-                  </TooltipTrigger>
-                  <TooltipContent hidden={!outData.description}>
-                    <p>{outData.description}</p>
+                <Tooltip>
+                  <TooltipTrigger asChild={false}>{value}</TooltipTrigger>
+                  <TooltipContent hidden={!description}>
+                    <p>{description}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

@@ -1,5 +1,7 @@
-import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
+"use client";
 
+import { ChevronDown } from "lucide-react";
+import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -7,19 +9,19 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
-
-import { ChevronDown } from "lucide-react";
-import { cn } from "@/lib/utils";
-import useSettings, { Settings, SettingsActionTypes } from "../use-settings";
-import { OUTPUT_DATA } from "@/data/outputData";
 import {
   TooltipProvider,
   TooltipTrigger,
   TooltipContent,
   Tooltip,
 } from "@/components/ui/tooltip";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { LEVEL_CAPS } from "@/data/levelCap";
+
+import { useSettings, SettingsActionTypes } from "../use-settings";
+import { Label } from "@/components/ui/label";
+import { useTranslations } from "next-intl";
 
 function LevelCapSelector({
   className,
@@ -28,17 +30,43 @@ function LevelCapSelector({
   className?: string;
 }) {
   const { settings, dispatch } = useSettings();
+  const t = useTranslations("settings");
+
+  const levelCaps = Object.entries(settings?.levelCaps)
+    .filter(([_, v]) => v)
+    .map(([levelCap]) => {
+      return levelCap;
+    });
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className={cn("", className)}>
-          <ChevronDown className="mr-2 size-4" />
-          Level Caps
-        </Button>
+        <Label className="flex flex-col">
+          <span className="text-muted-foreground text-xs capitalize">
+            {t("level-caps.title")}
+          </span>
+          <Button
+            variant={"outline"}
+            className={cn(
+              "capitalize min-w-24 flex justify-start items-center text-start",
+              levelCaps.length === 0 && "border-destructive",
+              className
+            )}
+          >
+            <ChevronDown
+              className={cn(
+                "mr-2 size-5",
+                levelCaps.length === 0 && "text-destructive"
+              )}
+            />
+            {levelCaps.join(", ") || (
+              <b className="text-destructive">{t("level-caps.title")}</b>
+            )}
+          </Button>
+        </Label>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-[150px]">
-        <DropdownMenuLabel>Show/Hide</DropdownMenuLabel>
+      <DropdownMenuContent align="end">
+        <DropdownMenuLabel>{t("common.show-hide")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         {LEVEL_CAPS.map((levelCap, i) => {
           return (
@@ -59,10 +87,23 @@ function LevelCapSelector({
               >
                 <Tooltip>
                   <TooltipTrigger asChild={false}>
-                    {levelCap.name}
+                    {
+                      // @ts-ignore
+                      t(`level-caps.fields.${levelCap.level}.value`)
+                    }
                   </TooltipTrigger>
-                  <TooltipContent hidden={!levelCap.description}>
-                    <p>{levelCap.description}</p>
+                  <TooltipContent
+                    hidden={
+                      // @ts-ignore
+                      !t(`level-caps.fields.${levelCap.level}.description`)
+                    }
+                  >
+                    <p>
+                      {
+                        // @ts-ignore
+                        t(`level-caps.fields.${levelCap.level}.description`)
+                      }
+                    </p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -74,4 +115,4 @@ function LevelCapSelector({
   );
 }
 
-export {LevelCapSelector}
+export { LevelCapSelector };

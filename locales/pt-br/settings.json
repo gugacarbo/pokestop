@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "description": "Configurações do aplicativo",
+    "title": "Configurações"
+  },
+  "leagues": {
+    "description": "Mostrar/ocultar cálculos de ligas",
+    "title": "Ligas"
+  },
+  "candidate": {
+    "description": "",
+    "title": "Criação de Candidato",
+    "fields": {
+      "iv-floor": {
+        "description": "IV mínimo",
+        "title": "IV mínimo",
+        "values": {
+          "0": {
+            "name": "Captura Selvagem",
+            "value": "0"
+          },
+          "1": {
+            "name": "Troca com Bons amigos",
+            "value": "1"
+          },
+          "2": {
+            "name": "Troca com grandes amigos",
+            "value": "2"
+          },
+          "3": {
+            "name": "Troca com ultra amigos",
+            "value": "3"
+          },
+          "4": {
+            "name": "Fortalecimento climático",
+            "value": "4"
+          },
+          "5": {
+            "name": "Troca com melhor amigo",
+            "value": "5"
+          },
+          "6": {
+            "name": "Raid Sombrosa, Giovanni",
+            "value": "6"
+          },
+          "10": {
+            "name": "Raid, Ovo, Pesquisa",
+            "value": "10"
+          },
+          "12": {
+            "name": "Troca sortuda",
+            "value": "12"
+          }
+        }
+      }
+    }
+  },
+  "output-data": {
+    "description": "",
+    "title": "Mostrar dados",
+    "fields": {
+      "bulkProduct": {
+        "description": "Métrica alternativa para spreads de classificação - calculada multiplicando os valores de Defesa e HP gerados.",
+        "value": "Produto a granel"
+      },
+      "cp": {
+        "description": "Pontos de Combate (CP)",
+        "value": "PC"
+      },
+      "level": {
+        "description": "",
+        "value": "Nível"
+      },
+      "percent": {
+        "description": "Exiba uma porcentagem em cada estatística e no produto estatístico comparando o valor com o spread de classificação 1.",
+        "value": "% do Rank 1"
+      },
+      "rank": {
+        "description": "",
+        "value": "Classificação"
+      },
+      "statProduct": {
+        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e Vigor.",
+        "value": "Produto estatístico"
+      },
+      "stats": {
+        "description": "Ataque, Defesa e Vigor, conforme calculado no jogo.",
+        "value": "Stats Base"
+      },
+      "xlCandy": {
+        "description": "Quantidade de doces gg para atingir o nível mostrado.",
+        "value": "Doces GG"
+      }
+    }
+  },
+  "level-caps": {
+    "description": "",
+    "title": "Limites de nível",
+    "fields": {
+      "40": {
+        "value": "Nível 40",
+        "description": "Doces normais"
+      },
+      "41": {
+        "value": "Nível 41",
+        "description": "Doces normais e melhor amigo"
+      },
+      "50": {
+        "value": "Nível 50",
+        "description": "Doce GG"
+      },
+      "51": {
+        "value": "Nível 51",
+        "description": "Doce GG e Melhor Amigo"
+      }
+    }
+  },
+  "common": {
+    "hide": "Esconder",
+    "show": "Mostrar",
+    "show-hide": "Mostrar/Ocultar"
+  },
+  "stats": {
+    "atk": {
+      "title": "Ataque"
+    },
+    "def": {
+      "title": "Defesa"
+    },
+    "sta": {
+      "title": "PS"
+    }
+  }
+}

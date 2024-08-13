@@ -3,6 +3,18 @@
     "title": "Rankings!",
     "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
   },
+  "individual": {
+    "metadata": {
+      "title": "Individual Ranking!",
+      "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
+    },
+    "spreads": {
+      "top-spreads": {
+        "title": "Top {league} IV Spreads for {pokemon}",
+        "level-data": "Level {level} - {levelDesc}"
+      }
+    }
+  },
   "cpLeagues": {
     "little": "Little Cup",
     "great": "Great League",
@@ -34,37 +46,5 @@
     "evolution": "Evolution Cup",
     "fantasy": "Fantasy Cup",
     "remix": " Remix"
-  },
-  "coupLeagues": {
-    "battlefrontiergreat": "",
-    "battlefrontiermaster": "",
-    "battlefrontierultra": "",
-    "catch": "",
-    "classic": "",
-    "devonchampionship": "",
-    "evolution": "",
-    "fantasy": "",
-    "fossil": "",
-    "little": "",
-    "littlecatch": "",
-    "mega": "",
-    "polaris": "",
-    "premier": "",
-    "premierclassic": "",
-    "remix": "",
-    "retro": "",
-    "sovereign": "",
-    "summer": "",
-    "tundra": "",
-    "ufc-untapped-master": "",
-    "wasteland": "",
-    "zodiac": ""
-  },
-  "rankings": {
-    "great": "",
-    "little": "",
-    "master": "",
-    "master-classic": "",
-    "ultra": ""
   }
 }
