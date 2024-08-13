@@ -3,8 +3,10 @@ import pkg from "@/../package.json";
 
 const envSchema = z.object({
   APP_NAME: z.string(),
+  APP_VERSION: z.string(),
   APP_ENV: z.string(),
   API_URL: z.string(),
+  APP_REPO: z.string(),
 });
 
 export const env = envSchema.parse({

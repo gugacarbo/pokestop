@@ -1,14 +1,18 @@
 import "../globals.css";
-
+import { cookies } from "next/headers";
 import { Inter } from "next/font/google";
+
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
 import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
+
+import type { Settings } from "@/features/settings";
+import { defaultSettings } from "@/features/settings";
+
 import { SettingsProvider } from "@/features/settings/use-settings";
 
-import { getInitialSettings } from "@/features/settings/use-settings/get-initial-settings";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -45,6 +49,8 @@ export default async function RootLayout({
 }: LayoutProps) {
   const messages = await getMessages();
 
+  const settings = await getInitialSettings();
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn("min-h-screen antialiased", inter.className)}>
@@ -55,7 +61,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <SettingsProvider>
+            <SettingsProvider initialSettings={settings}>
               <div className="flex flex-col items-center gap-2 w-full">
                 <Header />
                 <div className="flex flex-col mx-auto w-full max-w-screen-xl fle">
@@ -69,4 +75,34 @@ export default async function RootLayout({
       </body>
     </html>
   );
+}
+
+async function getInitialSettings() {
+  const cookieStore = cookies();
+
+  try {
+    if (!cookieStore.has("settings")) {
+      throw new Error("No settings cookie");
+    }
+
+    let parsed: Settings | undefined;
+    try {
+      parsed = JSON.parse(
+        cookieStore.get("settings")?.value || "{}"
+      ) as Settings;
+    } catch (err) {
+      parsed = undefined;
+    }
+
+    return {
+      ...defaultSettings,
+      ...parsed,
+      outputData: {
+        ...defaultSettings.outputData,
+        ...(parsed ?? {}).outputData,
+      },
+    };
+  } catch (err) {
+    return defaultSettings;
+  }
 }

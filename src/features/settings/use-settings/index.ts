@@ -34,5 +34,5 @@ export default useSettings;
 
 export { SettingsProvider } from "./context/settings-provider";
 export { SettingsActionTypes } from "./settings-reducer";
-export { getInitialSettings, defaultSettings } from "./get-initial-settings";
+export { parseInitialSettings } from "./parse-initial-settings";
 export { useSettings };

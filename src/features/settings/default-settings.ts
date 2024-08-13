@@ -1,4 +1,4 @@
-import { Settings } from ".";
+import { Settings } from "./use-settings";
 
 export const defaultSettings: Settings = {
   leagues: { great: true, ultra: true, master: true, little: false },
@@ -21,18 +21,3 @@ export const defaultSettings: Settings = {
   invertIVDropdown: false,
   layout: "grid",
 };
-
-async function getInitialSettings() {
-  try {
-    return {
-      ...defaultSettings,
-      outputData: {
-        ...defaultSettings.outputData,
-      },
-    };
-  } catch (err) {
-    return defaultSettings;
-  }
-}
-
-export { getInitialSettings };

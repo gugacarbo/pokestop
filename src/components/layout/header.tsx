@@ -25,6 +25,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { env } from "@/lib/env";
 
 export function Header() {
   const t = useTranslations("main");
@@ -91,7 +92,7 @@ export function Header() {
           <LanguageToggle />
           <ThemeToggle />
           
-          <a href="#">
+          <a href={env.APP_REPO}>
             <Button variant="outline" size="icon">
               <Github className="size-5" />
             </Button>
