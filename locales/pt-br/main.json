@@ -18,7 +18,11 @@
   },
   "common": {
     "cancel": "cancelar",
-    "confirm": "confirmar"
+    "confirm": "confirmar",
+    "showing": "Mostrando",
+    "of": "de",
+    "to": "para",
+    "export": "Exportar"
   },
   "numbers": {
     "ordinal-symbol": "{num, selectordinal, one {º} two {º} few {º} other {º}}",

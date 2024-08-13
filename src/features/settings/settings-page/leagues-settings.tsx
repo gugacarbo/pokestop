@@ -9,9 +9,11 @@ import { SettingsSection } from "@/features/settings/components/settings-section
 import { SettingsSectionItem } from "@/features/settings/components/settings-section-item";
 import { LeaguePosition } from "@/features/settings/components/league-position";
 import { SettingsSectionItemToggle } from "@/features/settings/components/settings-section-item-toggle";
+import { useTranslations } from "next-intl";
 
 function LeaguesSettings() {
   const { settings, dispatch } = useSettings();
+  const t = useTranslations();
 
   return (
     <SettingsSection id="leagues">
@@ -31,8 +33,15 @@ function LeaguesSettings() {
               })
             }
             value={settings.leagues[league.key]}
-            label={league.name}
-            description={`Max CP: ${league.cp}`}
+            // description={`Max CP: ${league.cp}`}
+            label={
+              //@ts-ignore
+              t(`rankings.cpLeagues.${league.key}.value`)
+            }
+            description={
+              //@ts-ignore
+              t(`rankings.cpLeagues.${league.key}.description`)
+            }
           />
         </SettingsSectionItem>
       ))}

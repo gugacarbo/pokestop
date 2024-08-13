@@ -11,47 +11,67 @@
     "description": "",
     "title": "Criação de Candidato",
     "fields": {
-      "iv-floor": {
-        "description": "IV mínimo",
-        "title": "IV mínimo",
-        "values": {
-          "0": {
-            "name": "Captura Selvagem",
-            "value": "0"
-          },
-          "1": {
-            "name": "Troca com Bons amigos",
-            "value": "1"
-          },
-          "2": {
-            "name": "Troca com grandes amigos",
-            "value": "2"
-          },
-          "3": {
-            "name": "Troca com ultra amigos",
-            "value": "3"
-          },
-          "4": {
-            "name": "Fortalecimento climático",
-            "value": "4"
-          },
-          "5": {
-            "name": "Troca com melhor amigo",
-            "value": "5"
-          },
-          "6": {
-            "name": "Raid Sombrosa, Giovanni",
-            "value": "6"
-          },
-          "10": {
-            "name": "Raid, Ovo, Pesquisa",
-            "value": "10"
-          },
-          "12": {
-            "name": "Troca sortuda",
-            "value": "12"
-          }
-        }
+      "allowImpossibleFloors": {
+        "description": "Permita que qualquer andar IV seja escolhido ao criar um Candidato, independentemente das limitações do método de aquisição.",
+        "value": "Permitir pisos IV impossíveis"
+      },
+      "invertIVDropdown": {
+        "description": "Liste as opções IV de 15-0 (descendente) em vez de 0-15 (crescente).",
+        "value": "Menu suspenso Inverter IV"
+      },
+      "showMinimumLevel": {
+        "description": "Escolha o nível mínimo a ser usado ao criar um Candidato. \nÚtil para verificar classificações quando as espécies não estão disponíveis em determinados níveis inferiores.",
+        "value": "Nível Mínimo"
+      },
+      "showRankingMetric": {
+        "description": "Opções para classificar por Ataque, Defesa e Vigor, bem como o Produto de Estatísticas padrão.",
+        "value": "Métricas de classificação alternativas"
+      },
+      "showSpeculative": {
+        "description": "Gerações, Formas e Mega Evoluções Inéditas. \nPara alguns Pokémon especulativos, isso incluirá múltiplas variações com diferentes nerfs de estatísticas com base em casos semelhantes no passado.",
+        "value": "Mostrar Pokémon Especulativos"
+      }
+    }
+  },
+  "iv-floor": {
+    "description": "IV mínimo",
+    "title": "IV mínimo",
+    "values": {
+      "0": {
+        "name": "Captura Selvagem",
+        "value": "0"
+      },
+      "1": {
+        "name": "Troca com Bons amigos",
+        "value": "1"
+      },
+      "2": {
+        "name": "Troca com grandes amigos",
+        "value": "2"
+      },
+      "3": {
+        "name": "Troca com ultra amigos",
+        "value": "3"
+      },
+      "4": {
+        "name": "Fortalecimento climático",
+        "value": "4"
+      },
+      "5": {
+        "name": "Troca com melhor amigo",
+        "value": "5"
+      },
+      "6": {
+        "name": "Raid Sombrosa, Giovanni",
+        "value": "6"
+      },
+      "10": {
+        "name": "Raid, Ovo, Pesquisa",
+        "value": "10"
+      },
+      "12": {
+        "name": "Troca sortuda",
+        "value": "12"
       }
     }
   },
@@ -103,7 +123,7 @@
       },
       "41": {
         "value": "Nível 41",
-        "description": "Doces normais e melhor amigo"
+        "description": "Doces normais + Melhor amigo"
       },
       "50": {
         "value": "Nível 50",
@@ -111,7 +131,7 @@
       },
       "51": {
         "value": "Nível 51",
-        "description": "Doce GG e Melhor Amigo"
+        "description": "Doce GG + Melhor Amigo"
       }
     }
   },
@@ -130,5 +150,32 @@
     "sta": {
       "title": "PS"
     }
+  },
+  "ranking-metrics": {
+    "description": "Selecione a métrica pela qual classificar os spreads.",
+    "fields": {
+      "bulkProduct": {
+        "description": "Métrica alternativa para spreads de classificação - calculada multiplicando os valores de Defesa e Vigor gerados.",
+        "value": "produto a granel"
+      },
+      "product": {
+        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e Vigor.",
+        "value": "produto estatístico"
+      },
+      "atk": {
+        "description": "ataque",
+        "value": "Ataque"
+      },
+      "def": {
+        "description": "Defesa",
+        "value": "Defesa"
+      },
+      "sta": {
+        "description": "Hp",
+        "value": "Hp"
+      }
+    },
+    "ranked-by": "Classificado por {rank}",
+    "title": "Métrica de classificação"
   }
 }

@@ -16,13 +16,28 @@
     }
   },
   "cpLeagues": {
-    "little": "Little Cup",
-    "great": "Great League",
-    "ultra": "Ultra League",
-    "master": "Master League",
-    "master-classic": "Master League Classic"
+    "little": {
+      "value": "Little Cup",
+      "description": "Max CP 500"
+    },
+    "great": {
+      "value": "Great League",
+      "description": "Max CP 1500"
+    },
+    "ultra": {
+      "value": "Ultra League",
+      "description": "Max CP 2500"
+    },
+    "master": {
+      "value": "Master League",
+      "description": "No Max CP"
+    }
   },
   "cupLeagues": {
+    "master-classic": {
+      "value": "Master League Classic",
+      "description": ""
+    },
     "premier": " Premier",
     "premierclassic": "Premier Classic",
     "classic": "Master League Classic",

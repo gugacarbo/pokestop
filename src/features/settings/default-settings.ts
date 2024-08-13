@@ -15,9 +15,10 @@ export const defaultSettings: Settings = {
     percent: true,
   },
   showSpeculative: false,
-  showMinimumLevel: false,
-  showRankingMetric: false,
+  showMinimumLevel: true,
+  showRankingMetric: true,
   allowImpossibleFloors: true,
   invertIVDropdown: false,
   layout: "grid",
+  showFamily: false,
 };

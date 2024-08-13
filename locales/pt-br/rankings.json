@@ -16,11 +16,22 @@
     }
   },
   "cpLeagues": {
-    "great": "Grande Liga",
-    "little": "Copinha",
-    "master": "Liga Mestre",
-    "master-classic": "Clássico da Liga Mestre",
-    "ultra": "Ultra Liga"
+    "great": {
+      "value": "Grande Liga",
+      "description": "PC Máx. 1500"
+    },
+    "little": {
+      "value": "Copinha",
+      "description": "PC Máx. 500"
+    },
+    "master": {
+      "value": "Liga Mestre",
+      "description": "Sem PC Máx."
+    },
+    "ultra": {
+      "value": "Ultra Liga",
+      "description": "PC Máx. 2500"
+    }
   },
   "cupLeagues": {
     "battlefrontiergreat": "Fronteira de Batalha (Mestre)",
@@ -45,6 +56,10 @@
     "tundra": "Taça Devon Tundra",
     "ufc-untapped-master": "UFC Invirado (Mestre)",
     "wasteland": "Fronteira de Batalha (Wasteland)",
-    "zodiac": "Taça Zodíaco Devon"
+    "zodiac": "Taça Zodíaco Devon",
+    "master-classic": {
+      "value": "Clássico da Liga Mestre",
+      "description": ""
+    }
   }
 }

@@ -8,9 +8,11 @@ import { SettingsSection } from "@/features/settings/components/settings-section
 import { SettingsSectionItem } from "@/features/settings/components/settings-section-item";
 import { SettingsSectionItemToggle } from "@/features/settings/components/settings-section-item-toggle";
 import { LEVEL_CAPS } from "@/data/levelCap";
+import { useTranslations } from "next-intl";
 
 function LevelCapSettings() {
   const { settings, dispatch } = useSettings();
+  const t = useTranslations("settings");
 
   return (
     <SettingsSection id="level-caps">
@@ -24,8 +26,14 @@ function LevelCapSettings() {
               })
             }
             value={settings.levelCaps[levelCap.level]}
-            label={levelCap.name}
-            description={levelCap.description}
+            label={
+              //@ts-ignore
+              t(`level-caps.fields.${levelCap.level}.value`)
+            }
+            description={
+              //@ts-ignore
+              t(`level-caps.fields.${levelCap.level}.description`)
+            }
           />
         </SettingsSectionItem>
       ))}

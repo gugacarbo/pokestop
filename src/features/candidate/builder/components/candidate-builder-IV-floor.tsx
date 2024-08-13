@@ -27,7 +27,7 @@ const CandidateBuilderIVFloor: FC = () => {
   return (
     <Label>
       <span className="text-muted-foreground text-xs">
-        {t("candidate.fields.iv-floor.title")}
+        {t("iv-floor.title")}
       </span>
       <Select
         value={String(candidate.floor)}
@@ -38,7 +38,7 @@ const CandidateBuilderIVFloor: FC = () => {
           })
         }
       >
-        <SelectTrigger>
+        <SelectTrigger className="min-w-32">
           <SelectValue placeholder="Select IV Floor" />
         </SelectTrigger>
         <SelectContent>
@@ -53,7 +53,7 @@ const CandidateBuilderIVFloor: FC = () => {
               {floor.value} -{" "}
               {
                 //@ts-ignore
-                t(`candidate.fields.iv-floor.values.${floor.value}.name`)
+                t(`iv-floor.values.${floor.value}.name`)
               }
             </SelectItem>
           ))}

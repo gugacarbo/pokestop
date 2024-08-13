@@ -47,7 +47,7 @@
         "description": ""
       },
       "cp": {
-        "value": "Cap",
+        "value": "Cp",
         "description": ""
       },
       "xlCandy": {
@@ -76,20 +76,25 @@
     "title": "Candidate Creation",
     "description": "",
     "fields": {
-      "iv-floor": {
-        "title": "IV Floor",
-        "description": "Minimum IV",
-        "values": {
-          "0": { "value": "0", "name": "Wild Catch" },
-          "1": { "value": "1", "name": "Good Friend Trade" },
-          "2": { "value": "2", "name": "Great Friend Trade" },
-          "3": { "value": "3", "name": "Ultra Friend Trade" },
-          "4": { "value": "4", "name": "Weather Boost" },
-          "5": { "value": "5", "name": "Best Friend Trade" },
-          "6": { "value": "6", "name": "Shadow Raid, Giovanni" },
-          "10": { "value": "10", "name": "Raid, Egg, Research" },
-          "12": { "value": "12", "name": "Lucky Trade" }
-        }
+      "showSpeculative": {
+        "value": "Show Speculative Pokémon",
+        "description": "Unreleased Generations, Forms and Mega Evolutions. For some speculative Pokémon this will include multiple variations with different stat nerfs based on similar cases in the past."
+      },
+      "showRankingMetric": {
+        "value": "Alternate Ranking Metrics",
+        "description": "Options to sort by Attack, Defense and Stamina as well as the default Stat Product."
+      },
+      "showMinimumLevel": {
+        "value": "Minimum Level",
+        "description": "Choose the minimum level to use when creating a Candidate. Useful for checking ranks when species are not available at certain lower levels."
+      },
+      "allowImpossibleFloors": {
+        "value": "Allow Impossible IV Floors",
+        "description": "Allow any IV floor to be picked when creating a Candidate, regardless of acquisition method limitations."
+      },
+      "invertIVDropdown": {
+        "value": "Invert IV Dropdown",
+        "description": "List IV options from 15-0 (descending) instead of 0-15 (ascending)."
       }
     }
   },
@@ -102,6 +107,48 @@
     },
     "sta": {
       "title": "Stamina"
+    }
+  },
+  "iv-floor": {
+    "title": "IV Floor",
+    "description": "Minimum IV",
+    "values": {
+      "0": { "value": "0", "name": "Wild Catch" },
+      "1": { "value": "1", "name": "Good Friend Trade" },
+      "2": { "value": "2", "name": "Great Friend Trade" },
+      "3": { "value": "3", "name": "Ultra Friend Trade" },
+      "4": { "value": "4", "name": "Weather Boost" },
+      "5": { "value": "5", "name": "Best Friend Trade" },
+      "6": { "value": "6", "name": "Shadow Raid, Giovanni" },
+      "10": { "value": "10", "name": "Raid, Egg, Research" },
+      "12": { "value": "12", "name": "Lucky Trade" }
+    }
+  },
+  "ranking-metrics": {
+    "title": "Ranking Metric",
+    "description": "Select the metric to rank the spreads by.",
+    "ranked-by": "Ranked by {rank}",
+    "fields": {
+      "product": {
+        "value": "Stat Product",
+        "description": "Standard metric used to rank spreads - calculated by multiplying the generated Attack, Defense and Stamina values together."
+      },
+      "bulkProduct": {
+        "value": "Bulk Product",
+        "description": "Alternative metric to rank spreads - calculated by multiplying the generated Defense and Stamina values together."
+      },
+      "def": {
+        "value": "Defense",
+        "description": "Defense"
+      },
+      "sta": {
+        "value": "Stamina",
+        "description": "Stamina"
+      },
+      "atk": {
+        "value": "Attack",
+        "description": "Attack"
+      }
     }
   }
 }

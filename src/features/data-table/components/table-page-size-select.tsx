@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/select";
 import { Table as TableInstance } from "@tanstack/react-table";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 function TablePageSizeSelect<TData>({
   table,
@@ -19,6 +20,8 @@ function TablePageSizeSelect<TData>({
   label?: string;
   className?: string;
 }) {
+  const t = useTranslations("main");
+
   const pageSize = table.getState().pagination.pageSize;
   const rowCount = table.getRowCount();
   const min = 10; // min=step
@@ -49,7 +52,7 @@ function TablePageSizeSelect<TData>({
         className
       )}
     >
-      <span>Showing</span>
+      <span>{t("common.showing")}</span>
       {rowCount < min ? (
         <span> {rowCount} </span>
       ) : (
@@ -71,7 +74,7 @@ function TablePageSizeSelect<TData>({
           </SelectContent>
         </Select>
       )}
-      <small>of</small>
+      <small>{t("common.of")}</small>
       <span>{rowCount}</span>
       <span>{label}</span>
     </div>

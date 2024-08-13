@@ -18,7 +18,11 @@
   },
   "common": {
     "confirm": "confirm",
-    "cancel": "cancel"
+    "cancel": "cancel",
+    "showing": "Showing",
+    "of": "of",
+    "to": "to",
+    "export": "Export"
   },
   "numbers": {
     "ordinal-symbol": "{num, selectordinal, one {st} two {nd} few {rd} other {th}}",

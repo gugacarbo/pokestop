@@ -97,6 +97,10 @@ const CandidateLeagueRanked: FC = () => {
         bulkProduct: settings.outputData.bulkProduct,
         percentOfMax: settings.outputData.percent,
       },
+      columnPinning: {
+        left: ["select-level-cap", "rank"],
+      },
+      columnOrder: ["select-level-cap", "percentOfMax"],
     },
     initialVisibility: {
       rank: settings.outputData.rank,
@@ -109,12 +113,6 @@ const CandidateLeagueRanked: FC = () => {
       statProduct: settings.outputData.statProduct,
       bulkProduct: settings.outputData.bulkProduct,
       percentOfMax: settings.outputData.percent,
-    },
-    initialState: {
-      columnPinning: {
-        left: ["select-level-cap", "rank"],
-      },
-      columnOrder: ["select-level-cap", "percentOfMax"],
     },
   });
 

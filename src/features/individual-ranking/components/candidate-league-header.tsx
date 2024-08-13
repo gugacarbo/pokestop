@@ -100,7 +100,7 @@ const CandidateLeagueHeader: FC = () => {
                 //@ts-ignore
                 t("rankings.individual.spreads.top-spreads.title", {
                   //@ts-ignore
-                  league: t("rankings.cpLeagues." + league.key),
+                  league: t("rankings.cpLeagues." + league.key + ".value"),
                   pokemon: candidate.species.name,
                 })
               }
@@ -115,19 +115,22 @@ const CandidateLeagueHeader: FC = () => {
               })}
             </p>
             <p className="flex items-baseline gap-1 mt-1 font-semibold text-xs">
-              <span>{t(`settings.candidate.fields.iv-floor.title`)}</span>
+              <span>{t(`settings.iv-floor.title`)}</span>
               <span>{floor.value} -</span>
               <span>
                 {
                   //@ts-ignore
-                  t(
-                    `settings.candidate.fields.iv-floor.values.${floor.value}.name`
-                  )
+                  t(`settings.iv-floor.values.${floor.value}.name`)
                 }
               </span>
             </p>
             <p className="mt-1 font-semibold text-xs">
-              Ranked By: {rankingMetric.name}
+              {t("settings.ranking-metrics.ranked-by", {
+                rank: t(
+                  //@ts-ignore
+                  `settings.ranking-metrics.fields.${rankingMetric.key}.value`
+                ),
+              })}
             </p>
           </>
         ) : (
@@ -135,7 +138,7 @@ const CandidateLeagueHeader: FC = () => {
             <h2 className="flex-grow font-semibold leading-none">
               {
                 //@ts-ignore
-                t("rankings.cpLeagues." + league.key)
+                t("rankings.cpLeagues." + league.key + ".value")
               }
             </h2>
           </>

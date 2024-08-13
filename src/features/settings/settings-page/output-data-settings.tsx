@@ -8,9 +8,11 @@ import { SettingsSection } from "@/features/settings/components/settings-section
 import { SettingsSectionItem } from "@/features/settings/components/settings-section-item";
 import { SettingsSectionItemToggle } from "@/features/settings/components/settings-section-item-toggle";
 import { OUTPUT_DATA } from "@/data/outputData";
+import { useTranslations } from "next-intl";
 
 function OutputDataSettings() {
   const { settings, dispatch } = useSettings();
+  const t = useTranslations("settings");
 
   return (
     <SettingsSection id="output-data">
@@ -24,8 +26,14 @@ function OutputDataSettings() {
               })
             }
             value={settings.outputData[outputField.key]}
-            label={outputField.name}
-            description={outputField.description}
+            label={
+              //@ts-ignore
+              t(`output-data.fields.${outputField.key}.value`)
+            }
+            description={
+              //@ts-ignore
+              t(`output-data.fields.${outputField.key}.description`)
+            }
           />
         </SettingsSectionItem>
       ))}

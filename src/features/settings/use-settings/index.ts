@@ -13,6 +13,7 @@ export type Settings = {
   allowImpossibleFloors: boolean;
   invertIVDropdown: boolean;
   layout: "grid" | "list";
+  showFamily: boolean;
 };
 
 export { SettingsProvider } from "./context/settings-provider";

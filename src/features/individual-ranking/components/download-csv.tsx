@@ -8,11 +8,14 @@ import { downloadFile } from "@/utils/downloadFile";
 import { xlCount } from "@/lib/xlCount";
 import { DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
   const { candidate } = useCandidate();
   const { league, inspectedLevelCap } = useLeague();
   const rankedSpreads = useRankedSpreads();
+
+  const t = useTranslations("main.common");
 
   if (inspectedLevelCap === null) {
     throw new Error("A level cap must be inspected to export");
@@ -45,7 +48,8 @@ const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
   return (
     <Button onClick={exportToCSV} variant="outline">
       <span className="mr-2 font-semibold text-xs">
-        Export All {rankedSpreads[inspectedLevelCap.level].length} to CSV
+        {t("export")} {rankedSpreads[inspectedLevelCap.level].length} {t("to")}{" "}
+        CSV
       </span>
       <DownloadIcon className="size-4" />
     </Button>

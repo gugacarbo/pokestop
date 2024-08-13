@@ -48,10 +48,10 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
 
   const columnsOrder: string[] = [
     { value: "rank", priority: 0 },
-    {
-      value: "percentOfMax",
-      priority: rankingMetric === "product" ? 2 : 4,
-    },
+    // {
+    //   value: "percentOfMax",
+    //   priority: rankingMetric === "" ? 2 : 4,
+    // },
     {
       value: "bulkProduct",
       priority: rankingMetric === "bulkProduct" ? 2 : 4,
@@ -69,7 +69,7 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
       priority: 2,
     },
     {
-      value: "product",
+      value: "statProduct",
       priority: rankingMetric === "product" ? 1 : 3,
     },
     {
@@ -108,10 +108,11 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
         bulkProduct: settings.outputData.bulkProduct,
         percentOfMax: settings.outputData.percent,
       },
-    },
-    initialState: {
       columnPinning: {
         left: ["select-level-cap", "rank"],
+      },
+      rowPinning:{
+        top:['0']
       },
       columnOrder: columnsOrder,
     },
