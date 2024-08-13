@@ -1,5 +1,4 @@
 import { Settings } from ".";
-import { useLocalSettings } from "./use-local-settings";
 
 export const defaultSettings: Settings = {
   leagues: { great: true, ultra: true, master: true, little: false },
@@ -23,19 +22,17 @@ export const defaultSettings: Settings = {
   layout: "grid",
 };
 
-export function useInitialSettings() {
+async function getInitialSettings() {
   try {
-    const [settings] = useLocalSettings();
-
     return {
       ...defaultSettings,
-      ...settings,
       outputData: {
         ...defaultSettings.outputData,
-        ...(settings ?? {}).outputData,
       },
     };
   } catch (err) {
     return defaultSettings;
   }
 }
+
+export { getInitialSettings };

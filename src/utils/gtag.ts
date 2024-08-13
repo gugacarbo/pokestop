@@ -1,3 +1,4 @@
+"use client"
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL) => {
   if (process.env.NODE_ENV === 'production') {

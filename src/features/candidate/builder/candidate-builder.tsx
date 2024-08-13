@@ -8,7 +8,7 @@ import CandidateBuilderIVFloor from "./CandidateBuilderIVFloor";
 import CandidateBuilderMinimumLevel from "./CandidateBuilderMinimumLevel";
 import CandidateBuilderRankingMetric from "./CandidateBuilderRankingMetric";
 
-function CandidateBuilder() {
+function CandidateBuilder({children}: {children?: React.ReactNode}) {
   return (
     <>
       <CandidateBuilderStickyHeader />
@@ -19,6 +19,7 @@ function CandidateBuilder() {
         <CandidateBuilderRankingMetric />
         <CandidateBuilderMinimumLevel />
         <CandidateBuilderFamilySwap />
+        {children}
       </section>
     </>
   );

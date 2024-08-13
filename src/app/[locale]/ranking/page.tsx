@@ -5,6 +5,8 @@ import { Provider as CandidateContextProvider } from "@/hooks/useCandidate";
 import { useSettings } from "@/features/settings/use-settings";
 import { CandidateBuilder } from "@/features/candidate/builder/candidate-builder";
 import CandidateLeague from "@/features/candidate/league/candidate-league";
+import { DataOutputSelector } from "@/features/settings/components/data-output-selector";
+import { LevelCapSelector } from "@/features/settings/components/level-cap-selector";
 
 const CandidatePage: FC<{
   //  cachedCandidate: Candidate | null
@@ -13,13 +15,16 @@ const CandidatePage: FC<{
 
   return (
     <CandidateContextProvider cachedCandidate={null}>
-      <CandidateBuilder />
+      <CandidateBuilder>
+        <DataOutputSelector />
+        <LevelCapSelector />
+      </CandidateBuilder>
       <section
         className={`grid items-start w-full grid-cols-1 gap-4 mb-4 sm:mb-8 sm:gap-8${
           settings.layout === "grid" ? " lg:grid-cols-2" : ""
         }`}
       >
-        {LEAGUES.filter((league) => settings.leagues[league.key] === true)
+        {LEAGUES.filter((league) => settings?.leagues?.[league.key] === true)
           .sort(
             (a, b) =>
               settings.leagueOrder.indexOf(a.key) -

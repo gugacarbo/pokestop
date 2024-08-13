@@ -137,7 +137,7 @@ export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
       }),
     cell: (cell) => (
       <div className="text-center">
-        {(cell.getValue<number>() * 100).toFixed(2)}%
+          {(cell.getValue<number>() * 100).toFixed(2)}%
       </div>
     ),
   },

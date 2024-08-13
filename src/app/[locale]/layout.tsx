@@ -6,9 +6,10 @@ import { getMessages, getTranslations } from "next-intl/server";
 
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Provider as SettingsProvider } from "@/features/settings/use-settings";
+import { SettingsProvider } from "@/features/settings/use-settings";
 
-import { PokemonID } from "@/data/pokedex";
+import { getInitialSettings } from "@/features/settings/use-settings/get-initial-settings";
+
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
@@ -57,7 +58,7 @@ export default async function RootLayout({
             <SettingsProvider>
               <div className="flex flex-col items-center gap-2 w-full">
                 <Header />
-                <div className="flex flex-col mx-auto w-full max-w-screen-xl">
+                <div className="flex flex-col mx-auto w-full max-w-screen-xl fle">
                   {children}
                 </div>
                 <Footer />

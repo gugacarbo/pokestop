@@ -1,10 +1,11 @@
-import { Dispatch as ReactDispatch } from 'react';
-import { Settings } from '.';
+import { Dispatch as ReactDispatch } from "react";
+import { Settings } from ".";
 
-import { LeagueKey } from '../../../data/league';
-import { LevelCapNumber } from '../../../data/levelCap';
-import { OutputDataKey } from '../../../data/outputData';
-import { ActionMap } from '../../../utils/actionMap';
+import { ActionMap } from "@/utils/actionMap";
+
+import { LeagueKey } from "@/data/league";
+import { LevelCapNumber } from "@/data/levelCap";
+import { OutputDataKey } from "@/data/outputData";
 
 export enum SettingsActionTypes {
   League,
@@ -34,7 +35,7 @@ type PayloadTypes = {
   [SettingsActionTypes.MinimumLevel]: boolean;
   [SettingsActionTypes.ImpossibleFloors]: boolean;
   [SettingsActionTypes.InvertIVDropdown]: boolean;
-  [SettingsActionTypes.Layout]: 'grid' | 'list';
+  [SettingsActionTypes.Layout]: "grid" | "list";
 };
 type Action = ActionMap<PayloadTypes>[keyof ActionMap<PayloadTypes>];
 export type Dispatch = ReactDispatch<Action>;

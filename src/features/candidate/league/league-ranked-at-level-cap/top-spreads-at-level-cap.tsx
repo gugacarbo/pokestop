@@ -93,17 +93,19 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
   const table = useDataTable({
     columns: rankSpreadColumns,
     data: displayedSpreads,
-    initialVisibility: {
-      rank: settings.outputData.rank,
-      level: settings.outputData.level,
-      cp: settings.outputData.cp,
-      xlCandy: settings.outputData.xlCandy,
-      stats_sta: settings.outputData.stats,
-      stats_def: settings.outputData.stats,
-      stats_atk: settings.outputData.stats,
-      statProduct: settings.outputData.statProduct,
-      bulkProduct: settings.outputData.bulkProduct,
-      percentOfMax: settings.outputData.percent,
+    state: {
+      columnVisibility: {
+        rank: settings.outputData.rank,
+        level: settings.outputData.level,
+        cp: settings.outputData.cp,
+        xlCandy: settings.outputData.xlCandy,
+        stats_sta: settings.outputData.stats,
+        stats_def: settings.outputData.stats,
+        stats_atk: settings.outputData.stats,
+        statProduct: settings.outputData.statProduct,
+        bulkProduct: settings.outputData.bulkProduct,
+        percentOfMax: settings.outputData.percent,
+      },
     },
     initialState: {
       columnPinning: {
@@ -116,7 +118,6 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
   return (
     <div className="w-full overflow-x-auto">
       <DataTable table={table} cardClassName="rounded-none " />
-
       <div className="flex justify-between items-center p-2 w-full">
         <TablePageSizeSelect table={table} />
         <CandidateLeagueTopSpreadsAtLevelCapDownload />

@@ -1,20 +1,11 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { useContext } from "react";
 
 import { LeagueKey } from "@/data/league";
 import { LevelCapNumber } from "@/data/levelCap";
 import { OutputDataKey } from "@/data/outputData";
-import { Dispatch } from "./settings-reducer";
-
-export { Provider } from "./settings-provider";
-export { SettingsActionTypes } from "./settings-reducer";
-export { useInitialSettings, defaultSettings } from "./use-initial-settings";
-
-export const Context = createContext<{
-  settings: Settings;
-  dispatch: Dispatch;
-} | null>(null);
+import { SettingsContext } from "./context/settings-context";
 
 export type Settings = {
   leagues: { [key in LeagueKey]: boolean };
@@ -29,16 +20,19 @@ export type Settings = {
   layout: "grid" | "list";
 };
 
-export function useSettings() {
-  const value = useContext(Context);
-
+function useSettings() {
+  const value = useContext(SettingsContext);
   if (value === null) {
     throw new Error(
       "useSettings must be called within the context of a SettingsProvider"
     );
   }
-
   return value;
 }
 
 export default useSettings;
+
+export { SettingsProvider } from "./context/settings-provider";
+export { SettingsActionTypes } from "./settings-reducer";
+export { getInitialSettings, defaultSettings } from "./get-initial-settings";
+export { useSettings };

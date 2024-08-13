@@ -53,7 +53,7 @@ const CandidateLeagueRanked: FC = () => {
           return resp;
         })
         .filter((i) => !!i),
-    [settings.levelCaps, candidate]
+    [settings.levelCaps, candidate, rankedSpreads]
   );
 
   const table = useDataTable({
@@ -82,6 +82,21 @@ const CandidateLeagueRanked: FC = () => {
     ],
     data,
     enableSorting: false,
+    state: {
+      columnVisibility: {
+        rank: settings.outputData.rank,
+        level: settings.outputData.level,
+        cp: settings.outputData.cp,
+        xlCandy: settings.outputData.xlCandy,
+        stats_sta: settings.outputData.stats,
+        stats_def: settings.outputData.stats,
+        stats_atk: settings.outputData.stats,
+        statProduct: settings.outputData.statProduct,
+        bulkProduct: settings.outputData.bulkProduct,
+        percentOfMax: settings.outputData.percent,
+      },
+     
+    },
     initialVisibility: {
       rank: settings.outputData.rank,
       level: settings.outputData.level,
