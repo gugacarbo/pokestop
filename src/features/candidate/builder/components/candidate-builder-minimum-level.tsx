@@ -1,8 +1,12 @@
 "use client";
 
 import React, { FC, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
-import { useCandidate, CandidateActionTypes } from "@/features/candidate/use-candidate";
+import {
+  useCandidate,
+  CandidateActionTypes,
+} from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";
 import { Label } from "@/components/ui/label";
 import {
@@ -31,12 +35,15 @@ function useSyncCandidateMinimumLevelWithDefault() {
 const CandidateBuilderMinimumLevel: FC = () => {
   const { candidate, dispatch } = useCandidate();
   const { settings } = useSettings();
+  const t = useTranslations("settings");
 
   useSyncCandidateMinimumLevelWithDefault();
 
   return settings.showMinimumLevel ? (
     <Label>
-      <span className="text-muted-foreground text-xs">Minimum Level</span>
+      <span className="text-muted-foreground text-xs">
+        {t("minimum-level.title")}
+      </span>
 
       <Select
         onValueChange={(evt) =>
@@ -51,10 +58,10 @@ const CandidateBuilderMinimumLevel: FC = () => {
           <SelectValue placeholder="select" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value={"1"}>1</SelectItem>
-          <SelectItem value={"15"}>15 - Research</SelectItem>
-          <SelectItem value={"20"}>20 - Raid</SelectItem>
-          <SelectItem value={"25"}>25 - Purified</SelectItem>
+          <SelectItem value={"1"}>{t("minimum-level.fields.1.value")}</SelectItem>
+          <SelectItem value={"15"}>{t("minimum-level.fields.15.value")}</SelectItem>
+          <SelectItem value={"20"}>{t("minimum-level.fields.20.value")}</SelectItem>
+          <SelectItem value={"25"}>{t("minimum-level.fields.25.value")}</SelectItem>
           <SelectSeparator />
           {Array.from({ length: 100 })
 
@@ -63,11 +70,17 @@ const CandidateBuilderMinimumLevel: FC = () => {
                 {(i + 1) / 2 + 0.5}
               </SelectItem>
             ))
-            .filter((_,i) => ((i + 1) / 2 + 0.5) !== 1 && ((i + 1) / 2 + 0.5) !== 15 && ((i + 1) / 2 + 0.5) !== 20 && ((i + 1) / 2 + 0.5) !== 25)}
+            .filter(
+              (_, i) =>
+                (i + 1) / 2 + 0.5 !== 1 &&
+                (i + 1) / 2 + 0.5 !== 15 &&
+                (i + 1) / 2 + 0.5 !== 20 &&
+                (i + 1) / 2 + 0.5 !== 25
+            )}
         </SelectContent>
       </Select>
     </Label>
   ) : null;
 };
 
-export  {CandidateBuilderMinimumLevel};
+export { CandidateBuilderMinimumLevel };

@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useMemo } from "react";
-import { RankedSpread } from "@/lib/generateRankedSpreads";
-import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
-import { useCandidate, Candidate } from "@/features/candidate/use-candidate";
-import { useRankedSpreads } from "@/hooks/useRankedSpreads";
+import React from "react";
+
+import { useCandidate } from "@/features/candidate/use-candidate";
 
 import CandidateLeagueTopSpreadsAtLevelCapDownload from "../components/download-csv";
 import { DataTable } from "@/features/data-table/components/data-table";
@@ -12,46 +10,23 @@ import { useDataTable } from "@/features/data-table/useDataTable";
 import { rankSpreadColumns } from "@/features/data-table/data-columns/rank-spread-columns";
 import { useSettings } from "@/features/settings/use-settings";
 import { TablePageSizeSelect } from "@/features/data-table/components/table-page-size-select";
-
-function useDisplayedSpreads() {
-  const { inspectedLevelCap } = useLeague();
-  const { candidate } = useCandidate();
-  const rankedSpreads = useRankedSpreads();
-
-  return useMemo(() => {
-    if (inspectedLevelCap === null) {
-      return [];
-    }
-
-    const spreadsForLevel = rankedSpreads[inspectedLevelCap.level];
-
-    const candidateSpread = spreadsForLevel.find(
-      (rankedSpread) =>
-        rankedSpread.ivs.atk === candidate.ivs.atk &&
-        rankedSpread.ivs.def === candidate.ivs.def &&
-        rankedSpread.ivs.sta === candidate.ivs.sta
-    );
-
-    return [candidateSpread, ...spreadsForLevel].filter(
-      (spread): spread is RankedSpread => spread !== undefined
-    );
-  }, [inspectedLevelCap, candidate, rankedSpreads]);
-}
+import { useDisplayedSpreads } from "./use-displayed-spreads";
 
 function CandidateLeagueTopSpreadsAtLevelCap() {
   const displayedSpreads = useDisplayedSpreads();
-  const { candidate } = useCandidate();
+
+  const {
+    candidate: { rankingMetric },
+  } = useCandidate();
 
   const { settings } = useSettings();
 
-  const rankingMetric = candidate.rankingMetric;
-
   const columnsOrder: string[] = [
     { value: "rank", priority: 0 },
-    // {
-    //   value: "percentOfMax",
-    //   priority: rankingMetric === "" ? 2 : 4,
-    // },
+    {
+      value: "percentOfMax",
+      priority: 1,
+    },
     {
       value: "bulkProduct",
       priority: rankingMetric === "bulkProduct" ? 2 : 4,
@@ -111,10 +86,19 @@ function CandidateLeagueTopSpreadsAtLevelCap() {
       columnPinning: {
         left: ["select-level-cap", "rank"],
       },
-      rowPinning:{
-        top:['0']
+      rowPinning: {
+        top: ["0"],
       },
       columnOrder: columnsOrder,
+    },
+    initialSorting: "rank",
+    initialState: {
+      sorting: [
+        {
+          id: "rank",
+          desc: false,
+        },
+      ],
     },
   });
 

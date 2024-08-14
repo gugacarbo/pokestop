@@ -36,7 +36,7 @@ function CandidateBuilderIVs() {
           <span className="text-muted-foreground text-xs">
             {
               //@ts-ignore
-              t(`stats.${stat.key}.title`)
+              t(`stats.${stat.key}.value`)
             }{" "}
             IV
           </span>

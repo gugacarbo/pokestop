@@ -12,23 +12,14 @@ import {
 import { RankCell } from "../components/cells/rank-cell";
 import { xlCount } from "@/lib/xlCount";
 import { formatValue } from "@/utils/formatValue";
+import { RankHeader } from "../components/headers/rank-header";
+import { PercentOfFirstHeader } from "../components/headers/percent-of-first-header";
+import { StatHeader } from "../components/headers/stat-header";
 
 export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
   {
     accessorKey: "rank",
-    header: ({ column }) =>
-      SortButton({
-        label: (sorted) => (
-          <TrophyIcon
-            className={cn(
-              "size-5",
-              sorted ? "text-amber-500  shadow-white" : ""
-            )}
-          />
-        ),
-        position: "left",
-        column,
-      }),
+    header: RankHeader,
     cell: RankCell,
     size: 2,
   },
@@ -36,19 +27,7 @@ export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
     accessorKey: "stats.atk.value",
     id: "stats_atk",
 
-    header: ({ column }) =>
-      SortButton({
-        label: (sorted) => (
-          <SwordsIcon
-            className={cn(
-              "size-5",
-              sorted ? "text-orange-600 fill-orange-600" : ""
-            )}
-          />
-        ),
-        position: "center",
-        column,
-      }),
+    header: StatHeader,
     cell: (cell) => (
       <div className="text-center">{cell.getValue<number>().toFixed(2)}</div>
     ),
@@ -57,20 +36,7 @@ export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
     accessorKey: "stats.def.value",
     id: "stats_def",
 
-    header: ({ column }) =>
-      SortButton({
-        label: (sorted) => (
-          <ShieldIcon
-            className={cn(
-              "size-5",
-              sorted ? "text-sky-600/80 fill-blue-600 shadow-white" : ""
-            )}
-          />
-        ),
-
-        position: "center",
-        column,
-      }),
+    header: StatHeader,
     cell: (cell) => (
       <div className="text-center">{cell.getValue<number>().toFixed(2)}</div>
     ),
@@ -78,16 +44,7 @@ export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
   {
     accessorKey: "stats.sta.value",
     id: "stats_sta",
-    header: ({ column }) =>
-      SortButton({
-        label: (sorted) => (
-          <CrossIcon
-            className={cn("size-5", sorted ? "text-red-600 fill-red-600" : "")}
-          />
-        ),
-        position: "center",
-        column,
-      }),
+    header: StatHeader,
     cell: (cell) => (
       <div className="text-center">{cell.getValue<number>().toFixed(2)}</div>
     ),
@@ -121,23 +78,10 @@ export const rankSpreadColumns: ColumnDef<RankedSpread>[] = [
     id: "percentOfMax",
     invertSorting: true,
 
-    header: ({ column }) =>
-      SortButton({
-        label: (sorted) => (
-          <div className="flex items-end gap-0.5">
-            <span className="flex items-start leading-none">
-              <b className="text-base leading-none">1</b>
-              <b className="text-xs leading-none">st</b>
-            </span>
-            <PercentIcon strokeWidth={2} className={cn("size-4")} />
-          </div>
-        ),
-        position: "center",
-        column,
-      }),
+    header: PercentOfFirstHeader,
     cell: (cell) => (
       <div className="text-center">
-          {(cell.getValue<number>() * 100).toFixed(2)}%
+        {(cell.getValue<number>() * 100).toFixed(2)}%
       </div>
     ),
   },

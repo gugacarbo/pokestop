@@ -59,7 +59,7 @@ function DataTable<TData>({
           ))}
         </TableHeader>
         <TableBody>
-          {table.getTopRows().map((row) => (
+          {table?.getTopRows()?.map((row) => (
             <PinnedRow short={short} key={row.id} row={row} table={table} />
           ))}
           {table.getRowModel().rows?.length ? (
@@ -137,7 +137,7 @@ function PinnedRow<T>({
               width: pxToPercent(cell.column.getSize()),
             }}
             className={cn(
-              "",
+              "bg-secondary",
               short && "p-2",
               cell.column.getSize() === 0 && "px-0",
               cell.column.getSize() === 1 && "px-1",

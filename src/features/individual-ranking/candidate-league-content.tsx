@@ -25,7 +25,7 @@ const CandidateLeagueContent: FC = () => {
         className="space-y-0 pb-0"
       >
         <AccordionItem value={league.league.name} className="space-y-0 mb-0">
-          <AccordionContent className="space-y-0 mb-0 pb-0">
+          <AccordionContent className="z- z-10 space-y-0 mb-0 pb-0">
             {inspectedLevelCap ? (
               <CandidateLeagueTopSpreadsAtLevelCap />
             ) : (

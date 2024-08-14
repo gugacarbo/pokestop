@@ -67,7 +67,7 @@ const CandidateLeagueHeader: FC = () => {
     <div
       className={leagueHeaderClass({
         className:
-          "z-5 rounded-t-md w-full p-4 bg-gradient-to-br  shadow-md sticky top-0 sm:relative left-0 flex justify-between items-center overflow-hidden font-title",
+          "z-0 rounded-t-md w-full p-4 bg-gradient-to-br  shadow-md sticky top-0 sm:relative left-0 flex justify-between items-center overflow-hidden font-title",
         background: league.key,
         text: league.key,
       })}

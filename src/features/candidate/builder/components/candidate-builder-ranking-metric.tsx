@@ -1,8 +1,13 @@
 "use client";
 
 import React, { FC, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
-import { useCandidate, CandidateActionTypes } from "@/features/candidate/use-candidate";
+import {
+  useCandidate,
+  CandidateActionTypes,
+} from "@/features/candidate/use-candidate";
+
 import { useSettings } from "@/features/settings/use-settings";
 import { RankableMetric, RANKABLE_METRICS } from "@/data/stat";
 import { Label } from "@/components/ui/label";
@@ -28,15 +33,22 @@ function useSyncCandidateRankingMetricWithDefault() {
   }, [dispatch, settings.showRankingMetric]);
 }
 
-const CandidateBuilderRankingMetric: FC = () => {
+function CandidateBuilderRankingMetric() {
+  const t = useTranslations("settings");
+
   const { candidate, dispatch } = useCandidate();
   const { settings } = useSettings();
 
   useSyncCandidateRankingMetricWithDefault();
 
-  return settings.showRankingMetric ? (
+
+  if (!settings.showRankingMetric) return null;
+
+  return (
     <Label>
-      <span className="text-muted-foreground text-xs">Rank By</span>
+      <span className="text-muted-foreground text-xs">
+        {t(`ranking-metrics.title`)}
+      </span>
       <Select
         onValueChange={(evt) =>
           dispatch({
@@ -46,21 +58,23 @@ const CandidateBuilderRankingMetric: FC = () => {
         }
         value={candidate.rankingMetric}
       >
-        <SelectTrigger>
-          <SelectValue placeholder="select" />
+        <SelectTrigger className="min-w-32 capitalize">
+          <SelectValue placeholder={t("common.select")} />
         </SelectTrigger>
         <SelectContent>
           {RANKABLE_METRICS.map((rankableMetric) => (
-            <SelectItem key={rankableMetric.key} value={rankableMetric.key}>
-              {rankableMetric.name}
+            <SelectItem
+              key={rankableMetric.key}
+              value={rankableMetric.key}
+              className="capitalize"
+            >
+              {t(`ranking-metrics.fields.${rankableMetric.key}.value`)}
             </SelectItem>
           ))}
         </SelectContent>
       </Select>
     </Label>
-  ) : (
-    <></>
   );
-};
+}
 
-export  {CandidateBuilderRankingMetric};
+export { CandidateBuilderRankingMetric };

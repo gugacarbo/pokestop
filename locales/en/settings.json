@@ -6,7 +6,8 @@
   "common": {
     "show-hide": "Show/Hide",
     "show": "Show",
-    "hide": "Hide"
+    "hide": "Hide",
+    "select": "Select"
   },
   "leagues": {
     "title": "Leagues",
@@ -44,7 +45,7 @@
       },
       "rank": {
         "value": "Rank",
-        "description": ""
+        "description": "Spread ranking based on the selected metric."
       },
       "cp": {
         "value": "Cp",
@@ -68,7 +69,7 @@
       },
       "percent": {
         "value": "% of Rank 1",
-        "description": "Display a percentage under each Stat and the Stat Product comparing the value to that of the Rank 1 spread."
+        "description": "Percentage of the top ranked spread."
       }
     }
   },
@@ -100,28 +101,58 @@
   },
   "stats": {
     "atk": {
-      "title": "Attack"
+      "value": "Attack",
+      "description": ""
     },
     "def": {
-      "title": "Defense"
+      "value": "Defense",
+      "description": ""
     },
     "sta": {
-      "title": "Stamina"
+      "value": "Stamina",
+      "description": ""
     }
   },
   "iv-floor": {
     "title": "IV Floor",
     "description": "Minimum IV",
     "values": {
-      "0": { "value": "0", "name": "Wild Catch" },
-      "1": { "value": "1", "name": "Good Friend Trade" },
-      "2": { "value": "2", "name": "Great Friend Trade" },
-      "3": { "value": "3", "name": "Ultra Friend Trade" },
-      "4": { "value": "4", "name": "Weather Boost" },
-      "5": { "value": "5", "name": "Best Friend Trade" },
-      "6": { "value": "6", "name": "Shadow Raid, Giovanni" },
-      "10": { "value": "10", "name": "Raid, Egg, Research" },
-      "12": { "value": "12", "name": "Lucky Trade" }
+      "0": {
+        "value": "0",
+        "name": "Wild Catch"
+      },
+      "1": {
+        "value": "1",
+        "name": "Good Friend Trade"
+      },
+      "2": {
+        "value": "2",
+        "name": "Great Friend Trade"
+      },
+      "3": {
+        "value": "3",
+        "name": "Ultra Friend Trade"
+      },
+      "4": {
+        "value": "4",
+        "name": "Weather Boost"
+      },
+      "5": {
+        "value": "5",
+        "name": "Best Friend Trade"
+      },
+      "6": {
+        "value": "6",
+        "name": "Shadow Raid, Giovanni"
+      },
+      "10": {
+        "value": "10",
+        "name": "Raid, Egg, Research"
+      },
+      "12": {
+        "value": "12",
+        "name": "Lucky Trade"
+      }
     }
   },
   "ranking-metrics": {
@@ -148,6 +179,24 @@
       "atk": {
         "value": "Attack",
         "description": "Attack"
+      }
+    }
+  },
+  "minimum-level": {
+    "title": "Minimum Level",
+    "description": "Choose the minimum level to compare.",
+    "fields": {
+      "1": {
+        "value": "1"
+      },
+      "15": {
+        "value": "15 - Research"
+      },
+      "20": {
+        "value": "20 - Raid"
+      },
+      "25": {
+        "value": "25 - Purified"
       }
     }
   }

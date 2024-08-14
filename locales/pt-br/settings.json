@@ -7,29 +7,35 @@
     "description": "Mostrar/ocultar cálculos de ligas",
     "title": "Ligas"
   },
+  "common": {
+    "hide": "Esconder",
+    "show": "Mostrar",
+    "show-hide": "Mostrar/Ocultar",
+    "select": "Selecione"
+  },
   "candidate": {
     "description": "",
     "title": "Criação de Candidato",
     "fields": {
       "allowImpossibleFloors": {
         "description": "Permita que qualquer andar IV seja escolhido ao criar um Candidato, independentemente das limitações do método de aquisição.",
-        "value": "Permitir pisos IV impossíveis"
+        "value": "Permitir IVs impossíveis"
       },
       "invertIVDropdown": {
         "description": "Liste as opções IV de 15-0 (descendente) em vez de 0-15 (crescente).",
-        "value": "Menu suspenso Inverter IV"
+        "value": "Inverter ordem do seletor de IV"
       },
       "showMinimumLevel": {
         "description": "Escolha o nível mínimo a ser usado ao criar um Candidato. \nÚtil para verificar classificações quando as espécies não estão disponíveis em determinados níveis inferiores.",
         "value": "Nível Mínimo"
       },
       "showRankingMetric": {
-        "description": "Opções para classificar por Ataque, Defesa e Vigor, bem como o Produto de Estatísticas padrão.",
-        "value": "Métricas de classificação alternativas"
+        "description": "Opções para classificar por Ataque, Defesa e HP, bem como o Produto de Estatísticas padrão.",
+        "value": "Mostrar métricas alternativas"
       },
       "showSpeculative": {
-        "description": "Gerações, Formas e Mega Evoluções Inéditas. \nPara alguns Pokémon especulativos, isso incluirá múltiplas variações com diferentes nerfs de estatísticas com base em casos semelhantes no passado.",
-        "value": "Mostrar Pokémon Especulativos"
+        "description": "Gerações, Formas e Mega Evoluções alternativos, isso incluirá múltiplas variações com diferentes nerfs e pokemons não lançados.",
+        "value": "Mostrar Pokémon especulativos"
       }
     }
   },
@@ -92,19 +98,19 @@
         "value": "Nível"
       },
       "percent": {
-        "description": "Exiba uma porcentagem em cada estatística e no produto estatístico comparando o valor com o spread de classificação 1.",
+        "description": "Porcentagem do Rank 1",
         "value": "% do Rank 1"
       },
       "rank": {
-        "description": "",
+        "description": "Classificação do spread com base na métrica selecionada.",
         "value": "Classificação"
       },
       "statProduct": {
-        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e Vigor.",
+        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e HP.",
         "value": "Produto estatístico"
       },
       "stats": {
-        "description": "Ataque, Defesa e Vigor, conforme calculado no jogo.",
+        "description": "Ataque, Defesa e HP, conforme calculado no jogo.",
         "value": "Stats Base"
       },
       "xlCandy": {
@@ -135,31 +141,29 @@
       }
     }
   },
-  "common": {
-    "hide": "Esconder",
-    "show": "Mostrar",
-    "show-hide": "Mostrar/Ocultar"
-  },
   "stats": {
     "atk": {
-      "title": "Ataque"
+      "value": "Ataque",
+      "description":""
     },
     "def": {
-      "title": "Defesa"
+      "value": "Defesa",
+      "description":""
     },
     "sta": {
-      "title": "PS"
+      "value": "PS",
+      "description":""
     }
   },
   "ranking-metrics": {
     "description": "Selecione a métrica pela qual classificar os spreads.",
     "fields": {
       "bulkProduct": {
-        "description": "Métrica alternativa para spreads de classificação - calculada multiplicando os valores de Defesa e Vigor gerados.",
+        "description": "Métrica alternativa para spreads de classificação - calculada multiplicando os valores de Defesa e HP gerados.",
         "value": "produto a granel"
       },
       "product": {
-        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e Vigor.",
+        "description": "Métrica padrão usada para classificar spreads - calculada multiplicando os valores gerados de Ataque, Defesa e HP.",
         "value": "produto estatístico"
       },
       "atk": {
@@ -177,5 +181,23 @@
     },
     "ranked-by": "Classificado por {rank}",
     "title": "Métrica de classificação"
+  },
+  "minimum-level": {
+    "description": "Escolha o nível mínimo para comparar.",
+    "fields": {
+      "1": {
+        "value": "1"
+      },
+      "15": {
+        "value": "15 - Pesquisa"
+      },
+      "20": {
+        "value": "20 - Raid"
+      },
+      "25": {
+        "value": "25 - Purificado"
+      }
+    },
+    "title": "Nível Mínimo"
   }
 }
