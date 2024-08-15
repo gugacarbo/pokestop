@@ -1,8 +1,8 @@
-import { IV } from '../iv';
-import { IVFloor } from '../ivFloor';
-import { isSubsequence } from '../../utils/isSubsequence';
+import { IV } from "../iv";
+import { IVFloor } from "../ivFloor";
+import { isSubsequence } from "../../utils/isSubsequence";
 
-import { POKEDEX } from './list';
+import { POKEDEX } from "./list";
 export { POKEDEX };
 
 export type PokemonID = string;
@@ -18,24 +18,24 @@ export type PokemonStats = {
 };
 
 export type PokemonType =
-  | 'normal'
-  | 'fighting'
-  | 'flying'
-  | 'poison'
-  | 'ground'
-  | 'rock'
-  | 'bug'
-  | 'ghost'
-  | 'steel'
-  | 'fire'
-  | 'water'
-  | 'grass'
-  | 'electric'
-  | 'psychic'
-  | 'ice'
-  | 'dragon'
-  | 'dark'
-  | 'fairy';
+  | "normal"
+  | "fighting"
+  | "flying"
+  | "poison"
+  | "ground"
+  | "rock"
+  | "bug"
+  | "ghost"
+  | "steel"
+  | "fire"
+  | "water"
+  | "grass"
+  | "electric"
+  | "psychic"
+  | "ice"
+  | "dragon"
+  | "dark"
+  | "fairy";
 
 export type PokemonIVs = {
   atk: IV;
@@ -81,7 +81,7 @@ export function searchPokemonByName(query: string, list: Pokemon[] = POKEDEX) {
     return matches[0];
   } else {
     const exactMatch = matches.find(
-      (match) => match.name.toLowerCase() === lowerCaseQuery,
+      (match) => match.name.toLowerCase() === lowerCaseQuery
     );
 
     if (exactMatch !== undefined) {
@@ -100,7 +100,7 @@ export function getPokemonByID(id: PokemonID, list: Pokemon[] = POKEDEX) {
 
 export function getPokemonFamilyMembers(
   familyID: PokemonID,
-  list: Pokemon[] = POKEDEX,
+  list: Pokemon[] = POKEDEX
 ) {
   return list.filter((pokemon) => pokemon.family.id === familyID);
 }
