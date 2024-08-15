@@ -1,5 +1,5 @@
 import { PokemonIVs } from '@/data/pokedex';
-import { IV } from '@/data/iv';
+import { IV } from '@/@types/iv';
 import { IVFloor } from '@/@types/iv-floor';
 
 export function getIVSpreads(floor: IVFloor) {

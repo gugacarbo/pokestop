@@ -1,12 +1,12 @@
 import {
   CandidateBuilderStickyHeader,
   CandidateBuilderIVs,
-  CandidateBuilderIVFloor,
+  IvFloorSelector,
   CandidateBuilderSpecies,
   CandidateBuilderFamilySwap,
   CandidateBuilderMinimumLevel,
   CandidateBuilderRankingMetric,
-} from "./components";
+} from ".";
 
 function CandidateBuilder({ children }: { children?: React.ReactNode }) {
   return (
@@ -15,7 +15,7 @@ function CandidateBuilder({ children }: { children?: React.ReactNode }) {
       <section className="flex flex-wrap justify-start items-start gap-x-4 gap-y-2 mb-2 px-4 sm:px-0 w-full">
         <CandidateBuilderSpecies />
         <CandidateBuilderIVs />
-        <CandidateBuilderIVFloor />
+        <IvFloorSelector />
         {children}
         <CandidateBuilderRankingMetric />
         <CandidateBuilderMinimumLevel />

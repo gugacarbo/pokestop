@@ -19,7 +19,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { useTranslations } from "next-intl";
 
-const CandidateBuilderIVFloor: FC = () => {
+const IvFloorSelector: FC = () => {
   const { candidate, dispatch } = useCandidate();
   const { settings } = useSettings();
   const t = useTranslations("settings");
@@ -42,19 +42,13 @@ const CandidateBuilderIVFloor: FC = () => {
           <SelectValue placeholder="Select IV Floor" />
         </SelectTrigger>
         <SelectContent>
-          {IV_FLOORS.filter((floor) => {
-            if (settings.allowImpossibleFloors) {
-              return true;
-            } else {
-              return floor.value >= (candidate.species.floor ?? 0);
-            }
-          }).map((floor) => (
-            <SelectItem key={floor.value} value={String(floor.value)}>
-              {floor.value} -{" "}
-              {
-                //@ts-ignore
-                t(`iv-floor.values.${floor.value}.name`)
-              }
+          {IV_FLOORS.filter(
+            (floor) =>
+              settings.allowImpossibleFloors ||
+              floor >= (candidate.species.floor ?? 0)
+          ).map((floor) => (
+            <SelectItem key={floor} value={String(floor)}>
+              {floor} - {t(`iv-floor.values.${floor}.name`)}
             </SelectItem>
           ))}
         </SelectContent>
@@ -63,4 +57,4 @@ const CandidateBuilderIVFloor: FC = () => {
   );
 };
 
-export { CandidateBuilderIVFloor };
+export { IvFloorSelector };

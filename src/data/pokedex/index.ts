@@ -26,7 +26,7 @@ export const pokemonSchema = z.object({
     def: z.number(),
     sta: z.number(),
   }),
-  types: z.tuple([pokemonTypes, z.optional(pokemonTypes)]),
+  types: z.tuple([pokemonTypes]).or(z.tuple([pokemonTypes, pokemonTypes])),
   floor: ivFloors.optional(),
   family: z.object({
     id: z.string(),
@@ -37,21 +37,6 @@ export const pokemonSchema = z.object({
 
 export type PokemonFamilyStage = z.infer<typeof familyStages>;
 export type Pokemon = z.infer<typeof pokemonSchema>;
-/*
-{
-  id: PokemonID;
-  dexNumber: PokedexNumber;
-  name: PokemonName;
-  stats: PokemonStats;
-  types: PokemonType[];
-  floor?: IVFloor;
-  family: {
-    id: PokemonID;
-    stage: PokemonFamilyStage;
-  };
-  aliases?: string[];
-};
-*/
 
 export type PokemonID = Pokemon["id"];
 export type PokemonName = Pokemon["name"];

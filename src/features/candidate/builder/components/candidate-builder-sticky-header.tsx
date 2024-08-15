@@ -29,7 +29,7 @@ function useIsScrolled() {
   return isScrolled;
 }
 
-export  function CandidateBuilderStickyHeader() {
+export function CandidateBuilderStickyHeader() {
   const { candidate } = useCandidate();
   const { settings } = useSettings();
 
@@ -43,7 +43,7 @@ export  function CandidateBuilderStickyHeader() {
     throw new Error("No matching ranking metric could be found.");
   }
 
-  const floor = IV_FLOORS.find((floor) => floor.value === candidate.floor);
+  const floor = IV_FLOORS.find((floor) => floor === candidate.floor);
   if (floor === undefined) {
     throw new Error("No matching IV floor could be found.");
   }
@@ -58,8 +58,8 @@ export  function CandidateBuilderStickyHeader() {
           {candidate.species.name}, {candidate.ivs.atk}-{candidate.ivs.def}-
           {candidate.ivs.sta}{" "}
         </p>
-        <p className="text-[10px] text-gray-600 dark:text-gray-300">
-          Ranked by {rankingMetric.name}, Min. IV {floor.value} ({floor.name})
+        <p className="text-[10px] text-muted-foreground">
+          Ranked by {rankingMetric.name}, Min. IV {floor} ({floor})
           {settings.showMinimumLevel &&
             `, Min. Level ${candidate.minimumLevel}`}
         </p>

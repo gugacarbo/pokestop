@@ -8,11 +8,7 @@ export const ivFloors = z.union([
   z.literal(4),
   z.literal(5),
   z.literal(6),
-  z.literal(7),
-  z.literal(8),
-  z.literal(9),
   z.literal(10),
-  z.literal(11),
   z.literal(12),
 ]);
 

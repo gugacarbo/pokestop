@@ -1,20 +1,14 @@
-import { useTranslations } from "next-intl";
 import { PokeStats } from "@/features/poke-stats";
+import { PokeStatsHeader } from "./header";
+import { getCandidateCookie } from "@/features/candidate/get-candidate-cookie";
 
-function Page() {
-  const t = useTranslations("pages");
+async function Page() {
+  const candidate = await getCandidateCookie();
 
   return (
     <>
-      <h1 className="px-4 sm:px-0 pt-2 w-full font-semibold text-2xl">
-        {t("poke-stats.title")}
-        <span className="text-muted-foreground text-xs">Beta</span>
-      </h1>
-      <p className="mb-2 px-4 sm:px-0 w-full text-gray-700 text-sm dark:text-gray-300">
-        {t("poke-stats.description")}
-      </p>
-
-      <PokeStats />
+      <PokeStatsHeader />
+      <PokeStats candidate={candidate} />
     </>
   );
 }
