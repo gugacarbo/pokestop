@@ -4,6 +4,10 @@
     "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
   },
   "individual": {
+    "level-cap": {
+      "title": "Select Level Cap",
+      "description": "View top {league} IV spreads for {name}, Level {minimumLevel}-{levelCap}"
+    },
     "metadata": {
       "title": "Individual Ranking!",
       "description": "Explore the top Pokemon for Pokemon GO PvP in the league. Rankings include top moves, matchups, and counters for every Pokemon, as well as ratings for different roles."
@@ -14,6 +18,9 @@
         "level-data": "Level {level} - {levelDesc}"
       }
     }
+  },
+  "league": {
+    "title": "League"
   },
   "cpLeagues": {
     "little": {

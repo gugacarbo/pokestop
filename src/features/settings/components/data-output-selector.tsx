@@ -10,11 +10,9 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useSettings, Settings, SettingsActionTypes } from "../use-settings";
-import { OUTPUT_DATA } from "@/data/outputData";
+import { useSettings, SettingsActionTypes } from "../use-settings";
 import {
   TooltipProvider,
   TooltipTrigger,
@@ -23,6 +21,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Label } from "@/components/ui/label";
 import { useTranslations } from "next-intl";
+import { outputDataKeys } from "@/@types/output-data";
 
 export function DataOutputSelector({
   className,
@@ -50,24 +49,22 @@ export function DataOutputSelector({
       <DropdownMenuContent align="end" className="">
         <DropdownMenuLabel>{t("common.show-hide")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        {OUTPUT_DATA.map((outData, i) => {
-          // @ts-ignore
+        {outputDataKeys.map((outDatakey, i) => {
           const description = !t(
-            `output-data.fields.${outData.key}.description`
+            `output-data.fields.${outDatakey}.description`
           );
 
-          // @ts-ignore
-          const value = t(`output-data.fields.${outData.key}.value`);
+          const value = t(`output-data.fields.${outDatakey}.value`);
           return (
             <DropdownMenuCheckboxItem
-              key={outData.key}
+              key={outDatakey}
               className="normal-case"
-              checked={settings.outputData?.[outData.key]}
+              checked={settings.outputData?.[outDatakey]}
               onCheckedChange={(value) => {
                 dispatch({
                   type: SettingsActionTypes.OutputData,
                   payload: {
-                    key: outData.key,
+                    key: outDatakey,
                     value,
                   },
                 });

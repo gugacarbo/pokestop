@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { League } from "@/data/league";
+import { League } from "@/@types/league";
 import { Provider as LeagueContextProvider } from "@/features/individual-ranking/hooks/useLeague";
 
 import { CandidateLeagueHeader } from "./components/candidate-league-header";

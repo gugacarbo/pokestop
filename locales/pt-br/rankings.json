@@ -13,6 +13,10 @@
         "title": "Melhores IVs de {pokemon} para {league}",
         "level-data": "Nível {level} - {levelDesc}"
       }
+    },
+    "level-cap": {
+      "description": "Veja os principais spreads IV da {league} para {name}, nível {minimumLevel}-{levelCap}",
+      "title": "Selecione o limite de nível"
     }
   },
   "cpLeagues": {
@@ -61,5 +65,8 @@
       "value": "Clássico da Liga Mestre",
       "description": ""
     }
+  },
+  "league": {
+    "title": "Liga"
   }
 }

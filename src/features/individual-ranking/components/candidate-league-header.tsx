@@ -107,10 +107,10 @@ const CandidateLeagueHeader: FC = () => {
             </h2>
             <p className="mt-1 font-semibold text-xs">
               {t("rankings.individual.spreads.top-spreads.level-data", {
-                level: `${candidate.minimumLevel} - ${inspectedLevelCap.level}`,
+                level: `${candidate.minimumLevel} - ${inspectedLevelCap}`,
                 //@ts-ignore
                 levelDesc: t(
-                  `settings.level-caps.fields.${inspectedLevelCap.level}.description`
+                  `settings.level-caps.fields.${inspectedLevelCap}.description`
                 ),
               })}
             </p>

@@ -1,15 +1,15 @@
-import { useMemo } from 'react';
+import { useMemo } from "react";
 
-import { LevelCapNumber } from '../../data/levelCap';
+import { LevelCapNumber } from "@/@types/level-cap";
 
-import { useLeague } from '../../features/individual-ranking/hooks/useLeague';
-import { useCandidate } from '../../features/candidate/use-candidate';
-import { useSettings } from '../../features/settings/use-settings';
+import { useLeague } from "../useLeague";
+import { useCandidate } from "@/features/candidate/use-candidate";
+import { useSettings } from "@/features/settings/use-settings";
 
 import {
   generateRankedSpreads,
   RankedSpread,
-} from '../../lib/generateRankedSpreads';
+} from "@/lib/generateRankedSpreads";
 
 export function useMemoRankedSpreads(levelCapNumber: LevelCapNumber) {
   const { league } = useLeague();
@@ -25,7 +25,7 @@ export function useMemoRankedSpreads(levelCapNumber: LevelCapNumber) {
       league.cp,
       levelCapNumber,
       candidate.minimumLevel,
-      candidate.rankingMetric,
+      candidate.rankingMetric
     );
   }, [
     settings.levelCaps,

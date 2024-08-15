@@ -1,7 +1,7 @@
 "use server";
 
 import { cookies } from "next/headers";
-import { Settings } from ".";
+import { Settings } from "@/@types/settings";
 
 export async function setSettingsCookie(settings: Settings) {
   const cookieStore = cookies();

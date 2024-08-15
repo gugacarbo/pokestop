@@ -122,6 +122,7 @@
   "level-caps": {
     "description": "",
     "title": "Limites de nível",
+    "placeholder": "Selecione o nível máx.",
     "fields": {
       "40": {
         "value": "Nível 40",
@@ -144,15 +145,15 @@
   "stats": {
     "atk": {
       "value": "Ataque",
-      "description":""
+      "description": ""
     },
     "def": {
       "value": "Defesa",
-      "description":""
+      "description": ""
     },
     "sta": {
       "value": "PS",
-      "description":""
+      "description": ""
     }
   },
   "ranking-metrics": {

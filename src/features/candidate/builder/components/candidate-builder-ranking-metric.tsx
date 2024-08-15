@@ -41,7 +41,6 @@ function CandidateBuilderRankingMetric() {
 
   useSyncCandidateRankingMetricWithDefault();
 
-
   if (!settings.showRankingMetric) return null;
 
   return (

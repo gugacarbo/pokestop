@@ -1,11 +1,11 @@
 import { Dispatch as ReactDispatch } from "react";
-import { Settings } from ".";
+import { Settings } from "@/@types/settings";
 
 import { ActionMap } from "@/utils/actionMap";
 
-import { LeagueKey } from "@/data/league";
-import { LevelCapNumber } from "@/data/levelCap";
-import { OutputDataKey } from "@/data/outputData";
+import { LeagueKey } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
+import { OutputDataKey } from "@/@types/output-data";
 
 export enum SettingsActionTypes {
   League,
@@ -23,7 +23,7 @@ type PayloadTypes = {
   [SettingsActionTypes.League]: { key: LeagueKey; value: boolean };
   [SettingsActionTypes.LeagueOrder]: LeagueKey[];
   [SettingsActionTypes.LevelCap]: {
-    key: LevelCapNumber;
+    key: LevelCap;
     value: boolean;
   };
   [SettingsActionTypes.OutputData]: {

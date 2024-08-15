@@ -1,8 +1,8 @@
 "use client"
 import React, { FC, ReactNode, useState } from "react";
 
-import { League } from "@/data/league";
-import { LevelCap } from "@/data/levelCap";
+import { League } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
 
 import { Context } from ".";
 

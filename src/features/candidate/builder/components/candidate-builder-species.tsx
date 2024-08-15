@@ -1,13 +1,11 @@
 "use client";
 
 import React, { FC, MutableRefObject, useEffect, useRef } from "react";
-
 import {
   useCandidate,
   CandidateActionTypes,
   Candidate,
 } from "@/features/candidate/use-candidate";
-import { usePokedex } from "@/hooks/use-pokedex";
 import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
 
 function useInputRef() {
@@ -32,7 +30,6 @@ function useSyncInputToCandidate(
 }
 
 const CandidateBuilderSpecies: FC = () => {
-  const pokedex = usePokedex();
   const { candidate, dispatch } = useCandidate();
   const input = useInputRef();
   useSyncInputToCandidate(input, candidate);
@@ -50,4 +47,4 @@ const CandidateBuilderSpecies: FC = () => {
   );
 };
 
-export {CandidateBuilderSpecies};
+export { CandidateBuilderSpecies };

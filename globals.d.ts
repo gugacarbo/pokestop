@@ -3,9 +3,11 @@ import rankings from "./locales/en/rankings.json";
 import filters from "./locales/en/filters.json";
 import pokemons from "./locales/en/pokemons.json";
 import settings from "./locales/en/settings.json";
+import pages from "./locales/en/pages.json";
 
 type Messages = {
   main: typeof main;
+  pages: typeof pages;
   rankings: typeof rankings;
   filters: typeof filters;
   pokemons: typeof pokemons;

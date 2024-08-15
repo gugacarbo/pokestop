@@ -16,6 +16,7 @@
   "level-caps": {
     "title": "Level Caps",
     "description": "",
+    "placeholder": "Select Level Cap",
     "fields": {
       "40": {
         "description": "Regular Candy",

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { RankedSpread } from "@/lib/generateRankedSpreads";
 import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
-import { useRankedSpreads } from "@/hooks/useRankedSpreads";
+import { useRankedSpreads } from "@/features/individual-ranking/hooks/useRankedSpreads";
 import { useCandidate } from "@/features/candidate/use-candidate";
 
 function useDisplayedSpreads() {

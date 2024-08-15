@@ -2,7 +2,7 @@ import React from "react";
 import { Provider as CandidateContextProvider } from "@/features/candidate/use-candidate";
 import { CandidateBuilder } from "@/features/candidate/builder/candidate-builder";
 import { DataOutputSelector } from "@/features/settings/components/data-output-selector";
-import { LevelCapSelector } from "@/features/settings/components/level-cap-selector";
+import { LevelCapSelector } from "@/features/candidate/components/level-cap-selector";
 import { getTranslations } from "next-intl/server";
 import { CandidateIndividualRanking } from "@/features/individual-ranking/candidate-individual-ranking";
 import { getCandidateCookie } from "@/features/candidate/get-candidate-cookie";

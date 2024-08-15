@@ -1,14 +1,12 @@
 import { FC } from "react";
-import { League } from "@/data/league";
+import { League } from "@/@types/league";
 import {
   SettingsActionTypes,
   useSettings,
 } from "@/features/settings/use-settings";
 import { ChevronsDown, ChevronsUp } from "lucide-react";
 
-const LeaguePosition: FC<{ league: League }> = ({
-  league,
-}) => {
+const LeaguePosition: FC<{ league: League }> = ({ league }) => {
   const { settings, dispatch } = useSettings();
 
   return (
@@ -30,7 +28,7 @@ const LeaguePosition: FC<{ league: League }> = ({
           });
         }}
         disabled={settings.leagueOrder.indexOf(league.key) === 0}
-        aria-label={`Move ${league.name} up`}
+        aria-label={`Move ${league.key} up`}
         className="p-0.5 rounded-full focus-visible-ring ring-offset-gray-100 dark:ring-offset-gray-800 text-gray-400 disabled:text-gray-700 disabled:cursor-not-allowed"
       >
         <ChevronsUp className="w-4 h-4" aria-hidden />
@@ -56,7 +54,7 @@ const LeaguePosition: FC<{ league: League }> = ({
           settings.leagueOrder.indexOf(league.key) ===
           settings.leagueOrder.length - 1
         }
-        aria-label={`Move ${league.name} down`}
+        aria-label={`Move ${league.key} down`}
         className="p-1 rounded-full focus-visible-ring ring-offset-gray-100 dark:ring-offset-gray-800 text-gray-400 disabled:text-gray-700 disabled:cursor-not-allowed"
       >
         <ChevronsDown className="w-4 h-4" aria-hidden />
@@ -65,4 +63,4 @@ const LeaguePosition: FC<{ league: League }> = ({
   );
 };
 
-export {LeaguePosition};
+export { LeaguePosition };

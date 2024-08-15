@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { useRankedSpreads } from "@/hooks/useRankedSpreads";
+import { useRankedSpreads } from "@/features/individual-ranking/hooks/useRankedSpreads";
 import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
 import { useCandidate } from "@/features/candidate/use-candidate";
 

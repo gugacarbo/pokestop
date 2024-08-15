@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { Settings } from "..";
+import { Settings } from "@/@types/settings";
 import { Dispatch } from "../settings-reducer";
 
 export const SettingsContext = createContext<{

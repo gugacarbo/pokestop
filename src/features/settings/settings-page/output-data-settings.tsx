@@ -7,8 +7,8 @@ import {
 import { SettingsSection } from "@/features/settings/components/settings-section";
 import { SettingsSectionItem } from "@/features/settings/components/settings-section-item";
 import { SettingsSectionItemToggle } from "@/features/settings/components/settings-section-item-toggle";
-import { OUTPUT_DATA } from "@/data/outputData";
 import { useTranslations } from "next-intl";
+import { outputDataKeys } from "@/@types/output-data";
 
 function OutputDataSettings() {
   const { settings, dispatch } = useSettings();
@@ -16,24 +16,18 @@ function OutputDataSettings() {
 
   return (
     <SettingsSection id="output-data">
-      {OUTPUT_DATA.map((outputField) => (
-        <SettingsSectionItem key={outputField.key}>
+      {outputDataKeys.map((outputFieldkey) => (
+        <SettingsSectionItem key={outputFieldkey}>
           <SettingsSectionItemToggle
             onInput={(value) =>
               dispatch({
                 type: SettingsActionTypes.OutputData,
-                payload: { key: outputField.key, value },
+                payload: { key: outputFieldkey, value },
               })
             }
-            value={settings.outputData[outputField.key]}
-            label={
-              //@ts-ignore
-              t(`output-data.fields.${outputField.key}.value`)
-            }
-            description={
-              //@ts-ignore
-              t(`output-data.fields.${outputField.key}.description`)
-            }
+            value={settings.outputData[outputFieldkey]}
+            label={t(`output-data.fields.${outputFieldkey}.value`)}
+            description={t(`output-data.fields.${outputFieldkey}.description`)}
           />
         </SettingsSectionItem>
       ))}

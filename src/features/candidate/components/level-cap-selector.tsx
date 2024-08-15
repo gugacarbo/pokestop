@@ -1,13 +1,13 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   TooltipProvider,
@@ -17,17 +17,23 @@ import {
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { LEVEL_CAPS } from "@/data/levelCap";
 
-import { useSettings, SettingsActionTypes } from "../use-settings";
+import { LEVEL_CAPS } from "@/@types/level-cap";
+
+import {
+  useSettings,
+  SettingsActionTypes,
+} from "@/features/settings/use-settings";
 import { Label } from "@/components/ui/label";
 import { useTranslations } from "next-intl";
 
 function LevelCapSelector({
   className,
+  single,
 }: {
   columnsNames?: Record<string, string>;
   className?: string;
+  single?: boolean;
 }) {
   const { settings, dispatch } = useSettings();
   const t = useTranslations("settings");
@@ -71,13 +77,13 @@ function LevelCapSelector({
         {LEVEL_CAPS.map((levelCap, i) => {
           return (
             <DropdownMenuCheckboxItem
-              key={levelCap.name}
+              key={levelCap}
               className="normal-case"
-              checked={settings.levelCaps?.[levelCap.level]}
+              checked={settings.levelCaps?.[levelCap]}
               onCheckedChange={(value) => {
                 dispatch({
                   type: SettingsActionTypes.LevelCap,
-                  payload: { key: levelCap.level, value },
+                  payload: { key: levelCap, value },
                 });
               }}
             >
@@ -87,23 +93,12 @@ function LevelCapSelector({
               >
                 <Tooltip>
                   <TooltipTrigger asChild={false}>
-                    {
-                      // @ts-ignore
-                      t(`level-caps.fields.${levelCap.level}.value`)
-                    }
+                    {t(`level-caps.fields.${levelCap}.value`)}
                   </TooltipTrigger>
                   <TooltipContent
-                    hidden={
-                      // @ts-ignore
-                      !t(`level-caps.fields.${levelCap.level}.description`)
-                    }
+                    hidden={!t(`level-caps.fields.${levelCap}.description`)}
                   >
-                    <p>
-                      {
-                        // @ts-ignore
-                        t(`level-caps.fields.${levelCap.level}.description`)
-                      }
-                    </p>
+                    <p>{t(`level-caps.fields.${levelCap}.description`)}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

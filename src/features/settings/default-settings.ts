@@ -1,4 +1,4 @@
-import { Settings } from "./use-settings";
+import { Settings } from "@/@types/settings";
 
 export const defaultSettings: Settings = {
   leagues: { great: true, ultra: true, master: true, little: false },

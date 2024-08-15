@@ -1,6 +1,6 @@
 import { CPMs } from '@/data/cpm';
 import { LeagueCPCap } from '@/data/league';
-import { LevelCapNumber } from '@/data/levelCap';
+import { LevelCapNumber } from '@/@types/level-cap';
 import { PokemonStats } from '@/data/pokedex';
 
 // binary search to find the closest actual CPM to a given estimated CPM

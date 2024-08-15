@@ -7,7 +7,6 @@ import { getMessages, getTranslations } from "next-intl/server";
 
 import { cn } from "@/lib/utils";
 
-import type { Settings } from "@/features/settings";
 import { defaultSettings } from "@/features/settings";
 
 import { SettingsProvider } from "@/features/settings/use-settings";
@@ -17,6 +16,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { parseSettingsCookies } from "@/features/settings/parse-settings-cookies";
+import { parseCookies } from "@/lib/parse-cookies";
 
 export const runtime = "edge";
 
@@ -45,8 +45,11 @@ interface LayoutProps {
 }
 
 async function getInitialSettings() {
+  const hok = await parseCookies("settings", defaultSettings);
   const cookieStore = cookies();
-  return await parseSettingsCookies(cookieStore.get("settings")?.value);
+  const p = await parseSettingsCookies(cookieStore.get("settings")?.value);
+  // console.log(JSON.stringify(p) === JSON.stringify(hok), );
+  return p;
 }
 
 export default async function RootLayout({

@@ -13,6 +13,7 @@ export default getRequestConfig(async ({ locale = "en" }) => {
     filters: (await import(`../locales/${locale}/filters.json`)).default,
     pokemons: (await import(`../locales/${locale}/pokemons.json`)).default,
     settings: (await import(`../locales/${locale}/settings.json`)).default,
+    pages: (await import(`../locales/${locale}/pages.json`)).default,
   };
 
   return {

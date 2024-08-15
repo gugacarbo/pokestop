@@ -6,7 +6,7 @@ import {
   CandidateActionTypes,
   useCandidate,
 } from "@/features/candidate/use-candidate";
-import { usePokedex } from "@/hooks/use-pokedex";
+import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
 
 import SpeciesTypeIcons from "@/features/pokemon/components/SpeciesTypeIcons";
 
@@ -39,7 +39,8 @@ const CandidateBuilderFamilySwap: FC = () => {
           }
           className={cn(
             "gap-1",
-            candidate.species.id === familyMember.id && "text-accent-foreground border-primary"
+            candidate.species.id === familyMember.id &&
+              "text-accent-foreground border-primary"
           )}
         >
           <SpeciesTypeIcons types={familyMember.types} />

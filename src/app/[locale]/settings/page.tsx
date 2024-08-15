@@ -19,6 +19,7 @@ export async function generateMetadata({
 }
 
 async function Page() {
+
   return (
     <div className="items-start gap-12 md:gap-8 grid grid-cols-1 lg:grid-cols-2 -mt-2 md:mt-4 w-full">
       <div className="flex flex-col gap-12 md:gap-8 w-full">

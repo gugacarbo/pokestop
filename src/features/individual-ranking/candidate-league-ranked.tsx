@@ -2,18 +2,19 @@
 
 import React, { FC, useMemo } from "react";
 
-import { LEVEL_CAPS, LevelCap } from "@/data/levelCap";
+import { LEVEL_CAPS } from "@/@types/level-cap";
 import { useSettings } from "@/features/settings/use-settings";
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useDataTable } from "@/features/data-table/useDataTable";
 import { rankSpreadColumns } from "@/features/data-table/data-columns/rank-spread-columns";
-import { useRankedSpreads } from "@/hooks/useRankedSpreads";
+import { useRankedSpreads } from "@/features/individual-ranking/hooks/useRankedSpreads";
 import { IV_FLOORS } from "@/data/ivFloor";
 import { DataTable } from "@/features/data-table/components/data-table";
 import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
-import { Button } from "@/components/ui/button";
-import { MenuIcon } from "lucide-react";
 import { RankedSpread } from "@/lib/generateRankedSpreads";
+
+import { SelectLevelCapButton } from "./components/select-level-cap-button";
+import { LevelCap } from "@/@types/level-cap";
 
 const CandidateLeagueRanked: FC = () => {
   const { candidate } = useCandidate();
@@ -24,11 +25,9 @@ const CandidateLeagueRanked: FC = () => {
 
   const data = useMemo(
     () =>
-      LEVEL_CAPS.filter(
-        (levelCap) => settings.levelCaps[levelCap.level] === true
-      )
+      LEVEL_CAPS.filter((levelCap) => settings.levelCaps[levelCap] === true)
         .map((levelCap) => {
-          const candidateAtLevel = rankedSpreads[levelCap.level].find(
+          const candidateAtLevel = rankedSpreads[levelCap].find(
             (spread) =>
               spread.ivs.atk === candidate.ivs.atk &&
               spread.ivs.def === candidate.ivs.def &&
@@ -68,15 +67,13 @@ const CandidateLeagueRanked: FC = () => {
         cell: (row) => {
           const levelCap = row.getValue<LevelCap>();
           return (
-            <Button
-              variant="outline"
-              size="sm-icon"
-              className="size-8"
-              onClick={() => setInspectedLevelCap(levelCap)}
-              title={`View top ${league.name} IV spreads for ${candidate.species.name}, Level ${candidate.minimumLevel}-${levelCap.level}`}
-            >
-              <MenuIcon className="text-muted-foreground size-4" />
-            </Button>
+            <SelectLevelCapButton
+              league={league.key}
+              species_name={candidate.species.name}
+              minimumLevel={candidate.minimumLevel}
+              levelCap={levelCap}
+              setInspectedLevelCap={setInspectedLevelCap}
+            />
           );
         },
       },
@@ -86,33 +83,21 @@ const CandidateLeagueRanked: FC = () => {
     enableSorting: false,
     state: {
       columnVisibility: {
-        rank: settings.outputData.rank,
-        level: settings.outputData.level,
-        cp: settings.outputData.cp,
-        xlCandy: settings.outputData.xlCandy,
-        stats_sta: settings.outputData.stats,
-        stats_def: settings.outputData.stats,
-        stats_atk: settings.outputData.stats,
-        statProduct: settings.outputData.statProduct,
-        bulkProduct: settings.outputData.bulkProduct,
-        percentOfMax: settings.outputData.percent,
+        rank: settings.outputData.rank || true,
+        level: settings.outputData.level || true,
+        cp: settings.outputData.cp || true,
+        xlCandy: settings.outputData.xlCandy || true,
+        stats_sta: settings.outputData.stats || true,
+        stats_def: settings.outputData.stats || true,
+        stats_atk: settings.outputData.stats || true,
+        statProduct: settings.outputData.statProduct || true,
+        bulkProduct: settings.outputData.bulkProduct || true,
+        percentOfMax: settings.outputData.percent || true,
       },
       columnPinning: {
         left: ["select-level-cap", "rank"],
       },
       columnOrder: ["select-level-cap", "percentOfMax"],
-    },
-    initialVisibility: {
-      rank: settings.outputData.rank,
-      level: settings.outputData.level,
-      cp: settings.outputData.cp,
-      xlCandy: settings.outputData.xlCandy,
-      stats_sta: settings.outputData.stats,
-      stats_def: settings.outputData.stats,
-      stats_atk: settings.outputData.stats,
-      statProduct: settings.outputData.statProduct,
-      bulkProduct: settings.outputData.bulkProduct,
-      percentOfMax: settings.outputData.percent,
     },
   });
 

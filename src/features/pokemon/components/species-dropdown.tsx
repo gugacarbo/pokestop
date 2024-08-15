@@ -14,7 +14,8 @@ import {
 
 import { useState } from "react";
 
-import { usePokedex } from "@/hooks/use-pokedex";
+import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
+
 import { Pokemon } from "@/data/pokedex";
 import { Input } from "@/components/ui/input";
 import { useFuzzyFilter } from "@/hooks/use-fuzzy-filter";
@@ -24,7 +25,6 @@ import {
   TooltipContent,
   Tooltip,
 } from "@/components/ui/tooltip";
-import { Label } from "@/components/ui/label";
 
 interface SpeciesDropdownProps {
   label: string;
@@ -72,10 +72,7 @@ export function SpeciesDropdown({
       <div className="flex items-center gap-1">
         <TooltipProvider delayDuration={300} disableHoverableContent={false}>
           <Tooltip>
-            <TooltipTrigger
-            
-              onClick={() => setOpen(true)}
-            asChild={false}>
+            <TooltipTrigger onClick={() => setOpen(true)} asChild={false}>
               <kbd className="md:inline-flex items-center gap-1 hidden bg-muted opacity-100 px-1.5 border rounded h-8 font-bold font-mono text-base text-muted-foreground pointer-events-none select-none">
                 <span className="text-xs">⌘</span>S
               </kbd>
@@ -91,15 +88,15 @@ export function SpeciesDropdown({
         </TooltipProvider>
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
-              <Button
-                variant="outline"
-                role="combobox"
-                aria-expanded={open}
-                className="justify-between w-[200px]"
-              >
-                {pokemon.name ?? "Select Pokémon..."}
-                <ChevronsUpDown className="opacity-50 ml-2 w-4 h-4 shrink-0" />
-              </Button>
+            <Button
+              variant="outline"
+              role="combobox"
+              aria-expanded={open}
+              className="justify-between w-[200px]"
+            >
+              {pokemon.name ?? "Select Pokémon..."}
+              <ChevronsUpDown className="opacity-50 ml-2 w-4 h-4 shrink-0" />
+            </Button>
           </PopoverTrigger>
           <PopoverContent className="p-0">
             <Input

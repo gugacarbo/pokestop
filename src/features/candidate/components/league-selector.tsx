@@ -1,3 +1,4 @@
+import { LeagueCPCap } from "@/@types/league";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -6,18 +7,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { LeagueCPCap, LEAGUES } from "@/data/league";
+import { LEAGUES } from "@/data/league";
+import { useTranslations } from "next-intl";
 
-function LeagueSelector({
+function CpLeagueSelector({
   league,
   setLeague,
 }: {
   league: LeagueCPCap;
   setLeague: (league: LeagueCPCap) => void;
 }) {
+  const t = useTranslations("rankings");
+
   return (
     <Label>
-      <span className="text-gray-500 text-xs dark:text-gray-400">League</span>
+      <span className="text-gray-500 text-xs dark:text-gray-400">
+        {t("league.title")}
+      </span>
       <Select
         onValueChange={(val) => setLeague(Number(val) as LeagueCPCap)}
         value={String(league)}
@@ -27,8 +33,8 @@ function LeagueSelector({
         </SelectTrigger>
         <SelectContent>
           {LEAGUES.map((league) => (
-            <SelectItem key={league.key} value={String(league.cp)}>
-              {league.name}
+            <SelectItem key={league.cp} value={String(league.cp)}>
+              {t(`cpLeagues.${league.key}.value`)}
             </SelectItem>
           ))}
         </SelectContent>
@@ -37,4 +43,4 @@ function LeagueSelector({
   );
 }
 
-export { LeagueSelector };
+export { CpLeagueSelector };

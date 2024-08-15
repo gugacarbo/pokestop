@@ -4,13 +4,13 @@ import React from "react";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 
-import CandidateLeagueTopSpreadsAtLevelCapDownload from "../components/download-csv";
+import CandidateLeagueTopSpreadsAtLevelCapDownload from "./components/download-csv";
 import { DataTable } from "@/features/data-table/components/data-table";
 import { useDataTable } from "@/features/data-table/useDataTable";
 import { rankSpreadColumns } from "@/features/data-table/data-columns/rank-spread-columns";
 import { useSettings } from "@/features/settings/use-settings";
 import { TablePageSizeSelect } from "@/features/data-table/components/table-page-size-select";
-import { useDisplayedSpreads } from "./use-displayed-spreads";
+import { useDisplayedSpreads } from "./hooks/use-displayed-spreads";
 
 function CandidateLeagueTopSpreadsAtLevelCap() {
   const displayedSpreads = useDisplayedSpreads();

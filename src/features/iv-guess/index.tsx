@@ -1,24 +1,20 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { LeagueCPCap } from "@/data/league";
-import { LevelCapNumber } from "@/data/levelCap";
+import { LeagueCPCap } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
 import { Pokemon } from "@/data/pokedex";
-import {
-  RankedSpread,
-  generateRankedSpreads,
-} from "@/lib/generateRankedSpreads";
 import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
-import { usePokedex } from "@/hooks/use-pokedex";
+import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
 
 import { ScatterPokemonChart } from "./rank-chart/scatter-ranking.chart";
 import { CpSelector } from "./components/cp-selector";
 import { HpSelector } from "./components/hp-selector";
-import { LeagueSelector } from "./components/league-selector";
-import { LevelCapSelector } from "./components/level-cap-selector";
+import { CpLeagueSelector } from "../candidate/components/league-selector";
 import { ResultTable } from "./result_table/table";
 import { useGenerateRankedSpreads } from "@/lib/useGenerateRankedSpreads";
 import { CompareModes } from "@/@types/compare-modes";
+import { SingleLevelCapSelector } from "./components/single-level-cap-selector";
 
 const defaultPokemon = {
   name: "Medicham",
@@ -33,9 +29,7 @@ export function IVGuess() {
 
   const [pokemon, setPokemon] = useState<Pokemon>(byName(defaultPokemon.name)!);
   const [league, setLeague] = useState<LeagueCPCap>(defaultPokemon.leagueCp);
-  const [levelCap, setLevelCap] = useState<LevelCapNumber>(
-    defaultPokemon.levelCap
-  );
+  const [levelCap, setLevelCap] = useState<LevelCap>(defaultPokemon.levelCap);
 
   const [anyHp, setAnyHp] = useState<boolean>(true);
   const [hp, setHp] = useState<number>(defaultPokemon.hp);
@@ -97,8 +91,8 @@ export function IVGuess() {
         mode={hpFilterMode}
         onModeChange={setHpFilterMode}
       />
-      <LeagueSelector league={league} setLeague={setLeague} />
-      <LevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
+      <CpLeagueSelector league={league} setLeague={setLeague} />
+      <SingleLevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
       <ResultTable matchingSpreads={filtered} />
       <ScatterPokemonChart matchingSpreads={filtered} />
     </div>

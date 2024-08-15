@@ -28,7 +28,6 @@ function CandidateBuilderIVs() {
   } = useSettings();
 
   const t = useTranslations("settings");
-
   return (
     <div className="gap-2 grid grid-cols-3">
       {STATS.map((stat) => (
