@@ -14,7 +14,7 @@ function useDisplayedSpreads() {
       return [];
     }
 
-    const spreadsForLevel = rankedSpreads[inspectedLevelCap.level];
+    const spreadsForLevel = rankedSpreads[inspectedLevelCap];
 
     const candidateSpread = spreadsForLevel.find(
       (rankedSpread) =>

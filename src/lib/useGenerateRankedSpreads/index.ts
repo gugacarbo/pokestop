@@ -1,5 +1,5 @@
-import { LeagueCPCap } from "@/data/league";
-import { LevelCapNumber } from "@/data/levelCap";
+import { LeagueCPCap } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
 import { IVFloor } from "@/data/ivFloor";
 import { Pokemon, PokemonIVs, PokemonStats } from "@/data/pokedex";
 
@@ -43,7 +43,7 @@ export function useGenerateRankedSpreads(
   pokemon: Pokemon,
   floor: IVFloor,
   maxCP: LeagueCPCap,
-  maxLevel: LevelCapNumber,
+  maxLevel: LevelCap,
   minLevel: number,
   rankingMetric: RankableMetric
 ) {
@@ -81,7 +81,15 @@ export function useGenerateRankedSpreads(
           }
           return getRankingMetricValue(b) - getRankingMetricValue(a);
         }),
-    [pokemon, maxCP, maxLevel, minLevel, getRankingMetricValue, rankingMetric,floor]
+    [
+      pokemon,
+      maxCP,
+      maxLevel,
+      minLevel,
+      getRankingMetricValue,
+      rankingMetric,
+      floor,
+    ]
   );
 
   const result = useMemo(() => {
@@ -121,7 +129,7 @@ export function useGenerateRankedSpreads(
         ),
       });
     }
-    return output
+    return output;
   }, [spreadsWithStats, getRankingMetricValue]);
 
   return result;

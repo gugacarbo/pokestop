@@ -1,7 +1,7 @@
-import { CPMs } from '@/data/cpm';
-import { LeagueCPCap } from '@/data/league';
-import { LevelCapNumber } from '@/@types/level-cap';
-import { PokemonStats } from '@/data/pokedex';
+import { CPMs } from "@/data/cpm";
+import { LeagueCPCap } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
+import { PokemonStats } from "@/data/pokedex";
 
 // binary search to find the closest actual CPM to a given estimated CPM
 function getActualCPMIndex(estimatedCPM: number) {
@@ -34,11 +34,11 @@ function getActualCPMIndex(estimatedCPM: number) {
 }
 
 export function getLevel(
-  atk: PokemonStats['atk'],
-  def: PokemonStats['def'],
-  sta: PokemonStats['sta'],
+  atk: PokemonStats["atk"],
+  def: PokemonStats["def"],
+  sta: PokemonStats["sta"],
   maxCP: LeagueCPCap,
-  maxLevel: LevelCapNumber,
+  maxLevel: LevelCap
 ) {
   // use the provided maxLevel if the maxCP is for master league, since it would
   // never be optimal to not push right to the level cap
@@ -50,7 +50,7 @@ export function getLevel(
   // formula, which is derived from the cp calculation formula
   const estimatedCPM = Math.pow(
     (100 * Math.pow(maxCP + 1, 2)) / (Math.pow(atk, 2) * def * sta),
-    0.25,
+    0.25
   );
 
   // find the closest actual cpm to the estimated cpm

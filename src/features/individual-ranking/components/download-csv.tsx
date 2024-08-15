@@ -26,9 +26,9 @@ const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
       throw new Error("A level cap must be inspected to export");
     }
 
-    const fileName = `${candidate.species.id}-${league.cp}-${inspectedLevelCap.level}-${candidate.floor}-${candidate.rankingMetric}.csv`;
+    const fileName = `${candidate.species.id}-${league.cp}-${inspectedLevelCap}-${candidate.floor}-${candidate.rankingMetric}.csv`;
 
-    const csvContent = rankedSpreads[inspectedLevelCap.level].reduce(
+    const csvContent = rankedSpreads[inspectedLevelCap].reduce(
       (output, spread) =>
         output.concat(
           `\n${spread.rank},${spread.ivs.atk},${spread.ivs.def},${
@@ -48,7 +48,7 @@ const CandidateLeagueTopSpreadsAtLevelCapDownload: FC = () => {
   return (
     <Button onClick={exportToCSV} variant="outline">
       <span className="mr-2 font-semibold text-xs">
-        {t("export")} {rankedSpreads[inspectedLevelCap.level].length} {t("to")}{" "}
+        {t("export")} {rankedSpreads[inspectedLevelCap].length} {t("to")}{" "}
         CSV
       </span>
       <DownloadIcon className="size-4" />

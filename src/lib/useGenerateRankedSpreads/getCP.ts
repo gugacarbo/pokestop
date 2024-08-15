@@ -1,11 +1,11 @@
-import { CPMs } from '@/data/cpm';
-import { PokemonStats } from '@/data/pokedex';
+import { CPMs } from "@/data/cpm";
+import { PokemonStats } from "@/data/pokedex";
 
 export function getCP(
-  atk: PokemonStats['atk'],
-  def: PokemonStats['def'],
-  sta: PokemonStats['sta'],
-  level: number,
+  atk: PokemonStats["atk"],
+  def: PokemonStats["def"],
+  sta: PokemonStats["sta"],
+  level: number
 ) {
   const cpmIndex = (level - 1) * 2;
   const cpm = CPMs[cpmIndex];

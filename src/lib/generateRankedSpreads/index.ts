@@ -1,5 +1,5 @@
-import { LeagueCPCap } from "@/data/league";
-import { LevelCapNumber } from "@/data/levelCap";
+import { LeagueCPCap } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
 import { IVFloor } from "@/data/ivFloor";
 import { Pokemon, PokemonIVs, PokemonStats } from "@/data/pokedex";
 
@@ -42,7 +42,7 @@ export function generateRankedSpreads(
   pokemon: Pokemon,
   floor: IVFloor,
   maxCP: LeagueCPCap,
-  maxLevel: LevelCapNumber,
+  maxLevel: LevelCap,
   minLevel: number,
   rankingMetric: RankableMetric
 ) {

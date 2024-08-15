@@ -1,17 +1,17 @@
-import { LeagueCPCap } from '@/data/league';
-import { LevelCapNumber } from '@/@types/level-cap';
-import { Pokemon, PokemonIVs } from '@/data/pokedex';
+import { LeagueCPCap } from "@/@types/league";
+import { LevelCap } from "@/@types/level-cap";
+import { Pokemon, PokemonIVs } from "@/data/pokedex";
 
-import { SpreadWithMaximizedStats } from '.';
-import { getLevel } from './getLevel';
-import { getStats } from './getStats';
-import { getCP } from './getCP';
+import { SpreadWithMaximizedStats } from ".";
+import { getLevel } from "./getLevel";
+import { getStats } from "./getStats";
+import { getCP } from "./getCP";
 
 export function getMaximizedStats(
   species: Pokemon,
   ivs: PokemonIVs,
   maxCP: LeagueCPCap,
-  maxLevel: LevelCapNumber,
+  maxLevel: LevelCap
 ): SpreadWithMaximizedStats {
   const atk = ivs.atk + species.stats.atk;
   const def = ivs.def + species.stats.def;

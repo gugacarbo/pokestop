@@ -86,7 +86,7 @@ const CandidateLeagueHeader: FC = () => {
           variant="outline"
           onClick={() => setInspectedLevelCap(null)}
           title={`Back`}
-          className="z-10 bg-background/70 opacity-70 hover:opacity-100 mr-2"
+          className="z-10 bg-background/70 dark:opacity-70 hover:opacity-100 mr-2"
         >
           <ArrowLeftIcon className="size-4" />
         </Button>
