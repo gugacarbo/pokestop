@@ -5,9 +5,10 @@ import { Link } from "@/lib/navigation";
 import {
   ChevronFirstIcon,
   CogIcon,
-  FileQuestion,
+  SlidersHorizontal,
   Github,
   SearchIcon,
+  UserPlusIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -29,7 +30,7 @@ import { env } from "@/lib/env";
 import { ChangeLayoutButton } from "@/features/settings/components/change-layout-button";
 
 export function Header() {
-  const t = useTranslations("main");
+  const t = useTranslations();
 
   return (
     <header className="flex justify-center items-center shadow-md px-2 py-3 border-b border-border w-full">
@@ -44,38 +45,27 @@ export function Header() {
                   width={50}
                   height={50}
                 />
-                <h1 className="font-bold text-xl">{t("metadata.title")}</h1>
+                <h1 className="font-bold text-xl">
+                  {t("main.metadata.title")}
+                </h1>
               </NavigationMenuTrigger>
               <NavigationMenuContent className="flex flex-col gap-1 p-1">
-                <Link
+                <NavItem
                   href="/filter-generator"
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    "w-auto truncate justify-start"
-                  )}
-                >
-                  <SearchIcon className="size-5" />{" "}
-                  <span>Search String Generator</span>
-                </Link>
-                <Link
-                  href="/iv-guess"
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    "w-auto truncate justify-start"
-                  )}
-                >
-                  <FileQuestion className="size-5" />
-                  <span>IV Guess</span>
-                </Link>
-                <Link
+                  label={t("pages.search-string-generator.title")}
+                  icon={<SearchIcon />}
+                />
+
+                <NavItem
+                  href="/poke-stats"
+                  label={t("pages.poke-stats.title")}
+                  icon={<SlidersHorizontal />}
+                />
+                <NavItem
                   href="/individual-ranking"
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    "w-auto truncate justify-start"
-                  )}
-                >
-                  <ChevronFirstIcon className="size-5" />
-                </Link>
+                  label={t("pages.individual-ranking.title")}
+                  icon={<UserPlusIcon />}
+                />
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuIndicator />
@@ -101,5 +91,28 @@ export function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+function NavItem({
+  href,
+  label,
+  icon,
+}: {
+  href: string;
+  label: string;
+  icon: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className={cn(
+        navigationMenuTriggerStyle(),
+        "w-auto truncate justify-start flex items-center gap-2"
+      )}
+    >
+      {icon}
+      <span>{label}</span>
+    </Link>
   );
 }

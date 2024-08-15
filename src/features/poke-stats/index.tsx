@@ -24,7 +24,7 @@ const defaultPokemon = {
   levelCap: 51,
 } as const;
 
-export function IVGuess() {
+export function PokeStats() {
   const { byName } = usePokedex();
 
   const [pokemon, setPokemon] = useState<Pokemon>(byName(defaultPokemon.name)!);
