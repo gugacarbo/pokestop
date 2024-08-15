@@ -1,4 +1,4 @@
-import { RankableMetric } from "@/data/stat";
+import { RankableMetric } from "@/@types/stat";
 import { RankedSpread } from "@/lib/generateRankedSpreads";
 
 export type SpreadColors = {

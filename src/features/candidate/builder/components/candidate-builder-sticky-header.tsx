@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { IV_FLOORS } from "@/data/ivFloor";
-import { RANKABLE_METRICS } from "@/data/stat";
+import { IV_FLOORS } from "@/@types/iv-floor";
+import { RANKABLE_METRICS } from "@/@types/stat";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";

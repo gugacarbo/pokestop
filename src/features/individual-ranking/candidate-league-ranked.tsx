@@ -8,7 +8,7 @@ import { useCandidate } from "@/features/candidate/use-candidate";
 import { useDataTable } from "@/features/data-table/useDataTable";
 import { rankSpreadColumns } from "@/features/data-table/data-columns/rank-spread-columns";
 import { useRankedSpreads } from "@/features/individual-ranking/hooks/useRankedSpreads";
-import { IV_FLOORS } from "@/data/ivFloor";
+import { IV_FLOORS, IVFloor } from "@/@types/iv-floor";
 import { DataTable } from "@/features/data-table/components/data-table";
 import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
 import { RankedSpread } from "@/lib/generateRankedSpreads";
@@ -38,14 +38,14 @@ const CandidateLeagueRanked: FC = () => {
             return;
           }
           const floor = IV_FLOORS.find(
-            (ivFloor) => ivFloor.value === candidate.floor
+            (ivFloor) => ivFloor === candidate.floor
           );
           if (floor === undefined) {
             return;
           }
           const resp: RankedSpread & {
             levelCap?: LevelCap;
-            floor?: (typeof IV_FLOORS)[0];
+            floor?: IVFloor;
           } = candidateAtLevel;
 
           resp.levelCap = levelCap;

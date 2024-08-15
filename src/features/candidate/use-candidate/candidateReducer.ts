@@ -1,12 +1,12 @@
-import { Dispatch as ReactDispatch } from 'react';
+import { Dispatch as ReactDispatch } from "react";
 
-import { IV } from '@/data/iv';
-import { IVFloor } from '@/data/ivFloor';
-import { StatKey, RankableMetric } from '@/data/stat';
-import { Pokemon } from '@/data/pokedex';
-import { ActionMap } from '@/utils/actionMap';
+import { IV } from "@/@types/iv";
+import { IVFloor } from "@/@types/iv-floor";
+import { StatKey, RankableMetric } from "@/@types/stat";
+import { Pokemon } from "@/data/pokedex";
+import { ActionMap } from "@/utils/actionMap";
 
-import { Candidate } from '.';
+import { Candidate } from ".";
 
 export enum CandidateActionTypes {
   Species,

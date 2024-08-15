@@ -9,7 +9,7 @@ import {
 } from "@/features/candidate/use-candidate";
 
 import { useSettings } from "@/features/settings/use-settings";
-import { RankableMetric, RANKABLE_METRICS } from "@/data/stat";
+import { RankableMetric, RANKABLE_METRICS } from "@/@types/stat";
 import { Label } from "@/components/ui/label";
 import {
   Select,

@@ -1,11 +1,11 @@
 import { LeagueCPCap } from "@/@types/league";
 import { LevelCap } from "@/@types/level-cap";
-import { IVFloor } from "@/data/ivFloor";
+import { IVFloor } from "@/@types/iv-floor";
 import { Pokemon, PokemonIVs, PokemonStats } from "@/data/pokedex";
 
 import { getMaximizedStats } from "./getMaximizedStats";
 import { getIVSpreads } from "./getIVSpreads";
-import { RankableMetric } from "@/data/stat";
+import { RankableMetric } from "@/@types/stat";
 
 export type ComparableToMax = {
   value: number;

@@ -1,12 +1,12 @@
 "use client";
 import React, { FC } from "react";
 
-import { IV_FLOORS } from "@/data/ivFloor";
+import { IV_FLOORS } from "@/@types/iv-floor";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useLeague } from "@/features/individual-ranking/hooks/useLeague";
 
-import { RANKABLE_METRICS } from "@/data/stat";
+import { RANKABLE_METRICS } from "@/@types/stat";
 import { ArrowLeftIcon, ChevronUpIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cva } from "class-variance-authority";
@@ -58,7 +58,7 @@ const CandidateLeagueHeader: FC = () => {
     throw new Error("No matching ranking metric could be found.");
   }
 
-  const floor = IV_FLOORS.find((floor) => floor.value === candidate.floor);
+  const floor = IV_FLOORS.find((floor) => floor === candidate.floor);
   if (floor === undefined) {
     throw new Error("No matching IV floor could be found.");
   }
@@ -116,7 +116,7 @@ const CandidateLeagueHeader: FC = () => {
             </p>
             <p className="flex items-baseline gap-1 mt-1 font-semibold text-xs">
               <span>{t(`settings.iv-floor.title`)}</span>
-              <span>{floor.value} -</span>
+              <span>{floor} -</span>
               <span>
                 {
                   //@ts-ignore
@@ -127,7 +127,6 @@ const CandidateLeagueHeader: FC = () => {
             <p className="mt-1 font-semibold text-xs">
               {t("settings.ranking-metrics.ranked-by", {
                 rank: t(
-                  //@ts-ignore
                   `settings.ranking-metrics.fields.${rankingMetric.key}.value`
                 ),
               })}
@@ -137,8 +136,7 @@ const CandidateLeagueHeader: FC = () => {
           <>
             <h2 className="flex-grow font-semibold leading-none">
               {
-                //@ts-ignore
-                t("rankings.cpLeagues." + league.key + ".value")
+                t(`rankings.cpLeagues.${league.key}.value`)
               }
             </h2>
           </>

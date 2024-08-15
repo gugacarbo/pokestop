@@ -7,8 +7,8 @@ import {
   CandidateActionTypes,
 } from "@/features/candidate/use-candidate";
 
-import { IV, IV_RANGE } from "@/data/iv";
-import { STATS } from "@/data/stat";
+import { IV, IV_RANGE } from "@/@types/iv";
+import { STATS } from "@/@types/stat";
 
 import {
   Select,
@@ -31,28 +31,24 @@ function CandidateBuilderIVs() {
   return (
     <div className="gap-2 grid grid-cols-3">
       {STATS.map((stat) => (
-        <Label key={stat.key}>
+        <Label key={stat}>
           <span className="text-muted-foreground text-xs">
-            {
-              //@ts-ignore
-              t(`stats.${stat.key}.value`)
-            }{" "}
-            IV
+            {t(`stats.${stat}.value`)} IV
           </span>
           <Select
             onValueChange={(evt) =>
               dispatch({
                 type: CandidateActionTypes.IV,
                 payload: {
-                  stat: stat.key,
+                  stat: stat,
                   value: parseInt(evt) as IV,
                 },
               })
             }
-            value={String(candidate.ivs[stat.key])}
+            value={String(candidate.ivs[stat])}
           >
             <SelectTrigger>
-              <SelectValue placeholder={stat.name} />
+              <SelectValue placeholder={t(`stats.${stat}.value`)} />
             </SelectTrigger>
             <SelectContent>
               {IV_RANGE.filter((iv) => iv >= candidate.floor)

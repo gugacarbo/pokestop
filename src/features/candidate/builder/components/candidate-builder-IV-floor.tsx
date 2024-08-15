@@ -7,7 +7,7 @@ import {
   CandidateActionTypes,
 } from "@/features/candidate/use-candidate";
 
-import { IVFloor, IV_FLOORS } from "@/data/ivFloor";
+import { IVFloor, IV_FLOORS } from "@/@types/iv-floor";
 import { useSettings } from "@/features/settings/use-settings";
 import {
   Select,

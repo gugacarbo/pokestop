@@ -6,7 +6,7 @@ import { Candidate, Context } from ".";
 
 import { candidateReducer } from "./candidateReducer";
 import { cacheCandidate } from "./cache-candidate";
-import { getInitialCandidate } from "./getInitialCandidate";
+import { getInitialCandidate } from "./get-initial-candidate";
 
 function useCandidateReducer(cachedCandidate: Candidate | null) {
   const [candidate, dispatch] = useReducer(

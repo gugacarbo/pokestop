@@ -1,12 +1,12 @@
 import { getPokemonByID, PokemonID } from "@/data/pokedex";
-import { IV, MAX_IV } from "@/data/iv";
-import { IVFloor, MIN_IV_FLOOR, MAX_IV_FLOOR } from "@/data/ivFloor";
+import { IV, MAX_IV } from "@/@types/iv";
+import { IVFloor, MIN_IV_FLOOR, MAX_IV_FLOOR } from "@/@types/iv-floor";
 
 import { tidyNumericInput } from "@/utils/tidyNumericInput";
 
 import { NextRouter } from "next/router";
 import { Candidate } from ".";
-import { RankableMetric, RANKABLE_METRICS } from "@/data/stat";
+import { RankableMetric, RANKABLE_METRICS } from "@/@types/stat";
 
 type DirtyIV = IV | number;
 type DirtyIVFloor = IVFloor | number;
@@ -110,13 +110,13 @@ export function getInitialCandidate(
     return sanitizeCandidate(id, atk, def, sta, floor, rankingMetric);
   } else if (cachedCandidate !== null) {
     return sanitizeCandidate(
-      cachedCandidate.species.id,
-      cachedCandidate.ivs.atk,
-      cachedCandidate.ivs.def,
-      cachedCandidate.ivs.sta,
-      cachedCandidate.floor,
-      cachedCandidate.minimumLevel,
-      cachedCandidate.rankingMetric
+      cachedCandidate?.species?.id,
+      cachedCandidate?.ivs?.atk,
+      cachedCandidate?.ivs?.def,
+      cachedCandidate?.ivs?.sta,
+      cachedCandidate?.floor,
+      cachedCandidate?.minimumLevel,
+      cachedCandidate?.rankingMetric
     );
   } else {
     return sanitizeCandidate(null);

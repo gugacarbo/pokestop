@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { LeagueCPCap } from "@/@types/league";
-import { LevelCap } from "@/@types/level-cap";
+import { LeagueCPCap, leagueCPKeysSchema } from "@/@types/league";
+import { LevelCap, levelCapNumberSchema } from "@/@types/level-cap";
 import { Pokemon } from "@/data/pokedex";
 import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
 import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
@@ -15,6 +15,16 @@ import { ResultTable } from "./result_table/table";
 import { useGenerateRankedSpreads } from "@/lib/useGenerateRankedSpreads";
 import { CompareModes } from "@/@types/compare-modes";
 import { SingleLevelCapSelector } from "./components/single-level-cap-selector";
+import { z } from "zod";
+import { Candidate } from "../candidate/use-candidate";
+
+const pokeStatsSchema = z.object({
+  name: z.string(),
+  hp: z.number(),
+  cp: z.number(),
+  leagueCp: leagueCPKeysSchema,
+  levelCap: levelCapNumberSchema,
+});
 
 const defaultPokemon = {
   name: "Medicham",
@@ -24,10 +34,13 @@ const defaultPokemon = {
   levelCap: 51,
 } as const;
 
-export function PokeStats() {
+export function PokeStats({ candidate }: { candidate?: Candidate | null }) {
   const { byName } = usePokedex();
 
-  const [pokemon, setPokemon] = useState<Pokemon>(byName(defaultPokemon.name)!);
+  const [pokemon, setPokemon] = useState<Pokemon>(
+    byName(candidate?.species?.name || defaultPokemon.name)!
+  );
+
   const [league, setLeague] = useState<LeagueCPCap>(defaultPokemon.leagueCp);
   const [levelCap, setLevelCap] = useState<LevelCap>(defaultPokemon.levelCap);
 

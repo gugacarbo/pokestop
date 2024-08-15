@@ -1,10 +1,9 @@
-export type StatKey = "atk" | "def" | "sta";
+import { z } from "zod";
 
-export const STATS: { key: StatKey; name: string }[] = [
-  { key: "atk", name: "Attack" },
-  { key: "def", name: "Defense" },
-  { key: "sta", name: "Stamina" },
-];
+const statKeys = z.enum(["atk", "def", "sta"]);
+export type StatKey = z.infer<typeof statKeys>;
+
+export const STATS: StatKey[] = statKeys.options;
 
 export type RankableMetric = StatKey | "product" | "bulkProduct";
 

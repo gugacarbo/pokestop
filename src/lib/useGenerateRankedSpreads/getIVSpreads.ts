@@ -1,6 +1,6 @@
 import { PokemonIVs } from '@/data/pokedex';
 import { IV } from '@/data/iv';
-import { IVFloor } from '@/data/ivFloor';
+import { IVFloor } from '@/@types/iv-floor';
 
 export function getIVSpreads(floor: IVFloor) {
   const ivCombinations: PokemonIVs[] = [];

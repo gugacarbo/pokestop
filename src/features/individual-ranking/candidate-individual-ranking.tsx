@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { LEAGUES } from "@/data/league";
 import { useSettings } from "@/features/settings/use-settings";
