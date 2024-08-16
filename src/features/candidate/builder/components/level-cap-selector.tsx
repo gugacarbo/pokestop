@@ -65,7 +65,7 @@ function LevelCapSelector({
                 levelCaps.length === 0 && "text-destructive"
               )}
             />
-            {levelCaps.join(", ") || (
+            {levelCaps.join(" | ") || (
               <b className="text-destructive">{t("level-caps.title")}</b>
             )}
           </Button>

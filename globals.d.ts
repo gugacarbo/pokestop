@@ -10,7 +10,6 @@ type Messages = {
   pages: typeof pages;
   rankings: typeof rankings;
   filters: typeof filters;
-  pokemons: typeof pokemons;
   settings: typeof settings;
 };
 

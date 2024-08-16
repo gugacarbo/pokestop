@@ -1,6 +1,6 @@
 "use client";
 
-import { SpeciesDropdown } from "@/features/_pokemon/components/species-dropdown";
+import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
 
 import {
   useCandidate,

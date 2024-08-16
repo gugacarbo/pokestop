@@ -8,15 +8,18 @@ import {
 } from "@/features/candidate/use-candidate";
 import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
 
-import SpeciesTypeIcons from "@/features/_pokemon/components/SpeciesTypeIcons";
+import SpeciesTypeIcons from "@/features/pokemon/components/species-type-icons";
 
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 const CandidateBuilderFamilySwap: FC = () => {
   const { candidate, dispatch } = useCandidate();
   const pokedex = usePokedex();
+
+  const t = useTranslations("rankings");
 
   const iterableFamily = pokedex
     .familyMembers(candidate.species.family?.id)
@@ -26,7 +29,7 @@ const CandidateBuilderFamilySwap: FC = () => {
 
   return (
     <div className="flex flex-wrap justify-start items-center gap-2 mt-2 sm:mt-1 w-full">
-      <Label className="sr-only">Other family members</Label>
+      <Label className="sr-only">{t("candidate.family.other-members")}</Label>
       {iterableFamily.map((familyMember) => (
         <Button
           variant="outline"

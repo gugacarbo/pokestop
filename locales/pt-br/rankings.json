@@ -1,22 +1,17 @@
 {
-  "metadata": {
-    "title": "Classificações!",
-    "description": "Explore os melhores Pokémon para Pokémon GO PvP da liga. \nAs classificações incluem os principais movimentos, confrontos e contadores para cada Pokémon, bem como classificações para diferentes funções."
+  "league": {
+    "title": "Liga"
   },
   "individual": {
-    "metadata": {
-      "description": "Explore os melhores Pokémon para Pokémon GO PvP da liga. \nAs classificações incluem os principais movimentos, confrontos e contadores para cada Pokémon, bem como classificações para diferentes funções.",
-      "title": "Classificação Individual!"
+    "level-cap": {
+      "description": "Veja os principais spreads IV da {league} para {name}, nível {minimumLevel}-{levelCap}",
+      "title": "Selecione o limite de nível"
     },
     "spreads": {
       "top-spreads": {
         "title": "Melhores IVs de {pokemon} para {league}",
         "level-data": "Nível {level} - {levelDesc}"
       }
-    },
-    "level-cap": {
-      "description": "Veja os principais spreads IV da {league} para {name}, nível {minimumLevel}-{levelCap}",
-      "title": "Selecione o limite de nível"
     }
   },
   "cpLeagues": {
@@ -37,36 +32,14 @@
       "description": "PC Máx. 2500"
     }
   },
-  "cupLeagues": {
-    "battlefrontiergreat": "Fronteira de Batalha (Mestre)",
-    "battlefrontiermaster": "Fronteira de Batalha (Mestre)",
-    "battlefrontierultra": "Fronteira de Batalha (Mestre)",
-    "catch": "Copo de captura",
-    "classic": "Clássico da Liga Master",
-    "devonchampionship": "Campeonato Devon",
-    "evolution": "Copa Evolução",
-    "fantasy": "Copa Fantasia",
-    "fossil": "Copa Fóssil",
-    "little": "Copinha",
-    "littlecatch": "Copinha de captura",
-    "mega": "Liga Mega Master",
-    "polaris": "Fronteira de Batalha (Polaris)",
-    "premier": "Primeiro-ministro",
-    "premierclassic": "Clássico Premier",
-    "remix": "Remixar",
-    "retro": "Copa retrô",
-    "sovereign": "Taça Soberana de Devon",
-    "summer": "Copa de Verão",
-    "tundra": "Taça Devon Tundra",
-    "ufc-untapped-master": "UFC Invirado (Mestre)",
-    "wasteland": "Fronteira de Batalha (Wasteland)",
-    "zodiac": "Taça Zodíaco Devon",
-    "master-classic": {
-      "value": "Clássico da Liga Mestre",
-      "description": ""
-    }
-  },
-  "league": {
-    "title": "Liga"
+  "candidate": {
+    "description": "Veja os principais spreads IV da {league} para {name}",
+    "family": {
+      "other-members": "Outros membros da família",
+      "value": "Família"
+    },
+    "title": "Candidato",
+    "edit-candidate": "Editar candidato",
+    "min-level": "Nível Min. {level}"
   }
 }

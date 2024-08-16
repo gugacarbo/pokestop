@@ -2,10 +2,10 @@ import React from "react";
 import { Provider as CandidateContextProvider } from "@/features/candidate/use-candidate";
 import { CandidateBuilder } from "@/features/candidate/builder/candidate-builder";
 import { DataOutputSelector } from "@/features/settings/components/data-output-selector";
-import { LevelCapSelector } from "@/features/candidate/components/level-cap-selector";
 import { getTranslations } from "next-intl/server";
 import { CandidateIndividualRanking } from "@/features/individual-ranking/candidate-individual-ranking";
 import { getCandidateCookie } from "@/features/candidate/get-candidate-cookie";
+import { LevelCapSelector } from "@/features/candidate/builder/components/level-cap-selector";
 
 export async function generateMetadata({
   params: { locale },
@@ -14,8 +14,8 @@ export async function generateMetadata({
 }) {
   const t = await getTranslations({ locale });
   return {
-    title: t("rankings.individual.metadata.title"),
-    description: t("rankings.individual.metadata.description"),
+    title: t("pages.individual-ranking.title"),
+    description: t("pages.individual-ranking.description"),
   };
 }
 

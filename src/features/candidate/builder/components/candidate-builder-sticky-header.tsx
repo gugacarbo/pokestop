@@ -6,21 +6,20 @@ import { RANKABLE_METRICS } from "@/@types/stat";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";
-import SpeciesTypeIcons from "@/features/_pokemon/components/SpeciesTypeIcons";
+import SpeciesTypeIcons from "@/features/pokemon/components/species-type-icons";
 import { PencilIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 
 function useIsScrolled() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
-      setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scrollY > 10);
     }
-
     handleScroll();
-
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,6 +31,8 @@ function useIsScrolled() {
 export function CandidateBuilderStickyHeader() {
   const { candidate } = useCandidate();
   const { settings } = useSettings();
+
+  const t = useTranslations();
 
   const isScrolled = useIsScrolled();
   if (!isScrolled) return null;
@@ -59,23 +60,28 @@ export function CandidateBuilderStickyHeader() {
           {candidate.ivs.sta}{" "}
         </p>
         <p className="text-[10px] text-muted-foreground">
-          Ranked by {rankingMetric.name}, Min. IV {floor} ({floor})
+          {t("settings.ranking-metrics.ranked-by", {
+            rank: t(
+              `settings.ranking-metrics.fields.${rankingMetric.key}.value`
+            ),
+          })}
           {settings.showMinimumLevel &&
-            `, Min. Level ${candidate.minimumLevel}`}
+            " " +
+              t(`rankings.candidate.min-level`, {
+                level: candidate.minimumLevel,
+              })}
         </p>
       </div>
 
-      <button
+      <Button
+        variant="ghost"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="p-1 rounded-full focus-visible-ring ring-offset-gray-100 dark:ring-offset-gray-800"
       >
-        <PencilIcon
-          className="w-5 h-5 text-gray-600 dark:text-gray-300"
-          aria-hidden
-        />
-
-        <span className="sr-only">Edit Candidate</span>
-      </button>
+        <PencilIcon className="w-5 h-5 text-muted-foreground" aria-hidden />
+        <span className="sr-only">
+          {t("rankings.candidate.edit-candidate")}
+        </span>
+      </Button>
     </div>
   );
 }

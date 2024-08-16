@@ -10,5 +10,9 @@
     "individual-ranking": {
         "title": "Individual Ranking",
         "description": "This tool is a work-in-progress and should be used for educational purposes only. Please don`t try to use this in an official tournament!"
+    },
+    "type-chart": {
+        "title": "Type Chart",
+        "description": "A complete Pokémon GO type chart, showing how each Pokémon type stacks against all of the other types. Dive into our comprehensive Pokémon GO Type Chart to master battles! Discover type strengths, weaknesses, and the best counters to gain an edge in every encounter."
     }
 }

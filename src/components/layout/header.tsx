@@ -66,6 +66,11 @@ export function Header() {
                   label={t("pages.individual-ranking.title")}
                   icon={<UserPlusIcon />}
                 />
+                <NavItem
+                  href="/type-chart"
+                  label={t("pages.type-chart.title")}
+                  icon={<UserPlusIcon />}
+                />
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuIndicator />

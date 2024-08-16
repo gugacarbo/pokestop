@@ -4,13 +4,13 @@ import { useMemo, useState } from "react";
 import { LeagueCPCap, leagueCPKeysSchema } from "@/@types/league";
 import { LevelCap, levelCapNumberSchema } from "@/@types/level-cap";
 import { Pokemon } from "@/@types/pokemon";
-import { SpeciesDropdown } from "@/features/_pokemon/components/species-dropdown";
+import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
 import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
 
 import { ScatterPokemonChart } from "./rank-chart/scatter-ranking.chart";
 import { CpSelector } from "./components/cp-selector";
 import { HpSelector } from "./components/hp-selector";
-import { CpLeagueSelector } from "../candidate/components/league-selector";
+import { CpLeagueSelector } from "../candidate/builder/components/league-selector";
 import { ResultTable } from "./result_table/table";
 import { useGenerateRankedSpreads } from "@/lib/useGenerateRankedSpreads";
 import { CompareModes } from "@/@types/compare-modes";
