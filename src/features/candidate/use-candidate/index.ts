@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext } from "react";
-import { Pokemon } from "@/data/pokedex";
+import { Pokemon } from "@/@types/pokemon";
 import { IV } from "@/@types/iv";
 import { IVFloor } from "@/@types/iv-floor";
 import { RankableMetric } from "@/@types/stat";

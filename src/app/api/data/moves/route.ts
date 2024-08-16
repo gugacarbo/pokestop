@@ -1,6 +1,6 @@
 import type { NextRequest, NextResponse } from "next/server";
 import moves from "./data/moves";
-import { moveSchema } from "@/features/pokemon/@types/move/move";
+import { moveSchema } from "@/features/_pokemon/@types/move/move";
 
 export const runtime = "edge";
 

@@ -2,9 +2,9 @@ import * as React from "react";
 
 import { FilterCard } from "../filter-card";
 
-import { getAllPokemon } from "@/features/pokemon/actions/get-pokemon";
+import { getAllPokemon } from "@/features/_pokemon/actions/get-pokemon";
 import { NamesListSelector } from "./names-list-selector";
-import { Pokemon } from "@/features/pokemon/@types";
+import { Pokemon } from "@/features/_pokemon/@types";
 import { NamesList } from "./names-list";
 
 async function PokemonNameFilter() {

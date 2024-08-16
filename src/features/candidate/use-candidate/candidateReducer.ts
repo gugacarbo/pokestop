@@ -3,7 +3,7 @@ import { Dispatch as ReactDispatch } from "react";
 import { IV } from "@/@types/iv";
 import { IVFloor } from "@/@types/iv-floor";
 import { StatKey, RankableMetric } from "@/@types/stat";
-import { Pokemon } from "@/data/pokedex";
+import { Pokemon } from "@/@types/pokemon";
 import { ActionMap } from "@/utils/actionMap";
 
 import { Candidate } from ".";

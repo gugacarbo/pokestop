@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/popover";
 
 import { useState } from "react";
-import { Pokemon } from "@/features/pokemon/@types";
+import { Pokemon } from "@/features/_pokemon/@types";
 import { useFormContext } from "react-hook-form";
 import { FormField } from "@/components/ui/form";
 import { SearchFilter } from "../schemas/search-filter-schema";

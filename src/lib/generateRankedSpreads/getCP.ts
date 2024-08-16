@@ -1,5 +1,5 @@
 import { CPMs } from '@/data/cpm';
-import { PokemonStats } from '@/data/pokedex';
+import { PokemonStats } from '@/@types/pokemon';
 
 export function getCP(
   atk: PokemonStats['atk'],

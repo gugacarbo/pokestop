@@ -1,4 +1,4 @@
-import { PokemonIVs } from '@/data/pokedex';
+import { PokemonIVs } from '@/@types/pokemon';
 import { IV } from '@/@types/iv';
 import { IVFloor } from '@/@types/iv-floor';
 

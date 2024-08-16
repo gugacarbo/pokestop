@@ -1,4 +1,4 @@
-import type { Pokemon } from ".";
+import type { Pokemon } from "@/@types/pokemon";
 
 export const POKEDEX: Pokemon[] = [
   {

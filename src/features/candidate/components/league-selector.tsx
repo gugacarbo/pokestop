@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { LEAGUES } from "@/data/league";
+import { LEAGUES } from "@/@types/league";
 import { useTranslations } from "next-intl";
 
 function CpLeagueSelector({

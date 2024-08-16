@@ -1,4 +1,4 @@
-import { Pokemon } from "@/features/pokemon/@types";
+import { Pokemon } from "@/features/_pokemon/@types";
 
 const pokemons: Record<string, Pokemon & any> = {
   bulbasaur: {

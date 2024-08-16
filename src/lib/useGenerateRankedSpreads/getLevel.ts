@@ -1,7 +1,7 @@
 import { CPMs } from "@/data/cpm";
 import { LeagueCPCap } from "@/@types/league";
 import { LevelCap } from "@/@types/level-cap";
-import { PokemonStats } from "@/data/pokedex";
+import { PokemonStats } from "@/@types/pokemon";
 
 // binary search to find the closest actual CPM to a given estimated CPM
 function getActualCPMIndex(estimatedCPM: number) {

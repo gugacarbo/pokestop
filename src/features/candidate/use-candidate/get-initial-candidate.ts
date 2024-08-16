@@ -1,4 +1,6 @@
-import { getPokemonByID, PokemonID } from "@/data/pokedex";
+import { PokemonID } from "@/@types/pokemon";
+import { getPokemonByID } from "@/features/pokemon";
+
 import { IV, MAX_IV } from "@/@types/iv";
 import { IVFloor, MIN_IV_FLOOR, MAX_IV_FLOOR } from "@/@types/iv-floor";
 

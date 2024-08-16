@@ -14,9 +14,9 @@ import {
 
 import { useState } from "react";
 
-import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
+import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
 
-import { Pokemon } from "@/data/pokedex";
+import { Pokemon } from "@/@types/pokemon";
 import { Input } from "@/components/ui/input";
 import { useFuzzyFilter } from "@/hooks/use-fuzzy-filter";
 import {

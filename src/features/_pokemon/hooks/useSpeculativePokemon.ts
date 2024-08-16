@@ -1,6 +1,6 @@
 "use client";
 
-import { PokemonID } from "@/data/pokedex";
+import { PokemonID } from "@/@types/pokemon";
 import { createContext, useContext } from "react";
 
 const SpeculativePokemonContext = createContext<PokemonID[]>([]);

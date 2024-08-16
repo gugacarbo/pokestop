@@ -6,9 +6,9 @@ import {
   CandidateActionTypes,
   useCandidate,
 } from "@/features/candidate/use-candidate";
-import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
+import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
 
-import SpeciesTypeIcons from "@/features/pokemon/components/SpeciesTypeIcons";
+import SpeciesTypeIcons from "@/features/_pokemon/components/SpeciesTypeIcons";
 
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";

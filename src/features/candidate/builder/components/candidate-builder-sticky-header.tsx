@@ -6,7 +6,7 @@ import { RANKABLE_METRICS } from "@/@types/stat";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";
-import SpeciesTypeIcons from "@/features/pokemon/components/SpeciesTypeIcons";
+import SpeciesTypeIcons from "@/features/_pokemon/components/SpeciesTypeIcons";
 import { PencilIcon } from "lucide-react";
 
 function useIsScrolled() {

@@ -1,4 +1,4 @@
-import { PokemonIVs } from "@/data/pokedex";
+import { PokemonIVs } from "@/@types/pokemon";
 import { RankedSpread } from "@/lib/generateRankedSpreads";
 import { cn } from "@/lib/utils";
 import { CellContext } from "@tanstack/react-table";

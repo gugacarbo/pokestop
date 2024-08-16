@@ -1,5 +1,5 @@
 import type { NextRequest, NextResponse } from "next/server";
-import { getAllPokemon } from "@/features/pokemon/actions/get-pokemon";
+import { getAllPokemon } from "@/features/_pokemon/actions/get-pokemon";
 
 export const runtime = "edge";
 

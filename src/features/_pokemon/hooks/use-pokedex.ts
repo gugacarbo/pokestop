@@ -1,17 +1,17 @@
 "use client";
 
 import { useCallback, useMemo } from "react";
-import { useSettings } from "../../settings/use-settings";
+import { useSettings } from "@/features/settings/use-settings";
+import { POKEDEX } from "@/data/pokedex";
 
+import type { PokemonName, PokemonID } from "@/@types/pokemon";
 import {
-  POKEDEX,
   getPokemonByName,
   getPokemonByID,
   getPokemonFamilyMembers,
-  PokemonName,
-  PokemonID,
   searchPokemonByName,
-} from "@/data/pokedex";
+} from "@/features/pokemon";
+
 import { useSpeculativePokemon } from "./useSpeculativePokemon";
 
 const speculativePokemon: PokemonID[] = [];

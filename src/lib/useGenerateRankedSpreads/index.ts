@@ -1,7 +1,7 @@
 import { LeagueCPCap } from "@/@types/league";
 import { LevelCap } from "@/@types/level-cap";
 import { IVFloor } from "@/@types/iv-floor";
-import { Pokemon, PokemonIVs, PokemonStats } from "@/data/pokedex";
+import { Pokemon, PokemonIVs, PokemonStats } from "@/@types/pokemon";
 
 import { getMaximizedStats } from "./getMaximizedStats";
 import { getIVSpreads } from "./getIVSpreads";

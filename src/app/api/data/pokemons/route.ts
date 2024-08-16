@@ -1,6 +1,6 @@
 import type { NextRequest, NextResponse } from "next/server";
 import pokemons from "./data/pokemons";
-import { pokemonSchema } from "@/features/pokemon/@types/pokemon/pokemon";
+import { pokemonSchema } from "@/features/_pokemon/@types/pokemon/pokemon";
 
 export const runtime = "edge";
 

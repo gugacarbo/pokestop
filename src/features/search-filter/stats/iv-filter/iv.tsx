@@ -14,7 +14,7 @@ import { ToggleFilterMode } from "../../components/toggle-filter-mode";
 import { EnableFilter } from "../../components/enable-filter";
 import { StarIconFilter } from "./components/star-icon-iv";
 import { FilterDescription } from "./components/iv-description";
-import { IvBar } from "@/features/pokemon/components/iv-bar";
+import { IvBar } from "@/features/_pokemon/components/iv-bar";
 import { CpFilter } from "../cp-filter";
 import { FilterCard } from "../../filter-card";
 

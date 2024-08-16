@@ -1,6 +1,6 @@
 "use client";
 
-import { LEAGUES } from "@/data/league";
+import { LEAGUES } from "@/@types/league";
 import { useSettings } from "@/features/settings/use-settings";
 import { CandidateLeague } from "@/features/individual-ranking/candidate-league";
 

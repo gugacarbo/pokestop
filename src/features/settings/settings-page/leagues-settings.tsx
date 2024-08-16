@@ -1,6 +1,6 @@
 "use client";
 
-import { LEAGUES } from "@/data/league";
+import { LEAGUES } from "@/@types/league";
 import {
   SettingsActionTypes,
   useSettings,

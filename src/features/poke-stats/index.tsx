@@ -3,9 +3,9 @@
 import { useMemo, useState } from "react";
 import { LeagueCPCap, leagueCPKeysSchema } from "@/@types/league";
 import { LevelCap, levelCapNumberSchema } from "@/@types/level-cap";
-import { Pokemon } from "@/data/pokedex";
-import { SpeciesDropdown } from "@/features/pokemon/components/species-dropdown";
-import { usePokedex } from "@/features/pokemon/hooks/use-pokedex";
+import { Pokemon } from "@/@types/pokemon";
+import { SpeciesDropdown } from "@/features/_pokemon/components/species-dropdown";
+import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
 
 import { ScatterPokemonChart } from "./rank-chart/scatter-ranking.chart";
 import { CpSelector } from "./components/cp-selector";

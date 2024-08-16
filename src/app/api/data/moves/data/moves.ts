@@ -1,4 +1,4 @@
-import { Move } from "@/features/pokemon/@types/move/move";
+import { Move } from "@/features/_pokemon/@types/move/move";
 
 const moves: Record<string, Move> = {
   ACID: {

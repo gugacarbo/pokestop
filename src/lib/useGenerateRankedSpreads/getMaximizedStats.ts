@@ -1,6 +1,6 @@
 import { LeagueCPCap } from "@/@types/league";
 import { LevelCap } from "@/@types/level-cap";
-import { Pokemon, PokemonIVs } from "@/data/pokedex";
+import { Pokemon, PokemonIVs } from "@/@types/pokemon";
 
 import { SpreadWithMaximizedStats } from ".";
 import { getLevel } from "./getLevel";

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Pokemon } from "@/data/pokedex";
+import { Pokemon } from "@/@types/pokemon";
 import Image from "next/image";
 
 export const SpeciesTypeIcons: FC<{ types: Pokemon["types"] }> = ({
