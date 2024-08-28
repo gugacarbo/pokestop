@@ -1,4 +1,6 @@
 import type { Move } from "@/@types/move";
+// Last Update at: 2024-08-28T17:12:29.125Z
+// From {@ pvpoke fetch} 
 export const MOVES: Move[] = [
     {
         "id": "ACID",
@@ -41,7 +43,7 @@ export const MOVES: Move[] = [
         "name": "Aerial Ace",
         "type": "flying",
         "power": 55,
-        "energy": 40,
+        "energy": 45,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "General"
@@ -86,13 +88,13 @@ export const MOVES: Move[] = [
         "id": "ANCIENT_POWER",
         "name": "Ancient Power",
         "type": "rock",
-        "power": 60,
+        "power": 45,
         "energy": 45,
         "energyGain": 0,
         "cooldown": 500,
         "buffs": [
-            1,
-            1
+            2,
+            2
         ],
         "buffApplyChance": 0.1,
         "buffTarget": "self",
@@ -112,7 +114,7 @@ export const MOVES: Move[] = [
         "id": "AQUA_TAIL",
         "name": "Aqua Tail",
         "type": "water",
-        "power": 55,
+        "power": 50,
         "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
@@ -122,11 +124,11 @@ export const MOVES: Move[] = [
         "id": "ASTONISH",
         "name": "Astonish",
         "type": "ghost",
-        "power": 9,
+        "power": 5,
         "energy": 0,
-        "energyGain": 10,
+        "energyGain": 9,
         "cooldown": 1500,
-        "archetype": "General"
+        "archetype": "Low Quality"
     },
     {
         "id": "AURA_SPHERE",
@@ -179,22 +181,6 @@ export const MOVES: Move[] = [
         "archetype": "General"
     },
     {
-        "id": "BLEAKWIND_STORM",
-        "name": "Bleakwind Storm",
-        "type": "flying",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
-    },
-    {
         "id": "BLIZZARD",
         "name": "Blizzard",
         "type": "ice",
@@ -213,16 +199,6 @@ export const MOVES: Move[] = [
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Spam/Bait"
-    },
-    {
-        "id": "BOOMBURST",
-        "name": "Boomburst",
-        "type": "normal",
-        "power": 150,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
     },
     {
         "id": "BONE_CLUB",
@@ -251,46 +227,14 @@ export const MOVES: Move[] = [
         "archetype": "Self-Debuff Nuke"
     },
     {
-        "id": "BREAKING_SWIPE",
-        "name": "Breaking Swipe",
-        "type": "dragon",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 0.5,
-        "buffTarget": "opponent",
-        "archetype": "Debuff Spam/Bait"
-    },
-    {
         "id": "BRICK_BREAK",
         "name": "Brick Break",
         "type": "fighting",
         "power": 40,
-        "energy": 40,
+        "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
-        "buffs": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff Spam/Bait"
-    },
-    {
-        "id": "BRUTAL_SWING",
-        "name": "Brutal Swing",
-        "type": "dark",
-        "power": 65,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
+        "archetype": "Spam/Bait"
     },
     {
         "id": "BRINE",
@@ -306,7 +250,7 @@ export const MOVES: Move[] = [
         "id": "BUBBLE",
         "name": "Bubble",
         "type": "water",
-        "power": 8,
+        "power": 7,
         "energy": 0,
         "energyGain": 11,
         "cooldown": 1500,
@@ -372,7 +316,7 @@ export const MOVES: Move[] = [
         "energy": 0,
         "energyGain": 7,
         "cooldown": 1000,
-        "archetype": "General"
+        "archetype": "Fast Charge"
     },
     {
         "id": "BULLET_SEED",
@@ -398,7 +342,7 @@ export const MOVES: Move[] = [
         "id": "CHARM",
         "name": "Charm",
         "type": "fairy",
-        "power": 15,
+        "power": 16,
         "energy": 0,
         "energyGain": 6,
         "cooldown": 1500,
@@ -460,7 +404,7 @@ export const MOVES: Move[] = [
         "id": "CROSS_CHOP",
         "name": "Cross Chop",
         "type": "fighting",
-        "power": 55,
+        "power": 50,
         "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
@@ -509,16 +453,6 @@ export const MOVES: Move[] = [
         "archetype": "Low Quality"
     },
     {
-        "id": "DARKEST_LARIAT",
-        "name": "Darkest Lariat",
-        "type": "dark",
-        "power": 120,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
-    },
-    {
         "id": "DARK_PULSE",
         "name": "Dark Pulse",
         "type": "dark",
@@ -542,8 +476,8 @@ export const MOVES: Move[] = [
         "id": "DIG",
         "name": "Dig",
         "type": "ground",
-        "power": 80,
-        "energy": 50,
+        "power": 100,
+        "energy": 80,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "High Energy"
@@ -579,26 +513,6 @@ export const MOVES: Move[] = [
         "archetype": "Spam/Bait"
     },
     {
-        "id": "DOUBLE_IRON_BASH",
-        "name": "Double Iron Bash",
-        "type": "steel",
-        "power": 50,
-        "energy": 35,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Spam/Bait"
-    },
-    {
-        "id": "DOUBLE_KICK",
-        "name": "Double Kick",
-        "type": "fighting",
-        "power": 8,
-        "energy": 0,
-        "energyGain": 12,
-        "cooldown": 1500,
-        "archetype": "Multipurpose"
-    },
-    {
         "id": "DRACO_METEOR",
         "name": "Draco Meteor",
         "type": "dragon",
@@ -609,22 +523,6 @@ export const MOVES: Move[] = [
         "buffs": [
             -2,
             0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "self",
-        "archetype": "Self-Debuff Nuke"
-    },
-    {
-        "id": "DRAGON_ASCENT",
-        "name": "Dragon Ascent",
-        "type": "flying",
-        "power": 150,
-        "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -1
         ],
         "buffApplyChance": 1,
         "buffTarget": "self",
@@ -730,7 +628,7 @@ export const MOVES: Move[] = [
         "id": "EARTHQUAKE",
         "name": "Earthquake",
         "type": "ground",
-        "power": 110,
+        "power": 120,
         "energy": 65,
         "energyGain": 0,
         "cooldown": 500,
@@ -848,21 +746,11 @@ export const MOVES: Move[] = [
         "id": "BLAZE_KICK",
         "name": "Blaze Kick",
         "type": "fire",
-        "power": 60,
+        "power": 55,
         "energy": 40,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Spam/Bait"
-    },
-    {
-        "id": "FAIRY_WIND",
-        "name": "Fairy Wind",
-        "type": "fairy",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 9,
-        "cooldown": 1000,
-        "archetype": "Fast Charge"
     },
     {
         "id": "FEATHER_DANCE",
@@ -884,7 +772,7 @@ export const MOVES: Move[] = [
         "id": "FIRE_SPIN",
         "name": "Fire Spin",
         "type": "fire",
-        "power": 10,
+        "power": 9,
         "energy": 0,
         "energyGain": 10,
         "cooldown": 1500,
@@ -977,16 +865,6 @@ export const MOVES: Move[] = [
         "archetype": "Nuke"
     },
     {
-        "id": "FORCE_PALM",
-        "name": "Force Palm",
-        "type": "fighting",
-        "power": 13,
-        "energy": 0,
-        "energyGain": 10,
-        "cooldown": 1500,
-        "archetype": "Multipurpose"
-    },
-    {
         "id": "FOUL_PLAY",
         "name": "Foul Play",
         "type": "dark",
@@ -1037,26 +915,6 @@ export const MOVES: Move[] = [
         "archetype": "Fast Charge"
     },
     {
-        "id": "FUSION_BOLT",
-        "name": "Fusion Bolt",
-        "type": "electric",
-        "power": 90,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
-    },
-    {
-        "id": "FUSION_FLARE",
-        "name": "Fusion Flare",
-        "type": "fire",
-        "power": 90,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
-    },
-    {
         "id": "FUTURE_SIGHT",
         "name": "Future Sight",
         "type": "psychic",
@@ -1065,16 +923,6 @@ export const MOVES: Move[] = [
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Nuke"
-    },
-    {
-        "id": "GEOMANCY",
-        "name": "Geomancy",
-        "type": "fairy",
-        "power": 4,
-        "energy": 0,
-        "energyGain": 13,
-        "cooldown": 1500,
-        "archetype": "Fast Charge"
     },
     {
         "id": "GIGA_DRAIN",
@@ -1095,22 +943,6 @@ export const MOVES: Move[] = [
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Nuke"
-    },
-    {
-        "id": "GLACIATE",
-        "name": "Glaciate",
-        "type": "ice",
-        "power": 60,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
     },
     {
         "id": "GRASS_KNOT",
@@ -1353,32 +1185,6 @@ export const MOVES: Move[] = [
         "archetype": "Low Quality"
     },
     {
-        "id": "HIGH_HORSEPOWER",
-        "name": "High Horsepower",
-        "type": "ground",
-        "power": 100,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
-    },
-    {
-        "id": "HIGH_JUMP_KICK",
-        "name": "High Jump Kick",
-        "type": "fighting",
-        "power": 110,
-        "energy": 55,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -4
-        ],
-        "buffApplyChance": 0.1,
-        "buffTarget": "self",
-        "archetype": "Self-Debuff Nuke"
-    },
-    {
         "id": "HORN_ATTACK",
         "name": "Horn Attack",
         "type": "normal",
@@ -1492,8 +1298,8 @@ export const MOVES: Move[] = [
         "id": "ICICLE_SPEAR",
         "name": "Icicle Spear",
         "type": "ice",
-        "power": 65,
-        "energy": 40,
+        "power": 60,
+        "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Spam/Bait"
@@ -1518,7 +1324,7 @@ export const MOVES: Move[] = [
         "id": "INCINERATE",
         "name": "Incinerate",
         "type": "fire",
-        "power": 20,
+        "power": 15,
         "energy": 0,
         "energyGain": 20,
         "cooldown": 2500,
@@ -1548,11 +1354,11 @@ export const MOVES: Move[] = [
         "id": "IRON_TAIL",
         "name": "Iron Tail",
         "type": "steel",
-        "power": 10,
+        "power": 9,
         "energy": 0,
-        "energyGain": 7,
+        "energyGain": 6,
         "cooldown": 1500,
-        "archetype": "General"
+        "archetype": "Low Quality"
     },
     {
         "id": "KARATE_CHOP",
@@ -1617,16 +1423,6 @@ export const MOVES: Move[] = [
         "archetype": "Self-Debuff Nuke"
     },
     {
-        "id": "LEAFAGE",
-        "name": "Leafage",
-        "type": "grass",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 7,
-        "cooldown": 1000,
-        "archetype": "General"
-    },
-    {
         "id": "LICK",
         "name": "Lick",
         "type": "ghost",
@@ -1635,22 +1431,6 @@ export const MOVES: Move[] = [
         "energyGain": 3,
         "cooldown": 500,
         "archetype": "General"
-    },
-    {
-        "id": "LIQUIDATION",
-        "name": "Liquidation",
-        "type": "water",
-        "power": 70,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 0.3,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
     },
     {
         "id": "LOCK_ON",
@@ -1725,16 +1505,6 @@ export const MOVES: Move[] = [
         "archetype": "General"
     },
     {
-        "id": "MAGMA_STORM",
-        "name": "Magma Storm",
-        "type": "fire",
-        "power": 65,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
-    },
-    {
         "id": "MAGNET_BOMB",
         "name": "Magnet Bomb",
         "type": "steel",
@@ -1773,32 +1543,6 @@ export const MOVES: Move[] = [
         "energyGain": 6,
         "cooldown": 1000,
         "archetype": "Low Quality"
-    },
-    {
-        "id": "METAL_SOUND",
-        "name": "Metal Sound",
-        "type": "steel",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 8,
-        "cooldown": 1000,
-        "archetype": "Fast Charge"
-    },
-    {
-        "id": "METEOR_BEAM",
-        "name": "Meteor Beam",
-        "type": "rock",
-        "power": 120,
-        "energy": 60,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "self",
-        "archetype": "Boost Nuke"
     },
     {
         "id": "METEOR_MASH",
@@ -1869,20 +1613,10 @@ export const MOVES: Move[] = [
         "archetype": "Debuff Nuke"
     },
     {
-        "id": "MOONGEIST_BEAM",
-        "name": "Moongeist Beam",
-        "type": "ghost",
-        "power": 135,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
-    },
-    {
         "id": "MUD_BOMB",
         "name": "Mud Bomb",
         "type": "ground",
-        "power": 60,
+        "power": 55,
         "energy": 40,
         "energyGain": 0,
         "cooldown": 500,
@@ -1920,41 +1654,9 @@ export const MOVES: Move[] = [
         "type": "ground",
         "power": 11,
         "energy": 0,
-        "energyGain": 9,
+        "energyGain": 8,
         "cooldown": 1500,
         "archetype": "Heavy Damage"
-    },
-    {
-        "id": "MYSTICAL_FIRE",
-        "name": "Mystical Fire",
-        "type": "fire",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
-    },
-    {
-        "id": "NATURES_MADNESS",
-        "name": "Nature's Madness",
-        "type": "fairy",
-        "power": 80,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
     },
     {
         "id": "NIGHT_SHADE",
@@ -1983,40 +1685,6 @@ export const MOVES: Move[] = [
         "archetype": "Boost Spam/Bait"
     },
     {
-        "id": "OBLIVION_WING",
-        "name": "Oblivion Wing",
-        "type": "flying",
-        "power": 85,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
-    },
-    {
-        "id": "OBSTRUCT",
-        "name": "Obstruct",
-        "type": "dark",
-        "power": 15,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            1
-        ],
-        "buffsSelf": [
-            0,
-            1
-        ],
-        "buffsOpponent": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "both",
-        "archetype": "Boost Spam/Bait"
-    },
-    {
         "id": "OCTAZOOKA",
         "name": "Octazooka",
         "type": "water",
@@ -2041,8 +1709,8 @@ export const MOVES: Move[] = [
         "energyGain": 0,
         "cooldown": 500,
         "buffs": [
-            1,
-            1
+            2,
+            2
         ],
         "buffApplyChance": 0.1,
         "buffTarget": "self",
@@ -2138,8 +1806,8 @@ export const MOVES: Move[] = [
         "id": "POISON_FANG",
         "name": "Poison Fang",
         "type": "poison",
-        "power": 45,
-        "energy": 40,
+        "power": 40,
+        "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
         "buffs": [
@@ -2169,16 +1837,6 @@ export const MOVES: Move[] = [
         "energyGain": 9,
         "cooldown": 1000,
         "archetype": "Fast Charge"
-    },
-    {
-        "id": "POLTERGEIST",
-        "name": "Poltergeist",
-        "type": "ghost",
-        "power": 150,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
     },
     {
         "id": "POUND",
@@ -2270,7 +1928,7 @@ export const MOVES: Move[] = [
         "id": "PSYCHIC",
         "name": "Psychic",
         "type": "psychic",
-        "power": 75,
+        "power": 90,
         "energy": 55,
         "energyGain": 0,
         "cooldown": 500,
@@ -2345,22 +2003,12 @@ export const MOVES: Move[] = [
         "archetype": "General"
     },
     {
-        "id": "PSYWAVE",
-        "name": "Psywave",
-        "type": "psychic",
-        "power": 3,
-        "energy": 0,
-        "energyGain": 2,
-        "cooldown": 500,
-        "archetype": "Low Quality"
-    },
-    {
         "id": "QUICK_ATTACK",
         "name": "Quick Attack",
         "type": "normal",
         "power": 5,
         "energy": 0,
-        "energyGain": 8,
+        "energyGain": 7,
         "cooldown": 1000,
         "archetype": "Fast Charge"
     },
@@ -2406,16 +2054,6 @@ export const MOVES: Move[] = [
         "type": "normal",
         "power": 130,
         "energy": 70,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
-    },
-    {
-        "id": "ROAR_OF_TIME",
-        "name": "Roar of Time",
-        "type": "dragon",
-        "power": 150,
-        "energy": 65,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Nuke"
@@ -2488,12 +2126,12 @@ export const MOVES: Move[] = [
     },
     {
         "id": "ROLLOUT",
-        "name": "Rollout",
+        "name": "Rollout (Speculative)",
         "type": "rock",
-        "power": 5,
+        "power": 4,
         "energy": 0,
-        "energyGain": 13,
-        "cooldown": 1500,
+        "energyGain": 8,
+        "cooldown": 1000,
         "archetype": "Fast Charge"
     },
     {
@@ -2523,16 +2161,6 @@ export const MOVES: Move[] = [
         "archetype": "Spam/Bait"
     },
     {
-        "id": "SAND_ATTACK",
-        "name": "Sand Attack",
-        "type": "ground",
-        "power": 2,
-        "energy": 0,
-        "energyGain": 4,
-        "cooldown": 500,
-        "archetype": "Fast Charge"
-    },
-    {
         "id": "SAND_TOMB",
         "name": "Sand Tomb",
         "type": "ground",
@@ -2549,41 +2177,9 @@ export const MOVES: Move[] = [
         "archetype": "Debuff Spam/Bait"
     },
     {
-        "id": "SANDSEAR_STORM",
-        "name": "Sandsear Storm",
-        "type": "ground",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
-    },
-    {
         "id": "SCALD",
         "name": "Scald",
         "type": "water",
-        "power": 85,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 0.3,
-        "buffTarget": "opponent",
-        "archetype": "High Energy Debuff"
-    },
-    {
-        "id": "SCORCHING_SANDS",
-        "name": "Scorching Sands",
-        "type": "ground",
         "power": 80,
         "energy": 50,
         "energyGain": 0,
@@ -2595,6 +2191,16 @@ export const MOVES: Move[] = [
         "buffApplyChance": 0.3,
         "buffTarget": "opponent",
         "archetype": "High Energy Debuff"
+    },
+    {
+        "id": "SCALD_BLASTOISE",
+        "name": "Scald Blastoise",
+        "type": "water",
+        "power": 50,
+        "energy": 80,
+        "energyGain": 0,
+        "cooldown": 500,
+        "archetype": "High Energy"
     },
     {
         "id": "SCRATCH",
@@ -2610,27 +2216,11 @@ export const MOVES: Move[] = [
         "id": "SEED_BOMB",
         "name": "Seed Bomb",
         "type": "grass",
-        "power": 65,
-        "energy": 45,
+        "power": 55,
+        "energy": 40,
         "energyGain": 0,
         "cooldown": 500,
-        "archetype": "General"
-    },
-    {
-        "id": "SEED_FLARE",
-        "name": "Seed Flare",
-        "type": "grass",
-        "power": 130,
-        "energy": 75,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -2
-        ],
-        "buffApplyChance": 0.4,
-        "buffTarget": "opponent",
-        "archetype": "Nuke Debuff"
+        "archetype": "Spam/Bait"
     },
     {
         "id": "SHADOW_BALL",
@@ -2646,7 +2236,7 @@ export const MOVES: Move[] = [
         "id": "SHADOW_BONE",
         "name": "Shadow Bone",
         "type": "ghost",
-        "power": 80,
+        "power": 75,
         "energy": 45,
         "energyGain": 0,
         "cooldown": 500,
@@ -2667,16 +2257,6 @@ export const MOVES: Move[] = [
         "energyGain": 8,
         "cooldown": 1000,
         "archetype": "Multipurpose"
-    },
-    {
-        "id": "SHADOW_FORCE",
-        "name": "Shadow Force",
-        "type": "ghost",
-        "power": 120,
-        "energy": 90,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
     },
     {
         "id": "SHADOW_PUNCH",
@@ -2718,13 +2298,13 @@ export const MOVES: Move[] = [
         "id": "SILVER_WIND",
         "name": "Silver Wind",
         "type": "bug",
-        "power": 60,
+        "power": 45,
         "energy": 45,
         "energyGain": 0,
         "cooldown": 500,
         "buffs": [
-            1,
-            1
+            2,
+            2
         ],
         "buffApplyChance": 0.1,
         "buffTarget": "self",
@@ -2751,7 +2331,7 @@ export const MOVES: Move[] = [
         "name": "Sky Attack",
         "type": "flying",
         "power": 75,
-        "energy": 50,
+        "energy": 45,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "General"
@@ -2817,40 +2397,14 @@ export const MOVES: Move[] = [
         "archetype": "Nuke"
     },
     {
-        "id": "SPACIAL_REND",
-        "name": "Spacial Rend",
-        "type": "dragon",
-        "power": 95,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "General"
-    },
-    {
         "id": "SPARK",
         "name": "Spark",
         "type": "electric",
-        "power": 5,
+        "power": 4,
         "energy": 0,
-        "energyGain": 7,
+        "energyGain": 8,
         "cooldown": 1000,
-        "archetype": "General"
-    },
-    {
-        "id": "SPIRIT_SHACKLE",
-        "name": "Spirit Shackle",
-        "type": "ghost",
-        "power": 50,
-        "energy": 40,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 0.33,
-        "buffTarget": "opponent",
-        "archetype": "Debuff Spam/Bait"
+        "archetype": "Fast Charge"
     },
     {
         "id": "SPLASH",
@@ -2863,30 +2417,14 @@ export const MOVES: Move[] = [
         "archetype": "Low Quality"
     },
     {
-        "id": "SPRINGTIDE_STORM",
-        "name": "Springtide Storm (Speculative)",
-        "type": "fairy",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
-    },
-    {
         "id": "STEEL_WING",
         "name": "Steel Wing",
         "type": "steel",
         "power": 7,
         "energy": 0,
-        "energyGain": 7,
+        "energyGain": 5,
         "cooldown": 1000,
-        "archetype": "General"
+        "archetype": "Heavy Damage"
     },
     {
         "id": "STOMP",
@@ -2949,16 +2487,6 @@ export const MOVES: Move[] = [
         "archetype": "Fast Charge"
     },
     {
-        "id": "SUNSTEEL_STRIKE",
-        "name": "Sunsteel Strike",
-        "type": "steel",
-        "power": 135,
-        "energy": 65,
-        "energyGain": 0,
-        "cooldown": 500,
-        "archetype": "Nuke"
-    },
-    {
         "id": "SUPER_POWER",
         "name": "Superpower",
         "type": "fighting",
@@ -2988,11 +2516,11 @@ export const MOVES: Move[] = [
         "id": "SWIFT",
         "name": "Swift",
         "type": "normal",
-        "power": 55,
-        "energy": 40,
+        "power": 60,
+        "energy": 55,
         "energyGain": 0,
         "cooldown": 500,
-        "archetype": "Spam/Bait"
+        "archetype": "High Energy"
     },
     {
         "id": "SYNCHRONOISE",
@@ -3010,9 +2538,9 @@ export const MOVES: Move[] = [
         "type": "normal",
         "power": 3,
         "energy": 0,
-        "energyGain": 3,
+        "energyGain": 2,
         "cooldown": 500,
-        "archetype": "General"
+        "archetype": "Low Quality"
     },
     {
         "id": "TAKE_DOWN",
@@ -3125,22 +2653,6 @@ export const MOVES: Move[] = [
         "archetype": "High Energy"
     },
     {
-        "id": "TRAILBLAZE",
-        "name": "Trailblaze",
-        "type": "grass",
-        "power": 65,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "self",
-        "archetype": "Boost"
-    },
-    {
         "id": "TRANSFORM",
         "name": "Transform",
         "type": "normal",
@@ -3164,22 +2676,6 @@ export const MOVES: Move[] = [
         "buffApplyChance": 0.5,
         "buffTarget": "opponent",
         "archetype": "Debuff"
-    },
-    {
-        "id": "TRIPLE_AXEL",
-        "name": "Triple Axel",
-        "type": "ice",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "self",
-        "archetype": "Boost"
     },
     {
         "id": "TWISTER",
@@ -3238,22 +2734,6 @@ export const MOVES: Move[] = [
         "archetype": "Multipurpose"
     },
     {
-        "id": "VOLT_TACKLE",
-        "name": "Volt Tackle",
-        "type": "electric",
-        "power": 90,
-        "energy": 50,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            0,
-            -1
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "self",
-        "archetype": "Self-Debuff"
-    },
-    {
         "id": "WATER_GUN",
         "name": "Water Gun",
         "type": "water",
@@ -3277,11 +2757,11 @@ export const MOVES: Move[] = [
         "id": "WATER_PULSE",
         "name": "Water Pulse",
         "type": "water",
-        "power": 80,
-        "energy": 55,
+        "power": 70,
+        "energy": 60,
         "energyGain": 0,
         "cooldown": 500,
-        "archetype": "General"
+        "archetype": "High Energy"
     },
     {
         "id": "WATERFALL",
@@ -3292,16 +2772,6 @@ export const MOVES: Move[] = [
         "energyGain": 8,
         "cooldown": 1500,
         "archetype": "Heavy Damage"
-    },
-    {
-        "id": "WATER_SHURIKEN",
-        "name": "Water Shuriken",
-        "type": "water",
-        "power": 6,
-        "energy": 0,
-        "energyGain": 14,
-        "cooldown": 1500,
-        "archetype": "Fast Charge"
     },
     {
         "id": "WEATHER_BALL_FIRE",
@@ -3354,22 +2824,6 @@ export const MOVES: Move[] = [
         "archetype": "Spam/Bait"
     },
     {
-        "id": "WILDBOLT_STORM",
-        "name": "Wildbolt Storm",
-        "type": "electric",
-        "power": 60,
-        "energy": 45,
-        "energyGain": 0,
-        "cooldown": 500,
-        "buffs": [
-            -1,
-            0
-        ],
-        "buffApplyChance": 1,
-        "buffTarget": "opponent",
-        "archetype": "Debuff"
-    },
-    {
         "id": "WILD_CHARGE",
         "name": "Wild Charge",
         "type": "electric",
@@ -3391,7 +2845,7 @@ export const MOVES: Move[] = [
         "type": "flying",
         "power": 5,
         "energy": 0,
-        "energyGain": 8,
+        "energyGain": 7,
         "cooldown": 1000,
         "archetype": "Fast Charge"
     },
@@ -3429,8 +2883,8 @@ export const MOVES: Move[] = [
         "id": "X_SCISSOR",
         "name": "X-Scissor",
         "type": "bug",
-        "power": 65,
-        "energy": 40,
+        "power": 45,
+        "energy": 35,
         "energyGain": 0,
         "cooldown": 500,
         "archetype": "Spam/Bait"
@@ -3457,7 +2911,7 @@ export const MOVES: Move[] = [
             -1,
             0
         ],
-        "buffApplyChance": 0.66,
+        "buffApplyChance": 1,
         "buffTarget": "opponent",
         "archetype": "Debuff Nuke"
     },

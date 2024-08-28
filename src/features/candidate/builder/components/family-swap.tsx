@@ -21,7 +21,7 @@ const CandidateBuilderFamilySwap: FC = () => {
 
 	const t = useTranslations('rankings');
 
-	const iterableFamily = pokedex
+	const iterableFamily = pokedex.pokemon
 		.familyMembers(candidate.species.family?.id)
 		.sort((a, b) => a.family.stage - b.family.stage);
 

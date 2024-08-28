@@ -14,9 +14,7 @@
     "pages:build": "pnpm next-on-pages",
     "preview": "pnpm pages:build && wrangler pages dev",
     "deploy": "pnpm pages:build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
-    "parse:pvpoke-moves": "tsx scripts\\pvpoke\\parse-moves\\parse-moves.ts",
-    "parse:pvpoke-pokemon-moves": "tsx scripts\\pvpoke\\parse-pokemon-moves\\parse-pokemon-moves.ts"
+    "parse:pvpoke-pokemons": "tsx scripts/pvpoke/parse-pokemons-data/index.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

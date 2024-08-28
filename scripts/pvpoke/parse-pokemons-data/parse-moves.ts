@@ -1,19 +1,20 @@
 import {moveSchema} from '@/@types/move';
-import {OutputMove, PvPokeMove} from '.';
+import {OutputMove, PvPokeMove} from './@types/types';
 
 import * as fs from 'fs';
 import * as path from 'path';
 import {z} from 'zod';
 
-async function parseMoves() {
+export async function parseMoves({
+	shouldFetch = false,
+	shouldMini = false,
+}: {
+	shouldFetch?: boolean;
+	shouldMini?: boolean;
+} = {}) {
+	console.log('parsig moves');
 	const output: OutputMove[] = [];
 	let pvPokeMovesData: PvPokeMove[] = [];
-
-	const shouldFetch =
-		process?.argv.includes('--fetch') || process?.argv.includes('-f');
-
-	const shouldMini =
-		process?.argv.includes('--mini') || process?.argv.includes('-m');
 
 	if (shouldFetch) {
 		const response = await fetch(
@@ -24,6 +25,8 @@ async function parseMoves() {
 		const pvpokeMovesPath = path.join(__dirname, './pvp-poke-data/moves.json');
 		pvPokeMovesData = require(pvpokeMovesPath);
 	}
+
+	console.log('pvPokeMovesData', pvPokeMovesData.length);
 
 	for (const move of pvPokeMovesData as PvPokeMove[]) {
 		const Poke = moveSchema.parse({
@@ -47,6 +50,8 @@ async function parseMoves() {
 
 	z.array(moveSchema).parse(output);
 
+	console.log('output', output.length);
+
 	const outDir = path.join(__dirname, 'output');
 	const outFilePath = path.join(outDir, 'moves.ts');
 
@@ -61,5 +66,3 @@ export const MOVES: Move[] = ${JSON.stringify(
 
 	fs.writeFileSync(outFilePath, fileContent);
 }
-
-parseMoves();

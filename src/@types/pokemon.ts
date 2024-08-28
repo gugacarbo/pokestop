@@ -15,7 +15,7 @@ export const familyStages = z.union([
 	z.literal(5),
 ]);
 
-export const pokemonDataSchema = z.object({
+export const pokemonSchema = z.object({
 	id: z.string(),
 	dexNumber: z.number(),
 	name: z.string(),
@@ -35,22 +35,21 @@ export const pokemonDataSchema = z.object({
 	aliases: z.optional(z.array(z.string())),
 	moves: z
 		.object({
-			fastMoves: z.array(moveSchema).optional().default([]),
-			chargedMoves: z.array(moveSchema).optional().default([]),
+			fastMoves: z.array(z.string().or(moveSchema)).optional().default([]),
+			chargedMoves: z.array(z.string().or(moveSchema)).optional().default([]),
+			legacyMoves: z.array(z.string().or(moveSchema)).optional(),
+			eliteMoves: z.array(z.string().or(moveSchema)).optional(),
 		})
 		.optional(),
 	tags: z.array(z.string()).default([]).optional(),
 	buddyDistance: z.coerce.number().optional(),
-	thirdMoveCost: z.coerce.number().optional(),
-	released: z.boolean().optional(),
-});
-
-export const pokemonSchema = pokemonDataSchema.transform(data => {
-	return data;
+	thirdMoveCost: z.coerce.number().default(10000),
+	released: z.boolean().default(true).optional(),
+	shadowEligible: z.boolean().optional(),
 });
 
 export type PokemonFamilyStage = z.infer<typeof familyStages>;
-export type Pokemon = z.infer<typeof pokemonDataSchema>;
+export type Pokemon = z.infer<typeof pokemonSchema>;
 
 export type PokemonID = Pokemon['id'];
 export type PokemonName = Pokemon['name'];

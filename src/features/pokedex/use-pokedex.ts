@@ -2,15 +2,16 @@
 
 import {useCallback, useMemo} from 'react';
 import {useSettings} from '@/features/settings/use-settings';
-import {POKEMONS} from '@/consts/pokemons';
-import type {PokemonName, PokemonID} from '@/@types/pokemon';
+import type {PokemonName, PokemonID, Pokemon} from '@/@types/pokemon';
 import {
 	getPokemonByName,
 	getPokemonByID,
 	getPokemonFamilyMembers,
 	searchPokemonByName,
 } from '@/features/pokemon';
-import {MOVES} from '@/consts/moves';
+import {MOVES} from '@/data/moves';
+import {POKEMONS} from '@/data/pokemons';
+import {Move} from '@/@types/move';
 
 const speculativePokemon: PokemonID[] = [];
 
@@ -23,7 +24,6 @@ export function usePokedex() {
 				if (settings?.showSpeculative === true) {
 					return true;
 				}
-
 				return speculativePokemon.includes(pokemon.id) === false;
 			}),
 		[settings?.showSpeculative],
@@ -34,16 +34,18 @@ export function usePokedex() {
 		[list],
 	);
 	const byId = useCallback((id: PokemonID) => getPokemonByID(id, list), [list]);
+
 	const familyMembers = useCallback(
 		(familyId: PokemonID) => getPokemonFamilyMembers(familyId, list),
 		[list],
 	);
+
 	const searchByName = useCallback(
 		(query: string) => searchPokemonByName(query, list),
 		[list],
 	);
 
-	const getMove = useCallback(
+	const getMoveById = useCallback(
 		(id: string) => MOVES.find(move => move.id === id),
 		[],
 	);
@@ -53,14 +55,52 @@ export function usePokedex() {
 		[],
 	);
 
+	function parseMoves(moves?: (string | Move)[]) {
+		if (!moves) return [];
+		return moves
+			.map(moveId => {
+				if (typeof moveId === 'string') {
+					const move = getMoveById(moveId);
+					if (!move) {
+						console.warn(`Move not found: ${moveId}`);
+						return null;
+					}
+					return move;
+				}
+				return moveId;
+			})
+			.filter(move => !!move);
+	}
+
+	function getMoves(pokemon: string | Pokemon) {
+		const poke = typeof pokemon === 'string' ? byId(pokemon) : pokemon;
+
+		if (!poke) return pokemon;
+
+		return {
+			...poke,
+			moves: {
+				fastMoves: parseMoves(poke.moves?.fastMoves),
+				chargedMoves: parseMoves(poke.moves?.chargedMoves),
+				legacyMoves: parseMoves(poke.moves?.legacyMoves),
+				eliteMoves: parseMoves(poke.moves?.eliteMoves),
+			},
+		};
+	}
+
 	return {
-		list,
-		byName,
-		byId,
-		familyMembers,
-		searchByName,
-		moves: MOVES,
-		getMove,
-		getMoveByName,
+		pokemon: {
+			list,
+			byName,
+			byId,
+			familyMembers,
+			searchByName,
+		},
+		move: {
+			list: MOVES,
+			getMoveById,
+			getMoveByName,
+			getMoves,
+		},
 	};
 }

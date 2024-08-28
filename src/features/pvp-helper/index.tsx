@@ -15,16 +15,7 @@ import {ResultTable} from './result_table/table';
 import {useGenerateRankedSpreads} from '@/lib/useGenerateRankedSpreads';
 import {CompareModes} from '@/@types/compare-modes';
 import {SingleLevelCapSelector} from './components/single-level-cap-selector';
-import {z} from 'zod';
 import {Candidate} from '../candidate/use-candidate';
-
-const pvpHelperSchema = z.object({
-	name: z.string(),
-	hp: z.number(),
-	cp: z.number(),
-	leagueCp: leagueCPKeysSchema,
-	levelCap: levelCapNumberSchema,
-});
 
 const defaultPokemon = {
 	name: 'Medicham',
@@ -35,7 +26,9 @@ const defaultPokemon = {
 } as const;
 
 export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
-	const {byName} = usePokedex();
+	const {
+		pokemon: {byName},
+	} = usePokedex();
 
 	const [pokemon, setPokemon] = useState<Pokemon>(
 		byName(candidate?.species?.name || defaultPokemon.name)!,

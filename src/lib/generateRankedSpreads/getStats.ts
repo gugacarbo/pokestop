@@ -1,4 +1,4 @@
-import { CPMs } from '@/consts/cpm';
+import { CPMs } from '@/data/consts/cpm';
 import { PokemonStats } from '@/@types/pokemon';
 
 export function getStats(
