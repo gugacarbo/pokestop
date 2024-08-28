@@ -13,7 +13,7 @@ import { SettingsProvider } from "@/features/settings/use-settings";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
-import { Header } from "@/components/layout/header";
+import { Header } from "@/components/layout/header/header";
 import { Footer } from "@/components/layout/footer";
 import { parseSettingsCookies } from "@/features/settings/parse-settings-cookies";
 import { parseCookies } from "@/lib/parse-cookies";

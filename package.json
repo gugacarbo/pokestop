@@ -14,7 +14,9 @@
     "pages:build": "pnpm next-on-pages",
     "preview": "pnpm pages:build && wrangler pages dev",
     "deploy": "pnpm pages:build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "parse:pvpoke-moves": "tsx scripts\\pvpoke\\parse-moves\\parse-moves.ts",
+    "parse:pvpoke-pokemon-moves": "tsx scripts\\pvpoke\\parse-pokemon-moves\\parse-pokemon-moves.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -73,6 +75,7 @@
     "eslint-plugin-next-on-pages": "^1.13.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "tsx": "^4.19.0",
     "typescript": "^5",
     "vercel": "^35.2.2",
     "wrangler": "^3.67.1"

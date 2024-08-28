@@ -1,14 +1,14 @@
 import { Pokemon, PokemonID, PokemonName } from "@/@types/pokemon";
-import { POKEDEX } from "@/data/pokedex";
+import { POKEMONS } from "@/consts/pokemons";
 import { isSubsequence } from "@/utils/isSubsequence";
 
-export function getPokemonByName(name: PokemonName, list: Pokemon[] = POKEDEX) {
+export function getPokemonByName(name: PokemonName, list: Pokemon[] = POKEMONS) {
   if (!name) return null;
 
   return list.find((pokemon) => pokemon.name === name) ?? null;
 }
 
-export function searchPokemonByName(query: string, list: Pokemon[] = POKEDEX) {
+export function searchPokemonByName(query: string, list: Pokemon[] = POKEMONS) {
   const lowerCaseQuery = query.toLowerCase();
 
   const matches = list.filter((pokemon) => {
@@ -35,7 +35,7 @@ export function searchPokemonByName(query: string, list: Pokemon[] = POKEDEX) {
   }
 }
 
-export function getPokemonByID(id: PokemonID, list: Pokemon[] = POKEDEX) {
+export function getPokemonByID(id: PokemonID, list: Pokemon[] = POKEMONS) {
   if (!id) return null;
 
   return list.find((pokemon) => pokemon.id === id) ?? null;
@@ -43,7 +43,7 @@ export function getPokemonByID(id: PokemonID, list: Pokemon[] = POKEDEX) {
 
 export function getPokemonFamilyMembers(
   familyID: PokemonID,
-  list: Pokemon[] = POKEDEX
+  list: Pokemon[] = POKEMONS
 ) {
   return list.filter((pokemon) => pokemon.family.id === familyID);
 }

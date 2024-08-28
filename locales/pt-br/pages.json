@@ -1,18 +1,26 @@
 {
-  "poke-stats": {
-    "description": "Esta ferramenta é um trabalho em andamento e deve ser usada apenas para fins educacionais. \nPor favor, não tente usar isso em um torneio oficial!",
-    "title": "Estatísticas do Pokemon"
-  },
-  "search-string-generator": {
-    "description": "Esta ferramenta é um trabalho em andamento e deve ser usada apenas para fins educacionais. \nPor favor, não tente usar isso em um torneio oficial!",
-    "title": "Gerador de texto de pesquisa"
+  "home": {
+    "description": "Bem-vindo à ferramenta Pokémon GO PvP! \nSomos um grupo de treinadores de Pokémon GO que amam o PvP e querem ajudar a comunidade a crescer. \nEstamos trabalhando constantemente para melhorar a ferramenta e adicionar novos recursos. \nSe você tiver alguma sugestão, por favor nos avise!",
+    "title": "Lar"
   },
   "individual-ranking": {
     "description": "Esta ferramenta é um trabalho em andamento e deve ser usada apenas para fins educacionais. \nPor favor, não tente usar isso em um torneio oficial!",
     "title": "Classificação Individual"
   },
+  "leagues-rankings": {
+    "description": "Esta ferramenta é um trabalho em andamento e deve ser usada apenas para fins educacionais. \nPor favor, não tente usar isso em um torneio oficial!",
+    "title": "Classificações das Ligas"
+  },
+  "filter-generator": {
+    "description": "Esta ferramenta é um trabalho em andamento e deve ser usada apenas para fins educacionais. \nPor favor, não tente usar isso em um torneio oficial!",
+    "title": "Gerador de string de pesquisa"
+  },
   "type-chart": {
     "description": "Um gráfico completo de tipos de Pokémon GO, mostrando como cada tipo de Pokémon se compara a todos os outros tipos. \nMergulhe em nossa tabela abrangente de tipos de Pokémon GO para dominar as batalhas! \nDescubra os pontos fortes e fracos do tipo e os melhores contra-ataques para obter vantagem em cada encontro.",
-    "title": "Gráfico de Efetividade"
+    "title": "Tipo de gráfico"
+  },
+  "pvp-helper": {
+    "description": "O PvP Helper é uma ferramenta que ajuda você a escolher os melhores Pokémon para as batalhas. \nMostra os melhores movesets, IVs e estratégias para cada Pokémon. \nVocê também pode filtrar Pokémon por tipo, liga e muito mais!",
+    "title": "Ajudante PvP"
   }
 }

@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { moveSchema } from "../move/move";
 
 export const rawPokemonSchema = z.object({
   dex: z.number(),
@@ -27,8 +26,8 @@ export const rawPokemonSchema = z.object({
   eliteMoves: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
 
-  fastMovePool: z.array(moveSchema).optional(),
-  chargedMovePool: z.array(moveSchema).optional(),
+  fastMovePool: z.array(z.string()),
+  chargedMovePool: z.array(z.string()),
 
   shadowEligible: z.boolean().optional(),
   nicknames: z.array(z.string()).optional(),

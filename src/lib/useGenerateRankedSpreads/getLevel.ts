@@ -1,4 +1,4 @@
-import { CPMs } from "@/data/cpm";
+import { CPMs } from "@/consts/cpm";
 import { LeagueCPCap } from "@/@types/league";
 import { LevelCap } from "@/@types/level-cap";
 import { PokemonStats } from "@/@types/pokemon";

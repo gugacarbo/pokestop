@@ -14,7 +14,7 @@ import {
 
 import { useState } from "react";
 
-import { usePokedex } from "@/features/_pokemon/hooks/use-pokedex";
+import { usePokedex } from "@/features/pokedex/use-pokedex";
 
 import { Pokemon } from "@/@types/pokemon";
 import { Input } from "@/components/ui/input";

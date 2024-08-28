@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const pokemonTypes = z.enum([
+export const pokemonTypesSchema = z.enum([
   "normal",
   "fighting",
   "flying",
@@ -21,4 +21,4 @@ export const pokemonTypes = z.enum([
   "fairy",
 ]);
 
-export type PokemonType = z.infer<typeof pokemonTypes>;
+export type PokemonType = z.infer<typeof pokemonTypesSchema>;

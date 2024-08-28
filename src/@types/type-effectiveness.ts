@@ -10,7 +10,7 @@ export type TypesEffectiveness = {
   [attackingType in PokemonType]: Effectiveness;
 };
 
-export { typesEffectiveness } from "@/data/type-effectiveness";
+export { typesEffectiveness } from "@/consts/type-effectiveness";
 
 export type TypesOrder = PokemonType[];
 
