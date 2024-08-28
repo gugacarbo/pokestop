@@ -1,9 +1,12 @@
-import {moveSchema} from '@/@types/move';
+import {MoveArcheType, moveSchema} from '@/@types/move';
 import {OutputMove, PvPokeMove} from './@types/types';
 
 import * as fs from 'fs';
 import * as path from 'path';
 import {z} from 'zod';
+
+const parseArcheType: (i?: string) => MoveArcheType = i =>
+	i?.toLowerCase().replaceAll(' ', '-').replaceAll('/', '_') as MoveArcheType;
 
 export async function parseMoves({
 	shouldFetch = false,
@@ -37,7 +40,7 @@ export async function parseMoves({
 			energy: move.energy,
 			energyGain: move.energyGain,
 			cooldown: move.cooldown,
-			archetype: move.archetype,
+			archetype: parseArcheType(move.archetype),
 			buffs: move.buffs,
 			buffTarget: move.buffTarget,
 			buffApplyChance: move.buffApplyChance,

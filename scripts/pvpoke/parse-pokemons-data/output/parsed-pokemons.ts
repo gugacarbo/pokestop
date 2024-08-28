@@ -1,17 +1,9 @@
 import type {Pokemon} from '@/@types/pokemon';
-// Last Update at: 2024-08-28T17:12:30.559Z
-// From {@ pvpoke fetch} 
+// Last Update at: 2024-08-28T22:01:11.081Z
+// From {@ local file} 
 export const POKEMONS_DATA: (Pick<
 		Pokemon,
-		'id' | 'dexNumber' | 'tags' | 'buddyDistance' | 'thirdMoveCost' | 'released'
-	> & {
-		moves: {
-			fastMoves: string[];
-			chargedMoves: string[];
-			eliteMoves?: string[];
-			legacyMoves?: string[];
-		};
-	})[] =
+		'id' | 'dexNumber' | 'tags' | 'buddyDistance' | 'thirdMoveCost' | 'released'| 'moves' >)[] =
 	[
     {
         "id": "bulbasaur",
@@ -114,6 +106,9 @@ export const POKEMONS_DATA: (Pick<
                 "PETAL_BLIZZARD",
                 "SLUDGE_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -137,6 +132,9 @@ export const POKEMONS_DATA: (Pick<
                 "PETAL_BLIZZARD",
                 "SLUDGE_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -161,6 +159,9 @@ export const POKEMONS_DATA: (Pick<
                 "PETAL_BLIZZARD",
                 "SLUDGE_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -228,6 +229,9 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_PUNCH",
                 "FLAME_BURST",
                 "FLAMETHROWER"
+            ],
+            "eliteMoves": [
+                "SCRATCH"
             ]
         },
         "tags": [
@@ -251,6 +255,9 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_PUNCH",
                 "FLAME_BURST",
                 "FLAMETHROWER"
+            ],
+            "eliteMoves": [
+                "SCRATCH"
             ]
         },
         "tags": [
@@ -278,6 +285,13 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FLAMETHROWER",
                 "OVERHEAT"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "WING_ATTACK",
+                "BLAST_BURN",
+                "FLAMETHROWER",
+                "DRAGON_BREATH"
             ]
         },
         "tags": [
@@ -305,6 +319,13 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FLAMETHROWER",
                 "OVERHEAT"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "WING_ATTACK",
+                "BLAST_BURN",
+                "FLAMETHROWER",
+                "DRAGON_BREATH"
             ]
         },
         "tags": [
@@ -333,6 +354,13 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FLAMETHROWER",
                 "OVERHEAT"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "WING_ATTACK",
+                "BLAST_BURN",
+                "FLAMETHROWER",
+                "DRAGON_BREATH"
             ]
         },
         "tags": [
@@ -361,6 +389,13 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FLAMETHROWER",
                 "OVERHEAT"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "WING_ATTACK",
+                "BLAST_BURN",
+                "FLAMETHROWER",
+                "DRAGON_BREATH"
             ]
         },
         "tags": [
@@ -473,6 +508,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "ICE_BEAM",
                 "SKULL_BASH"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -497,6 +535,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "ICE_BEAM",
                 "SKULL_BASH"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -522,6 +563,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "ICE_BEAM",
                 "SKULL_BASH"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -579,6 +623,9 @@ export const POKEMONS_DATA: (Pick<
                 "BUG_BUZZ",
                 "PSYCHIC",
                 "SIGNAL_BEAM"
+            ],
+            "eliteMoves": [
+                "BUG_BITE"
             ]
         },
         "tags": [],
@@ -677,6 +724,10 @@ export const POKEMONS_DATA: (Pick<
                 "X_SCISSOR",
                 "FELL_STINGER",
                 "DRILL_RUN"
+            ],
+            "eliteMoves": [
+                "BUG_BITE",
+                "DRILL_RUN"
             ]
         },
         "tags": [
@@ -700,6 +751,10 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_BOMB",
                 "X_SCISSOR",
                 "FELL_STINGER",
+                "DRILL_RUN"
+            ],
+            "eliteMoves": [
+                "BUG_BITE",
                 "DRILL_RUN"
             ]
         },
@@ -726,6 +781,10 @@ export const POKEMONS_DATA: (Pick<
                 "X_SCISSOR",
                 "FELL_STINGER",
                 "DRILL_RUN"
+            ],
+            "eliteMoves": [
+                "BUG_BITE",
+                "DRILL_RUN"
             ]
         },
         "tags": [
@@ -749,7 +808,30 @@ export const POKEMONS_DATA: (Pick<
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "pidgey_shadow",
+        "dexNumber": 16,
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "AIR_CUTTER",
+                "TWISTER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -768,7 +850,30 @@ export const POKEMONS_DATA: (Pick<
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "pidgeotto_shadow",
+        "dexNumber": 17,
+        "moves": {
+            "fastMoves": [
+                "STEEL_WING",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "AIR_CUTTER",
+                "TWISTER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -789,9 +894,16 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD",
                 "HURRICANE",
                 "FEATHER_DANCE"
+            ],
+            "eliteMoves": [
+                "WING_ATTACK",
+                "AIR_CUTTER",
+                "GUST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -812,10 +924,45 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD",
                 "HURRICANE",
                 "FEATHER_DANCE"
+            ],
+            "eliteMoves": [
+                "WING_ATTACK",
+                "AIR_CUTTER",
+                "GUST"
             ]
         },
         "tags": [
             "mega"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "pidgeot_shadow",
+        "dexNumber": 18,
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "STEEL_WING",
+                "WING_ATTACK",
+                "GUST"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "AIR_CUTTER",
+                "BRAVE_BIRD",
+                "HURRICANE",
+                "FEATHER_DANCE"
+            ],
+            "eliteMoves": [
+                "WING_ATTACK",
+                "AIR_CUTTER",
+                "GUST"
+            ]
+        },
+        "tags": [
+            "shadow"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -1006,6 +1153,9 @@ export const POKEMONS_DATA: (Pick<
                 "DRILL_PECK",
                 "SKY_ATTACK",
                 "TWISTER"
+            ],
+            "eliteMoves": [
+                "TWISTER"
             ]
         },
         "tags": [],
@@ -1025,6 +1175,10 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "DRILL_RUN",
                 "SKY_ATTACK",
+                "TWISTER",
+                "FLY"
+            ],
+            "eliteMoves": [
                 "TWISTER"
             ]
         },
@@ -1046,6 +1200,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "SLUDGE_BOMB",
                 "WRAP"
+            ],
+            "eliteMoves": [
+                "GUNK_SHOT"
             ]
         },
         "tags": [
@@ -1068,6 +1225,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "SLUDGE_BOMB",
                 "WRAP"
+            ],
+            "eliteMoves": [
+                "GUNK_SHOT"
             ]
         },
         "tags": [
@@ -1138,6 +1298,11 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER",
                 "THUNDERBOLT",
                 "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "PRESENT",
+                "SURF",
+                "THUNDER"
             ]
         },
         "tags": [],
@@ -1159,6 +1324,9 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT",
                 "WILD_CHARGE",
                 "FLY"
+            ],
+            "eliteMoves": [
+                "PRESENT"
             ]
         },
         "tags": [],
@@ -1179,6 +1347,29 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT",
                 "WILD_CHARGE",
                 "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "pikachu_horizons",
+        "dexNumber": 25,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "QUICK_ATTACK"
+            ],
+            "chargedMoves": [
+                "DISCHARGE",
+                "THUNDERBOLT",
+                "WILD_CHARGE",
+                "VOLT_TACKLE"
+            ],
+            "eliteMoves": [
+                "VOLT_TACKLE"
             ]
         },
         "tags": [],
@@ -1263,6 +1454,34 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "pikachu_shaymin",
+        "dexNumber": 25,
+        "moves": {
+            "fastMoves": [
+                "PRESENT",
+                "QUICK_ATTACK",
+                "THUNDER_SHOCK"
+            ],
+            "chargedMoves": [
+                "DISCHARGE",
+                "SURF",
+                "THUNDER",
+                "THUNDERBOLT",
+                "WILD_CHARGE",
+                "GRASS_KNOT"
+            ],
+            "eliteMoves": [
+                "PRESENT",
+                "SURF",
+                "THUNDER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
         "id": "raichu",
         "dexNumber": 26,
         "moves": {
@@ -1277,7 +1496,11 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER",
                 "THUNDER_PUNCH",
                 "WILD_CHARGE",
-                "SKULL_BASH"
+                "SKULL_BASH",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "THUNDER"
             ]
         },
         "tags": [],
@@ -1298,7 +1521,8 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "THUNDER_PUNCH",
                 "WILD_CHARGE",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -1314,13 +1538,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "SCRATCH"
+                "SCRATCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
                 "ROCK_SLIDE",
                 "ROCK_TOMB",
                 "SAND_TOMB"
+            ],
+            "eliteMoves": [
+                "ROCK_TOMB"
             ]
         },
         "tags": [
@@ -1358,13 +1586,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "SCRATCH"
+                "SCRATCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
                 "ROCK_SLIDE",
                 "ROCK_TOMB",
                 "SAND_TOMB"
+            ],
+            "eliteMoves": [
+                "ROCK_TOMB"
             ]
         },
         "tags": [
@@ -1402,12 +1634,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BULLDOZE",
                 "EARTHQUAKE",
                 "ROCK_TOMB",
+                "NIGHT_SLASH",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "NIGHT_SLASH"
             ]
         },
@@ -1431,7 +1668,12 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "BULLDOZE",
                 "GYRO_BALL",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "DRILL_RUN",
+                "AERIAL_ACE"
+            ],
+            "eliteMoves": [
+                "SHADOW_CLAW"
             ]
         },
         "tags": [
@@ -1448,12 +1690,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BULLDOZE",
                 "EARTHQUAKE",
                 "ROCK_TOMB",
+                "NIGHT_SLASH",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "NIGHT_SLASH"
             ]
         },
@@ -1477,7 +1724,12 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "BULLDOZE",
                 "GYRO_BALL",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "DRILL_RUN",
+                "AERIAL_ACE"
+            ],
+            "eliteMoves": [
+                "SHADOW_CLAW"
             ]
         },
         "tags": [
@@ -1541,7 +1793,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DIG",
                 "POISON_FANG",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "THUNDERBOLT"
             ]
         },
         "tags": [
@@ -1562,7 +1815,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DIG",
                 "POISON_FANG",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "THUNDERBOLT"
             ]
         },
         "tags": [
@@ -1671,7 +1925,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DIG",
                 "HORN_ATTACK",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -1692,7 +1947,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DIG",
                 "HORN_ATTACK",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -1709,7 +1965,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "FURY_CUTTER",
                 "IRON_TAIL",
-                "POISON_JAB"
+                "POISON_JAB",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -1717,6 +1974,9 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_WAVE",
                 "EARTH_POWER",
                 "SAND_TOMB"
+            ],
+            "eliteMoves": [
+                "FURY_CUTTER"
             ]
         },
         "tags": [
@@ -1733,7 +1993,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "FURY_CUTTER",
                 "IRON_TAIL",
-                "POISON_JAB"
+                "POISON_JAB",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -1741,6 +2002,9 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_WAVE",
                 "EARTH_POWER",
                 "SAND_TOMB"
+            ],
+            "eliteMoves": [
+                "FURY_CUTTER"
             ]
         },
         "tags": [
@@ -1761,7 +2025,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "DISARMING_VOICE",
-                "MOONBLAST"
+                "MOONBLAST",
+                "SWIFT"
             ]
         },
         "tags": [],
@@ -1777,13 +2042,18 @@ export const POKEMONS_DATA: (Pick<
                 "CHARGE_BEAM",
                 "POUND",
                 "ZEN_HEADBUTT",
-                "CHARM"
+                "CHARM",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "METEOR_MASH",
                 "MOONBLAST",
-                "PSYCHIC"
+                "PSYCHIC",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "POUND"
             ]
         },
         "tags": [],
@@ -1829,7 +2099,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -1858,6 +2129,29 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "vulpix_alolan_shadow",
+        "dexNumber": 37,
+        "moves": {
+            "fastMoves": [
+                "POWDER_SNOW",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "DARK_PULSE",
+                "ICE_BEAM",
+                "WEATHER_BALL_ICE"
+            ]
+        },
+        "tags": [
+            "alolan",
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "ninetales",
         "dexNumber": 38,
         "moves": {
@@ -1873,7 +2167,13 @@ export const POKEMONS_DATA: (Pick<
                 "OVERHEAT",
                 "PSYSHOCK",
                 "SOLAR_BEAM",
-                "WEATHER_BALL_FIRE"
+                "WEATHER_BALL_FIRE",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "FIRE_BLAST",
+                "FLAMETHROWER"
             ]
         },
         "tags": [
@@ -1901,7 +2201,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -1923,10 +2224,41 @@ export const POKEMONS_DATA: (Pick<
                 "OVERHEAT",
                 "PSYSHOCK",
                 "SOLAR_BEAM",
-                "WEATHER_BALL_FIRE"
+                "WEATHER_BALL_FIRE",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
+                "EMBER",
+                "FIRE_BLAST",
+                "FLAMETHROWER"
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "ninetales_alolan_shadow",
+        "dexNumber": 38,
+        "moves": {
+            "fastMoves": [
+                "FEINT_ATTACK",
+                "POWDER_SNOW",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "DAZZLING_GLEAM",
+                "ICE_BEAM",
+                "PSYSHOCK",
+                "WEATHER_BALL_ICE"
+            ]
+        },
+        "tags": [
+            "alolan",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -1946,7 +2278,12 @@ export const POKEMONS_DATA: (Pick<
                 "DAZZLING_GLEAM",
                 "DISARMING_VOICE",
                 "GYRO_BALL",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "PLAY_ROUGH",
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -1967,7 +2304,10 @@ export const POKEMONS_DATA: (Pick<
                 "DAZZLING_GLEAM",
                 "HYPER_BEAM",
                 "ICE_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "DISARMING_VOICE",
+                "ICY_WIND",
+                "SWIFT"
             ]
         },
         "tags": [],
@@ -1988,6 +2328,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "SLUDGE_BOMB",
                 "SWIFT"
+            ],
+            "eliteMoves": [
+                "SLUDGE_BOMB"
             ]
         },
         "tags": [
@@ -2010,6 +2353,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "SLUDGE_BOMB",
                 "SWIFT"
+            ],
+            "eliteMoves": [
+                "SLUDGE_BOMB"
             ]
         },
         "tags": [
@@ -2032,6 +2378,9 @@ export const POKEMONS_DATA: (Pick<
                 "OMINOUS_WIND",
                 "POISON_FANG",
                 "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "OMINOUS_WIND"
             ]
         },
         "tags": [
@@ -2054,6 +2403,9 @@ export const POKEMONS_DATA: (Pick<
                 "OMINOUS_WIND",
                 "POISON_FANG",
                 "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "OMINOUS_WIND"
             ]
         },
         "tags": [
@@ -2223,6 +2575,9 @@ export const POKEMONS_DATA: (Pick<
                 "CROSS_POISON",
                 "SOLAR_BEAM",
                 "X_SCISSOR"
+            ],
+            "eliteMoves": [
+                "BUG_BITE"
             ]
         },
         "tags": [],
@@ -2286,6 +2641,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "PSYCHIC",
                 "SILVER_WIND"
+            ],
+            "eliteMoves": [
+                "BUG_BITE"
             ]
         },
         "tags": [
@@ -2309,6 +2667,9 @@ export const POKEMONS_DATA: (Pick<
                 "POISON_FANG",
                 "PSYCHIC",
                 "SILVER_WIND"
+            ],
+            "eliteMoves": [
+                "BUG_BITE"
             ]
         },
         "tags": [
@@ -2346,7 +2707,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SLAP"
+                "MUD_SLAP",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -2355,7 +2717,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2366,6 +2729,7 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 50,
         "moves": {
             "fastMoves": [
+                "MUD_SHOT",
                 "MUD_SLAP",
                 "SCRATCH"
             ],
@@ -2376,6 +2740,29 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "diglett_alolan_shadow",
+        "dexNumber": 50,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "MUD_SLAP",
+                "SAND_ATTACK"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "MUD_BOMB",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "alolan",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -2410,7 +2797,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SLAP"
+                "MUD_SLAP",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -2419,7 +2807,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2430,6 +2819,7 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 51,
         "moves": {
             "fastMoves": [
+                "MUD_SHOT",
                 "MUD_SLAP",
                 "SUCKER_PUNCH"
             ],
@@ -2440,6 +2830,29 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "dugtrio_alolan_shadow",
+        "dexNumber": 51,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "MUD_SLAP",
+                "SAND_ATTACK"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "IRON_HEAD",
+                "MUD_BOMB"
+            ]
+        },
+        "tags": [
+            "alolan",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -2459,6 +2872,9 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "FOUL_PLAY",
                 "NIGHT_SLASH"
+            ],
+            "eliteMoves": [
+                "BODY_SLAM"
             ]
         },
         "tags": [
@@ -2479,7 +2895,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DARK_PULSE",
                 "FOUL_PLAY",
-                "NIGHT_SLASH"
+                "NIGHT_SLASH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2500,7 +2917,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "NIGHT_SLASH",
                 "GYRO_BALL",
-                "DIG"
+                "DIG",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2523,6 +2941,9 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "FOUL_PLAY",
                 "NIGHT_SLASH"
+            ],
+            "eliteMoves": [
+                "BODY_SLAM"
             ]
         },
         "tags": [
@@ -2546,6 +2967,9 @@ export const POKEMONS_DATA: (Pick<
                 "PLAY_ROUGH",
                 "POWER_GEM",
                 "PAYBACK"
+            ],
+            "eliteMoves": [
+                "NIGHT_SLASH"
             ]
         },
         "tags": [
@@ -2567,7 +2991,8 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "FOUL_PLAY",
                 "PLAY_ROUGH",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2591,6 +3016,9 @@ export const POKEMONS_DATA: (Pick<
                 "PLAY_ROUGH",
                 "POWER_GEM",
                 "PAYBACK"
+            ],
+            "eliteMoves": [
+                "NIGHT_SLASH"
             ]
         },
         "tags": [
@@ -2656,7 +3084,8 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "BUBBLE_BEAM",
                 "SYNCHRONOISE",
-                "CROSS_CHOP"
+                "CROSS_CHOP",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -2680,7 +3109,8 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "BUBBLE_BEAM",
                 "SYNCHRONOISE",
-                "CROSS_CHOP"
+                "CROSS_CHOP",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -2704,7 +3134,9 @@ export const POKEMONS_DATA: (Pick<
                 "LOW_SWEEP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "include1500"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -2724,6 +3156,10 @@ export const POKEMONS_DATA: (Pick<
                 "LOW_SWEEP",
                 "NIGHT_SLASH",
                 "ICE_PUNCH"
+            ],
+            "eliteMoves": [
+                "KARATE_CHOP",
+                "CROSS_CHOP"
             ]
         },
         "tags": [],
@@ -2747,6 +3183,27 @@ export const POKEMONS_DATA: (Pick<
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "growlithe_hisuian",
+        "dexNumber": 58,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "EMBER"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "CRUNCH",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2788,11 +3245,40 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "FIRE_BLAST",
                 "FLAMETHROWER",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "PSYCHIC_FANGS",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
+                "BITE",
+                "BULLDOZE"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "arcanine_hisuian",
+        "dexNumber": 59,
+        "moves": {
+            "fastMoves": [
+                "FIRE_FANG",
+                "SNARL",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "WILD_CHARGE",
+                "CRUNCH",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2813,7 +3299,13 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "FIRE_BLAST",
                 "FLAMETHROWER",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "PSYCHIC_FANGS",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
+                "BITE",
+                "BULLDOZE"
             ]
         },
         "tags": [
@@ -2878,6 +3370,9 @@ export const POKEMONS_DATA: (Pick<
                 "MUD_BOMB",
                 "SCALD",
                 "WATER_PULSE"
+            ],
+            "eliteMoves": [
+                "SCALD"
             ]
         },
         "tags": [
@@ -2900,6 +3395,9 @@ export const POKEMONS_DATA: (Pick<
                 "MUD_BOMB",
                 "SCALD",
                 "WATER_PULSE"
+            ],
+            "eliteMoves": [
+                "SCALD"
             ]
         },
         "tags": [
@@ -2916,7 +3414,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "BUBBLE",
                 "MUD_SHOT",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "COUNTER"
             ],
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
@@ -2924,7 +3423,12 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_PUNCH",
                 "SUBMISSION",
                 "POWER_UP_PUNCH",
-                "SCALD"
+                "SCALD",
+                "ICY_WIND"
+            ],
+            "eliteMoves": [
+                "SUBMISSION",
+                "COUNTER"
             ]
         },
         "tags": [
@@ -2941,7 +3445,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "BUBBLE",
                 "MUD_SHOT",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "COUNTER"
             ],
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
@@ -2949,7 +3454,12 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_PUNCH",
                 "SUBMISSION",
                 "POWER_UP_PUNCH",
-                "SCALD"
+                "SCALD",
+                "ICY_WIND"
+            ],
+            "eliteMoves": [
+                "SUBMISSION",
+                "COUNTER"
             ]
         },
         "tags": [
@@ -3016,7 +3526,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "shadoweligible"
+            "shadoweligible",
+            "include1500"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3037,6 +3548,7 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
+            "shadoweligible",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -3059,10 +3571,46 @@ export const POKEMONS_DATA: (Pick<
                 "FUTURE_SIGHT",
                 "PSYCHIC",
                 "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "COUNTER",
+                "DAZZLING_GLEAM",
+                "PSYCHIC"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "alakazam_mega",
+        "dexNumber": 65,
+        "moves": {
+            "fastMoves": [
+                "CONFUSION",
+                "PSYCHO_CUT",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FIRE_PUNCH",
+                "FOCUS_BLAST",
+                "FUTURE_SIGHT",
+                "PSYCHIC",
+                "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "COUNTER",
+                "DAZZLING_GLEAM",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3084,6 +3632,11 @@ export const POKEMONS_DATA: (Pick<
                 "FUTURE_SIGHT",
                 "PSYCHIC",
                 "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "COUNTER",
+                "DAZZLING_GLEAM",
+                "PSYCHIC"
             ]
         },
         "tags": [
@@ -3106,6 +3659,9 @@ export const POKEMONS_DATA: (Pick<
                 "BRICK_BREAK",
                 "CROSS_CHOP",
                 "LOW_SWEEP"
+            ],
+            "eliteMoves": [
+                "LOW_KICK"
             ]
         },
         "tags": [
@@ -3128,6 +3684,9 @@ export const POKEMONS_DATA: (Pick<
                 "BRICK_BREAK",
                 "CROSS_CHOP",
                 "LOW_SWEEP"
+            ],
+            "eliteMoves": [
+                "LOW_KICK"
             ]
         },
         "tags": [
@@ -3150,6 +3709,9 @@ export const POKEMONS_DATA: (Pick<
                 "CROSS_CHOP",
                 "DYNAMIC_PUNCH",
                 "SUBMISSION"
+            ],
+            "eliteMoves": [
+                "CROSS_CHOP"
             ]
         },
         "tags": [
@@ -3172,6 +3734,9 @@ export const POKEMONS_DATA: (Pick<
                 "CROSS_CHOP",
                 "DYNAMIC_PUNCH",
                 "SUBMISSION"
+            ],
+            "eliteMoves": [
+                "CROSS_CHOP"
             ]
         },
         "tags": [
@@ -3199,6 +3764,12 @@ export const POKEMONS_DATA: (Pick<
                 "STONE_EDGE",
                 "SUBMISSION",
                 "PAYBACK"
+            ],
+            "eliteMoves": [
+                "KARATE_CHOP",
+                "STONE_EDGE",
+                "SUBMISSION",
+                "PAYBACK"
             ]
         },
         "tags": [
@@ -3223,6 +3794,12 @@ export const POKEMONS_DATA: (Pick<
                 "DYNAMIC_PUNCH",
                 "HEAVY_SLAM",
                 "ROCK_SLIDE",
+                "STONE_EDGE",
+                "SUBMISSION",
+                "PAYBACK"
+            ],
+            "eliteMoves": [
+                "KARATE_CHOP",
                 "STONE_EDGE",
                 "SUBMISSION",
                 "PAYBACK"
@@ -3290,6 +3867,9 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_WHIP",
                 "SEED_BOMB",
                 "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "RAZOR_LEAF"
             ]
         },
         "tags": [
@@ -3312,6 +3892,9 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_WHIP",
                 "SEED_BOMB",
                 "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "RAZOR_LEAF"
             ]
         },
         "tags": [
@@ -3327,7 +3910,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ACID",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
@@ -3335,6 +3919,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "ACID_SPRAY",
                 "LEAF_TORNADO"
+            ],
+            "eliteMoves": [
+                "MAGICAL_LEAF"
             ]
         },
         "tags": [
@@ -3350,7 +3937,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ACID",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
@@ -3358,6 +3946,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "ACID_SPRAY",
                 "LEAF_TORNADO"
+            ],
+            "eliteMoves": [
+                "MAGICAL_LEAF"
             ]
         },
         "tags": [
@@ -3381,7 +3972,30 @@ export const POKEMONS_DATA: (Pick<
                 "WRAP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "tentacool_shadow",
+        "dexNumber": 72,
+        "moves": {
+            "fastMoves": [
+                "BUBBLE",
+                "POISON_STING"
+            ],
+            "chargedMoves": [
+                "BUBBLE_BEAM",
+                "WATER_PULSE",
+                "WRAP"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -3398,10 +4012,36 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "HYDRO_PUMP",
                 "SLUDGE_WAVE",
-                "ACID_SPRAY"
+                "ACID_SPRAY",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "tentacruel_shadow",
+        "dexNumber": 73,
+        "moves": {
+            "fastMoves": [
+                "ACID",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "HYDRO_PUMP",
+                "SLUDGE_WAVE",
+                "ACID_SPRAY",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -3420,7 +4060,9 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3440,7 +4082,51 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "geodude_shadow",
+        "dexNumber": 74,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_SLIDE",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "geodude_alolan_shadow",
+        "dexNumber": 74,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "VOLT_SWITCH"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "ROCK_TOMB",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [
+            "alolan",
+            "shadow"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3460,9 +4146,14 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_BLAST",
                 "ROCK_SLIDE",
                 "STONE_EDGE"
+            ],
+            "eliteMoves": [
+                "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3482,7 +4173,56 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "graveler_shadow",
+        "dexNumber": 75,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "MUD_SLAP",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_BLAST",
+                "ROCK_SLIDE",
+                "STONE_EDGE"
+            ],
+            "eliteMoves": [
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "graveler_alolan_shadow",
+        "dexNumber": 75,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "VOLT_SWITCH"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "STONE_EDGE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [
+            "alolan",
+            "shadow"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3504,7 +4244,9 @@ export const POKEMONS_DATA: (Pick<
                 "STONE_EDGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3515,16 +4257,70 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ROCK_THROW",
-                "VOLT_SWITCH"
+                "VOLT_SWITCH",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "ROCK_BLAST",
                 "STONE_EDGE",
                 "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "ROLLOUT"
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "golem_shadow",
+        "dexNumber": 76,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "MUD_SLAP",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "ANCIENT_POWER",
+                "EARTHQUAKE",
+                "ROCK_BLAST",
+                "STONE_EDGE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "golem_alolan_shadow",
+        "dexNumber": 76,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "VOLT_SWITCH",
+                "ROLLOUT"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "STONE_EDGE",
+                "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "ROLLOUT"
+            ]
+        },
+        "tags": [
+            "alolan",
+            "shadow"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3543,6 +4339,9 @@ export const POKEMONS_DATA: (Pick<
                 "FLAME_CHARGE",
                 "FLAME_WHEEL",
                 "STOMP"
+            ],
+            "eliteMoves": [
+                "FIRE_BLAST"
             ]
         },
         "tags": [],
@@ -3585,7 +4384,11 @@ export const POKEMONS_DATA: (Pick<
                 "DRILL_RUN",
                 "FIRE_BLAST",
                 "HEAT_WAVE",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
+                "EMBER"
             ]
         },
         "tags": [],
@@ -3599,13 +4402,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "PSYCHO_CUT"
+                "PSYCHO_CUT",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "PLAY_ROUGH",
                 "PSYCHIC",
                 "BODY_SLAM",
-                "MEGAHORN"
+                "MEGAHORN",
+                "HIGH_HORSEPOWER"
             ]
         },
         "tags": [
@@ -3689,7 +4494,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICE_BEAM",
                 "PSYCHIC",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -3710,7 +4520,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "PSYCHIC",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -3731,11 +4546,17 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICE_BEAM",
                 "PSYCHIC",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3752,7 +4573,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICE_BEAM",
                 "PSYCHIC",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -3768,7 +4594,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -3789,7 +4617,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -3811,7 +4641,9 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CHARGE_BEAM",
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -3834,7 +4666,9 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CHARGE_BEAM",
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -3863,6 +4697,9 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "AIR_CUTTER",
                 "LEAF_BLADE"
+            ],
+            "eliteMoves": [
+                "CUT"
             ]
         },
         "tags": [
@@ -3906,6 +4743,9 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD",
                 "DRILL_PECK",
                 "SWIFT"
+            ],
+            "eliteMoves": [
+                "SWIFT"
             ]
         },
         "tags": [],
@@ -3926,6 +4766,9 @@ export const POKEMONS_DATA: (Pick<
                 "AIR_CUTTER",
                 "BRAVE_BIRD",
                 "DRILL_PECK"
+            ],
+            "eliteMoves": [
+                "AIR_CUTTER"
             ]
         },
         "tags": [],
@@ -3947,6 +4790,10 @@ export const POKEMONS_DATA: (Pick<
                 "AQUA_TAIL",
                 "AURORA_BEAM",
                 "ICY_WIND"
+            ],
+            "eliteMoves": [
+                "WATER_GUN",
+                "AQUA_JET"
             ]
         },
         "tags": [],
@@ -3968,7 +4815,14 @@ export const POKEMONS_DATA: (Pick<
                 "AURORA_BEAM",
                 "BLIZZARD",
                 "ICY_WIND",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "DRILL_RUN",
+                "LIQUIDATION"
+            ],
+            "eliteMoves": [
+                "ICE_SHARD",
+                "AQUA_JET",
+                "ICY_WIND"
             ]
         },
         "tags": [],
@@ -3989,6 +4843,9 @@ export const POKEMONS_DATA: (Pick<
                 "MUD_BOMB",
                 "SLUDGE",
                 "SLUDGE_BOMB"
+            ],
+            "legacyMoves": [
+                "ACID"
             ]
         },
         "tags": [
@@ -4011,10 +4868,14 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "GUNK_SHOT",
                 "SLUDGE_BOMB"
+            ],
+            "legacyMoves": [
+                "ACID"
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4042,6 +4903,28 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "grimer_alolan_shadow",
+        "dexNumber": 88,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "GUNK_SHOT",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [
+            "alolan",
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "muk",
         "dexNumber": 89,
         "moves": {
@@ -4057,6 +4940,12 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_WAVE",
                 "THUNDER_PUNCH",
                 "ACID_SPRAY"
+            ],
+            "legacyMoves": [
+                "ACID"
+            ],
+            "eliteMoves": [
+                "LICK"
             ]
         },
         "tags": [
@@ -4083,7 +4972,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4104,9 +4994,36 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_WAVE",
                 "THUNDER_PUNCH",
                 "ACID_SPRAY"
+            ],
+            "eliteMoves": [
+                "LICK"
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "muk_alolan_shadow",
+        "dexNumber": 89,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "POISON_JAB",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "GUNK_SHOT",
+                "SLUDGE_WAVE",
+                "ACID_SPRAY"
+            ]
+        },
+        "tags": [
+            "alolan",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -4124,7 +5041,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "ICY_WIND",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [
@@ -4145,7 +5063,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "ICY_WIND",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [
@@ -4168,7 +5087,12 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "BLIZZARD",
                 "HYDRO_PUMP",
-                "ICY_WIND"
+                "ICY_WIND",
+                "LIQUIDATION",
+                "RAZOR_SHELL"
+            ],
+            "eliteMoves": [
+                "BLIZZARD"
             ]
         },
         "tags": [
@@ -4191,7 +5115,12 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "BLIZZARD",
                 "HYDRO_PUMP",
-                "ICY_WIND"
+                "ICY_WIND",
+                "LIQUIDATION",
+                "RAZOR_SHELL"
+            ],
+            "eliteMoves": [
+                "BLIZZARD"
             ]
         },
         "tags": [
@@ -4215,9 +5144,42 @@ export const POKEMONS_DATA: (Pick<
                 "NIGHT_SHADE",
                 "OMINOUS_WIND",
                 "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "SUCKER_PUNCH",
+                "OMINOUS_WIND"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "gastly_shadow",
+        "dexNumber": 92,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "LICK",
+                "SUCKER_PUNCH"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "NIGHT_SHADE",
+                "OMINOUS_WIND",
+                "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "SUCKER_PUNCH",
+                "OMINOUS_WIND"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4235,10 +5197,43 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "SHADOW_BALL",
                 "SHADOW_PUNCH",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "ICE_PUNCH"
+            ],
+            "eliteMoves": [
+                "LICK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "haunter_shadow",
+        "dexNumber": 93,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "LICK",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "SHADOW_BALL",
+                "SHADOW_PUNCH",
+                "SLUDGE_BOMB",
+                "ICE_PUNCH"
+            ],
+            "eliteMoves": [
+                "LICK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4261,9 +5256,18 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_BOMB",
                 "SLUDGE_WAVE",
                 "SHADOW_PUNCH"
+            ],
+            "eliteMoves": [
+                "LICK",
+                "SLUDGE_WAVE",
+                "DARK_PULSE",
+                "PSYCHIC",
+                "SHADOW_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4286,10 +5290,51 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_BOMB",
                 "SLUDGE_WAVE",
                 "SHADOW_PUNCH"
+            ],
+            "eliteMoves": [
+                "LICK",
+                "SLUDGE_WAVE",
+                "DARK_PULSE",
+                "PSYCHIC",
+                "SHADOW_PUNCH"
             ]
         },
         "tags": [
             "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "gengar_shadow",
+        "dexNumber": 94,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "LICK",
+                "SHADOW_CLAW",
+                "SUCKER_PUNCH"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "FOCUS_BLAST",
+                "PSYCHIC",
+                "SHADOW_BALL",
+                "SLUDGE_BOMB",
+                "SLUDGE_WAVE",
+                "SHADOW_PUNCH"
+            ],
+            "eliteMoves": [
+                "LICK",
+                "SLUDGE_WAVE",
+                "DARK_PULSE",
+                "PSYCHIC",
+                "SHADOW_PUNCH"
+            ]
+        },
+        "tags": [
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4308,10 +5353,45 @@ export const POKEMONS_DATA: (Pick<
                 "IRON_HEAD",
                 "ROCK_SLIDE",
                 "SAND_TOMB",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "IRON_HEAD",
+                "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "onix_shadow",
+        "dexNumber": 95,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "HEAVY_SLAM",
+                "IRON_HEAD",
+                "ROCK_SLIDE",
+                "SAND_TOMB",
+                "STONE_EDGE",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "IRON_HEAD",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -4375,6 +5455,9 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_PUNCH",
                 "ICE_PUNCH",
                 "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "PSYSHOCK"
             ]
         },
         "tags": [
@@ -4401,6 +5484,9 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_PUNCH",
                 "ICE_PUNCH",
                 "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "PSYSHOCK"
             ]
         },
         "tags": [
@@ -4421,7 +5507,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "VICE_GRIP",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
@@ -4442,7 +5529,11 @@ export const POKEMONS_DATA: (Pick<
                 "VICE_GRIP",
                 "WATER_PULSE",
                 "X_SCISSOR",
-                "CRABHAMMER"
+                "CRABHAMMER",
+                "RAZOR_SHELL"
+            ],
+            "eliteMoves": [
+                "MUD_SHOT"
             ]
         },
         "tags": [],
@@ -4463,6 +5554,9 @@ export const POKEMONS_DATA: (Pick<
                 "GYRO_BALL",
                 "SIGNAL_BEAM",
                 "THUNDERBOLT"
+            ],
+            "eliteMoves": [
+                "SIGNAL_BEAM"
             ]
         },
         "tags": [
@@ -4491,7 +5585,7 @@ export const POKEMONS_DATA: (Pick<
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "voltorb_shadow",
@@ -4506,6 +5600,9 @@ export const POKEMONS_DATA: (Pick<
                 "GYRO_BALL",
                 "SIGNAL_BEAM",
                 "THUNDERBOLT"
+            ],
+            "eliteMoves": [
+                "SIGNAL_BEAM"
             ]
         },
         "tags": [
@@ -4529,6 +5626,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYPER_BEAM",
                 "THUNDERBOLT",
                 "FOUL_PLAY"
+            ],
+            "eliteMoves": [
+                "TACKLE"
             ]
         },
         "tags": [
@@ -4573,6 +5673,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYPER_BEAM",
                 "THUNDERBOLT",
                 "FOUL_PLAY"
+            ],
+            "eliteMoves": [
+                "TACKLE"
             ]
         },
         "tags": [
@@ -4638,6 +5741,9 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "SEED_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "ZEN_HEADBUTT"
             ]
         },
         "tags": [
@@ -4659,6 +5765,9 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_PULSE",
                 "SEED_BOMB",
                 "SOLAR_BEAM",
+                "DRACO_METEOR"
+            ],
+            "eliteMoves": [
                 "DRACO_METEOR"
             ]
         },
@@ -4684,6 +5793,9 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "SEED_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "ZEN_HEADBUTT"
             ]
         },
         "tags": [
@@ -4705,6 +5817,9 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_PULSE",
                 "SEED_BOMB",
                 "SOLAR_BEAM",
+                "DRACO_METEOR"
+            ],
+            "eliteMoves": [
                 "DRACO_METEOR"
             ]
         },
@@ -4769,7 +5884,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BONE_CLUB",
                 "DIG",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -4794,10 +5910,14 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL",
                 "FLAME_WHEEL",
                 "SHADOW_BONE"
+            ],
+            "eliteMoves": [
+                "SHADOW_BONE"
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4814,10 +5934,39 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BONE_CLUB",
                 "DIG",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "marowak_alolan_shadow",
+        "dexNumber": 105,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "ROCK_SMASH",
+                "FIRE_SPIN"
+            ],
+            "chargedMoves": [
+                "BONE_CLUB",
+                "FIRE_BLAST",
+                "SHADOW_BALL",
+                "FLAME_WHEEL",
+                "SHADOW_BONE"
+            ],
+            "eliteMoves": [
+                "SHADOW_BONE"
+            ]
+        },
+        "tags": [
+            "alolan",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -4830,14 +5979,20 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "CLOSE_COMBAT",
                 "LOW_SWEEP",
                 "STOMP",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "STOMP",
+                "BRICK_BREAK"
             ]
         },
         "tags": [
@@ -4853,14 +6008,20 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "CLOSE_COMBAT",
                 "LOW_SWEEP",
                 "STOMP",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "STOMP",
+                "BRICK_BREAK"
             ]
         },
         "tags": [
@@ -4886,6 +6047,10 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_PUNCH",
                 "THUNDER_PUNCH",
                 "POWER_UP_PUNCH"
+            ],
+            "eliteMoves": [
+                "ROCK_SMASH",
+                "BRICK_BREAK"
             ]
         },
         "tags": [
@@ -4911,6 +6076,10 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_PUNCH",
                 "THUNDER_PUNCH",
                 "POWER_UP_PUNCH"
+            ],
+            "eliteMoves": [
+                "ROCK_SMASH",
+                "BRICK_BREAK"
             ]
         },
         "tags": [
@@ -4933,6 +6102,9 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_WHIP",
                 "STOMP",
                 "BODY_SLAM"
+            ],
+            "eliteMoves": [
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -4953,6 +6125,9 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "SLUDGE",
                 "SLUDGE_BOMB"
+            ],
+            "legacyMoves": [
+                "ACID"
             ]
         },
         "tags": [
@@ -4997,6 +6172,9 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL",
                 "SLUDGE_BOMB",
                 "THUNDERBOLT"
+            ],
+            "legacyMoves": [
+                "ACID"
             ]
         },
         "tags": [
@@ -5011,13 +6189,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 110,
         "moves": {
             "fastMoves": [
-                "TACKLE"
+                "TACKLE",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "SLUDGE",
                 "HYPER_BEAM",
                 "PLAY_ROUGH",
-                "OVERHEAT"
+                "OVERHEAT",
+                "BRUTAL_SWING"
             ]
         },
         "tags": [
@@ -5063,7 +6243,30 @@ export const POKEMONS_DATA: (Pick<
                 "STOMP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "rhyhorn_shadow",
+        "dexNumber": 111,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "BULLDOZE",
+                "HORN_ATTACK",
+                "STOMP"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -5080,10 +6283,42 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "MEGAHORN",
                 "STONE_EDGE",
-                "SURF"
+                "SURF",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "MEGAHORN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "rhydon_shadow",
+        "dexNumber": 112,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "MEGAHORN",
+                "STONE_EDGE",
+                "SURF",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "MEGAHORN"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -5101,6 +6336,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYPER_BEAM",
                 "PSYBEAM",
                 "PSYCHIC"
+            ],
+            "legacyMoves": [
+                "PSYBEAM"
             ]
         },
         "tags": [],
@@ -5121,6 +6359,9 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_WHIP",
                 "SLUDGE_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "POWER_WHIP"
             ]
         },
         "tags": [
@@ -5143,6 +6384,9 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_WHIP",
                 "SLUDGE_BOMB",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "POWER_WHIP"
             ]
         },
         "tags": [
@@ -5167,6 +6411,10 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "STOMP",
                 "POWER_UP_PUNCH"
+            ],
+            "eliteMoves": [
+                "BRICK_BREAK",
+                "STOMP"
             ]
         },
         "tags": [
@@ -5191,6 +6439,10 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "STOMP",
                 "POWER_UP_PUNCH"
+            ],
+            "eliteMoves": [
+                "BRICK_BREAK",
+                "STOMP"
             ]
         },
         "tags": [
@@ -5256,6 +6508,9 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "DRAGON_PULSE",
                 "HYDRO_PUMP"
+            ],
+            "eliteMoves": [
+                "BLIZZARD"
             ]
         },
         "tags": [
@@ -5278,6 +6533,9 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "DRAGON_PULSE",
                 "HYDRO_PUMP"
+            ],
+            "eliteMoves": [
+                "BLIZZARD"
             ]
         },
         "tags": [
@@ -5321,6 +6579,11 @@ export const POKEMONS_DATA: (Pick<
                 "ICY_WIND",
                 "MEGAHORN",
                 "WATER_PULSE"
+            ],
+            "eliteMoves": [
+                "POISON_JAB",
+                "ICY_WIND",
+                "DRILL_RUN"
             ]
         },
         "tags": [],
@@ -5341,6 +6604,9 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "POWER_GEM",
                 "SWIFT"
+            ],
+            "legacyMoves": [
+                "QUICK_ATTACK"
             ]
         },
         "tags": [],
@@ -5380,6 +6646,12 @@ export const POKEMONS_DATA: (Pick<
                 "PSYBEAM",
                 "PSYCHIC",
                 "THUNDER"
+            ],
+            "legacyMoves": [
+                "QUICK_ATTACK"
+            ],
+            "eliteMoves": [
+                "TACKLE"
             ]
         },
         "tags": [],
@@ -5393,7 +6665,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -5419,7 +6693,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "PSYBEAM",
                 "PSYCHIC",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -5442,7 +6717,12 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "BUG_BUZZ",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "STEEL_WING",
+                "BUG_BUZZ"
             ]
         },
         "tags": [
@@ -5465,7 +6745,12 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "BUG_BUZZ",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "STEEL_WING",
+                "BUG_BUZZ"
             ]
         },
         "tags": [
@@ -5490,6 +6775,10 @@ export const POKEMONS_DATA: (Pick<
                 "FOCUS_BLAST",
                 "ICE_PUNCH",
                 "PSYSHOCK"
+            ],
+            "eliteMoves": [
+                "POUND",
+                "ICE_PUNCH"
             ]
         },
         "tags": [],
@@ -5550,7 +6839,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -5571,7 +6861,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -5596,10 +6887,41 @@ export const POKEMONS_DATA: (Pick<
                 "VICE_GRIP",
                 "X_SCISSOR",
                 "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "SUBMISSION"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "pinsir_mega",
+        "dexNumber": 127,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "FURY_CUTTER",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "SUBMISSION",
+                "VICE_GRIP",
+                "X_SCISSOR",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "SUBMISSION"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -5620,6 +6942,9 @@ export const POKEMONS_DATA: (Pick<
                 "VICE_GRIP",
                 "X_SCISSOR",
                 "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "SUBMISSION"
             ]
         },
         "tags": [
@@ -5640,7 +6965,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "EARTHQUAKE",
                 "HORN_ATTACK",
-                "IRON_HEAD"
+                "IRON_HEAD",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -5703,6 +7029,11 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "TWISTER",
                 "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "DRAGON_TAIL",
+                "DRAGON_PULSE",
+                "AQUA_TAIL"
             ]
         },
         "tags": [
@@ -5728,6 +7059,11 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "OUTRAGE",
                 "TWISTER",
+                "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "DRAGON_TAIL",
+                "DRAGON_PULSE",
                 "AQUA_TAIL"
             ]
         },
@@ -5756,6 +7092,11 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "TWISTER",
                 "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "DRAGON_TAIL",
+                "DRAGON_PULSE",
+                "AQUA_TAIL"
             ]
         },
         "tags": [
@@ -5781,6 +7122,11 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_BEAM",
                 "SURF",
                 "SKULL_BASH"
+            ],
+            "eliteMoves": [
+                "ICE_SHARD",
+                "DRAGON_PULSE",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -5806,6 +7152,11 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_BEAM",
                 "SURF",
                 "SKULL_BASH"
+            ],
+            "eliteMoves": [
+                "ICE_SHARD",
+                "DRAGON_PULSE",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -5829,7 +7180,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": true
+        "released": false
     },
     {
         "id": "eevee",
@@ -5844,6 +7195,10 @@ export const POKEMONS_DATA: (Pick<
                 "DIG",
                 "LAST_RESORT",
                 "SWIFT"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -5863,6 +7218,11 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "LAST_RESORT",
                 "WATER_PULSE",
+                "SCALD",
+                "LIQUIDATION"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
                 "SCALD"
             ]
         },
@@ -5885,6 +7245,10 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER",
                 "THUNDERBOLT",
                 "ZAP_CANNON"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
+                "ZAP_CANNON"
             ]
         },
         "tags": [],
@@ -5906,6 +7270,11 @@ export const POKEMONS_DATA: (Pick<
                 "HEAT_WAVE",
                 "LAST_RESORT",
                 "OVERHEAT",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
+                "HEAT_WAVE",
                 "SUPER_POWER"
             ]
         },
@@ -5947,6 +7316,16 @@ export const POKEMONS_DATA: (Pick<
                 "SIGNAL_BEAM",
                 "SOLAR_BEAM",
                 "ZAP_CANNON"
+            ],
+            "legacyMoves": [
+                "QUICK_ATTACK"
+            ],
+            "eliteMoves": [
+                "TACKLE",
+                "ZEN_HEADBUTT",
+                "SIGNAL_BEAM",
+                "PSYBEAM",
+                "DISCHARGE"
             ]
         },
         "tags": [
@@ -5988,6 +7367,13 @@ export const POKEMONS_DATA: (Pick<
                 "SIGNAL_BEAM",
                 "SOLAR_BEAM",
                 "ZAP_CANNON"
+            ],
+            "eliteMoves": [
+                "TACKLE",
+                "ZEN_HEADBUTT",
+                "SIGNAL_BEAM",
+                "PSYBEAM",
+                "DISCHARGE"
             ]
         },
         "tags": [
@@ -6011,6 +7397,10 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "ROCK_BLAST",
                 "ROCK_TOMB"
+            ],
+            "eliteMoves": [
+                "ROCK_TOMB",
+                "BRINE"
             ]
         },
         "tags": [
@@ -6034,6 +7424,10 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "ROCK_BLAST",
                 "ROCK_TOMB"
+            ],
+            "eliteMoves": [
+                "ROCK_TOMB",
+                "BRINE"
             ]
         },
         "tags": [
@@ -6057,6 +7451,10 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "ROCK_BLAST",
                 "ROCK_SLIDE"
+            ],
+            "eliteMoves": [
+                "ROCK_THROW",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -6079,6 +7477,10 @@ export const POKEMONS_DATA: (Pick<
                 "ANCIENT_POWER",
                 "HYDRO_PUMP",
                 "ROCK_BLAST",
+                "ROCK_SLIDE"
+            ],
+            "eliteMoves": [
+                "ROCK_THROW",
                 "ROCK_SLIDE"
             ]
         },
@@ -6122,6 +7524,9 @@ export const POKEMONS_DATA: (Pick<
                 "ANCIENT_POWER",
                 "STONE_EDGE",
                 "WATER_PULSE"
+            ],
+            "eliteMoves": [
+                "FURY_CUTTER"
             ]
         },
         "tags": [],
@@ -6171,7 +7576,8 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -6218,6 +7624,9 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "SKULL_BASH",
                 "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "YAWN"
             ]
         },
         "tags": [
@@ -6244,6 +7653,9 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "SKULL_BASH",
                 "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "YAWN"
             ]
         },
         "tags": [
@@ -6266,12 +7678,38 @@ export const POKEMONS_DATA: (Pick<
                 "HURRICANE",
                 "ICE_BEAM",
                 "ICY_WIND",
-                "ANCIENT_POWER"
+                "ANCIENT_POWER",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
+                "HURRICANE"
             ]
         },
         "tags": [
             "legendary",
             "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "articuno_galarian",
+        "dexNumber": 144,
+        "moves": {
+            "fastMoves": [
+                "CONFUSION",
+                "PSYCHO_CUT"
+            ],
+            "chargedMoves": [
+                "FUTURE_SIGHT",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -6290,7 +7728,11 @@ export const POKEMONS_DATA: (Pick<
                 "HURRICANE",
                 "ICE_BEAM",
                 "ICY_WIND",
-                "ANCIENT_POWER"
+                "ANCIENT_POWER",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
+                "HURRICANE"
             ]
         },
         "tags": [
@@ -6315,11 +7757,35 @@ export const POKEMONS_DATA: (Pick<
                 "ZAP_CANNON",
                 "ANCIENT_POWER",
                 "DRILL_PECK"
+            ],
+            "eliteMoves": [
+                "THUNDER_SHOCK"
             ]
         },
         "tags": [
             "legendary",
             "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "zapdos_galarian",
+        "dexNumber": 145,
+        "moves": {
+            "fastMoves": [
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -6339,6 +7805,9 @@ export const POKEMONS_DATA: (Pick<
                 "ZAP_CANNON",
                 "ANCIENT_POWER",
                 "DRILL_PECK"
+            ],
+            "eliteMoves": [
+                "THUNDER_SHOCK"
             ]
         },
         "tags": [
@@ -6363,11 +7832,36 @@ export const POKEMONS_DATA: (Pick<
                 "OVERHEAT",
                 "SKY_ATTACK",
                 "ANCIENT_POWER"
+            ],
+            "eliteMoves": [
+                "SKY_ATTACK"
             ]
         },
         "tags": [
             "legendary",
             "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "moltres_galarian",
+        "dexNumber": 146,
+        "moves": {
+            "fastMoves": [
+                "SUCKER_PUNCH",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "PAYBACK",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -6387,6 +7881,9 @@ export const POKEMONS_DATA: (Pick<
                 "OVERHEAT",
                 "SKY_ATTACK",
                 "ANCIENT_POWER"
+            ],
+            "eliteMoves": [
+                "SKY_ATTACK"
             ]
         },
         "tags": [
@@ -6450,7 +7947,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AQUA_TAIL",
                 "DRAGON_PULSE",
-                "WRAP"
+                "WRAP",
+                "BODY_SLAM"
             ]
         },
         "tags": [
@@ -6471,7 +7969,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AQUA_TAIL",
                 "DRAGON_PULSE",
-                "WRAP"
+                "WRAP",
+                "BODY_SLAM"
             ]
         },
         "tags": [
@@ -6496,7 +7995,12 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_PULSE",
                 "HURRICANE",
                 "HYPER_BEAM",
-                "OUTRAGE"
+                "OUTRAGE",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "DRACO_METEOR",
+                "DRAGON_PULSE"
             ]
         },
         "tags": [
@@ -6521,7 +8025,12 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_PULSE",
                 "HURRICANE",
                 "HYPER_BEAM",
-                "OUTRAGE"
+                "OUTRAGE",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "DRACO_METEOR",
+                "DRAGON_PULSE"
             ]
         },
         "tags": [
@@ -6548,6 +8057,11 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL",
                 "THUNDERBOLT",
                 "PSYSTRIKE"
+            ],
+            "eliteMoves": [
+                "PSYSTRIKE",
+                "SHADOW_BALL",
+                "HYPER_BEAM"
             ]
         },
         "tags": [
@@ -6571,6 +8085,9 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE",
                 "EARTHQUAKE",
                 "FUTURE_SIGHT",
+                "PSYSTRIKE"
+            ],
+            "eliteMoves": [
                 "PSYSTRIKE"
             ]
         },
@@ -6598,6 +8115,11 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL",
                 "THUNDERBOLT",
                 "PSYSTRIKE"
+            ],
+            "eliteMoves": [
+                "PSYSTRIKE",
+                "SHADOW_BALL",
+                "HYPER_BEAM"
             ]
         },
         "tags": [
@@ -6607,110 +8129,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": true
-    },
-    {
-        "id": "mewtwo_mega_x",
-        "dexNumber": 150,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "mewtwo_mega_y",
-        "dexNumber": 150,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "mewtwo_mega_x",
-        "dexNumber": 150,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "mewtwo_mega_y",
-        "dexNumber": 150,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "mew",
@@ -6774,7 +8192,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -6796,7 +8215,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -6818,7 +8238,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "TACKLE"
+                "TACKLE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ANCIENT_POWER",
@@ -6840,7 +8261,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "TACKLE"
+                "TACKLE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ANCIENT_POWER",
@@ -6862,13 +8284,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
                 "FRENZY_PLANT",
                 "PETAL_BLIZZARD",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -6885,13 +8311,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
                 "FRENZY_PLANT",
                 "PETAL_BLIZZARD",
                 "SOLAR_BEAM"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -7003,12 +8433,39 @@ export const POKEMONS_DATA: (Pick<
                 "BLAST_BURN",
                 "FIRE_BLAST",
                 "OVERHEAT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
             "starter",
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "typhlosion_hisuian",
+        "dexNumber": 157,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "WILD_CHARGE",
+                "SHADOW_BALL",
+                "OVERHEAT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -7027,7 +8484,11 @@ export const POKEMONS_DATA: (Pick<
                 "BLAST_BURN",
                 "FIRE_BLAST",
                 "OVERHEAT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
@@ -7134,13 +8595,18 @@ export const POKEMONS_DATA: (Pick<
                 "BITE",
                 "WATER_GUN",
                 "WATERFALL",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "HYDRO_CANNON",
                 "HYDRO_PUMP",
                 "ICE_BEAM"
+            ],
+            "eliteMoves": [
+                "WATER_GUN",
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -7159,13 +8625,18 @@ export const POKEMONS_DATA: (Pick<
                 "BITE",
                 "WATER_GUN",
                 "WATERFALL",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "HYDRO_CANNON",
                 "HYDRO_PUMP",
                 "ICE_BEAM"
+            ],
+            "eliteMoves": [
+                "WATER_GUN",
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -7267,7 +8738,30 @@ export const POKEMONS_DATA: (Pick<
                 "SWIFT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "ledyba_shadow",
+        "dexNumber": 165,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "SILVER_WIND",
+                "SWIFT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -7283,10 +8777,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BUG_BUZZ",
-                "SILVER_WIND"
+                "SILVER_WIND",
+                "DYNAMIC_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "ledian_shadow",
+        "dexNumber": 166,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BUG_BUZZ",
+                "SILVER_WIND",
+                "DYNAMIC_PUNCH"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -7322,7 +8841,8 @@ export const POKEMONS_DATA: (Pick<
                 "CROSS_POISON",
                 "MEGAHORN",
                 "SHADOW_SNEAK",
-                "LUNGE"
+                "LUNGE",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -7407,10 +8927,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "HYDRO_PUMP",
                 "THUNDER",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "SURF"
             ]
         },
         "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "lanturnw",
+        "dexNumber": 171,
+        "moves": {
+            "fastMoves": [
+                "CHARGE_BEAM",
+                "WATER_GUN",
+                "SPARK"
+            ],
+            "chargedMoves": [
+                "HYDRO_PUMP",
+                "THUNDER",
+                "THUNDERBOLT",
+                "SURF"
+            ]
+        },
+        "tags": [
+            "duplicate",
+            "duplicate1500"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -7427,6 +8972,9 @@ export const POKEMONS_DATA: (Pick<
                 "DISARMING_VOICE",
                 "THUNDER_PUNCH",
                 "THUNDERBOLT"
+            ],
+            "legacyMoves": [
+                "QUICK_ATTACK"
             ]
         },
         "tags": [],
@@ -7447,7 +8995,12 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT",
                 "PSYCHIC",
                 "PSYSHOCK",
-                "SIGNAL_BEAM"
+                "SIGNAL_BEAM",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "PSYCHIC",
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -7467,7 +9020,11 @@ export const POKEMONS_DATA: (Pick<
                 "BODY_SLAM",
                 "PSYCHIC",
                 "SHADOW_BALL",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -7503,6 +9060,9 @@ export const POKEMONS_DATA: (Pick<
                 "ANCIENT_POWER",
                 "DAZZLING_GLEAM",
                 "PSYSHOCK"
+            ],
+            "eliteMoves": [
+                "ZEN_HEADBUTT"
             ]
         },
         "tags": [],
@@ -7515,6 +9075,7 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 176,
         "moves": {
             "fastMoves": [
+                "FAIRY_WIND",
                 "EXTRASENSORY",
                 "HIDDEN_POWER_BUG",
                 "HIDDEN_POWER_DARK",
@@ -7539,6 +9100,10 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "ANCIENT_POWER",
                 "DAZZLING_GLEAM"
+            ],
+            "eliteMoves": [
+                "STEEL_WING",
+                "ZEN_HEADBUTT"
             ]
         },
         "tags": [],
@@ -7560,7 +9125,30 @@ export const POKEMONS_DATA: (Pick<
                 "PSYSHOCK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "natu_shadow",
+        "dexNumber": 177,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "QUICK_ATTACK"
+            ],
+            "chargedMoves": [
+                "DRILL_PECK",
+                "NIGHT_SHADE",
+                "PSYSHOCK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -7579,7 +9167,30 @@ export const POKEMONS_DATA: (Pick<
                 "OMINOUS_WIND"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "xatu_shadow",
+        "dexNumber": 178,
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "FEINT_ATTACK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "FUTURE_SIGHT",
+                "OMINOUS_WIND"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -7595,7 +9206,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "DISCHARGE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7616,7 +9228,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "DISCHARGE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7637,7 +9250,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DISCHARGE",
                 "POWER_GEM",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7658,7 +9272,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DISCHARGE",
                 "POWER_GEM",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7682,7 +9297,12 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_GEM",
                 "THUNDER",
                 "ZAP_CANNON",
-                "THUNDER_PUNCH"
+                "THUNDER_PUNCH",
+                "BRUTAL_SWING",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "DRAGON_PULSE"
             ]
         },
         "tags": [
@@ -7706,7 +9326,12 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_GEM",
                 "THUNDER",
                 "ZAP_CANNON",
-                "THUNDER_PUNCH"
+                "THUNDER_PUNCH",
+                "BRUTAL_SWING",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "DRAGON_PULSE"
             ]
         },
         "tags": [
@@ -7731,7 +9356,12 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_GEM",
                 "THUNDER",
                 "ZAP_CANNON",
-                "THUNDER_PUNCH"
+                "THUNDER_PUNCH",
+                "BRUTAL_SWING",
+                "TRAILBLAZE"
+            ],
+            "eliteMoves": [
+                "DRAGON_PULSE"
             ]
         },
         "tags": [
@@ -7748,7 +9378,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "ACID",
                 "RAZOR_LEAF",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -7770,7 +9401,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "ACID",
                 "RAZOR_LEAF",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -7824,27 +9456,6 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
-        "id": "azumarill_xs",
-        "dexNumber": 184,
-        "moves": {
-            "fastMoves": [
-                "BUBBLE",
-                "ROCK_SMASH"
-            ],
-            "chargedMoves": [
-                "HYDRO_PUMP",
-                "ICE_BEAM",
-                "PLAY_ROUGH"
-            ]
-        },
-        "tags": [
-            "xs"
-        ],
-        "buddyDistance": 3,
-        "thirdMoveCost": 50000,
-        "released": true
-    },
-    {
         "id": "sudowoodo",
         "dexNumber": 185,
         "moves": {
@@ -7856,7 +9467,9 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "ROCK_SLIDE",
                 "STONE_EDGE",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7878,7 +9491,9 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "ROCK_SLIDE",
                 "STONE_EDGE",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -7901,7 +9516,13 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "HYDRO_PUMP",
                 "SURF",
-                "WEATHER_BALL_WATER"
+                "WEATHER_BALL_WATER",
+                "ICE_BEAM",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "EARTHQUAKE",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -7924,7 +9545,13 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "HYDRO_PUMP",
                 "SURF",
-                "WEATHER_BALL_WATER"
+                "WEATHER_BALL_WATER",
+                "ICE_BEAM",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "EARTHQUAKE",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -8024,13 +9651,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BULLET_SEED",
-                "INFESTATION"
+                "INFESTATION",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "ENERGY_BALL",
                 "AERIAL_ACE",
                 "SOLAR_BEAM",
+                "ACROBATICS"
+            ],
+            "eliteMoves": [
                 "ACROBATICS"
             ]
         },
@@ -8047,13 +9678,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BULLET_SEED",
-                "INFESTATION"
+                "INFESTATION",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "ENERGY_BALL",
                 "AERIAL_ACE",
                 "SOLAR_BEAM",
+                "ACROBATICS"
+            ],
+            "eliteMoves": [
                 "ACROBATICS"
             ]
         },
@@ -8186,6 +9821,27 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "wooper_paldean",
+        "dexNumber": 194,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "DIG",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [
+            "paldean"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "wooper_shadow",
         "dexNumber": 194,
         "moves": {
@@ -8218,7 +9874,12 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "SLUDGE_BOMB",
                 "STONE_EDGE",
-                "ACID_SPRAY"
+                "ACID_SPRAY",
+                "MUD_BOMB",
+                "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "AQUA_TAIL"
             ]
         },
         "tags": [
@@ -8240,7 +9901,12 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "SLUDGE_BOMB",
                 "STONE_EDGE",
-                "ACID_SPRAY"
+                "ACID_SPRAY",
+                "MUD_BOMB",
+                "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "AQUA_TAIL"
             ]
         },
         "tags": [
@@ -8263,6 +9929,11 @@ export const POKEMONS_DATA: (Pick<
                 "LAST_RESORT",
                 "PSYBEAM",
                 "PSYCHIC",
+                "SHADOW_BALL",
+                "PSYCHIC_FANGS"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
                 "SHADOW_BALL"
             ]
         },
@@ -8282,6 +9953,10 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DARK_PULSE",
                 "FOUL_PLAY",
+                "LAST_RESORT",
+                "PSYCHIC"
+            ],
+            "eliteMoves": [
                 "LAST_RESORT",
                 "PSYCHIC"
             ]
@@ -8344,7 +10019,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BLIZZARD",
                 "FIRE_BLAST",
-                "PSYCHIC"
+                "PSYCHIC",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -8366,7 +10046,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FUTURE_SIGHT",
                 "SHADOW_BALL",
-                "SLUDGE_WAVE"
+                "SLUDGE_WAVE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -8387,7 +10072,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BLIZZARD",
                 "FIRE_BLAST",
-                "PSYCHIC"
+                "PSYCHIC",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -8403,7 +10093,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "HEX"
+                "HEX",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -8424,7 +10115,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "HEX"
+                "HEX",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -8516,12 +10208,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "TACKLE"
+                "TACKLE",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "MIRROR_COAT",
                 "PSYCHIC",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "PSYCHIC_FANGS",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8537,12 +10232,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "TACKLE"
+                "TACKLE",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "MIRROR_COAT",
                 "PSYCHIC",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "PSYCHIC_FANGS",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8646,7 +10344,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "BITE"
+                "BITE",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "DIG",
@@ -8713,10 +10412,14 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "EARTHQUAKE",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "PSYCHIC_FANGS",
+                "BREAKING_SWIPE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -8733,11 +10436,38 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "EARTHQUAKE",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "PSYCHIC_FANGS",
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "steelix_shadow",
+        "dexNumber": 208,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "IRON_TAIL",
+                "THUNDER_FANG"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "EARTHQUAKE",
+                "HEAVY_SLAM",
+                "PSYCHIC_FANGS",
+                "BREAKING_SWIPE"
+            ]
+        },
+        "tags": [
+            "shadow"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -8842,10 +10572,34 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_BEAM",
                 "SLUDGE_WAVE",
                 "ACID_SPRAY",
-                "FELL_STINGER"
+                "FELL_STINGER",
+                "SCALD"
             ]
         },
         "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "qwilfish_hisuian",
+        "dexNumber": 211,
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AQUA_TAIL",
+                "ICE_BEAM",
+                "SLUDGE_BOMB",
+                "DARK_PULSE",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -8861,11 +10615,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "IRON_HEAD",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "scizor_mega",
+        "dexNumber": 212,
+        "moves": {
+            "fastMoves": [
+                "BULLET_PUNCH",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "IRON_HEAD",
+                "NIGHT_SLASH",
+                "X_SCISSOR",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -8882,7 +10660,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "IRON_HEAD",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8957,6 +10736,29 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "heracross_mega",
+        "dexNumber": 214,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "EARTHQUAKE",
+                "MEGAHORN",
+                "ROCK_BLAST"
+            ]
+        },
+        "tags": [
+            "regional",
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "sneasel",
         "dexNumber": 215,
         "moves": {
@@ -8967,10 +10769,33 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "FOUL_PLAY",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "sneasel_hisuian",
+        "dexNumber": 215,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "hisuian",
             "shadoweligible"
         ],
         "buddyDistance": 3,
@@ -8988,10 +10813,33 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "FOUL_PLAY",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "sneasel_hisuian_shadow",
+        "dexNumber": 215,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "hisuian",
             "shadow"
         ],
         "buddyDistance": 3,
@@ -9009,7 +10857,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CROSS_CHOP",
                 "CRUNCH",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9030,7 +10880,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CROSS_CHOP",
                 "CRUNCH",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9052,7 +10904,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "HYPER_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9074,7 +10928,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "HYPER_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9177,7 +11033,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "BULLDOZE",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "HIGH_HORSEPOWER"
             ]
         },
         "tags": [
@@ -9198,7 +11055,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "BULLDOZE",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "HIGH_HORSEPOWER"
             ]
         },
         "tags": [
@@ -9281,7 +11139,12 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "ICE_PUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "FLY",
+                "TRIPLE_AXEL"
+            ],
+            "legacyMoves": [
+                "QUICK_ATTACK"
             ]
         },
         "tags": [
@@ -9301,7 +11164,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "ICE_PUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "FLY",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -9497,6 +11362,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "OUTRAGE",
                 "OCTAZOOKA"
+            ],
+            "eliteMoves": [
+                "WATER_GUN"
             ]
         },
         "tags": [
@@ -9520,6 +11388,9 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "OUTRAGE",
                 "OCTAZOOKA"
+            ],
+            "eliteMoves": [
+                "WATER_GUN"
             ]
         },
         "tags": [
@@ -9540,10 +11411,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "BULLDOZE",
-                "ROCK_SLIDE"
+                "ROCK_SLIDE",
+                "TRAILBLAZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "phanpy_shadow",
+        "dexNumber": 231,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "BULLDOZE",
+                "ROCK_SLIDE",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -9562,10 +11458,38 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "HEAVY_SLAM",
                 "PLAY_ROUGH",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "TRAILBLAZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "donphan_shadow",
+        "dexNumber": 232,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "MUD_SLAP",
+                "TACKLE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "HEAVY_SLAM",
+                "PLAY_ROUGH",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -9966,10 +11890,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "GYRO_BALL",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "TRIPLE_AXEL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "hitmontop_shadow",
+        "dexNumber": 237,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "GYRO_BALL",
+                "STONE_EDGE",
+                "TRIPLE_AXEL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -9987,6 +11936,9 @@ export const POKEMONS_DATA: (Pick<
                 "ICE_BEAM",
                 "ICE_PUNCH",
                 "PSYSHOCK"
+            ],
+            "eliteMoves": [
+                "FROST_BREATH"
             ]
         },
         "tags": [],
@@ -10006,6 +11958,9 @@ export const POKEMONS_DATA: (Pick<
                 "BRICK_BREAK",
                 "DISCHARGE",
                 "THUNDER_PUNCH",
+                "THUNDERBOLT"
+            ],
+            "eliteMoves": [
                 "THUNDERBOLT"
             ]
         },
@@ -10027,6 +11982,9 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_PUNCH",
                 "FLAME_BURST",
                 "FLAMETHROWER"
+            ],
+            "eliteMoves": [
+                "FLAMETHROWER"
             ]
         },
         "tags": [],
@@ -10040,7 +11998,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -10066,7 +12025,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "HYPER_BEAM",
-                "PSYCHIC"
+                "PSYCHIC",
+                "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "WILD_CHARGE"
             ]
         },
         "tags": [],
@@ -10133,7 +12096,8 @@ export const POKEMONS_DATA: (Pick<
                 "FLAMETHROWER",
                 "IRON_HEAD",
                 "OVERHEAT",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -10157,7 +12121,8 @@ export const POKEMONS_DATA: (Pick<
                 "FLAMETHROWER",
                 "IRON_HEAD",
                 "OVERHEAT",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -10197,7 +12162,26 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "HYDRO_PUMP",
                 "ICE_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER"
             ]
         },
         "tags": [
@@ -10237,7 +12221,26 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "HYDRO_PUMP",
                 "ICE_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER"
             ]
         },
         "tags": [
@@ -10344,11 +12347,42 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FIRE_BLAST",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "SMACK_DOWN"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "tyranitar_mega",
+        "dexNumber": 248,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "IRON_TAIL",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "FIRE_BLAST",
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "SMACK_DOWN"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -10366,7 +12400,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FIRE_BLAST",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "SMACK_DOWN"
             ]
         },
         "tags": [
@@ -10388,6 +12426,9 @@ export const POKEMONS_DATA: (Pick<
                 "FUTURE_SIGHT",
                 "HYDRO_PUMP",
                 "SKY_ATTACK",
+                "AEROBLAST"
+            ],
+            "eliteMoves": [
                 "AEROBLAST"
             ]
         },
@@ -10411,6 +12452,9 @@ export const POKEMONS_DATA: (Pick<
                 "FUTURE_SIGHT",
                 "HYDRO_PUMP",
                 "SKY_ATTACK",
+                "AEROBLAST"
+            ],
+            "eliteMoves": [
                 "AEROBLAST"
             ]
         },
@@ -10451,6 +12495,10 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD",
                 "FIRE_BLAST",
                 "SOLAR_BEAM",
+                "EARTHQUAKE",
+                "SACRED_FIRE"
+            ],
+            "eliteMoves": [
                 "EARTHQUAKE",
                 "SACRED_FIRE"
             ]
@@ -10494,6 +12542,10 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "EARTHQUAKE",
                 "SACRED_FIRE"
+            ],
+            "eliteMoves": [
+                "EARTHQUAKE",
+                "SACRED_FIRE"
             ]
         },
         "tags": [
@@ -10519,6 +12571,9 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "SEED_BOMB",
                 "LEAF_STORM"
+            ],
+            "eliteMoves": [
+                "MAGICAL_LEAF"
             ]
         },
         "tags": [
@@ -10544,7 +12599,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "treecko_shadow",
+        "dexNumber": 252,
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "POUND"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "ENERGY_BALL",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10565,7 +12643,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "grovyle_shadow",
+        "dexNumber": 253,
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "QUICK_ATTACK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "GRASS_KNOT",
+                "LEAF_BLADE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10584,11 +12685,73 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "LEAF_BLADE",
                 "FRENZY_PLANT",
-                "DRAGON_CLAW"
+                "DRAGON_CLAW",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "sceptile_mega",
+        "dexNumber": 254,
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "EARTHQUAKE",
+                "LEAF_BLADE",
+                "FRENZY_PLANT",
+                "DRAGON_CLAW",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "mega",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "sceptile_shadow",
+        "dexNumber": 254,
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "EARTHQUAKE",
+                "LEAF_BLADE",
+                "FRENZY_PLANT",
+                "DRAGON_CLAW",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10609,7 +12772,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "torchic_shadow",
+        "dexNumber": 255,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "SCRATCH"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "FLAMETHROWER",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10630,7 +12816,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "combusken_shadow",
+        "dexNumber": 256,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "PECK"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "FLAMETHROWER",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10651,10 +12860,74 @@ export const POKEMONS_DATA: (Pick<
                 "STONE_EDGE",
                 "BLAST_BURN",
                 "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN",
+                "STONE_EDGE"
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "blaziken_mega",
+        "dexNumber": 257,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "FIRE_SPIN"
+            ],
+            "chargedMoves": [
+                "BRAVE_BIRD",
+                "FOCUS_BLAST",
+                "OVERHEAT",
+                "STONE_EDGE",
+                "BLAST_BURN",
+                "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN",
+                "STONE_EDGE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "mega",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "blaziken_shadow",
+        "dexNumber": 257,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "FIRE_SPIN"
+            ],
+            "chargedMoves": [
+                "BRAVE_BIRD",
+                "FOCUS_BLAST",
+                "OVERHEAT",
+                "STONE_EDGE",
+                "BLAST_BURN",
+                "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN",
+                "STONE_EDGE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10760,11 +13033,42 @@ export const POKEMONS_DATA: (Pick<
                 "SURF",
                 "HYDRO_CANNON",
                 "MUDDY_WATER"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
             "starter",
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "swampert_mega",
+        "dexNumber": 260,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "SLUDGE_WAVE",
+                "SURF",
+                "HYDRO_CANNON",
+                "MUDDY_WATER"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -10784,6 +13088,9 @@ export const POKEMONS_DATA: (Pick<
                 "SURF",
                 "HYDRO_CANNON",
                 "MUDDY_WATER"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -10888,7 +13195,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ROCK_SMASH",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -10928,7 +13236,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "SHADOW_CLAW",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -11061,7 +13370,8 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "BUBBLE_BEAM",
-                "ENERGY_BALL"
+                "ENERGY_BALL",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -11080,7 +13390,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "GRASS_KNOT",
-                "ICE_BEAM"
+                "ICE_BEAM",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -11102,7 +13413,8 @@ export const POKEMONS_DATA: (Pick<
                 "ENERGY_BALL",
                 "ICE_BEAM",
                 "SOLAR_BEAM",
-                "LEAF_STORM"
+                "LEAF_STORM",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -11209,6 +13521,9 @@ export const POKEMONS_DATA: (Pick<
                 "HURRICANE",
                 "LEAF_BLADE",
                 "LEAF_TORNADO"
+            ],
+            "eliteMoves": [
+                "BULLET_SEED"
             ]
         },
         "tags": [
@@ -11233,6 +13548,9 @@ export const POKEMONS_DATA: (Pick<
                 "HURRICANE",
                 "LEAF_BLADE",
                 "LEAF_TORNADO"
+            ],
+            "eliteMoves": [
+                "BULLET_SEED"
             ]
         },
         "tags": [
@@ -11365,12 +13683,17 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "CONFUSION"
+                "CONFUSION",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DISARMING_VOICE",
                 "PSYCHIC",
                 "SHADOW_SNEAK",
+                "DRAINING_KISS",
+                "TRIPLE_AXEL"
+            ],
+            "legacyMoves": [
                 "DRAINING_KISS"
             ]
         },
@@ -11387,13 +13710,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "CONFUSION"
+                "CONFUSION",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DISARMING_VOICE",
                 "PSYCHIC",
                 "SHADOW_SNEAK",
-                "DRAINING_KISS"
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -11410,17 +13734,51 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CHARGE_BEAM",
                 "CONFUSION",
-                "CHARM"
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "PSYCHIC",
                 "SHADOW_BALL",
+                "SYNCHRONOISE",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
                 "SYNCHRONOISE"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gardevoir_mega",
+        "dexNumber": 282,
+        "moves": {
+            "fastMoves": [
+                "CHARGE_BEAM",
+                "CONFUSION",
+                "CHARM",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "PSYCHIC",
+                "SHADOW_BALL",
+                "SYNCHRONOISE",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
+                "SYNCHRONOISE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -11433,12 +13791,17 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CHARGE_BEAM",
                 "CONFUSION",
-                "CHARM"
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "PSYCHIC",
                 "SHADOW_BALL",
+                "SYNCHRONOISE",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
                 "SYNCHRONOISE"
             ]
         },
@@ -11521,6 +13884,9 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT",
                 "SEED_BOMB",
                 "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "GRASS_KNOT"
             ]
         },
         "tags": [],
@@ -11557,7 +13923,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "BRICK_BREAK",
-                "BULLDOZE"
+                "BULLDOZE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [],
@@ -11576,6 +13943,9 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "HYPER_BEAM",
                 "PLAY_ROUGH",
+                "BODY_SLAM"
+            ],
+            "eliteMoves": [
                 "BODY_SLAM"
             ]
         },
@@ -11635,12 +14005,15 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "DIG",
                 "SHADOW_SNEAK"
+            ],
+            "eliteMoves": [
+                "STRUGGLE_BUG"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": true
+        "released": false
     },
     {
         "id": "whismur",
@@ -11737,7 +14110,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "DISARMING_VOICE",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "BOOMBURST"
             ]
         },
         "tags": [
@@ -11758,7 +14132,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "DISARMING_VOICE",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "BOOMBURST"
             ]
         },
         "tags": [
@@ -11976,7 +14351,7 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
-        "id": "sableye_xs",
+        "id": "sableye_mega",
         "dexNumber": 302,
         "moves": {
             "fastMoves": [
@@ -11991,7 +14366,7 @@ export const POKEMONS_DATA: (Pick<
         },
         "tags": [
             "shadoweligible",
-            "xs"
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -12026,7 +14401,8 @@ export const POKEMONS_DATA: (Pick<
                 "ASTONISH",
                 "BITE",
                 "FIRE_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "IRON_HEAD",
@@ -12050,7 +14426,8 @@ export const POKEMONS_DATA: (Pick<
                 "ASTONISH",
                 "BITE",
                 "FIRE_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "IRON_HEAD",
@@ -12065,54 +14442,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
-    },
-    {
-        "id": "mawile_mega",
-        "dexNumber": 303,
-        "moves": {
-            "fastMoves": [
-                "ASTONISH",
-                "BITE",
-                "FIRE_FANG",
-                "ICE_FANG",
-                "FAIRY_WIND"
-            ],
-            "chargedMoves": [
-                "IRON_HEAD",
-                "PLAY_ROUGH",
-                "VICE_GRIP",
-                "POWER_UP_PUNCH"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "mawile_mega",
-        "dexNumber": 303,
-        "moves": {
-            "fastMoves": [
-                "ASTONISH",
-                "BITE",
-                "FIRE_FANG",
-                "ICE_FANG",
-                "FAIRY_WIND"
-            ],
-            "chargedMoves": [
-                "IRON_HEAD",
-                "PLAY_ROUGH",
-                "VICE_GRIP",
-                "POWER_UP_PUNCH"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "aron",
@@ -12213,11 +14542,37 @@ export const POKEMONS_DATA: (Pick<
                 "HEAVY_SLAM",
                 "STONE_EDGE",
                 "THUNDER",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "aggron_mega",
+        "dexNumber": 306,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "IRON_TAIL",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "HEAVY_SLAM",
+                "STONE_EDGE",
+                "THUNDER",
+                "ROCK_TOMB",
+                "METEOR_BEAM"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -12236,7 +14591,8 @@ export const POKEMONS_DATA: (Pick<
                 "HEAVY_SLAM",
                 "STONE_EDGE",
                 "THUNDER",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM"
             ]
         },
         "tags": [
@@ -12286,7 +14642,7 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
-        "id": "medicham_xs",
+        "id": "medicham_mega",
         "dexNumber": 308,
         "moves": {
             "fastMoves": [
@@ -12301,7 +14657,7 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "xs"
+            "mega"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -12362,7 +14718,8 @@ export const POKEMONS_DATA: (Pick<
                 "FLAME_BURST",
                 "THUNDER",
                 "WILD_CHARGE",
-                "OVERHEAT"
+                "OVERHEAT",
+                "PSYCHIC_FANGS"
             ]
         },
         "tags": [
@@ -12385,10 +14742,12 @@ export const POKEMONS_DATA: (Pick<
                 "FLAME_BURST",
                 "THUNDER",
                 "WILD_CHARGE",
-                "OVERHEAT"
+                "OVERHEAT",
+                "PSYCHIC_FANGS"
             ]
         },
         "tags": [
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 3,
@@ -12408,7 +14767,8 @@ export const POKEMONS_DATA: (Pick<
                 "FLAME_BURST",
                 "THUNDER",
                 "WILD_CHARGE",
-                "OVERHEAT"
+                "OVERHEAT",
+                "PSYCHIC_FANGS"
             ]
         },
         "tags": [
@@ -12506,7 +14866,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -12544,7 +14905,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "INFESTATION",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "GUNK_SHOT",
@@ -12645,46 +15007,6 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
-        "id": "sharpedo_mega",
-        "dexNumber": 319,
-        "moves": {
-            "fastMoves": [
-                "BITE",
-                "WATERFALL"
-            ],
-            "chargedMoves": [
-                "CRUNCH",
-                "HYDRO_PUMP",
-                "POISON_FANG"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "sharpedo_mega",
-        "dexNumber": 319,
-        "moves": {
-            "fastMoves": [
-                "BITE",
-                "WATERFALL"
-            ],
-            "chargedMoves": [
-                "CRUNCH",
-                "HYDRO_PUMP",
-                "POISON_FANG"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
         "id": "wailmer",
         "dexNumber": 320,
         "moves": {
@@ -12695,10 +15017,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BODY_SLAM",
                 "HEAVY_SLAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "wailmer_shadow",
+        "dexNumber": 320,
+        "moves": {
+            "fastMoves": [
+                "SPLASH",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "HEAVY_SLAM",
+                "WATER_PULSE",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -12714,10 +15061,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BLIZZARD",
                 "HYPER_BEAM",
-                "SURF"
+                "SURF",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "wailord_shadow",
+        "dexNumber": 321,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "HYPER_BEAM",
+                "SURF",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -12770,7 +15142,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "EMBER",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -12792,7 +15165,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "EMBER",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -12807,44 +15181,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
-    },
-    {
-        "id": "camerupt_mega",
-        "dexNumber": 323,
-        "moves": {
-            "fastMoves": [
-                "EMBER",
-                "ROCK_SMASH",
-                "INCINERATE"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "OVERHEAT",
-                "SOLAR_BEAM",
-                "EARTH_POWER"
-            ]
-        },
-        "tags": [],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "camerupt_mega",
-        "dexNumber": 323,
-        "moves": {
-            "fastMoves": [
-                "EMBER",
-                "ROCK_SMASH",
-                "INCINERATE"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "OVERHEAT",
-                "SOLAR_BEAM",
-                "EARTH_POWER"
-            ]
-        },
-        "tags": [],
-        "thirdMoveCost": 10000
     },
     {
         "id": "torkoal",
@@ -12881,7 +15217,30 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "spoink_shadow",
+        "dexNumber": 325,
+        "moves": {
+            "fastMoves": [
+                "SPLASH",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "MIRROR_COAT",
+                "PSYBEAM",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -12900,7 +15259,30 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "grumpig_shadow",
+        "dexNumber": 326,
+        "moves": {
+            "fastMoves": [
+                "CHARGE_BEAM",
+                "EXTRASENSORY"
+            ],
+            "chargedMoves": [
+                "MIRROR_COAT",
+                "PSYCHIC",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -12930,12 +15312,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "STRUGGLE_BUG"
+                "STRUGGLE_BUG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "DIG",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -12951,12 +15335,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "STRUGGLE_BUG"
+                "STRUGGLE_BUG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "DIG",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -12972,12 +15358,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "DRAGON_BREATH",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
                 "BULLDOZE",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -12993,12 +15381,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "DRAGON_BREATH",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
                 "BULLDOZE",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -13014,12 +15404,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "DRAGON_TAIL",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "EARTHQUAKE",
                 "STONE_EDGE",
+                "EARTH_POWER",
+                "BOOMBURST",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "EARTH_POWER"
             ]
         },
@@ -13036,12 +15432,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "DRAGON_TAIL",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "EARTHQUAKE",
                 "STONE_EDGE",
+                "EARTH_POWER",
+                "BOOMBURST",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "EARTH_POWER"
             ]
         },
@@ -13058,13 +15460,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_STING",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "GRASS_KNOT",
                 "SEED_BOMB",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -13080,13 +15484,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_STING",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "GRASS_KNOT",
                 "SEED_BOMB",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -13102,13 +15508,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
                 "DYNAMIC_PUNCH",
                 "GRASS_KNOT",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -13124,13 +15532,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
                 "DYNAMIC_PUNCH",
                 "GRASS_KNOT",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -13172,6 +15582,9 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_PULSE",
                 "SKY_ATTACK",
                 "MOONBLAST"
+            ],
+            "eliteMoves": [
+                "MOONBLAST"
             ]
         },
         "tags": [],
@@ -13191,6 +15604,9 @@ export const POKEMONS_DATA: (Pick<
                 "DAZZLING_GLEAM",
                 "DRAGON_PULSE",
                 "SKY_ATTACK",
+                "MOONBLAST"
+            ],
+            "eliteMoves": [
                 "MOONBLAST"
             ]
         },
@@ -13249,7 +15665,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ROCK_THROW"
+                "ROCK_THROW",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -13270,7 +15687,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ROCK_THROW"
+                "ROCK_THROW",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYCHIC",
@@ -13296,10 +15714,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AQUA_TAIL",
                 "ICE_BEAM",
-                "MUD_BOMB"
+                "MUD_BOMB",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "barboach_shadow",
+        "dexNumber": 339,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "AQUA_TAIL",
+                "ICE_BEAM",
+                "MUD_BOMB",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -13315,10 +15758,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BLIZZARD",
                 "MUD_BOMB",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "whiscash_shadow",
+        "dexNumber": 340,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "MUD_BOMB",
+                "WATER_PULSE",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -13334,10 +15802,37 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AQUA_JET",
                 "BUBBLE_BEAM",
-                "VICE_GRIP"
+                "VICE_GRIP",
+                "RAZOR_SHELL",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "corphish_shadow",
+        "dexNumber": 341,
+        "moves": {
+            "fastMoves": [
+                "BUBBLE",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "BUBBLE_BEAM",
+                "VICE_GRIP",
+                "RAZOR_SHELL",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -13354,10 +15849,38 @@ export const POKEMONS_DATA: (Pick<
                 "BUBBLE_BEAM",
                 "NIGHT_SLASH",
                 "VICE_GRIP",
-                "CRABHAMMER"
+                "CRABHAMMER",
+                "RAZOR_SHELL",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "crawdaunt_shadow",
+        "dexNumber": 342,
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "WATERFALL"
+            ],
+            "chargedMoves": [
+                "BUBBLE_BEAM",
+                "NIGHT_SLASH",
+                "VICE_GRIP",
+                "CRABHAMMER",
+                "RAZOR_SHELL",
+                "SCALD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -13397,7 +15920,8 @@ export const POKEMONS_DATA: (Pick<
                 "EARTH_POWER",
                 "ICE_BEAM",
                 "SHADOW_BALL",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
@@ -13433,7 +15957,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ACID",
-                "INFESTATION"
+                "INFESTATION",
+                "BULLET_SEED"
             ],
             "chargedMoves": [
                 "ANCIENT_POWER",
@@ -13460,7 +15985,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BULLDOZE",
                 "GRASS_KNOT",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -13482,7 +16008,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BULLDOZE",
                 "GRASS_KNOT",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -13545,7 +16072,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CROSS_POISON",
                 "ROCK_BLAST",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -13566,7 +16094,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CROSS_POISON",
                 "ROCK_BLAST",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -13709,7 +16238,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "shuppet",
@@ -13769,6 +16298,28 @@ export const POKEMONS_DATA: (Pick<
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "banette_mega",
+        "dexNumber": 354,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "SHADOW_BALL",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -13848,7 +16399,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FIRE_PUNCH",
                 "ICE_PUNCH",
-                "SHADOW_PUNCH"
+                "SHADOW_PUNCH",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -13869,7 +16421,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FIRE_PUNCH",
                 "ICE_PUNCH",
-                "SHADOW_PUNCH"
+                "SHADOW_PUNCH",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -13957,6 +16510,7 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 5,
@@ -14016,7 +16570,30 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "snorunt_shadow",
+        "dexNumber": 361,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "AVALANCHE",
+                "ICY_WIND",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -14035,7 +16612,51 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "glalie_mega",
+        "dexNumber": 362,
+        "moves": {
+            "fastMoves": [
+                "FROST_BREATH",
+                "ICE_SHARD"
+            ],
+            "chargedMoves": [
+                "AVALANCHE",
+                "GYRO_BALL",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "glalie_shadow",
+        "dexNumber": 362,
+        "moves": {
+            "fastMoves": [
+                "FROST_BREATH",
+                "ICE_SHARD"
+            ],
+            "chargedMoves": [
+                "AVALANCHE",
+                "GYRO_BALL",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -14138,6 +16759,10 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "WATER_PULSE",
                 "ICICLE_SPEAR"
+            ],
+            "eliteMoves": [
+                "POWDER_SNOW",
+                "ICICLE_SPEAR"
             ]
         },
         "tags": [
@@ -14160,6 +16785,10 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "EARTHQUAKE",
                 "WATER_PULSE",
+                "ICICLE_SPEAR"
+            ],
+            "eliteMoves": [
+                "POWDER_SNOW",
                 "ICICLE_SPEAR"
             ]
         },
@@ -14363,11 +16992,43 @@ export const POKEMONS_DATA: (Pick<
                 "DRACO_METEOR",
                 "FIRE_BLAST",
                 "HYDRO_PUMP",
+                "OUTRAGE",
+                "FLY"
+            ],
+            "eliteMoves": [
                 "OUTRAGE"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "salamence_mega",
+        "dexNumber": 373,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "DRAGON_TAIL",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "FIRE_BLAST",
+                "HYDRO_PUMP",
+                "OUTRAGE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "OUTRAGE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -14386,6 +17047,10 @@ export const POKEMONS_DATA: (Pick<
                 "DRACO_METEOR",
                 "FIRE_BLAST",
                 "HYDRO_PUMP",
+                "OUTRAGE",
+                "FLY"
+            ],
+            "eliteMoves": [
                 "OUTRAGE"
             ]
         },
@@ -14487,6 +17152,9 @@ export const POKEMONS_DATA: (Pick<
                 "FLASH_CANNON",
                 "METEOR_MASH",
                 "PSYCHIC"
+            ],
+            "eliteMoves": [
+                "METEOR_MASH"
             ]
         },
         "tags": [
@@ -14509,6 +17177,9 @@ export const POKEMONS_DATA: (Pick<
                 "FLASH_CANNON",
                 "METEOR_MASH",
                 "PSYCHIC"
+            ],
+            "eliteMoves": [
+                "METEOR_MASH"
             ]
         },
         "tags": [
@@ -14517,48 +17188,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
-    },
-    {
-        "id": "metagross_mega",
-        "dexNumber": 376,
-        "moves": {
-            "fastMoves": [
-                "BULLET_PUNCH",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "FLASH_CANNON",
-                "METEOR_MASH",
-                "PSYCHIC"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "metagross_mega",
-        "dexNumber": 376,
-        "moves": {
-            "fastMoves": [
-                "BULLET_PUNCH",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "FLASH_CANNON",
-                "METEOR_MASH",
-                "PSYCHIC"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "regirock",
@@ -14574,10 +17203,41 @@ export const POKEMONS_DATA: (Pick<
                 "STONE_EDGE",
                 "ZAP_CANNON",
                 "EARTHQUAKE"
+            ],
+            "eliteMoves": [
+                "EARTHQUAKE"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "regirock_shadow",
+        "dexNumber": 377,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "ROCK_THROW",
+                "LOCK_ON"
+            ],
+            "chargedMoves": [
+                "FOCUS_BLAST",
+                "STONE_EDGE",
+                "ZAP_CANNON",
+                "EARTHQUAKE"
+            ],
+            "eliteMoves": [
+                "EARTHQUAKE"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14597,10 +17257,41 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "FOCUS_BLAST",
                 "THUNDER"
+            ],
+            "eliteMoves": [
+                "THUNDER"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "regice_shadow",
+        "dexNumber": 378,
+        "moves": {
+            "fastMoves": [
+                "FROST_BREATH",
+                "ROCK_SMASH",
+                "LOCK_ON"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "EARTHQUAKE",
+                "FOCUS_BLAST",
+                "THUNDER"
+            ],
+            "eliteMoves": [
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14620,10 +17311,41 @@ export const POKEMONS_DATA: (Pick<
                 "FOCUS_BLAST",
                 "HYPER_BEAM",
                 "ZAP_CANNON"
+            ],
+            "eliteMoves": [
+                "ZAP_CANNON"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "registeel_shadow",
+        "dexNumber": 379,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "ROCK_SMASH",
+                "LOCK_ON"
+            ],
+            "chargedMoves": [
+                "FLASH_CANNON",
+                "FOCUS_BLAST",
+                "HYPER_BEAM",
+                "ZAP_CANNON"
+            ],
+            "eliteMoves": [
+                "ZAP_CANNON"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14643,35 +17365,14 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "THUNDER",
                 "MIST_BALL"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible"
-        ],
-        "buddyDistance": 20,
-        "thirdMoveCost": 100000,
-        "released": true
-    },
-    {
-        "id": "latias_shadow",
-        "dexNumber": 380,
-        "moves": {
-            "fastMoves": [
-                "DRAGON_BREATH",
-                "ZEN_HEADBUTT",
-                "CHARM"
             ],
-            "chargedMoves": [
-                "OUTRAGE",
-                "PSYCHIC",
-                "THUNDER",
+            "eliteMoves": [
                 "MIST_BALL"
             ]
         },
         "tags": [
             "legendary",
-            "shadow"
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14691,11 +17392,42 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "THUNDER",
                 "MIST_BALL"
+            ],
+            "eliteMoves": [
+                "MIST_BALL"
             ]
         },
         "tags": [
             "legendary",
+            "shadoweligible",
             "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "latias_shadow",
+        "dexNumber": 380,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ZEN_HEADBUTT",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "PSYCHIC",
+                "THUNDER",
+                "MIST_BALL"
+            ],
+            "eliteMoves": [
+                "MIST_BALL"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14714,10 +17446,14 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "SOLAR_BEAM",
                 "LUSTER_PURGE"
+            ],
+            "eliteMoves": [
+                "LUSTER_PURGE"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14736,11 +17472,41 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "SOLAR_BEAM",
                 "LUSTER_PURGE"
+            ],
+            "eliteMoves": [
+                "LUSTER_PURGE"
             ]
         },
         "tags": [
             "legendary",
+            "shadoweligible",
             "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "latios_shadow",
+        "dexNumber": 381,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "PSYCHIC",
+                "SOLAR_BEAM",
+                "LUSTER_PURGE"
+            ],
+            "eliteMoves": [
+                "LUSTER_PURGE"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14757,11 +17523,68 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "HYDRO_PUMP",
                 "THUNDER",
-                "SURF"
+                "SURF",
+                "ORIGIN_PULSE"
+            ],
+            "eliteMoves": [
+                "ORIGIN_PULSE"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "kyogre_primal",
+        "dexNumber": 382,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "HYDRO_PUMP",
+                "THUNDER",
+                "SURF",
+                "ORIGIN_PULSE"
+            ],
+            "eliteMoves": [
+                "ORIGIN_PULSE"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "kyogre_shadow",
+        "dexNumber": 382,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "HYDRO_PUMP",
+                "THUNDER",
+                "SURF",
+                "ORIGIN_PULSE"
+            ],
+            "eliteMoves": [
+                "ORIGIN_PULSE"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14779,11 +17602,73 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "FIRE_BLAST",
                 "SOLAR_BEAM",
+                "FIRE_PUNCH",
+                "PRECIPICE_BLADES"
+            ],
+            "eliteMoves": [
+                "PRECIPICE_BLADES",
                 "FIRE_PUNCH"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "groudon_primal",
+        "dexNumber": 383,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "SOLAR_BEAM",
+                "FIRE_PUNCH",
+                "PRECIPICE_BLADES"
+            ],
+            "eliteMoves": [
+                "PRECIPICE_BLADES",
+                "FIRE_PUNCH"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "groudon_shadow",
+        "dexNumber": 383,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "SOLAR_BEAM",
+                "FIRE_PUNCH",
+                "PRECIPICE_BLADES"
+            ],
+            "eliteMoves": [
+                "PRECIPICE_BLADES",
+                "FIRE_PUNCH"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -14801,11 +17686,48 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "ANCIENT_POWER",
                 "OUTRAGE",
-                "HURRICANE"
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
+            ],
+            "eliteMoves": [
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
             ]
         },
         "tags": [
             "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "rayquaza_mega",
+        "dexNumber": 384,
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "ANCIENT_POWER",
+                "OUTRAGE",
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
+            ],
+            "eliteMoves": [
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -15023,6 +17945,9 @@ export const POKEMONS_DATA: (Pick<
                 "SAND_TOMB",
                 "STONE_EDGE",
                 "FRENZY_PLANT"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -15046,6 +17971,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "SAND_TOMB",
                 "STONE_EDGE",
+                "FRENZY_PLANT"
+            ],
+            "eliteMoves": [
                 "FRENZY_PLANT"
             ]
         },
@@ -15072,7 +18000,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "chimchar_shadow",
+        "dexNumber": 390,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "SCRATCH"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "FLAME_WHEEL",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15093,7 +18044,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "monferno_shadow",
+        "dexNumber": 391,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "FLAME_WHEEL",
+                "FLAMETHROWER",
+                "LOW_SWEEP"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15112,10 +18086,40 @@ export const POKEMONS_DATA: (Pick<
                 "FLAMETHROWER",
                 "SOLAR_BEAM",
                 "BLAST_BURN"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "infernape_shadow",
+        "dexNumber": 392,
+        "moves": {
+            "fastMoves": [
+                "FIRE_SPIN",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "FLAMETHROWER",
+                "SOLAR_BEAM",
+                "BLAST_BURN"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15136,7 +18140,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "piplup_shadow",
+        "dexNumber": 393,
+        "moves": {
+            "fastMoves": [
+                "BUBBLE",
+                "POUND"
+            ],
+            "chargedMoves": [
+                "BUBBLE_BEAM",
+                "DRILL_PECK",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15157,7 +18184,30 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "prinplup_shadow",
+        "dexNumber": 394,
+        "moves": {
+            "fastMoves": [
+                "BUBBLE",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "BUBBLE_BEAM",
+                "HYDRO_PUMP",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15169,7 +18219,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "WATERFALL"
+                "WATERFALL",
+                "STEEL_WING"
             ],
             "chargedMoves": [
                 "BLIZZARD",
@@ -15177,10 +18228,42 @@ export const POKEMONS_DATA: (Pick<
                 "HYDRO_PUMP",
                 "HYDRO_CANNON",
                 "DRILL_PECK"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "empoleon_shadow",
+        "dexNumber": 395,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "WATERFALL",
+                "STEEL_WING"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "FLASH_CANNON",
+                "HYDRO_PUMP",
+                "HYDRO_CANNON",
+                "DRILL_PECK"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -15192,11 +18275,13 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
-                "BRAVE_BIRD"
+                "BRAVE_BIRD",
+                "FLY"
             ]
         },
         "tags": [
@@ -15212,11 +18297,13 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
-                "BRAVE_BIRD"
+                "BRAVE_BIRD",
+                "FLY"
             ]
         },
         "tags": [
@@ -15232,12 +18319,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BRAVE_BIRD",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
             ]
         },
         "tags": [
@@ -15253,12 +18342,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BRAVE_BIRD",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
             ]
         },
         "tags": [
@@ -15274,12 +18365,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "GUST",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRAVE_BIRD",
                 "CLOSE_COMBAT",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "GUST"
             ]
         },
         "tags": [
@@ -15295,12 +18392,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "GUST",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRAVE_BIRD",
                 "CLOSE_COMBAT",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "GUST"
             ]
         },
         "tags": [
@@ -15326,6 +18429,12 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT",
                 "SHADOW_BALL",
                 "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "ICE_BEAM",
+                "THUNDERBOLT",
+                "SHADOW_BALL",
+                "SUPER_POWER"
             ]
         },
         "tags": [
@@ -15347,6 +18456,12 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "GRASS_KNOT",
                 "HYPER_FANG",
+                "ICE_BEAM",
+                "THUNDERBOLT",
+                "SHADOW_BALL",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
                 "ICE_BEAM",
                 "THUNDERBOLT",
                 "SHADOW_BALL",
@@ -15452,7 +18567,30 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "shinx_shadow",
+        "dexNumber": 403,
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "DISCHARGE",
+                "SWIFT",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15471,7 +18609,30 @@ export const POKEMONS_DATA: (Pick<
                 "WILD_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "luxio_shadow",
+        "dexNumber": 404,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "SPARK"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "THUNDERBOLT",
+                "WILD_CHARGE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15505,9 +18666,55 @@ export const POKEMONS_DATA: (Pick<
                 "HYPER_BEAM",
                 "WILD_CHARGE",
                 "PSYCHIC_FANGS"
+            ],
+            "eliteMoves": [
+                "PSYCHIC_FANGS"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "luxray_shadow",
+        "dexNumber": 405,
+        "moves": {
+            "fastMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER",
+                "SNARL",
+                "SPARK"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "HYPER_BEAM",
+                "WILD_CHARGE",
+                "PSYCHIC_FANGS"
+            ],
+            "eliteMoves": [
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15552,7 +18759,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "POISON_JAB",
                 "RAZOR_LEAF",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -15561,6 +18769,10 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "WEATHER_BALL_FIRE",
                 "LEAF_STORM"
+            ],
+            "eliteMoves": [
+                "BULLET_SEED",
+                "WEATHER_BALL_FIRE"
             ]
         },
         "tags": [],
@@ -15582,7 +18794,30 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "cranidos_shadow",
+        "dexNumber": 408,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "ANCIENT_POWER",
+                "BULLDOZE",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15601,7 +18836,32 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "include1500",
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "rampardos_shadow",
+        "dexNumber": 409,
+        "moves": {
+            "fastMoves": [
+                "SMACK_DOWN",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "OUTRAGE",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "include1500",
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15620,7 +18880,30 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "shieldon_shadow",
+        "dexNumber": 410,
+        "moves": {
+            "fastMoves": [
+                "IRON_TAIL",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "ANCIENT_POWER",
+                "HEAVY_SLAM",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -15639,13 +18922,15 @@ export const POKEMONS_DATA: (Pick<
                 "STONE_EDGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
     },
     {
-        "id": "bastiodon_xs",
+        "id": "bastiodon_shadow",
         "dexNumber": 411,
         "moves": {
             "fastMoves": [
@@ -15659,7 +18944,7 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "xs"
+            "shadow"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -15760,7 +19045,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BUG_BITE",
-                "CONFUSION"
+                "CONFUSION",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
@@ -15882,7 +19168,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AQUA_JET",
                 "HYDRO_PUMP",
-                "SWIFT"
+                "SWIFT",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -16075,7 +19362,30 @@ export const POKEMONS_DATA: (Pick<
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "drifloon_shadow",
+        "dexNumber": 425,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "ICY_WIND",
+                "OMINOUS_WIND",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16091,10 +19401,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICY_WIND",
                 "OMINOUS_WIND",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "MYSTICAL_FIRE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "drifblim_shadow",
+        "dexNumber": 426,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "ICY_WIND",
+                "OMINOUS_WIND",
+                "SHADOW_BALL",
+                "MYSTICAL_FIRE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16123,12 +19458,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "POUND"
+                "POUND",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_PUNCH",
                 "FOCUS_BLAST",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -16142,7 +19479,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "POUND"
+                "POUND",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_PUNCH",
@@ -16163,7 +19501,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "HEX",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "MAGICAL_LEAF",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -16184,7 +19524,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "HEX",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "MAGICAL_LEAF",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -16257,7 +19599,30 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "glameow_shadow",
+        "dexNumber": 431,
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "SCRATCH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "PLAY_ROUGH",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -16276,7 +19641,30 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "purugly_shadow",
+        "dexNumber": 432,
+        "moves": {
+            "fastMoves": [
+                "SCRATCH",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "PLAY_ROUGH",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -16311,7 +19699,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -16332,7 +19721,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -16353,7 +19743,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -16374,7 +19765,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -16410,7 +19802,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "FEINT_ATTACK"
+                "FEINT_ATTACK",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "FLASH_CANNON",
@@ -16535,7 +19928,30 @@ export const POKEMONS_DATA: (Pick<
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gible_shadow",
+        "dexNumber": 443,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "DIG",
+                "TWISTER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16554,7 +19970,30 @@ export const POKEMONS_DATA: (Pick<
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gabite_shadow",
+        "dexNumber": 444,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "FLAMETHROWER",
+                "TWISTER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16573,9 +20012,66 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "SAND_TOMB",
                 "EARTH_POWER"
+            ],
+            "eliteMoves": [
+                "EARTH_POWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "garchomp_mega",
+        "dexNumber": 445,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "OUTRAGE",
+                "SAND_TOMB",
+                "EARTH_POWER"
+            ],
+            "eliteMoves": [
+                "EARTH_POWER"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "garchomp_shadow",
+        "dexNumber": 445,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "OUTRAGE",
+                "SAND_TOMB",
+                "EARTH_POWER"
+            ],
+            "eliteMoves": [
+                "EARTH_POWER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16610,7 +20106,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BRICK_BREAK",
                 "CROSS_CHOP",
-                "LOW_SWEEP"
+                "LOW_SWEEP",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -16624,17 +20122,52 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BULLET_PUNCH",
-                "COUNTER"
+                "COUNTER",
+                "FORCE_PALM"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "FLASH_CANNON",
                 "SHADOW_BALL",
                 "POWER_UP_PUNCH",
-                "AURA_SPHERE"
+                "AURA_SPHERE",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FORCE_PALM"
             ]
         },
         "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "lucario_mega",
+        "dexNumber": 448,
+        "moves": {
+            "fastMoves": [
+                "BULLET_PUNCH",
+                "COUNTER",
+                "FORCE_PALM"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "FLASH_CANNON",
+                "SHADOW_BALL",
+                "POWER_UP_PUNCH",
+                "AURA_SPHERE",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FORCE_PALM"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -16645,7 +20178,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BITE",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -16666,7 +20200,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "BITE",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -16689,14 +20224,16 @@ export const POKEMONS_DATA: (Pick<
                 "BITE",
                 "FIRE_FANG",
                 "THUNDER_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
                 "EARTHQUAKE",
                 "STONE_EDGE",
                 "EARTH_POWER",
-                "WEATHER_BALL_ROCK"
+                "WEATHER_BALL_ROCK",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -16714,14 +20251,16 @@ export const POKEMONS_DATA: (Pick<
                 "BITE",
                 "FIRE_FANG",
                 "THUNDER_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
                 "EARTHQUAKE",
                 "STONE_EDGE",
                 "EARTH_POWER",
-                "WEATHER_BALL_ROCK"
+                "WEATHER_BALL_ROCK",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -16827,7 +20366,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "POISON_STING"
+                "POISON_STING",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
@@ -16835,7 +20375,31 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_BOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "croagunk_shadow",
+        "dexNumber": 453,
+        "moves": {
+            "fastMoves": [
+                "POISON_JAB",
+                "POISON_STING",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "BRICK_BREAK",
+                "LOW_SWEEP",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -16846,15 +20410,42 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "COUNTER",
-                "POISON_JAB"
+                "POISON_JAB",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
                 "MUD_BOMB",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "toxicroak_shadow",
+        "dexNumber": 454,
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "POISON_JAB",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "DYNAMIC_PUNCH",
+                "MUD_BOMB",
+                "SLUDGE_BOMB",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -16943,7 +20534,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ICE_SHARD",
-                "POWDER_SNOW"
+                "POWDER_SNOW",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
@@ -16964,7 +20556,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ICE_SHARD",
-                "POWDER_SNOW"
+                "POWDER_SNOW",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
@@ -16985,13 +20578,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POWDER_SNOW",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "BLIZZARD",
                 "ENERGY_BALL",
                 "OUTRAGE",
-                "WEATHER_BALL_ICE"
+                "WEATHER_BALL_ICE",
+                "ICY_WIND"
             ]
         },
         "tags": [
@@ -17007,13 +20602,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POWDER_SNOW",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "BLIZZARD",
                 "ENERGY_BALL",
                 "OUTRAGE",
-                "WEATHER_BALL_ICE"
+                "WEATHER_BALL_ICE",
+                "ICY_WIND"
             ]
         },
         "tags": [
@@ -17030,13 +20627,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "POWDER_SNOW",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "BLIZZARD",
                 "ENERGY_BALL",
                 "OUTRAGE",
-                "WEATHER_BALL_ICE"
+                "WEATHER_BALL_ICE",
+                "ICY_WIND"
             ]
         },
         "tags": [
@@ -17058,7 +20657,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "FOCUS_BLAST",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -17080,7 +20680,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "FOCUS_BLAST",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -17096,7 +20697,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "SPARK"
+                "SPARK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "FLASH_CANNON",
@@ -17118,7 +20721,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "SPARK"
+                "SPARK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "FLASH_CANNON",
@@ -17148,6 +20753,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "SHADOW_BALL",
                 "BODY_SLAM"
+            ],
+            "eliteMoves": [
+                "BODY_SLAM"
             ]
         },
         "tags": [],
@@ -17169,10 +20777,44 @@ export const POKEMONS_DATA: (Pick<
                 "SURF",
                 "SKULL_BASH",
                 "SUPER_POWER",
+                "ROCK_WRECKER",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
                 "ROCK_WRECKER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "rhyperior_shadow",
+        "dexNumber": 464,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "STONE_EDGE",
+                "SURF",
+                "SKULL_BASH",
+                "SUPER_POWER",
+                "ROCK_WRECKER",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "ROCK_WRECKER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -17237,6 +20879,9 @@ export const POKEMONS_DATA: (Pick<
                 "WILD_CHARGE",
                 "ICE_PUNCH",
                 "FLAMETHROWER"
+            ],
+            "eliteMoves": [
+                "FLAMETHROWER"
             ]
         },
         "tags": [
@@ -17260,6 +20905,9 @@ export const POKEMONS_DATA: (Pick<
                 "WILD_CHARGE",
                 "ICE_PUNCH",
                 "FLAMETHROWER"
+            ],
+            "eliteMoves": [
+                "FLAMETHROWER"
             ]
         },
         "tags": [
@@ -17282,6 +20930,10 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
                 "PSYCHIC",
+                "THUNDERBOLT",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "THUNDERBOLT"
             ]
         },
@@ -17305,6 +20957,10 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
                 "PSYCHIC",
+                "THUNDERBOLT",
+                "SCORCHING_SANDS"
+            ],
+            "eliteMoves": [
                 "THUNDERBOLT"
             ]
         },
@@ -17343,7 +20999,11 @@ export const POKEMONS_DATA: (Pick<
                 "AERIAL_ACE",
                 "ANCIENT_POWER",
                 "DAZZLING_GLEAM",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "AURA_SPHERE"
+            ],
+            "eliteMoves": [
+                "AURA_SPHERE"
             ]
         },
         "tags": [],
@@ -17384,6 +21044,10 @@ export const POKEMONS_DATA: (Pick<
                 "LEAF_BLADE",
                 "SOLAR_BEAM",
                 "LAST_RESORT"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
+                "BULLET_SEED"
             ]
         },
         "tags": [],
@@ -17403,6 +21067,10 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "ICE_BEAM",
                 "ICY_WIND",
+                "LAST_RESORT",
+                "WATER_PULSE"
+            ],
+            "eliteMoves": [
                 "LAST_RESORT",
                 "WATER_PULSE"
             ]
@@ -17468,6 +21136,10 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "BULLDOZE",
                 "STONE_EDGE",
+                "ANCIENT_POWER",
+                "HIGH_HORSEPOWER"
+            ],
+            "eliteMoves": [
                 "ANCIENT_POWER"
             ]
         },
@@ -17490,6 +21162,10 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "BULLDOZE",
                 "STONE_EDGE",
+                "ANCIENT_POWER",
+                "HIGH_HORSEPOWER"
+            ],
+            "eliteMoves": [
                 "ANCIENT_POWER"
             ]
         },
@@ -17530,6 +21206,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "ZAP_CANNON",
                 "TRI_ATTACK"
+            ],
+            "eliteMoves": [
+                "TRI_ATTACK"
             ]
         },
         "tags": [
@@ -17569,6 +21248,9 @@ export const POKEMONS_DATA: (Pick<
                 "SOLAR_BEAM",
                 "ZAP_CANNON",
                 "TRI_ATTACK"
+            ],
+            "eliteMoves": [
+                "TRI_ATTACK"
             ]
         },
         "tags": [
@@ -17585,12 +21267,16 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CONFUSION",
                 "LOW_KICK",
-                "CHARM"
+                "CHARM",
+                "PSYCHO_CUT"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "LEAF_BLADE",
                 "PSYCHIC",
+                "SYNCHRONOISE"
+            ],
+            "eliteMoves": [
                 "SYNCHRONOISE"
             ]
         },
@@ -17608,12 +21294,16 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "CONFUSION",
                 "LOW_KICK",
-                "CHARM"
+                "CHARM",
+                "PSYCHO_CUT"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "LEAF_BLADE",
                 "PSYCHIC",
+                "SYNCHRONOISE"
+            ],
+            "eliteMoves": [
                 "SYNCHRONOISE"
             ]
         },
@@ -17623,50 +21313,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
-    },
-    {
-        "id": "gallade_mega",
-        "dexNumber": 475,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "LOW_KICK",
-                "CHARM"
-            ],
-            "chargedMoves": [
-                "CLOSE_COMBAT",
-                "LEAF_BLADE",
-                "PSYCHIC",
-                "SYNCHRONOISE"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "gallade_mega",
-        "dexNumber": 475,
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "LOW_KICK",
-                "CHARM"
-            ],
-            "chargedMoves": [
-                "CLOSE_COMBAT",
-                "LEAF_BLADE",
-                "PSYCHIC",
-                "SYNCHRONOISE"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "probopass",
@@ -17679,7 +21325,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "MAGNET_BOMB",
                 "ROCK_SLIDE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "ZAP_CANNON"
             ]
         },
         "tags": [
@@ -17700,7 +21347,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "MAGNET_BOMB",
                 "ROCK_SLIDE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "ZAP_CANNON"
             ]
         },
         "tags": [
@@ -17722,6 +21370,10 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "OMINOUS_WIND",
                 "PSYCHIC",
+                "SHADOW_BALL",
+                "POLTERGEIST"
+            ],
+            "eliteMoves": [
                 "SHADOW_BALL"
             ]
         },
@@ -17744,6 +21396,10 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE",
                 "OMINOUS_WIND",
                 "PSYCHIC",
+                "SHADOW_BALL",
+                "POLTERGEIST"
+            ],
+            "eliteMoves": [
                 "SHADOW_BALL"
             ]
         },
@@ -17765,10 +21421,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AVALANCHE",
                 "CRUNCH",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "TRIPLE_AXEL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "froslass_shadow",
+        "dexNumber": 478,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "AVALANCHE",
+                "CRUNCH",
+                "SHADOW_BALL",
+                "TRIPLE_AXEL"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -17790,7 +21471,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "rotom_fan",
@@ -17828,7 +21509,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "rotom_heat",
@@ -17847,7 +21528,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "rotom_mow",
@@ -17866,7 +21547,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "rotom_wash",
@@ -17972,6 +21653,31 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "dialga_origin",
+        "dexNumber": 483,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "IRON_HEAD",
+                "THUNDER",
+                "ROAR_OF_TIME"
+            ],
+            "legacyMoves": [
+                "ROAR_OF_TIME"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "palkia",
         "dexNumber": 484,
         "moves": {
@@ -17994,6 +21700,32 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
+        "id": "palkia_origin",
+        "dexNumber": 484,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "FIRE_BLAST",
+                "HYDRO_PUMP",
+                "AQUA_TAIL",
+                "SPACIAL_REND"
+            ],
+            "legacyMoves": [
+                "SPACIAL_REND"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "heatran",
         "dexNumber": 485,
         "moves": {
@@ -18005,7 +21737,12 @@ export const POKEMONS_DATA: (Pick<
                 "FIRE_BLAST",
                 "IRON_HEAD",
                 "STONE_EDGE",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "EARTH_POWER",
+                "MAGMA_STORM"
+            ],
+            "eliteMoves": [
+                "MAGMA_STORM"
             ]
         },
         "tags": [
@@ -18045,7 +21782,45 @@ export const POKEMONS_DATA: (Pick<
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "regigigas_shadow",
+        "dexNumber": 486,
+        "moves": {
+            "fastMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "GIGA_IMPACT",
+                "FOCUS_BLAST",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "shadow"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -18062,7 +21837,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ANCIENT_POWER",
                 "DRAGON_CLAW",
-                "SHADOW_SNEAK"
+                "SHADOW_SNEAK",
+                "SHADOW_FORCE"
+            ],
+            "eliteMoves": [
+                "SHADOW_FORCE"
             ]
         },
         "tags": [
@@ -18083,7 +21862,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "OMINOUS_WIND",
                 "DRAGON_PULSE",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "SHADOW_FORCE"
+            ],
+            "eliteMoves": [
+                "SHADOW_FORCE"
             ]
         },
         "tags": [
@@ -18105,6 +21888,9 @@ export const POKEMONS_DATA: (Pick<
                 "AURORA_BEAM",
                 "FUTURE_SIGHT",
                 "MOONBLAST",
+                "GRASS_KNOT"
+            ],
+            "eliteMoves": [
                 "GRASS_KNOT"
             ]
         },
@@ -18166,6 +21952,9 @@ export const POKEMONS_DATA: (Pick<
                 "FOCUS_BLAST",
                 "SHADOW_BALL",
                 "SLUDGE_BOMB"
+            ],
+            "eliteMoves": [
+                "SLUDGE_BOMB"
             ]
         },
         "tags": [
@@ -18197,18 +21986,25 @@ export const POKEMONS_DATA: (Pick<
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
                 "HIDDEN_POWER_WATER",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
                 "GRASS_KNOT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "SEED_FLARE"
+            ],
+            "eliteMoves": [
+                "SEED_FLARE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "shaymin_sky",
@@ -18231,18 +22027,25 @@ export const POKEMONS_DATA: (Pick<
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
                 "HIDDEN_POWER_WATER",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
                 "GRASS_KNOT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "SEED_FLARE"
+            ],
+            "eliteMoves": [
+                "SEED_FLARE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "arceus",
@@ -18664,6 +22467,9 @@ export const POKEMONS_DATA: (Pick<
                 "LEAF_TORNADO",
                 "AERIAL_ACE",
                 "FRENZY_PLANT"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -18729,6 +22535,9 @@ export const POKEMONS_DATA: (Pick<
                 "FOCUS_BLAST",
                 "FLAME_CHARGE",
                 "BLAST_BURN"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
@@ -18793,11 +22602,39 @@ export const POKEMONS_DATA: (Pick<
                 "BLIZZARD",
                 "MEGAHORN",
                 "RAZOR_SHELL",
+                "HYDRO_CANNON",
+                "LIQUIDATION"
+            ],
+            "eliteMoves": [
                 "HYDRO_CANNON"
             ]
         },
         "tags": [
             "starter"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "samurott_hisuian",
+        "dexNumber": 503,
+        "moves": {
+            "fastMoves": [
+                "FURY_CUTTER",
+                "WATERFALL",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "RAZOR_SHELL",
+                "ICY_WIND",
+                "X_SCISSOR",
+                "DARK_PULSE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -18817,7 +22654,30 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "patrat_shadow",
+        "dexNumber": 504,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "HYPER_FANG",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -18836,7 +22696,30 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "watchog_shadow",
+        "dexNumber": 505,
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "HYPER_FANG",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -18847,7 +22730,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "THUNDERBOLT",
@@ -18866,7 +22750,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "LICK",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "THUNDERBOLT",
@@ -18886,7 +22771,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "LICK",
                 "TAKE_DOWN",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "WILD_CHARGE",
@@ -18913,7 +22799,30 @@ export const POKEMONS_DATA: (Pick<
                 "DARK_PULSE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "purrloin_shadow",
+        "dexNumber": 509,
+        "moves": {
+            "fastMoves": [
+                "SCRATCH",
+                "SUCKER_PUNCH"
+            ],
+            "chargedMoves": [
+                "NIGHT_SLASH",
+                "PLAY_ROUGH",
+                "DARK_PULSE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -18933,7 +22842,31 @@ export const POKEMONS_DATA: (Pick<
                 "PAYBACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "liepard_shadow",
+        "dexNumber": 510,
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "GUNK_SHOT",
+                "PLAY_ROUGH",
+                "DARK_PULSE",
+                "PAYBACK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -19116,7 +23049,30 @@ export const POKEMONS_DATA: (Pick<
                 "AIR_CUTTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "pidove_shadow",
+        "dexNumber": 519,
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "HEAT_WAVE",
+                "AERIAL_ACE",
+                "AIR_CUTTER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -19135,7 +23091,30 @@ export const POKEMONS_DATA: (Pick<
                 "SKY_ATTACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "tranquill_shadow",
+        "dexNumber": 520,
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "STEEL_WING"
+            ],
+            "chargedMoves": [
+                "HEAT_WAVE",
+                "AERIAL_ACE",
+                "SKY_ATTACK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -19154,7 +23133,30 @@ export const POKEMONS_DATA: (Pick<
                 "SKY_ATTACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "unfezant_shadow",
+        "dexNumber": 521,
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "STEEL_WING"
+            ],
+            "chargedMoves": [
+                "HEAT_WAVE",
+                "HYPER_BEAM",
+                "SKY_ATTACK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -19173,7 +23175,30 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "blitzle_shadow",
+        "dexNumber": 522,
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "SPARK"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "DISCHARGE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19192,7 +23217,30 @@ export const POKEMONS_DATA: (Pick<
                 "WILD_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "zebstrika_shadow",
+        "dexNumber": 523,
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "SPARK"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "DISCHARGE",
+                "WILD_CHARGE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19247,7 +23295,11 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE",
                 "SOLAR_BEAM",
                 "SUPER_POWER",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "METEOR_BEAM"
+            ],
+            "eliteMoves": [
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
@@ -19285,7 +23337,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "PSYCHIC",
                 "AERIAL_ACE",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "PSYCHIC_FANGS",
+                "FLY"
             ]
         },
         "tags": [],
@@ -19307,7 +23361,30 @@ export const POKEMONS_DATA: (Pick<
                 "DRILL_RUN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "drilbur_shadow",
+        "dexNumber": 529,
+        "moves": {
+            "fastMoves": [
+                "SCRATCH",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "ROCK_TOMB",
+                "DIG",
+                "DRILL_RUN"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19325,10 +23402,37 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE",
                 "EARTHQUAKE",
                 "DRILL_RUN",
-                "IRON_HEAD"
+                "IRON_HEAD",
+                "SCORCHING_SANDS"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "excadrill_shadow",
+        "dexNumber": 530,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "MUD_SLAP",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "EARTHQUAKE",
+                "DRILL_RUN",
+                "IRON_HEAD",
+                "SCORCHING_SANDS"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19351,44 +23455,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
-    },
-    {
-        "id": "audino_mega",
-        "dexNumber": 531,
-        "moves": {
-            "fastMoves": [
-                "POUND",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "DISARMING_VOICE",
-                "DAZZLING_GLEAM",
-                "HYPER_BEAM"
-            ]
-        },
-        "tags": [
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "audino_mega",
-        "dexNumber": 531,
-        "moves": {
-            "fastMoves": [
-                "POUND",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "DISARMING_VOICE",
-                "DAZZLING_GLEAM",
-                "HYPER_BEAM"
-            ]
-        },
-        "tags": [
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "timburr",
@@ -19439,7 +23505,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
                 "FOCUS_BLAST",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "BRUTAL_SWING"
             ]
         },
         "tags": [],
@@ -19515,10 +23585,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "LOW_SWEEP",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "BRICK_BREAK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "throh_shadow",
+        "dexNumber": 538,
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "FOCUS_BLAST",
+                "LOW_SWEEP",
+                "BODY_SLAM",
+                "BRICK_BREAK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -19534,10 +23629,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "LOW_SWEEP",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "BRICK_BREAK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "sawk_shadow",
+        "dexNumber": 539,
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "FOCUS_BLAST",
+                "LOW_SWEEP",
+                "BODY_SLAM",
+                "BRICK_BREAK"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -19683,12 +23803,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CHARM",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "GRASS_KNOT",
                 "HURRICANE",
-                "MOONBLAST"
+                "MOONBLAST",
+                "SEED_BOMB"
             ]
         },
         "tags": [],
@@ -19750,7 +23872,8 @@ export const POKEMONS_DATA: (Pick<
                 "HIDDEN_POWER_PSYCHIC",
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
-                "HIDDEN_POWER_WATER"
+                "HIDDEN_POWER_WATER",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "PETAL_BLIZZARD",
@@ -19833,7 +23956,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "EARTHQUAKE",
                 "CRUNCH",
-                "OUTRAGE"
+                "OUTRAGE",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
@@ -19854,7 +23978,9 @@ export const POKEMONS_DATA: (Pick<
                 "FLAME_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19874,6 +24000,26 @@ export const POKEMONS_DATA: (Pick<
         },
         "tags": [
             "galarian"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "darumaka_shadow",
+        "dexNumber": 554,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "FLAME_CHARGE"
+            ]
+        },
+        "tags": [
+            "shadow"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -19939,7 +24085,9 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19950,7 +24098,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "FIRE_FANG"
+                "FIRE_FANG",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "OVERHEAT",
@@ -19963,6 +24112,29 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": false
+    },
+    {
+        "id": "darmanitan_standard_shadow",
+        "dexNumber": 555,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "FIRE_FANG",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "OVERHEAT",
+                "FOCUS_BLAST",
+                "PSYCHIC",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
     },
     {
         "id": "maractus",
@@ -19999,7 +24171,30 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "dwebble_shadow",
+        "dexNumber": 557,
+        "moves": {
+            "fastMoves": [
+                "CUT",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "X_SCISSOR",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -20018,7 +24213,30 @@ export const POKEMONS_DATA: (Pick<
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "crustle_shadow",
+        "dexNumber": 558,
+        "moves": {
+            "fastMoves": [
+                "FURY_CUTTER",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "X_SCISSOR",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -20034,7 +24252,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ACID_SPRAY",
                 "BRICK_BREAK",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -20053,7 +24272,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ACID_SPRAY",
                 "POWER_UP_PUNCH",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -20171,7 +24391,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "SURF",
                 "ANCIENT_POWER",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -20227,8 +24448,7 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "GUNK_SHOT",
-                "SEED_BOMB",
-                "GUNK_SHOT"
+                "SEED_BOMB"
             ]
         },
         "tags": [],
@@ -20273,7 +24493,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "zoroark",
@@ -20292,7 +24512,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "minccino",
@@ -20346,7 +24566,30 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "gothita_shadow",
+        "dexNumber": 574,
+        "moves": {
+            "fastMoves": [
+                "POUND",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "PSYSHOCK",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20365,7 +24608,30 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "gothorita_shadow",
+        "dexNumber": 575,
+        "moves": {
+            "fastMoves": [
+                "POUND",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "FUTURE_SIGHT",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20384,7 +24650,30 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "gothitelle_shadow",
+        "dexNumber": 576,
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "FUTURE_SIGHT",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20418,7 +24707,45 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "solosis_shadow",
+        "dexNumber": 577,
+        "moves": {
+            "fastMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "PSYSHOCK",
+                "NIGHT_SHADE",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20452,7 +24779,45 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "duosion_shadow",
+        "dexNumber": 578,
+        "moves": {
+            "fastMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "PSYSHOCK",
+                "NIGHT_SHADE",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20486,7 +24851,45 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "reuniclus_shadow",
+        "dexNumber": 579,
+        "moves": {
+            "fastMoves": [
+                "HIDDEN_POWER_BUG",
+                "HIDDEN_POWER_DARK",
+                "HIDDEN_POWER_DRAGON",
+                "HIDDEN_POWER_ELECTRIC",
+                "HIDDEN_POWER_FIGHTING",
+                "HIDDEN_POWER_FIRE",
+                "HIDDEN_POWER_FLYING",
+                "HIDDEN_POWER_GHOST",
+                "HIDDEN_POWER_GRASS",
+                "HIDDEN_POWER_GROUND",
+                "HIDDEN_POWER_ICE",
+                "HIDDEN_POWER_POISON",
+                "HIDDEN_POWER_PSYCHIC",
+                "HIDDEN_POWER_ROCK",
+                "HIDDEN_POWER_STEEL",
+                "HIDDEN_POWER_WATER",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "FUTURE_SIGHT",
+                "SHADOW_BALL",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20505,7 +24908,30 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "ducklett_shadow",
+        "dexNumber": 580,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BUBBLE_BEAM",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20521,10 +24947,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICE_BEAM",
                 "BUBBLE_BEAM",
-                "HURRICANE"
+                "HURRICANE",
+                "FLY"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "swanna_shadow",
+        "dexNumber": 581,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "ICE_BEAM",
+                "BUBBLE_BEAM",
+                "HURRICANE",
+                "FLY"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20597,7 +25048,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ENERGY_BALL",
                 "SEED_BOMB",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -20617,7 +25069,8 @@ export const POKEMONS_DATA: (Pick<
                 "MEGAHORN",
                 "SOLAR_BEAM",
                 "WILD_CHARGE",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -20636,7 +25089,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DISCHARGE",
                 "AERIAL_ACE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -20698,7 +25152,30 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "foongus_shadow",
+        "dexNumber": 590,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "FEINT_ATTACK"
+            ],
+            "chargedMoves": [
+                "ENERGY_BALL",
+                "BODY_SLAM",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20717,7 +25194,30 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "amoonguss_shadow",
+        "dexNumber": 591,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "FEINT_ATTACK"
+            ],
+            "chargedMoves": [
+                "FOUL_PLAY",
+                "SLUDGE_BOMB",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20752,7 +25252,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "SHADOW_BALL",
                 "ICE_BEAM",
-                "BUBBLE_BEAM"
+                "BUBBLE_BEAM",
+                "SURF"
             ]
         },
         "tags": [],
@@ -20808,7 +25309,30 @@ export const POKEMONS_DATA: (Pick<
                 "DISCHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "joltik_shadow",
+        "dexNumber": 595,
+        "moves": {
+            "fastMoves": [
+                "CHARGE_BEAM",
+                "SUCKER_PUNCH"
+            ],
+            "chargedMoves": [
+                "CROSS_POISON",
+                "BUG_BUZZ",
+                "DISCHARGE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20829,7 +25353,32 @@ export const POKEMONS_DATA: (Pick<
                 "LUNGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "galvantula_shadow",
+        "dexNumber": 596,
+        "moves": {
+            "fastMoves": [
+                "VOLT_SWITCH",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "CROSS_POISON",
+                "BUG_BUZZ",
+                "DISCHARGE",
+                "ENERGY_BALL",
+                "LUNGE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20848,7 +25397,30 @@ export const POKEMONS_DATA: (Pick<
                 "IRON_HEAD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "ferroseed_shadow",
+        "dexNumber": 597,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "GYRO_BALL",
+                "FLASH_CANNON",
+                "IRON_HEAD"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
         "released": true
@@ -20869,7 +25441,32 @@ export const POKEMONS_DATA: (Pick<
                 "MIRROR_SHOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "ferrothorn_shadow",
+        "dexNumber": 598,
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "POWER_WHIP",
+                "FLASH_CANNON",
+                "ACID_SPRAY",
+                "THUNDER",
+                "MIRROR_SHOT"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
         "released": true
@@ -20880,7 +25477,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "VOLT_SWITCH",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "VICE_GRIP",
@@ -20899,7 +25497,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "VICE_GRIP",
@@ -20918,7 +25517,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "HYPER_BEAM",
@@ -20974,13 +25574,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ACID",
-                "SPARK"
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "THUNDERBOLT",
                 "ACID_SPRAY",
-                "DRAGON_CLAW"
+                "DRAGON_CLAW",
+                "LIQUIDATION"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
@@ -21037,10 +25642,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "FLAME_CHARGE",
                 "FLAME_BURST",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "MYSTICAL_FIRE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "litwick_shadow",
+        "dexNumber": 607,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "EMBER"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "FLAME_BURST",
+                "HEAT_WAVE",
+                "MYSTICAL_FIRE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21059,7 +25689,30 @@ export const POKEMONS_DATA: (Pick<
                 "HEAT_WAVE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "lampent_shadow",
+        "dexNumber": 608,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "EMBER"
+            ],
+            "chargedMoves": [
+                "ENERGY_BALL",
+                "FLAME_BURST",
+                "HEAT_WAVE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21077,10 +25730,43 @@ export const POKEMONS_DATA: (Pick<
                 "ENERGY_BALL",
                 "SHADOW_BALL",
                 "OVERHEAT",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "POLTERGEIST"
+            ],
+            "eliteMoves": [
+                "POLTERGEIST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "chandelure_shadow",
+        "dexNumber": 609,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "FIRE_SPIN",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "ENERGY_BALL",
+                "SHADOW_BALL",
+                "OVERHEAT",
+                "FLAME_CHARGE",
+                "POLTERGEIST"
+            ],
+            "eliteMoves": [
+                "POLTERGEIST"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21135,7 +25821,11 @@ export const POKEMONS_DATA: (Pick<
                 "DRAGON_CLAW",
                 "SURF",
                 "NIGHT_SLASH",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [],
@@ -21173,7 +25863,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "ICE_PUNCH",
                 "SURF",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -21193,7 +25884,8 @@ export const POKEMONS_DATA: (Pick<
                 "AURORA_BEAM",
                 "NIGHT_SLASH",
                 "SOLAR_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -21226,7 +25918,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ACID",
-                "INFESTATION"
+                "INFESTATION",
+                "WATER_SHURIKEN"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
@@ -21311,7 +26004,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BRICK_BREAK",
                 "GRASS_KNOT",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BLAZE_KICK"
             ]
         },
         "tags": [],
@@ -21352,7 +26046,30 @@ export const POKEMONS_DATA: (Pick<
                 "NIGHT_SHADE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "golett_shadow",
+        "dexNumber": 622,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "SHADOW_PUNCH",
+                "BRICK_BREAK",
+                "NIGHT_SHADE"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21368,10 +26085,35 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "SHADOW_PUNCH",
                 "DYNAMIC_PUNCH",
-                "EARTH_POWER"
+                "EARTH_POWER",
+                "POLTERGEIST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "golurk_shadow",
+        "dexNumber": 623,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "SHADOW_PUNCH",
+                "DYNAMIC_PUNCH",
+                "EARTH_POWER",
+                "POLTERGEIST"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21448,7 +26190,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BRAVE_BIRD",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "FLY"
             ]
         },
         "tags": [],
@@ -21468,10 +26211,34 @@ export const POKEMONS_DATA: (Pick<
                 "HEAT_WAVE",
                 "BRAVE_BIRD",
                 "ROCK_SLIDE",
-                "CLOSE_COMBAT"
+                "CLOSE_COMBAT",
+                "FLY"
             ]
         },
         "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "braviary_hisuian",
+        "dexNumber": 628,
+        "moves": {
+            "fastMoves": [
+                "ZEN_HEADBUTT",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "BRAVE_BIRD",
+                "PSYCHIC",
+                "OMINOUS_WIND",
+                "FLY"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -21606,7 +26373,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DRAGON_PULSE",
                 "DARK_PULSE",
-                "FLASH_CANNON"
+                "FLASH_CANNON",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "BRUTAL_SWING"
             ]
         },
         "tags": [],
@@ -21631,7 +26402,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "volcarona",
@@ -21651,7 +26422,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "cobalion",
@@ -21659,12 +26430,16 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "IRON_HEAD",
                 "STONE_EDGE",
+                "SACRED_SWORD"
+            ],
+            "eliteMoves": [
                 "SACRED_SWORD"
             ]
         },
@@ -21681,12 +26456,16 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "SMACK_DOWN",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "EARTHQUAKE",
                 "ROCK_SLIDE",
+                "SACRED_SWORD"
+            ],
+            "eliteMoves": [
                 "SACRED_SWORD"
             ]
         },
@@ -21703,12 +26482,16 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "LEAF_BLADE",
                 "STONE_EDGE",
+                "SACRED_SWORD"
+            ],
+            "eliteMoves": [
                 "SACRED_SWORD"
             ]
         },
@@ -21753,7 +26536,11 @@ export const POKEMONS_DATA: (Pick<
                 "HEAT_WAVE",
                 "PSYCHIC",
                 "FOCUS_BLAST",
-                "HURRICANE"
+                "HURRICANE",
+                "BLEAKWIND_STORM"
+            ],
+            "eliteMoves": [
+                "BLEAKWIND_STORM"
             ]
         },
         "tags": [
@@ -21797,7 +26584,11 @@ export const POKEMONS_DATA: (Pick<
                 "SLUDGE_WAVE",
                 "THUNDER",
                 "FOCUS_BLAST",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "WILDBOLT_STORM"
+            ],
+            "eliteMoves": [
+                "WILDBOLT_STORM"
             ]
         },
         "tags": [
@@ -21819,7 +26610,11 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "OVERHEAT",
                 "DRACO_METEOR",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "FUSION_FLARE"
+            ],
+            "eliteMoves": [
+                "FUSION_FLARE"
             ]
         },
         "tags": [
@@ -21841,7 +26636,11 @@ export const POKEMONS_DATA: (Pick<
                 "OUTRAGE",
                 "WILD_CHARGE",
                 "FLASH_CANNON",
-                "CRUNCH"
+                "CRUNCH",
+                "FUSION_BOLT"
+            ],
+            "eliteMoves": [
+                "FUSION_BOLT"
             ]
         },
         "tags": [
@@ -21885,7 +26684,11 @@ export const POKEMONS_DATA: (Pick<
                 "EARTHQUAKE",
                 "STONE_EDGE",
                 "SUPER_POWER",
-                "BULLDOZE"
+                "BULLDOZE",
+                "SANDSEAR_STORM"
+            ],
+            "eliteMoves": [
+                "SANDSEAR_STORM"
             ]
         },
         "tags": [
@@ -21906,7 +26709,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "BLIZZARD",
-                "DRACO_METEOR"
+                "DRACO_METEOR",
+                "GLACIATE"
+            ],
+            "eliteMoves": [
+                "GLACIATE"
             ]
         },
         "tags": [
@@ -21972,13 +26779,17 @@ export const POKEMONS_DATA: (Pick<
                 "AQUA_JET",
                 "CLOSE_COMBAT",
                 "HYDRO_PUMP",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "SACRED_SWORD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "keldeo_resolute",
@@ -21992,10 +26803,17 @@ export const POKEMONS_DATA: (Pick<
                 "AQUA_JET",
                 "CLOSE_COMBAT",
                 "HYDRO_PUMP",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "SACRED_SWORD"
+            ],
+            "eliteMoves": [
+                "SACRED_SWORD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": false
@@ -22057,7 +26875,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "X_SCISSOR",
                 "MAGNET_BOMB",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TECHNO_BLAST_NORMAL"
+            ],
+            "eliteMoves": [
+                "TECHNO_BLAST_NORMAL"
             ]
         },
         "tags": [
@@ -22081,6 +26903,9 @@ export const POKEMONS_DATA: (Pick<
                 "MAGNET_BOMB",
                 "FLAMETHROWER",
                 "TECHNO_BLAST_BURN"
+            ],
+            "eliteMoves": [
+                "TECHNO_BLAST_BURN"
             ]
         },
         "tags": [
@@ -22102,7 +26927,11 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "X_SCISSOR",
                 "MAGNET_BOMB",
-                "ICE_BEAM"
+                "ICE_BEAM",
+                "TECHNO_BLAST_CHILL"
+            ],
+            "eliteMoves": [
+                "TECHNO_BLAST_CHILL"
             ]
         },
         "tags": [
@@ -22111,7 +26940,7 @@ export const POKEMONS_DATA: (Pick<
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "genesect_douse",
@@ -22125,6 +26954,9 @@ export const POKEMONS_DATA: (Pick<
                 "X_SCISSOR",
                 "MAGNET_BOMB",
                 "GUNK_SHOT",
+                "TECHNO_BLAST_DOUSE"
+            ],
+            "eliteMoves": [
                 "TECHNO_BLAST_DOUSE"
             ]
         },
@@ -22214,7 +27046,12 @@ export const POKEMONS_DATA: (Pick<
                 "GYRO_BALL",
                 "ENERGY_BALL",
                 "SUPER_POWER",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "FRENZY_PLANT",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -22279,7 +27116,12 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "FLAMETHROWER",
                 "FLAME_CHARGE",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "BLAST_BURN",
+                "MYSTICAL_FIRE"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
@@ -22337,13 +27179,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "FEINT_ATTACK",
-                "BUBBLE"
+                "BUBBLE",
+                "WATER_SHURIKEN"
             ],
             "chargedMoves": [
                 "NIGHT_SLASH",
                 "AERIAL_ACE",
                 "SURF",
-                "HYDRO_PUMP"
+                "HYDRO_PUMP",
+                "HYDRO_CANNON"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -22384,7 +27231,8 @@ export const POKEMONS_DATA: (Pick<
                 "DIG",
                 "HYPER_BEAM",
                 "EARTHQUAKE",
-                "FIRE_PUNCH"
+                "FIRE_PUNCH",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
@@ -22403,7 +27251,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "HEAT_WAVE",
-                "SWIFT"
+                "SWIFT",
+                "FLY"
             ]
         },
         "tags": [],
@@ -22423,7 +27272,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "AERIAL_ACE",
                 "HEAT_WAVE",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "FLY"
             ]
         },
         "tags": [],
@@ -22445,7 +27295,11 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD",
                 "FIRE_BLAST",
                 "FLAME_CHARGE",
-                "HURRICANE"
+                "HURRICANE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "INCINERATE"
             ]
         },
         "tags": [],
@@ -22468,15 +27322,14 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "spewpa",
         "dexNumber": 665,
         "moves": {
             "fastMoves": [
-                "BUG_BITE",
-                "TACKLE"
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -22492,7 +27345,6 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 666,
         "moves": {
             "fastMoves": [
-                "BUG_BITE",
                 "GUST",
                 "STRUGGLE_BUG"
             ],
@@ -22506,7 +27358,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "litleo",
@@ -22515,7 +27367,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "FIRE_FANG",
                 "TACKLE",
-                "EMBER"
+                "EMBER",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "FLAME_CHARGE",
@@ -22534,7 +27387,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "FIRE_FANG",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "INCINERATE",
+                "EMBER"
             ],
             "chargedMoves": [
                 "FLAME_CHARGE",
@@ -22547,26 +27402,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
-    },
-    {
-        "id": "pyroar_female",
-        "dexNumber": 668,
-        "moves": {
-            "fastMoves": [
-                "FIRE_FANG",
-                "TAKE_DOWN"
-            ],
-            "chargedMoves": [
-                "FLAME_CHARGE",
-                "SOLAR_BEAM",
-                "DARK_PULSE",
-                "OVERHEAT"
-            ]
-        },
-        "tags": [],
-        "buddyDistance": 3,
-        "thirdMoveCost": 10000,
-        "released": false
     },
     {
         "id": "flabebe",
@@ -22613,7 +27448,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "VINE_WHIP",
                 "TACKLE",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -22644,7 +27480,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "gogoat",
@@ -22657,7 +27493,6 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
-                "ROCK_SLIDE",
                 "LEAF_BLADE",
                 "SEED_BOMB"
             ]
@@ -22665,7 +27500,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "pancham",
@@ -22714,7 +27549,8 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "TAKE_DOWN",
                 "BITE",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "SURF",
@@ -22752,7 +27588,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "CHARM"
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "PSYCHIC",
@@ -22900,7 +27737,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "CHARM"
+                "CHARM",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "PLAY_ROUGH",
@@ -22920,7 +27758,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "PECK",
-                "TACKLE"
+                "TACKLE",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -22938,7 +27777,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "PECK",
-                "PSYCHO_CUT"
+                "PSYCHO_CUT",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -22984,7 +27824,8 @@ export const POKEMONS_DATA: (Pick<
                 "SKULL_BASH",
                 "CROSS_CHOP",
                 "STONE_EDGE",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
@@ -23104,7 +27945,8 @@ export const POKEMONS_DATA: (Pick<
                 "PARABOLIC_CHARGE",
                 "BULLDOZE",
                 "THUNDERBOLT",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [],
@@ -23129,7 +27971,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "tyrantrum",
@@ -23144,13 +27986,14 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH",
                 "STONE_EDGE",
                 "OUTRAGE",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "amaura",
@@ -23170,7 +28013,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "aurorus",
@@ -23186,13 +28029,14 @@ export const POKEMONS_DATA: (Pick<
                 "ANCIENT_POWER",
                 "BLIZZARD",
                 "THUNDERBOLT",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "sylveon",
@@ -23208,6 +28052,10 @@ export const POKEMONS_DATA: (Pick<
                 "DRAINING_KISS",
                 "LAST_RESORT",
                 "PSYSHOCK"
+            ],
+            "eliteMoves": [
+                "LAST_RESORT",
+                "PSYSHOCK"
             ]
         },
         "tags": [],
@@ -23220,21 +28068,22 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 701,
         "moves": {
             "fastMoves": [
-                "WING_ATTACK",
                 "LOW_KICK",
                 "POISON_JAB"
             ],
             "chargedMoves": [
                 "FLYING_PRESS",
-                "SKY_ATTACK",
+                "AERIAL_ACE",
                 "X_SCISSOR",
                 "POWER_UP_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "regional"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "dedenne",
@@ -23246,7 +28095,8 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "DISCHARGE",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "PARABOLIC_CHARGE"
             ]
         },
         "tags": [],
@@ -23271,7 +28121,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "goomy",
@@ -23324,7 +28174,12 @@ export const POKEMONS_DATA: (Pick<
                 "DRACO_METEOR",
                 "SLUDGE_WAVE",
                 "MUDDY_WATER",
-                "POWER_WHIP"
+                "POWER_WHIP",
+                "AQUA_TAIL",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -23486,7 +28341,8 @@ export const POKEMONS_DATA: (Pick<
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -23508,7 +28364,8 @@ export const POKEMONS_DATA: (Pick<
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -23530,7 +28387,8 @@ export const POKEMONS_DATA: (Pick<
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -23552,7 +28410,8 @@ export const POKEMONS_DATA: (Pick<
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [],
@@ -23570,7 +28429,8 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "CRUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "MIRROR_COAT"
             ]
         },
         "tags": [],
@@ -23591,10 +28451,34 @@ export const POKEMONS_DATA: (Pick<
                 "AVALANCHE",
                 "EARTHQUAKE",
                 "BODY_SLAM",
-                "MIRROR_COAT"
+                "MIRROR_COAT",
+                "ICY_WIND"
             ]
         },
         "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "avalugg_hisuian",
+        "dexNumber": 713,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "ROCK_SLIDE",
+                "BLIZZARD",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23630,7 +28514,11 @@ export const POKEMONS_DATA: (Pick<
                 "DRACO_METEOR",
                 "HURRICANE",
                 "HEAT_WAVE",
-                "PSYCHIC"
+                "PSYCHIC",
+                "BOOMBURST"
+            ],
+            "eliteMoves": [
+                "BOOMBURST"
             ]
         },
         "tags": [],
@@ -23644,7 +28532,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "GEOMANCY"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -23652,6 +28541,9 @@ export const POKEMONS_DATA: (Pick<
                 "CLOSE_COMBAT",
                 "GIGA_IMPACT",
                 "THUNDER"
+            ],
+            "eliteMoves": [
+                "GEOMANCY"
             ]
         },
         "tags": [
@@ -23675,7 +28567,35 @@ export const POKEMONS_DATA: (Pick<
                 "HURRICANE",
                 "FOCUS_BLAST",
                 "HYPER_BEAM",
-                "PSYCHIC"
+                "PSYCHIC",
+                "OBLIVION_WING"
+            ],
+            "eliteMoves": [
+                "OBLIVION_WING"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "zygarde_10",
+        "dexNumber": 718,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "BITE",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "EARTHQUAKE",
+                "CRUNCH",
+                "HYPER_BEAM",
+                "BULLDOZE"
             ]
         },
         "tags": [
@@ -23707,7 +28627,31 @@ export const POKEMONS_DATA: (Pick<
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
+    },
+    {
+        "id": "zygarde_complete",
+        "dexNumber": 718,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "BITE",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "EARTHQUAKE",
+                "CRUNCH",
+                "HYPER_BEAM",
+                "BULLDOZE"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
     },
     {
         "id": "diancie",
@@ -23723,10 +28667,36 @@ export const POKEMONS_DATA: (Pick<
                 "POWER_GEM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
+    },
+    {
+        "id": "diancie_mega",
+        "dexNumber": 719,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "MOONBLAST",
+                "POWER_GEM"
+            ]
+        },
+        "tags": [
+            "mythical",
+            "untradeable",
+            "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
     },
     {
         "id": "hoopa",
@@ -23820,14 +28790,18 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SEED_BOMB",
                 "ENERGY_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23838,7 +28812,9 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "PECK",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SEED_BOMB",
@@ -23846,7 +28822,9 @@ export const POKEMONS_DATA: (Pick<
                 "BRAVE_BIRD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23857,15 +28835,45 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SHADOW_SNEAK",
                 "ENERGY_BALL",
-                "BRAVE_BIRD"
+                "BRAVE_BIRD",
+                "FRENZY_PLANT",
+                "SPIRIT_SHACKLE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "decidueye_hisuian",
+        "dexNumber": 724,
+        "moves": {
+            "fastMoves": [
+                "MAGICAL_LEAF",
+                "PSYCHO_CUT"
+            ],
+            "chargedMoves": [
+                "AURA_SPHERE",
+                "ENERGY_BALL",
+                "AERIAL_ACE"
+            ]
+        },
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23884,7 +28892,9 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23903,7 +28913,9 @@ export const POKEMONS_DATA: (Pick<
                 "CRUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23914,15 +28926,24 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "SNARL",
-                "FIRE_FANG"
+                "FIRE_FANG",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_BLAST",
                 "FLAME_CHARGE",
-                "DARK_PULSE"
+                "DARK_PULSE",
+                "BLAZE_KICK",
+                "BLAST_BURN",
+                "DARKEST_LARIAT"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23941,7 +28962,9 @@ export const POKEMONS_DATA: (Pick<
                 "AQUA_TAIL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23960,7 +28983,9 @@ export const POKEMONS_DATA: (Pick<
                 "DISARMING_VOICE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -23976,10 +29001,13 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "PSYCHIC",
                 "HYDRO_PUMP",
-                "MOONBLAST"
+                "MOONBLAST",
+                "DISARMING_VOICE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -24085,80 +29113,108 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 736,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "VICE_GRIP",
+                "CRUNCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "charjabug",
         "dexNumber": 737,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "DISCHARGE",
+                "CRUNCH"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "vikavolt",
         "dexNumber": 738,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK",
+                "MUD_SLAP",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "DISCHARGE",
+                "CRUNCH",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "crabrawler",
         "dexNumber": 739,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_SMASH",
+                "BUBBLE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "CRABHAMMER",
+                "PAYBACK",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "crabominable",
         "dexNumber": 740,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_SMASH",
+                "BUBBLE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "CRABHAMMER",
+                "PAYBACK",
+                "ICE_PUNCH",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "oricorio_baile",
@@ -24241,32 +29297,36 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 742,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FAIRY_WIND",
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "ribombee",
         "dexNumber": 743,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FAIRY_WIND",
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "rockruff",
@@ -24279,7 +29339,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "STONE_EDGE",
                 "ROCK_TOMB",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24292,16 +29353,21 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 745,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "SUCKER_PUNCH",
+                "ROCK_THROW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "STONE_EDGE",
+                "IRON_HEAD",
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "lycanroc_midday",
@@ -24314,7 +29380,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "STONE_EDGE",
                 "DRILL_RUN",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24333,7 +29400,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "STONE_EDGE",
                 "PSYCHIC_FANGS",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24346,10 +29414,14 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 746,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "WATERFALL",
+                "IRON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "SURF",
+                "AQUA_TAIL"
             ]
         },
         "tags": [],
@@ -24362,10 +29434,14 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 746,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "WATERFALL",
+                "IRON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "SURF",
+                "AQUA_TAIL"
             ]
         },
         "tags": [],
@@ -24378,10 +29454,14 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 746,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "WATERFALL",
+                "IRON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "SURF",
+                "AQUA_TAIL"
             ]
         },
         "tags": [],
@@ -24394,42 +29474,51 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 747,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_STING",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "GUNK_SHOT",
+                "SLUDGE_WAVE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "toxapex",
         "dexNumber": 748,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "GUNK_SHOT",
+                "SLUDGE_WAVE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "mudbray",
         "dexNumber": 749,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "MUD_SLAP",
+                "ROCK_SMASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BULLDOZE",
+                "BODY_SLAM",
+                "EARTHQUAKE"
             ]
         },
         "tags": [],
@@ -24442,10 +29531,14 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 750,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "MUD_SLAP",
+                "ROCK_SMASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BULLDOZE",
+                "BODY_SLAM",
+                "EARTHQUAKE",
+                "HEAVY_SLAM"
             ]
         },
         "tags": [],
@@ -24470,7 +29563,7 @@ export const POKEMONS_DATA: (Pick<
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "araquanid",
@@ -24483,13 +29576,14 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "BUG_BUZZ",
                 "BUBBLE_BEAM",
-                "MIRROR_COAT"
+                "MIRROR_COAT",
+                "WATER_PULSE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "fomantis",
@@ -24497,12 +29591,14 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "FURY_CUTTER"
+                "FURY_CUTTER",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
                 "ENERGY_BALL",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24516,13 +29612,15 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "FURY_CUTTER"
+                "FURY_CUTTER",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
                 "LEAF_STORM",
                 "SUPER_POWER",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24535,32 +29633,35 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 755,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "SEED_BOMB"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "shiinotic",
         "dexNumber": 756,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MOONBLAST",
+                "SEED_BOMB",
+                "SLUDGE_BOMB"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "salandit",
@@ -24634,6 +29735,9 @@ export const POKEMONS_DATA: (Pick<
                 "PAYBACK",
                 "STOMP",
                 "DRAIN_PUNCH"
+            ],
+            "eliteMoves": [
+                "DRAIN_PUNCH"
             ]
         },
         "tags": [],
@@ -24646,48 +29750,64 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 761,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "steenee",
         "dexNumber": 762,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS",
+                "GRASS_KNOT",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "tsareena",
         "dexNumber": 763,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS",
+                "GRASS_KNOT",
+                "STOMP",
+                "TRIPLE_AXEL",
+                "HIGH_JUMP_KICK"
+            ],
+            "eliteMoves": [
+                "HIGH_JUMP_KICK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "comfey",
@@ -24737,7 +29857,8 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "PSYCHIC",
                 "FOUL_PLAY",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24750,90 +29871,111 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 766,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "ROCK_SMASH",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRICK_BREAK",
+                "CLOSE_COMBAT",
+                "SUPER_POWER"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "wimpod",
         "dexNumber": 767,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "golisopod",
         "dexNumber": 768,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FURY_CUTTER",
+                "METAL_CLAW",
+                "WATERFALL",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "sandygast",
         "dexNumber": 769,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SAND_TOMB",
+                "SHADOW_BALL",
+                "EARTH_POWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "palossand",
         "dexNumber": 770,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SAND_TOMB",
+                "SHADOW_BALL",
+                "EARTH_POWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "pyukumuku",
         "dexNumber": 771,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MIRROR_COAT"
             ]
         },
         "tags": [],
@@ -24846,10 +29988,13 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 772,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE"
             ]
         },
         "tags": [],
@@ -24862,10 +30007,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24878,10 +30028,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24894,10 +30049,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24910,10 +30070,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24926,10 +30091,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24942,10 +30112,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24958,10 +30133,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24974,10 +30154,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -24990,10 +30175,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25006,10 +30196,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25022,10 +30217,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25038,10 +30238,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25054,10 +30259,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25070,10 +30280,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25086,10 +30301,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25102,10 +30322,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25118,10 +30343,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25134,10 +30364,15 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 773,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -25150,10 +30385,13 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 774,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "ANCIENT_POWER",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -25166,10 +30404,13 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 774,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "ANCIENT_POWER",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -25182,58 +30423,72 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 775,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "YAWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "PLAY_ROUGH",
+                "BULLDOZE",
+                "PAYBACK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "turtonator",
         "dexNumber": 776,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "EMBER",
+                "FIRE_SPIN",
+                "INCINERATE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "OVERHEAT",
+                "FLAMETHROWER",
+                "DRAGON_PULSE",
+                "FLASH_CANNON"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "togedemaru",
         "dexNumber": 777,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "THUNDER_SHOCK",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FELL_STINGER",
+                "WILD_CHARGE",
+                "GYRO_BALL"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "mimikyu",
         "dexNumber": 778,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SHADOW_CLAW",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SHADOW_SNEAK",
+                "PLAY_ROUGH",
+                "SHADOW_BALL"
             ]
         },
         "tags": [],
@@ -25246,42 +30501,52 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 779,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "CONFUSION",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "PSYCHIC_FANGS",
+                "AQUA_TAIL",
+                "CRUNCH"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "drampa",
         "dexNumber": 780,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "DRAGON_BREATH",
+                "EXTRASENSORY"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "OUTRAGE",
+                "DRAGON_PULSE",
+                "FLY"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "dhelmise",
         "dexNumber": 781,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_WHIP",
+                "SHADOW_BALL",
+                "HEAVY_SLAM"
             ]
         },
         "tags": [],
@@ -25338,7 +30603,9 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "CLOSE_COMBAT",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "BOOMBURST",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
@@ -25358,7 +30625,11 @@ export const POKEMONS_DATA: (Pick<
                 "THUNDERBOLT",
                 "DAZZLING_GLEAM",
                 "BRAVE_BIRD",
-                "THUNDER"
+                "THUNDER",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -25380,7 +30651,11 @@ export const POKEMONS_DATA: (Pick<
                 "PSYSHOCK",
                 "MOONBLAST",
                 "FOCUS_BLAST",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -25402,7 +30677,11 @@ export const POKEMONS_DATA: (Pick<
                 "GRASS_KNOT",
                 "DAZZLING_GLEAM",
                 "MEGAHORN",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -25439,7 +30718,11 @@ export const POKEMONS_DATA: (Pick<
                 "SURF",
                 "MOONBLAST",
                 "ICE_BEAM",
-                "HYDRO_PUMP"
+                "HYDRO_PUMP",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -25447,14 +30730,14 @@ export const POKEMONS_DATA: (Pick<
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "cosmog",
         "dexNumber": 789,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPLASH"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -25470,7 +30753,7 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 790,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPLASH"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -25486,205 +30769,297 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 791,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ZEN_HEADBUTT",
+                "FIRE_SPIN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "IRON_HEAD",
+                "PSYCHIC_FANGS",
+                "SOLAR_BEAM",
+                "FLAMETHROWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "lunala",
         "dexNumber": 792,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "CONFUSION",
+                "AIR_SLASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SHADOW_BALL",
+                "PSYCHIC",
+                "MOONBLAST",
+                "FUTURE_SIGHT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "nihilego",
         "dexNumber": 793,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ACID",
+                "POUND",
+                "POISON_JAB"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "GUNK_SHOT",
+                "SLUDGE_BOMB",
+                "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "buzzwole",
         "dexNumber": 794,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "POISON_JAB"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "FELL_STINGER",
+                "LUNGE",
+                "SUPER_POWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "pheromosa",
         "dexNumber": 795,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "LOW_KICK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FOCUS_BLAST",
+                "BUG_BUZZ",
+                "LUNGE",
+                "CLOSE_COMBAT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "xurkitree",
         "dexNumber": 796,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "THUNDER_SHOCK",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DISCHARGE",
+                "THUNDER",
+                "POWER_WHIP",
+                "DAZZLING_GLEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "celesteela",
         "dexNumber": 797,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "AIR_SLASH",
+                "SMACK_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "IRON_HEAD",
+                "BODY_SLAM",
+                "HEAVY_SLAM",
+                "BULLDOZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "kartana",
         "dexNumber": 798,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "AIR_SLASH",
+                "RAZOR_LEAF"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "LEAF_BLADE",
+                "X_SCISSOR",
+                "NIGHT_SLASH",
+                "AERIAL_ACE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast",
+            "include1500"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "guzzlord",
         "dexNumber": 799,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SNARL",
+                "DRAGON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRUTAL_SWING",
+                "DRAGON_CLAW",
+                "CRUNCH",
+                "SLUDGE_BOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma",
         "dexNumber": 800,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_dawn_wings",
         "dexNumber": 800,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE",
+                "MOONGEIST_BEAM"
+            ],
+            "eliteMoves": [
+                "MOONGEIST_BEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_dusk_mane",
         "dexNumber": 800,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE",
+                "SUNSTEEL_STRIKE"
+            ],
+            "eliteMoves": [
+                "SUNSTEEL_STRIKE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_ultra",
         "dexNumber": 800,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": false
@@ -25706,78 +31081,129 @@ export const POKEMONS_DATA: (Pick<
         "released": false
     },
     {
+        "id": "marshadow",
+        "dexNumber": 802,
+        "moves": {
+            "fastMoves": [
+                "SUCKER_PUNCH",
+                "COUNTER",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "FIRE_PUNCH",
+                "THUNDER_PUNCH",
+                "ICE_PUNCH",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "poipole",
         "dexNumber": 803,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "PECK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SLUDGE_BOMB",
+                "SLUDGE_WAVE",
+                "FELL_STINGER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "naganadel",
         "dexNumber": 804,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "AIR_SLASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SLUDGE_BOMB",
+                "ACROBATICS",
+                "FELL_STINGER",
+                "DRAGON_PULSE",
+                "DRAGON_CLAW"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "stakataka",
         "dexNumber": 805,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_THROW",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FLASH_CANNON",
+                "STONE_EDGE",
+                "BULLDOZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "blacephalon",
         "dexNumber": 806,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "INCINERATE",
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MYSTICAL_FIRE",
+                "SHADOW_BALL",
+                "OVERHEAT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "zeraora",
         "dexNumber": 807,
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "THUNDER_PUNCH",
+                "DISCHARGE",
+                "WILD_CHARGE"
             ]
         },
         "tags": [],
@@ -25817,7 +31243,11 @@ export const POKEMONS_DATA: (Pick<
                 "HYPER_BEAM",
                 "ROCK_SLIDE",
                 "THUNDERBOLT",
-                "SUPER_POWER"
+                "SUPER_POWER",
+                "DOUBLE_IRON_BASH"
+            ],
+            "eliteMoves": [
+                "DOUBLE_IRON_BASH"
             ]
         },
         "tags": [
@@ -26003,7 +31433,8 @@ export const POKEMONS_DATA: (Pick<
             ],
             "chargedMoves": [
                 "BODY_SLAM",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -26018,11 +31449,13 @@ export const POKEMONS_DATA: (Pick<
             "fastMoves": [
                 "TACKLE",
                 "BITE",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -26234,7 +31667,8 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "WILD_CHARGE",
@@ -26932,7 +32366,11 @@ export const POKEMONS_DATA: (Pick<
                 "CROSS_CHOP",
                 "NIGHT_SLASH",
                 "HYPER_BEAM",
-                "GUNK_SHOT"
+                "GUNK_SHOT",
+                "OBSTRUCT"
+            ],
+            "eliteMoves": [
+                "OBSTRUCT"
             ]
         },
         "tags": [],
@@ -26952,7 +32390,8 @@ export const POKEMONS_DATA: (Pick<
                 "IRON_HEAD",
                 "CLOSE_COMBAT",
                 "PLAY_ROUGH",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -27013,7 +32452,8 @@ export const POKEMONS_DATA: (Pick<
                 "PSYBEAM",
                 "PSYCHIC",
                 "ICE_PUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -27026,7 +32466,8 @@ export const POKEMONS_DATA: (Pick<
         "dexNumber": 867,
         "moves": {
             "fastMoves": [
-                "ASTONISH"
+                "ASTONISH",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
                 "SHADOW_BALL",
@@ -27550,6 +32991,28 @@ export const POKEMONS_DATA: (Pick<
         "released": false
     },
     {
+        "id": "zacian_crowned_sword",
+        "dexNumber": 888,
+        "moves": {
+            "fastMoves": [
+                "METAL_CLAW",
+                "SNARL",
+                "QUICK_ATTACK",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "IRON_HEAD",
+                "WILD_CHARGE",
+                "CLOSE_COMBAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
         "id": "zacian_hero",
         "dexNumber": 888,
         "moves": {
@@ -27574,19 +33037,19 @@ export const POKEMONS_DATA: (Pick<
         "released": true
     },
     {
-        "id": "zacian_crowned_sword",
-        "dexNumber": 888,
+        "id": "zamazenta",
+        "dexNumber": 889,
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
                 "SNARL",
                 "QUICK_ATTACK",
-                "FIRE_FANG"
+                "ICE_FANG"
             ],
             "chargedMoves": [
-                "PLAY_ROUGH",
+                "MOONBLAST",
                 "IRON_HEAD",
-                "WILD_CHARGE",
+                "CRUNCH",
                 "CLOSE_COMBAT"
             ]
         },
@@ -27596,7 +33059,7 @@ export const POKEMONS_DATA: (Pick<
         "released": false
     },
     {
-        "id": "zamazenta",
+        "id": "zamazenta_crowned_shield",
         "dexNumber": 889,
         "moves": {
             "fastMoves": [
@@ -27640,28 +33103,6 @@ export const POKEMONS_DATA: (Pick<
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": true
-    },
-    {
-        "id": "zamazenta_crowned_shield",
-        "dexNumber": 889,
-        "moves": {
-            "fastMoves": [
-                "METAL_CLAW",
-                "SNARL",
-                "QUICK_ATTACK",
-                "ICE_FANG"
-            ],
-            "chargedMoves": [
-                "MOONBLAST",
-                "IRON_HEAD",
-                "CRUNCH",
-                "CLOSE_COMBAT"
-            ]
-        },
-        "tags": [],
-        "buddyDistance": 20,
-        "thirdMoveCost": 100000,
-        "released": false
     },
     {
         "id": "eternatus",
@@ -27810,18 +33251,21 @@ export const POKEMONS_DATA: (Pick<
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "LOCK_ON"
+                "LOCK_ON",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "THUNDERBOLT",
+                "ZAP_CANNON",
                 "THUNDER",
                 "HYPER_BEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "regidrago",
@@ -27833,13 +33277,16 @@ export const POKEMONS_DATA: (Pick<
             "chargedMoves": [
                 "HYPER_BEAM",
                 "OUTRAGE",
-                "DRAGON_PULSE"
+                "DRAGON_PULSE",
+                "BREAKING_SWIPE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "glastrier",
@@ -27911,6 +33358,2521 @@ export const POKEMONS_DATA: (Pick<
                 "PSYCHIC",
                 "ENERGY_BALL",
                 "AVALANCHE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "wyrdeer",
+        "dexNumber": 899,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ZEN_HEADBUTT",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "MEGAHORN",
+                "STOMP",
+                "WILD_CHARGE",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "kleavor",
+        "dexNumber": 900,
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "ROCK_SLIDE",
+                "STONE_EDGE",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "ursaluna",
+        "dexNumber": 901,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "THUNDER_PUNCH",
+                "AERIAL_ACE",
+                "HIGH_HORSEPOWER",
+                "ICE_PUNCH",
+                "TRAILBLAZE",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "HIGH_HORSEPOWER"
+            ]
+        },
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "ursaluna_shadow",
+        "dexNumber": 901,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "THUNDER_PUNCH",
+                "AERIAL_ACE",
+                "HIGH_HORSEPOWER",
+                "ICE_PUNCH",
+                "TRAILBLAZE",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "HIGH_HORSEPOWER"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "basculegion_female",
+        "dexNumber": 902,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "basculegion_male",
+        "dexNumber": 902,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "sneasler",
+        "dexNumber": 903,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "sneasler_shadow",
+        "dexNumber": 903,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "shadow"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "overqwil",
+        "dexNumber": 904,
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AQUA_TAIL",
+                "ICE_BEAM",
+                "SLUDGE_BOMB",
+                "DARK_PULSE",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "enamorus_incarnate",
+        "dexNumber": 905,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "ZEN_HEADBUTT",
+                "FAIRY_WIND"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FLY",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "enamorus_therian",
+        "dexNumber": 905,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "ZEN_HEADBUTT",
+                "FAIRY_WIND"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FLY",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "sprigatito",
+        "dexNumber": 906,
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "floragato",
+        "dexNumber": 907,
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "meowscarada",
+        "dexNumber": 908,
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL",
+                "NIGHT_SLASH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "fuecoco",
+        "dexNumber": 909,
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "crocalor",
+        "dexNumber": 910,
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "skeledirge",
+        "dexNumber": 911,
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaxly",
+        "dexNumber": 912,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaxwell",
+        "dexNumber": 913,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaquaval",
+        "dexNumber": 914,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION",
+                "CLOSE_COMBAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "lechonk",
+        "dexNumber": 915,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "oinkologne",
+        "dexNumber": 916,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "oinkologne_female",
+        "dexNumber": 916,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "tarountula",
+        "dexNumber": 917,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "GRASS_KNOT",
+                "LUNGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "spidops",
+        "dexNumber": 918,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "GRASS_KNOT",
+                "LUNGE",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "nymble",
+        "dexNumber": 919,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "BUG_BUZZ",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "lokix",
+        "dexNumber": 920,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "SUCKER_PUNCH",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "BUG_BUZZ",
+                "DARK_PULSE",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "pawmi",
+        "dexNumber": 921,
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "pawmo",
+        "dexNumber": 922,
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE",
+                "THUNDER_PUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "pawmot",
+        "dexNumber": 923,
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM",
+                "LOW_KICK"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE",
+                "CLOSE_COMBAT",
+                "THUNDER_PUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "tandemaus",
+        "dexNumber": 924,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "maushold",
+        "dexNumber": 925,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "maushold_family_of_four",
+        "dexNumber": 925,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "maushold_family_of_three",
+        "dexNumber": 925,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "fidough",
+        "dexNumber": 926,
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "PLAY_ROUGH",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dachsbun",
+        "dexNumber": 927,
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "PLAY_ROUGH",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "smoliv",
+        "dexNumber": 928,
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "dolliv",
+        "dexNumber": 929,
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "arboliva",
+        "dexNumber": 930,
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "squawkabilly",
+        "dexNumber": 931,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "squawkabilly_blue",
+        "dexNumber": 931,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "squawkabilly_green",
+        "dexNumber": 931,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "squawkabilly_white",
+        "dexNumber": 931,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "squawkabilly_yellow",
+        "dexNumber": 931,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "nacli",
+        "dexNumber": 932,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "naclstack",
+        "dexNumber": 933,
+        "moves": {
+            "fastMoves": [
+                "SMACK_DOWN",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "garganacl",
+        "dexNumber": 934,
+        "moves": {
+            "fastMoves": [
+                "SMACK_DOWN",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "charcadet",
+        "dexNumber": 935,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "armarouge",
+        "dexNumber": 936,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER",
+                "PSYSHOCK"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "ceruledge",
+        "dexNumber": 937,
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "tadbulb",
+        "dexNumber": 938,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "PARABOLIC_CHARGE",
+                "DISCHARGE",
+                "ZAP_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "bellibolt",
+        "dexNumber": 939,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "PARABOLIC_CHARGE",
+                "DISCHARGE",
+                "ZAP_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "wattrel",
+        "dexNumber": 940,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "PECK"
+            ],
+            "chargedMoves": [
+                "ACROBATICS",
+                "AERIAL_ACE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "kilowattrel",
+        "dexNumber": 941,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "ACROBATICS",
+                "AERIAL_ACE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "maschiff",
+        "dexNumber": 942,
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "PAYBACK",
+                "DIG"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "mabosstiff",
+        "dexNumber": 943,
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "PAYBACK",
+                "DIG"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "shroodle",
+        "dexNumber": 944,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "POISON_FANG",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "grafaiai",
+        "dexNumber": 945,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "POISON_FANG",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "bramblin",
+        "dexNumber": 946,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SHADOW_SNEAK",
+                "NIGHT_SHADE",
+                "POWER_WHIP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "brambleghast",
+        "dexNumber": 947,
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SHADOW_SNEAK",
+                "NIGHT_SHADE",
+                "POWER_WHIP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "toedscool",
+        "dexNumber": 948,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTH_POWER",
+                "SEED_BOMB",
+                "WRAP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "toedscruel",
+        "dexNumber": 949,
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTH_POWER",
+                "SEED_BOMB",
+                "ACID_SPRAY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "klawf",
+        "dexNumber": 950,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "ROCK_TOMB",
+                "BULLDOZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "capsakid",
+        "dexNumber": 951,
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "RAZOR_LEAF"
+            ],
+            "chargedMoves": [
+                "LEAF_STORM",
+                "GRASS_KNOT",
+                "SEED_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "scovillain",
+        "dexNumber": 952,
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "LEAF_STORM",
+                "GRASS_KNOT",
+                "OVERHEAT",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "rellor",
+        "dexNumber": 953,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BUG_BUZZ",
+                "LUNGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "rabsca",
+        "dexNumber": 954,
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BUG_BUZZ",
+                "LUNGE",
+                "PSYBEAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "flittle",
+        "dexNumber": 955,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "PSYSHOCK",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "espathra",
+        "dexNumber": 956,
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "PSYSHOCK",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "tinkatink",
+        "dexNumber": 957,
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tinkatuff",
+        "dexNumber": 958,
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tinkaton",
+        "dexNumber": 959,
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "wiglett",
+        "dexNumber": 960,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "LIQUIDATION",
+                "DIG",
+                "SURF"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "wugtrio",
+        "dexNumber": 961,
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "LIQUIDATION",
+                "DIG",
+                "SURF"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "bombirdier",
+        "dexNumber": 962,
+        "moves": {
+            "fastMoves": [
+                "WING_ATTACK",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "PAYBACK",
+                "AERIAL_ACE",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "finizen",
+        "dexNumber": 963,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "palafin",
+        "dexNumber": 964,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND",
+                "DRAIN_PUNCH",
+                "ACROBATICS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "palafin_hero",
+        "dexNumber": 964,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND",
+                "DRAIN_PUNCH",
+                "ACROBATICS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "palafin_zero",
+        "dexNumber": 964,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND",
+                "DRAIN_PUNCH",
+                "ACROBATICS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "varoom",
+        "dexNumber": 965,
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "GUNK_SHOT",
+                "GYRO_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "revavroom",
+        "dexNumber": 966,
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "GUNK_SHOT",
+                "GYRO_BALL",
+                "OVERHEAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "cyclizar",
+        "dexNumber": 967,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "BODY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "orthworm",
+        "dexNumber": 968,
+        "moves": {
+            "fastMoves": [
+                "IRON_TAIL",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "ROCK_TOMB",
+                "EARTHQUAKE",
+                "IRON_HEAD"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "glimmet",
+        "dexNumber": 969,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "ROCK_SLIDE",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "glimmora",
+        "dexNumber": 970,
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "ROCK_SLIDE",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "greavard",
+        "dexNumber": 971,
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DIG",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "houndstone",
+        "dexNumber": 972,
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DIG",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "flamigo",
+        "dexNumber": 973,
+        "moves": {
+            "fastMoves": [
+                "WING_ATTACK",
+                "DOUBLE_KICK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "CLOSE_COMBAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "cetoddle",
+        "dexNumber": 974,
+        "moves": {
+            "fastMoves": [
+                "ICE_SHARD",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "AVALANCHE",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "cetitan",
+        "dexNumber": 975,
+        "moves": {
+            "fastMoves": [
+                "ICE_SHARD",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "AVALANCHE",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "veluza",
+        "dexNumber": 976,
+        "moves": {
+            "fastMoves": [
+                "ICE_FANG",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "WATER_PULSE",
+                "PSYCHIC_FANGS",
+                "DRILL_RUN",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "dondozo",
+        "dexNumber": 977,
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tatsugiri",
+        "dexNumber": 978,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "MUDDY_WATER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tatsugiri_curly",
+        "dexNumber": 978,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "MUDDY_WATER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tatsugiri_droopy",
+        "dexNumber": 978,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "MUDDY_WATER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tatsugiri_stretchy",
+        "dexNumber": 978,
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "MUDDY_WATER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "annihilape",
+        "dexNumber": 979,
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "LOW_SWEEP",
+                "NIGHT_SLASH",
+                "ICE_PUNCH",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "clodsire",
+        "dexNumber": 980,
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "SLUDGE_BOMB",
+                "EARTHQUAKE",
+                "STONE_EDGE",
+                "ACID_SPRAY",
+                "WATER_PULSE",
+                "MEGAHORN"
+            ],
+            "eliteMoves": [
+                "MEGAHORN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "farigiraf",
+        "dexNumber": 981,
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "CONFUSION",
+                "DOUBLE_KICK"
+            ],
+            "chargedMoves": [
+                "PSYCHIC",
+                "THUNDERBOLT",
+                "MIRROR_COAT",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dudunsparce",
+        "dexNumber": 982,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "ASTONISH",
+                "ROLLOUT"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_SLIDE",
+                "DRILL_RUN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dudunsparce_three",
+        "dexNumber": 982,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "ASTONISH",
+                "ROLLOUT"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_SLIDE",
+                "DRILL_RUN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dudunsparce_two",
+        "dexNumber": 982,
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "ASTONISH",
+                "ROLLOUT"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_SLIDE",
+                "DRILL_RUN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "kingambit",
+        "dexNumber": 983,
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "IRON_HEAD",
+                "X_SCISSOR",
+                "FOCUS_BLAST"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "greattusk",
+        "dexNumber": 984,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "screamtail",
+        "dexNumber": 985,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "brutebonnet",
+        "dexNumber": 986,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "fluttermane",
+        "dexNumber": 987,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "slitherwing",
+        "dexNumber": 988,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "sandyshocks",
+        "dexNumber": 989,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "irontreads",
+        "dexNumber": 990,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironbundle",
+        "dexNumber": 991,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironhands",
+        "dexNumber": 992,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironjugulis",
+        "dexNumber": 993,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironmoth",
+        "dexNumber": 994,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironthorns",
+        "dexNumber": 995,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "frigibax",
+        "dexNumber": 996,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "arctibax",
+        "dexNumber": 997,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "baxcalibur",
+        "dexNumber": 998,
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "BLIZZARD",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gimmighoul",
+        "dexNumber": 999,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "gholdengo",
+        "dexNumber": 1000,
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DAZZLING_GLEAM",
+                "FOCUS_BLAST"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "wo_chien",
+        "dexNumber": 1001,
+        "moves": {
+            "fastMoves": [
+                "MAGICAL_LEAF",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "GRASS_KNOT",
+                "LEAF_STORM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "chien_pao",
+        "dexNumber": 1002,
+        "moves": {
+            "fastMoves": [
+                "POWDER_SNOW",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "AVALANCHE",
+                "BLIZZARD"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ting_lu",
+        "dexNumber": 1003,
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "BULLDOZE",
+                "EARTHQUAKE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "chi_yu",
+        "dexNumber": 1004,
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "DARK_PULSE",
+                "FLAME_WHEEL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "roaringmoon",
+        "dexNumber": 1005,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ironvaliant",
+        "dexNumber": 1006,
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "koraidon",
+        "dexNumber": 1007,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "GIGA_IMPACT",
+                "DRAGON_CLAW",
+                "CLOSE_COMBAT",
+                "OUTRAGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "koraidon_apex",
+        "dexNumber": 1007,
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "GIGA_IMPACT",
+                "DRAGON_CLAW",
+                "CLOSE_COMBAT",
+                "OUTRAGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "miraidon",
+        "dexNumber": 1008,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "HYPER_BEAM",
+                "DRAGON_PULSE",
+                "THUNDER",
+                "OUTRAGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "miraidon_ultimate",
+        "dexNumber": 1008,
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "HYPER_BEAM",
+                "DRAGON_PULSE",
+                "THUNDER",
+                "OUTRAGE"
             ]
         },
         "tags": [],

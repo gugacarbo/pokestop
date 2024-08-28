@@ -9,14 +9,14 @@ const pokemonWithMovesSchema = z.object({
 	moves: z.object({
 		fastMoves: z.array(z.string()).optional().default([]),
 		chargedMoves: z.array(z.string()).optional().default([]),
+		legacyMoves: z.array(z.string()).optional(),
+		eliteMoves: z.array(z.string()).optional(),
 	}),
 	tags: z.array(z.string()).optional().default([]),
 	buddyDistance: z.coerce.number().optional(),
 	thirdMoveCost: z.coerce.number().default(10000),
 	released: z.boolean().optional(),
 	shadowEligible: z.boolean().optional(),
-	legacyMoves: z.array(z.string()).optional(),
-	eliteMoves: z.array(z.string()).optional(),
 });
 
 type PokemonWithMoves = z.infer<typeof pokemonWithMovesSchema>;
@@ -100,15 +100,7 @@ export async function parsePokemons({
 // From {@ ${shouldFetch ? 'pvpoke fetch' : 'local file'}} 
 export const POKEMONS_DATA: (Pick<
 		Pokemon,
-		'id' | 'dexNumber' | 'tags' | 'buddyDistance' | 'thirdMoveCost' | 'released'
-	> & {
-		moves: {
-			fastMoves: string[];
-			chargedMoves: string[];
-			eliteMoves?: string[];
-			legacyMoves?: string[];
-		};
-	})[] =
+		'id' | 'dexNumber' | 'tags' | 'buddyDistance' | 'thirdMoveCost' | 'released'| 'moves' >)[] =
 	${JSON.stringify(output, null, shouldMini ? undefined : 4)};`;
 
 	fs.writeFileSync(outFilePath, fileContent);

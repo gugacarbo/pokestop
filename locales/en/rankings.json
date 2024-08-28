@@ -6,7 +6,7 @@
       "value": "Family",
       "other-members": "Other fFamily members"
     },
-    "edit-candidate":"Edit Candidate",
+    "edit-candidate": "Edit Candidate",
     "min-level": "Min. Level {level}"
   },
   "league": {
@@ -40,6 +40,31 @@
     "master": {
       "value": "Master League",
       "description": "No Max CP"
+    }
+  },
+  "moves": {
+    "title": "Moves",
+    "arche-types": {
+      "low-quality": "Low Quality",
+      "debuff": "Debuff",
+      "boost-nuke": "Boost Nuke",
+      "high-energy": "High Energy",
+      "general": "General",
+      "boost": "Boost",
+      "spam_bait": "Spam/Bait",
+      "nuke": "Nuke",
+      "heavy-damage": "Heavy Damage",
+      "self-debuff-nuke": "Self-Debuff Nuke",
+      "debuff-spam_bait": "Debuff Spam/Bait",
+      "fast-charge": "Fast Charge",
+      "high-energy-debuff": "High Energy Debuff",
+      "self-debuff": "Self-Debuff",
+      "multipurpose": "Multipurpose",
+      "boost-spam_bait": "Boost Spam/Bait",
+      "debuff-nuke": "Debuff Nuke",
+      "self-debuff-spam": "Self-Debuff Spam",
+      "spam_bait-debuff": "Spam/Bait Debuff",
+      "nuke-debuff": "Nuke Debuff"
     }
   }
 }

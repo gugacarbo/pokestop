@@ -1,3 +1,4 @@
+import { MoveArcheType } from '@/@types/move';
 import {z} from 'zod';
 
 export const rawPokemonSchema = z.object({
@@ -57,7 +58,7 @@ type EffectivenessTypes =
 	| 'steel'
 	| 'water';
 
-type PvPokeMoveType =
+export type PvPokeMoveType =
 	| 'Low Quality'
 	| 'Debuff'
 	| 'Boost Nuke'
@@ -108,7 +109,7 @@ export interface OutputMove {
 	energy: number;
 	energyGain: number;
 	cooldown: number;
-	archetype?: PvPokeMoveType;
+	archetype?: MoveArcheType;
 	buffs?: Buffs;
 	buffTarget?: BuffTarget;
 	buffApplyChance?: number;

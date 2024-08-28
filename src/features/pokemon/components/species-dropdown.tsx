@@ -21,6 +21,7 @@ import {
 	TooltipContent,
 	Tooltip,
 } from '@/components/ui/tooltip';
+import SpeciesTypeIcons from './species-type-icons';
 
 interface SpeciesDropdownProps {
 	label: string;
@@ -88,10 +89,11 @@ export function SpeciesDropdown({
 							variant="outline"
 							role="combobox"
 							aria-expanded={open}
-							className="justify-between w-[200px]"
+							className="gap-1 w-[200px]"
 						>
+							{pokemon.types && <SpeciesTypeIcons types={pokemon.types} />}
 							{pokemon.name ?? 'Select Pokémon...'}
-							<ChevronsUpDown className="opacity-50 ml-2 w-4 h-4 shrink-0" />
+							<ChevronsUpDown className="opacity-50 ml-auto w-4 h-4 shrink-0" />
 						</Button>
 					</PopoverTrigger>
 					<PopoverContent className="p-0">

@@ -16,6 +16,7 @@ import {useGenerateRankedSpreads} from '@/lib/useGenerateRankedSpreads';
 import {CompareModes} from '@/@types/compare-modes';
 import {SingleLevelCapSelector} from './components/single-level-cap-selector';
 import {Candidate} from '../candidate/use-candidate';
+import {KnownMoves} from './known-moves';
 
 const defaultPokemon = {
 	name: 'Medicham',
@@ -100,6 +101,7 @@ export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
 			<CpLeagueSelector league={league} setLeague={setLeague} />
 			<SingleLevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
 			<ResultTable matchingSpreads={filtered} />
+			<KnownMoves pokemon={pokemon} />
 			<ScatterPokemonChart matchingSpreads={filtered} />
 		</div>
 	);

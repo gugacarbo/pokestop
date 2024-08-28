@@ -3,32 +3,29 @@ import {pokemonTypesSchema} from './pokemon-types';
 
 const buffsSchema = z.tuple([z.number(), z.number()]).optional();
 
-export const moveArchetypeSchema = z
-	.enum([
-		'Low Quality',
-		'Debuff',
-		'Boost Nuke',
-		'High Energy',
-		'General',
-		'Boost',
-		'Spam/Bait',
-		'Nuke',
-		'Heavy Damage',
-		'Self-Debuff Nuke',
-		'Debuff Spam/Bait',
-		'Fast Charge',
-		'High Energy Debuff',
-		'Self-Debuff',
-		'Multipurpose',
-		'Boost Spam/Bait',
-		'Debuff Nuke',
-		'Self-Debuff Spam',
-		'Spam/Bait Debuff',
-		'Nuke Debuff',
-	])
-	.optional();
+export const moveArchetypeSchema = z.enum([
+	'low-quality',
+	'debuff',
+	'boost-nuke',
+	'high-energy',
+	'general',
+	'boost',
+	'spam_bait',
+	'nuke',
+	'heavy-damage',
+	'self-debuff-nuke',
+	'debuff-spam_bait',
+	'fast-charge',
+	'high-energy-debuff',
+	'self-debuff',
+	'multipurpose',
+	'boost-spam_bait',
+	'debuff-nuke',
+	'self-debuff-spam',
+	'spam_bait-debuff',
+	'nuke-debuff',
+]);
 
-	
 export const moveSchema = z.object({
 	id: z.string(),
 	name: z.string(),
@@ -44,10 +41,10 @@ export const moveSchema = z.object({
 	buffTarget: z
 		.union([z.literal('opponent'), z.literal('self'), z.literal('both')])
 		.optional(),
-	archetype: moveArchetypeSchema,
+	archetype: moveArchetypeSchema.optional(),
 	legacy: z.boolean().optional(),
 	elite: z.boolean().optional(),
 });
 
-export type MoveArchetype = z.infer<typeof moveArchetypeSchema>;
+export type MoveArcheType = z.infer<typeof moveArchetypeSchema>;
 export interface Move extends z.infer<typeof moveSchema> {}

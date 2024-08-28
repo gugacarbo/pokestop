@@ -15,6 +15,12 @@ export const familyStages = z.union([
 	z.literal(5),
 ]);
 
+const moveType = z
+	.array(moveSchema)
+	.or(z.array(z.string()))
+	.default([])
+	.optional();
+
 export const pokemonSchema = z.object({
 	id: z.string(),
 	dexNumber: z.number(),
@@ -35,10 +41,10 @@ export const pokemonSchema = z.object({
 	aliases: z.optional(z.array(z.string())),
 	moves: z
 		.object({
-			fastMoves: z.array(z.string().or(moveSchema)).optional().default([]),
-			chargedMoves: z.array(z.string().or(moveSchema)).optional().default([]),
-			legacyMoves: z.array(z.string().or(moveSchema)).optional(),
-			eliteMoves: z.array(z.string().or(moveSchema)).optional(),
+			fastMoves: moveType,
+			chargedMoves: moveType,
+			legacyMoves: moveType,
+			eliteMoves: moveType,
 		})
 		.optional(),
 	tags: z.array(z.string()).default([]).optional(),
@@ -47,6 +53,7 @@ export const pokemonSchema = z.object({
 	released: z.boolean().default(true).optional(),
 	shadowEligible: z.boolean().optional(),
 });
+
 
 export type PokemonFamilyStage = z.infer<typeof familyStages>;
 export type Pokemon = z.infer<typeof pokemonSchema>;

@@ -41,5 +41,30 @@
     "title": "Candidato",
     "edit-candidate": "Editar candidato",
     "min-level": "Nível Min. {level}"
+  },
+  "moves": {
+    "arche-types": {
+      "boost": "Impulsionar",
+      "boost-nuke": "Impulsionar Nuke",
+      "boost-spam_bait": "Aumentar spam/isca",
+      "debuff": "Debilitação",
+      "debuff-nuke": "Debilitação nuclear",
+      "debuff-spam_bait": "Debuff Spam/Isca",
+      "fast-charge": "Carga rápida",
+      "general": "Em geral",
+      "heavy-damage": "Dano Pesado",
+      "high-energy": "Alta energia",
+      "high-energy-debuff": "Debuff de alta energia",
+      "low-quality": "Baixa qualidade",
+      "multipurpose": "Multiuso",
+      "nuke": "Arma nuclear",
+      "nuke-debuff": "Debilitação nuclear",
+      "self-debuff": "Autodebuff",
+      "self-debuff-nuke": "Nuke autodebuff",
+      "self-debuff-spam": "Spam de autodebuff",
+      "spam_bait": "Spam/Isca",
+      "spam_bait-debuff": "Debuff de spam/isca"
+    },
+    "title": "Movimentos"
   }
 }

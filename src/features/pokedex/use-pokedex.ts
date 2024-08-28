@@ -30,10 +30,13 @@ export function usePokedex() {
 	);
 
 	const byName = useCallback(
-		(name: PokemonName) => getPokemonByName(name, list),
+		(name: PokemonName) => getMoves(getPokemonByName(name, list)),
 		[list],
 	);
-	const byId = useCallback((id: PokemonID) => getPokemonByID(id, list), [list]);
+	const byId = useCallback(
+		(id: PokemonID) => getMoves(getPokemonByID(id, list)),
+		[list],
+	);
 
 	const familyMembers = useCallback(
 		(familyId: PokemonID) => getPokemonFamilyMembers(familyId, list),
@@ -41,18 +44,18 @@ export function usePokedex() {
 	);
 
 	const searchByName = useCallback(
-		(query: string) => searchPokemonByName(query, list),
+		(query: string) => getMoves(searchPokemonByName(query, list)),
 		[list],
 	);
 
 	const getMoveById = useCallback(
 		(id: string) => MOVES.find(move => move.id === id),
-		[],
+		[MOVES],
 	);
 
 	const getMoveByName = useCallback(
 		(name: string) => MOVES.find(move => move.name === name),
-		[],
+		[MOVES],
 	);
 
 	function parseMoves(moves?: (string | Move)[]) {
@@ -63,19 +66,20 @@ export function usePokedex() {
 					const move = getMoveById(moveId);
 					if (!move) {
 						console.warn(`Move not found: ${moveId}`);
-						return null;
+						return undefined;
 					}
 					return move;
 				}
 				return moveId;
 			})
-			.filter(move => !!move);
+			.filter(move => move !== undefined && typeof move !== 'string');
 	}
 
-	function getMoves(pokemon: string | Pokemon) {
-		const poke = typeof pokemon === 'string' ? byId(pokemon) : pokemon;
+	function getMoves(pokemon: string | Pokemon | null): Pokemon | null {
+		if (!pokemon) return null;
 
-		if (!poke) return pokemon;
+		const poke = typeof pokemon === 'string' ? byId(pokemon) : pokemon;
+		if (!poke) return null;
 
 		return {
 			...poke,
