@@ -39,7 +39,7 @@ export const pokemonDataSchema = z.object({
 			chargedMoves: z.array(moveSchema).optional().default([]),
 		})
 		.optional(),
-	tags: z.array(z.string()).optional().default([]),
+	tags: z.array(z.string()).default([]).optional(),
 	buddyDistance: z.coerce.number().optional(),
 	thirdMoveCost: z.coerce.number().optional(),
 	released: z.boolean().optional(),
