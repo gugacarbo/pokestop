@@ -118,8 +118,6 @@ export function SpeciesTypeIcons({
 	);
 }
 
-export default SpeciesTypeIcons;
-
 export function PokemonTypeIcon({
 	type,
 	className,

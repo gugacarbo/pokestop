@@ -1,5 +1,5 @@
 import type {Pokemon} from '@/@types/pokemon';
-// Last Update at: 2024-08-28T22:01:11.081Z
+// Last Update at: 2024-08-29T13:35:29.882Z
 // From {@ local file} 
 export const POKEMONS_DATA: (Pick<
 		Pokemon,

@@ -22,3 +22,5 @@ export const pokemonTypesSchema = z.enum([
 ]);
 
 export type PokemonType = z.infer<typeof pokemonTypesSchema>;
+
+export const typesArray = pokemonTypesSchema._def.values;

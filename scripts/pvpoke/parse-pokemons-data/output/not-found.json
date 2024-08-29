@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "tauros_paldean",
+    "dexNumber": 128,
+    "name": "Tauros (Paldean)",
+    "stats": {
+      "atk": 210,
+      "def": 193,
+      "sta": 181
+    },
+    "types": [
+      "fighting"
+    ],
+    "family": {
+      "id": "tauros_paldean",
+      "stage": 1
+    }
+  },
+  {
+    "id": "tauros_paldean_fire",
+    "dexNumber": 128,
+    "name": "Tauros (Paldean, Fire)",
+    "stats": {
+      "atk": 210,
+      "def": 193,
+      "sta": 181
+    },
+    "types": [
+      "fighting",
+      "fire"
+    ],
+    "family": {
+      "id": "tauros_paldean",
+      "stage": 2
+    }
+  },
+  {
+    "id": "tauros_paldean_water",
+    "dexNumber": 128,
+    "name": "Tauros (Paldean, Water)",
+    "stats": {
+      "atk": 210,
+      "def": 193,
+      "sta": 181
+    },
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "family": {
+      "id": "tauros_paldean",
+      "stage": 2
+    }
+  },
+  {
+    "id": "mewtwo_mega_x",
+    "dexNumber": 150,
+    "name": "Mewtwo (Mega X, 3% nerf)",
+    "stats": {
+      "atk": 399,
+      "def": 215,
+      "sta": 228
+    },
+    "types": [
+      "psychic"
+    ],
+    "floor": 1,
+    "family": {
+      "id": "mewtwo",
+      "stage": 2
+    }
+  },
+  {
+    "id": "mewtwo_mega_y",
+    "dexNumber": 150,
+    "name": "Mewtwo (Mega Y, 3% nerf)",
+    "stats": {
+      "atk": 413,
+      "def": 223,
+      "sta": 228
+    },
+    "types": [
+      "psychic"
+    ],
+    "floor": 1,
+    "family": {
+      "id": "mewtwo",
+      "stage": 2
+    }
+  },
+  {
+    "id": "mewtwo_mega_x_9",
+    "dexNumber": 150,
+    "name": "Mewtwo (Mega X, 9% nerf)",
+    "stats": {
+      "atk": 375,
+      "def": 202,
+      "sta": 214
+    },
+    "types": [
+      "psychic"
+    ],
+    "floor": 1,
+    "family": {
+      "id": "mewtwo",
+      "stage": 3
+    }
+  },
+  {
+    "id": "mewtwo_mega_y_9",
+    "dexNumber": 150,
+    "name": "Mewtwo (Mega Y, 9% nerf)",
+    "stats": {
+      "atk": 388,
+      "def": 208,
+      "sta": 214
+    },
+    "types": [
+      "psychic"
+    ],
+    "floor": 1,
+    "family": {
+      "id": "mewtwo",
+      "stage": 3
+    }
+  },
+  {
+    "id": "corsola_galarian",
+    "dexNumber": 222,
+    "name": "Corsola (Galarian)",
+    "stats": {
+      "atk": 116,
+      "def": 182,
+      "sta": 155
+    },
+    "types": [
+      "ghost"
+    ],
+    "family": {
+      "id": "corsola_galarian",
+      "stage": 1
+    }
+  },
+  {
+    "id": "mawile_mega",
+    "dexNumber": 303,
+    "name": "Mawile (Mega)",
+    "stats": {
+      "atk": 188,
+      "def": 217,
+      "sta": 137
+    },
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "family": {
+      "id": "mawile",
+      "stage": 2
+    }
+  },
+  {
+    "id": "sharpedo_mega",
+    "dexNumber": 319,
+    "name": "Sharpedo (Mega)",
+    "stats": {
+      "atk": 289,
+      "def": 144,
+      "sta": 172
+    },
+    "types": [
+      "water",
+      "dark"
+    ],
+    "family": {
+      "id": "carvanha",
+      "stage": 3
+    }
+  },
+  {
+    "id": "camerupt_mega",
+    "dexNumber": 323,
+    "name": "Camerupt (Mega)",
+    "stats": {
+      "atk": 253,
+      "def": 183,
+      "sta": 172
+    },
+    "types": [
+      "fire",
+      "ground"
+    ],
+    "family": {
+      "id": "numel",
+      "stage": 3
+    }
+  },
+  {
+    "id": "metagross_mega",
+    "dexNumber": 376,
+    "name": "Metagross (Mega)",
+    "stats": {
+      "atk": 300,
+      "def": 289,
+      "sta": 190
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "family": {
+      "id": "beldum",
+      "stage": 4
+    }
+  },
+  {
+    "id": "gallade_mega",
+    "dexNumber": 475,
+    "name": "Gallade (Mega)",
+    "stats": {
+      "atk": 326,
+      "def": 230,
+      "sta": 169
+    },
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "family": {
+      "id": "ralts",
+      "stage": 4
+    }
+  },
+  {
+    "id": "rotom_appliance",
+    "dexNumber": 479,
+    "name": "Rotom (Appliance)",
+    "stats": {
+      "atk": 204,
+      "def": 219,
+      "sta": 137
+    },
+    "types": [
+      "electric"
+    ],
+    "family": {
+      "id": "rotom",
+      "stage": 2
+    }
+  },
+  {
+    "id": "audino_mega",
+    "dexNumber": 531,
+    "name": "Audino (Mega)",
+    "stats": {
+      "atk": 147,
+      "def": 239,
+      "sta": 230
+    },
+    "types": [
+      "normal"
+    ],
+    "family": {
+      "id": "audino",
+      "stage": 2
+    }
+  },
+  {
+    "id": "lilligant_hisuian",
+    "dexNumber": 549,
+    "name": "Lilligant (Hisuian)",
+    "stats": {
+      "atk": 208,
+      "def": 159,
+      "sta": 172
+    },
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "family": {
+      "id": "petilil",
+      "stage": 2
+    }
+  },
+  {
+    "id": "basculin_hisuian",
+    "dexNumber": 550,
+    "name": "Basculin (Hisuian)",
+    "stats": {
+      "atk": 189,
+      "def": 129,
+      "sta": 172
+    },
+    "types": [
+      "water"
+    ],
+    "family": {
+      "id": "basculin_hisuian",
+      "stage": 1
+    }
+  },
+  {
+    "id": "zorua_hisuian",
+    "dexNumber": 570,
+    "name": "Zorua (Hisuian)",
+    "stats": {
+      "atk": 162,
+      "def": 79,
+      "sta": 111
+    },
+    "types": [
+      "ghost",
+      "normal"
+    ],
+    "family": {
+      "id": "zorua_hisuian",
+      "stage": 1
+    }
+  },
+  {
+    "id": "zoroark_hisuian",
+    "dexNumber": 571,
+    "name": "Zoroark (Hisuian)",
+    "stats": {
+      "atk": 261,
+      "def": 128,
+      "sta": 146
+    },
+    "types": [
+      "ghost",
+      "normal"
+    ],
+    "family": {
+      "id": "zorua_hisuian",
+      "stage": 2
+    }
+  },
+  {
+    "id": "greninja_ash",
+    "dexNumber": 658,
+    "name": "Greninja (Ash)",
+    "stats": {
+      "atk": 339,
+      "def": 155,
+      "sta": 176
+    },
+    "types": [
+      "water",
+      "dark"
+    ],
+    "family": {
+      "id": "froakie",
+      "stage": 4
+    }
+  },
+  {
+    "id": "sliggoo_hisuian",
+    "dexNumber": 705,
+    "name": "Sliggoo (Hisuian)",
+    "stats": {
+      "atk": 153,
+      "def": 190,
+      "sta": 151
+    },
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "family": {
+      "id": "goomy",
+      "stage": 2
+    }
+  },
+  {
+    "id": "goodra_hisuian",
+    "dexNumber": 760,
+    "name": "Goodra (Hisuian)",
+    "stats": {
+      "atk": 211,
+      "def": 255,
+      "sta": 190
+    },
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "family": {
+      "id": "goomy",
+      "stage": 3
+    }
+  },
+  {
+    "id": "zygarde_50",
+    "dexNumber": 718,
+    "name": "Zygarde (50%)",
+    "stats": {
+      "atk": 203,
+      "def": 232,
+      "sta": 239
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "family": {
+      "id": "zygarde",
+      "stage": 2
+    }
+  },
+  {
+    "id": "calyrex_shadow_rider",
+    "dexNumber": 898,
+    "name": "Calyrex (Shadow Rider)",
+    "stats": {
+      "atk": 324,
+      "def": 194,
+      "sta": 205
+    },
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "floor": 1,
+    "family": {
+      "id": "calyrex",
+      "stage": 2
+    }
+  },
+  {
+    "id": "ursaluna_blood_moon",
+    "dexNumber": 901,
+    "name": "Ursaluna (Blood Moon)",
+    "stats": {
+      "atk": 242,
+      "def": 190,
+      "sta": 247
+    },
+    "types": [
+      "normal",
+      "ground"
+    ],
+    "family": {
+      "id": "teddiursa",
+      "stage": 4
+    }
+  },
+  {
+    "id": "oinkologne_male",
+    "dexNumber": 916,
+    "name": "Oinkologne (Male)",
+    "stats": {
+      "atk": 186,
+      "def": 153,
+      "sta": 242
+    },
+    "types": [
+      "normal"
+    ],
+    "family": {
+      "id": "lechonk",
+      "stage": 2
+    }
+  },
+  {
+    "id": "great_tusk",
+    "dexNumber": 984,
+    "name": "Great Tusk",
+    "stats": {
+      "atk": 226,
+      "def": 190,
+      "sta": 229
+    },
+    "types": [
+      "ground",
+      "fighting"
+    ],
+    "family": {
+      "id": "great_tusk",
+      "stage": 1
+    }
+  },
+  {
+    "id": "scream_tail",
+    "dexNumber": 985,
+    "name": "Scream Tail",
+    "stats": {
+      "atk": 139,
+      "def": 234,
+      "sta": 251
+    },
+    "types": [
+      "fairy",
+      "psychic"
+    ],
+    "family": {
+      "id": "scream_tail",
+      "stage": 1
+    }
+  },
+  {
+    "id": "brute_bonnet",
+    "dexNumber": 986,
+    "name": "Brute Bonnet",
+    "stats": {
+      "atk": 232,
+      "def": 190,
+      "sta": 244
+    },
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "family": {
+      "id": "brute_bonnet",
+      "stage": 1
+    }
+  },
+  {
+    "id": "flutter_mane",
+    "dexNumber": 987,
+    "name": "Flutter Mane",
+    "stats": {
+      "atk": 280,
+      "def": 235,
+      "sta": 146
+    },
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "family": {
+      "id": "flutter_mane",
+      "stage": 1
+    }
+  },
+  {
+    "id": "slither_wing",
+    "dexNumber": 988,
+    "name": "Slither Wing",
+    "stats": {
+      "atk": 261,
+      "def": 193,
+      "sta": 198
+    },
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "family": {
+      "id": "slither_wing",
+      "stage": 1
+    }
+  },
+  {
+    "id": "sandy_shocks",
+    "dexNumber": 989,
+    "name": "Sandy Shocks",
+    "stats": {
+      "atk": 244,
+      "def": 195,
+      "sta": 198
+    },
+    "types": [
+      "electric",
+      "ground"
+    ],
+    "family": {
+      "id": "sandy_shocks",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_treads",
+    "dexNumber": 990,
+    "name": "Iron Treads",
+    "stats": {
+      "atk": 227,
+      "def": 216,
+      "sta": 207
+    },
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "family": {
+      "id": "iron_treads",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_bundle",
+    "dexNumber": 991,
+    "name": "Iron Bundle",
+    "stats": {
+      "atk": 266,
+      "def": 211,
+      "sta": 148
+    },
+    "types": [
+      "ice",
+      "water"
+    ],
+    "family": {
+      "id": "iron_bundle",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_hands",
+    "dexNumber": 992,
+    "name": "Iron Hands",
+    "stats": {
+      "atk": 223,
+      "def": 161,
+      "sta": 291
+    },
+    "types": [
+      "fighting",
+      "electric"
+    ],
+    "family": {
+      "id": "iron_hands",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_jugulis",
+    "dexNumber": 993,
+    "name": "Iron Jugulis",
+    "stats": {
+      "atk": 249,
+      "def": 179,
+      "sta": 214
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "family": {
+      "id": "iron_jugulis",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_moth",
+    "dexNumber": 994,
+    "name": "Iron Moth",
+    "stats": {
+      "atk": 281,
+      "def": 196,
+      "sta": 190
+    },
+    "types": [
+      "fire",
+      "poison"
+    ],
+    "family": {
+      "id": "iron_moth",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_thorns",
+    "dexNumber": 995,
+    "name": "Iron Thorns",
+    "stats": {
+      "atk": 250,
+      "def": 200,
+      "sta": 225
+    },
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "family": {
+      "id": "iron_thorns",
+      "stage": 1
+    }
+  },
+  {
+    "id": "gimmighoul_chest",
+    "dexNumber": 999,
+    "name": "Gimmighoul (Chest)",
+    "stats": {
+      "atk": 121,
+      "def": 122,
+      "sta": 128
+    },
+    "types": [
+      "ghost"
+    ],
+    "family": {
+      "id": "gimmighoul",
+      "stage": 1
+    }
+  },
+  {
+    "id": "gimmighoul_roaming",
+    "dexNumber": 999,
+    "name": "Gimmighoul (Roaming)",
+    "stats": {
+      "atk": 140,
+      "def": 76,
+      "sta": 128
+    },
+    "types": [
+      "ghost"
+    ],
+    "family": {
+      "id": "gimmighoul",
+      "stage": 1
+    }
+  },
+  {
+    "id": "wo-chien",
+    "dexNumber": 1001,
+    "name": "Wo-Chien",
+    "stats": {
+      "atk": 186,
+      "def": 242,
+      "sta": 198
+    },
+    "types": [
+      "dark",
+      "grass"
+    ],
+    "family": {
+      "id": "wo_chien",
+      "stage": 1
+    }
+  },
+  {
+    "id": "roaring_moon",
+    "dexNumber": 1005,
+    "name": "Roaring Moon",
+    "stats": {
+      "atk": 254,
+      "def": 178,
+      "sta": 213
+    },
+    "types": [
+      "dragon",
+      "dark"
+    ],
+    "family": {
+      "id": "roaring_moon",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_valiant",
+    "dexNumber": 1006,
+    "name": "Iron Valiant",
+    "stats": {
+      "atk": 279,
+      "def": 171,
+      "sta": 179
+    },
+    "types": [
+      "fairy",
+      "fighting"
+    ],
+    "family": {
+      "id": "iron_valiant",
+      "stage": 1
+    }
+  },
+  {
+    "id": "walking_wake",
+    "dexNumber": 1009,
+    "name": "Walking Wake",
+    "stats": {
+      "atk": 256,
+      "def": 188,
+      "sta": 223
+    },
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "family": {
+      "id": "walking_wake",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_leaves",
+    "dexNumber": 1010,
+    "name": "Iron Leaves",
+    "stats": {
+      "atk": 259,
+      "def": 213,
+      "sta": 207
+    },
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "family": {
+      "id": "iron_leaves",
+      "stage": 1
+    }
+  },
+  {
+    "id": "dipplin",
+    "dexNumber": 1011,
+    "name": "Dipplin",
+    "stats": {
+      "atk": 173,
+      "def": 184,
+      "sta": 190
+    },
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "family": {
+      "id": "applin",
+      "stage": 2
+    }
+  },
+  {
+    "id": "poltchageist",
+    "dexNumber": 1012,
+    "name": "Poltchageist",
+    "stats": {
+      "atk": 134,
+      "def": 96,
+      "sta": 120
+    },
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "family": {
+      "id": "poltchageist",
+      "stage": 1
+    }
+  },
+  {
+    "id": "sinistcha",
+    "dexNumber": 1013,
+    "name": "Sinistcha",
+    "stats": {
+      "atk": 225,
+      "def": 191,
+      "sta": 174
+    },
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "family": {
+      "id": "poltchageist",
+      "stage": 2
+    }
+  },
+  {
+    "id": "okidogi",
+    "dexNumber": 1014,
+    "name": "Okidogi",
+    "stats": {
+      "atk": 241,
+      "def": 210,
+      "sta": 204
+    },
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "family": {
+      "id": "okidogi",
+      "stage": 1
+    }
+  },
+  {
+    "id": "monkidori",
+    "dexNumber": 1015,
+    "name": "Monkidori",
+    "stats": {
+      "atk": 261,
+      "def": 172,
+      "sta": 204
+    },
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "family": {
+      "id": "monkidori",
+      "stage": 1
+    }
+  },
+  {
+    "id": "fezandipiti",
+    "dexNumber": 1016,
+    "name": "Fezandipiti",
+    "stats": {
+      "atk": 185,
+      "def": 228,
+      "sta": 204
+    },
+    "types": [
+      "poison",
+      "fairy"
+    ],
+    "family": {
+      "id": "fezandipiti",
+      "stage": 1
+    }
+  },
+  {
+    "id": "ogerpon",
+    "dexNumber": 1017,
+    "name": "Ogerpon",
+    "stats": {
+      "atk": 241,
+      "def": 196,
+      "sta": 190
+    },
+    "types": [
+      "grass"
+    ],
+    "family": {
+      "id": "ogerpon",
+      "stage": 1
+    }
+  },
+  {
+    "id": "archaludon",
+    "dexNumber": 1018,
+    "name": "Archaludon",
+    "stats": {
+      "atk": 250,
+      "def": 215,
+      "sta": 207
+    },
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "family": {
+      "id": "duraludon",
+      "stage": 2
+    }
+  },
+  {
+    "id": "hydrapple",
+    "dexNumber": 1019,
+    "name": "Hydrapple",
+    "stats": {
+      "atk": 216,
+      "def": 186,
+      "sta": 235
+    },
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "family": {
+      "id": "applin",
+      "stage": 3
+    }
+  },
+  {
+    "id": "gouging_fire",
+    "dexNumber": 1020,
+    "name": "Gouging Fire",
+    "stats": {
+      "atk": 225,
+      "def": 228,
+      "sta": 233
+    },
+    "types": [
+      "fire",
+      "dragon"
+    ],
+    "family": {
+      "id": "gouging_fire",
+      "stage": 1
+    }
+  },
+  {
+    "id": "raging_bolt",
+    "dexNumber": 1021,
+    "name": "Raging Bolt",
+    "stats": {
+      "atk": 235,
+      "def": 165,
+      "sta": 245
+    },
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "family": {
+      "id": "raging_bolt",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_boulder",
+    "dexNumber": 1022,
+    "name": "Iron Boulder",
+    "stats": {
+      "atk": 249,
+      "def": 214,
+      "sta": 207
+    },
+    "types": [
+      "rock",
+      "psychic"
+    ],
+    "family": {
+      "id": "iron_boulder",
+      "stage": 1
+    }
+  },
+  {
+    "id": "iron_crown",
+    "dexNumber": 1023,
+    "name": "Iron Crown",
+    "stats": {
+      "atk": 243,
+      "def": 220,
+      "sta": 207
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "family": {
+      "id": "iron_crown",
+      "stage": 1
+    }
+  },
+  {
+    "id": "terapagos",
+    "dexNumber": 1024,
+    "name": "Terapagos",
+    "stats": {
+      "atk": 126,
+      "def": 165,
+      "sta": 207
+    },
+    "types": [
+      "normal"
+    ],
+    "family": {
+      "id": "terapagos",
+      "stage": 1
+    }
+  },
+  {
+    "id": "terapagos_terastal",
+    "dexNumber": 1024,
+    "name": "Terapagos (Terastal)",
+    "stats": {
+      "atk": 212,
+      "def": 224,
+      "sta": 216
+    },
+    "types": [
+      "normal"
+    ],
+    "family": {
+      "id": "terapagos",
+      "stage": 2
+    }
+  },
+  {
+    "id": "terapagos_stellar",
+    "dexNumber": 1024,
+    "name": "Terapagos (Stellar)",
+    "stats": {
+      "atk": 236,
+      "def": 204,
+      "sta": 300
+    },
+    "types": [
+      "normal"
+    ],
+    "family": {
+      "id": "terapagos",
+      "stage": 3
+    }
+  },
+  {
+    "id": "pecharunt",
+    "dexNumber": 1025,
+    "name": "Pecharunt",
+    "stats": {
+      "atk": 181,
+      "def": 273,
+      "sta": 204
+    },
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "family": {
+      "id": "pecharunt",
+      "stage": 1
+    }
+  }
+]

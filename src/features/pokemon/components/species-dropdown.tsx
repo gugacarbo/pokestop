@@ -21,7 +21,7 @@ import {
 	TooltipContent,
 	Tooltip,
 } from '@/components/ui/tooltip';
-import SpeciesTypeIcons from './species-type-icons';
+import {SpeciesTypeIcons} from './species-type-icons';
 
 interface SpeciesDropdownProps {
 	label: string;

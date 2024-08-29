@@ -4,7 +4,7 @@ import {
 	typeBorders,
 } from '@/features/pokemon/components/species-type-icons';
 import {cn} from '@/lib/utils';
-import {MoveTitle} from '../move-title';
+import {MoveTitle} from './move-title';
 import {Pokemon} from '@/@types/pokemon';
 import {FastMove} from './fast-move';
 import {ChargedMove} from './charged-move';

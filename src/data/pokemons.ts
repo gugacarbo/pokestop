@@ -1,6 +1,6 @@
 import type {Pokemon} from '@/@types/pokemon';
-// Last Update at: 2024-08-28T22:01:11.117Z
-// Parsed 1006 from 1196 Pokemons
+// Last Update at: 2024-08-29T13:35:29.920Z
+// Parsed 1134 from 1196 Pokemons
 export const POKEMONS: Pokemon[] =
 	[
     {
@@ -806,7 +806,9 @@ export const POKEMONS: Pokemon[] =
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -839,7 +841,9 @@ export const POKEMONS: Pokemon[] =
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -881,7 +885,9 @@ export const POKEMONS: Pokemon[] =
                 "GUST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -1133,7 +1139,8 @@ export const POKEMONS: Pokemon[] =
                 "AERIAL_ACE",
                 "DRILL_RUN",
                 "SKY_ATTACK",
-                "TWISTER"
+                "TWISTER",
+                "FLY"
             ],
             "eliteMoves": [
                 "TWISTER"
@@ -1289,7 +1296,8 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER",
                 "THUNDER_PUNCH",
                 "WILD_CHARGE",
-                "SKULL_BASH"
+                "SKULL_BASH",
+                "TRAILBLAZE"
             ],
             "eliteMoves": [
                 "THUNDER"
@@ -1330,7 +1338,8 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC",
                 "THUNDER_PUNCH",
                 "WILD_CHARGE",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -1359,7 +1368,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "SCRATCH"
+                "SCRATCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -1433,13 +1443,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BULLDOZE",
                 "EARTHQUAKE",
                 "ROCK_TOMB",
-                "NIGHT_SLASH"
+                "NIGHT_SLASH",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "NIGHT_SLASH"
@@ -1482,7 +1494,9 @@ export const POKEMONS: Pokemon[] =
                 "BLIZZARD",
                 "BULLDOZE",
                 "GYRO_BALL",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "DRILL_RUN",
+                "AERIAL_ACE"
             ],
             "eliteMoves": [
                 "SHADOW_CLAW"
@@ -1554,7 +1568,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DIG",
                 "POISON_FANG",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "THUNDERBOLT"
             ]
         },
         "tags": [
@@ -1659,7 +1674,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DIG",
                 "HORN_ATTACK",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -1690,7 +1706,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "FURY_CUTTER",
                 "IRON_TAIL",
-                "POISON_JAB"
+                "POISON_JAB",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -1734,7 +1751,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BODY_SLAM",
                 "DISARMING_VOICE",
-                "MOONBLAST"
+                "MOONBLAST",
+                "SWIFT"
             ]
         },
         "tags": [],
@@ -1763,13 +1781,15 @@ export const POKEMONS: Pokemon[] =
                 "CHARGE_BEAM",
                 "POUND",
                 "ZEN_HEADBUTT",
-                "CHARM"
+                "CHARM",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "METEOR_MASH",
                 "MOONBLAST",
-                "PSYCHIC"
+                "PSYCHIC",
+                "SWIFT"
             ],
             "eliteMoves": [
                 "POUND"
@@ -1844,7 +1864,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -1882,7 +1903,8 @@ export const POKEMONS: Pokemon[] =
                 "OVERHEAT",
                 "PSYSHOCK",
                 "SOLAR_BEAM",
-                "WEATHER_BALL_FIRE"
+                "WEATHER_BALL_FIRE",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "EMBER",
@@ -1932,7 +1954,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -1965,7 +1988,8 @@ export const POKEMONS: Pokemon[] =
                 "DAZZLING_GLEAM",
                 "DISARMING_VOICE",
                 "GYRO_BALL",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "SWIFT"
             ],
             "eliteMoves": [
                 "PLAY_ROUGH",
@@ -2004,7 +2028,10 @@ export const POKEMONS: Pokemon[] =
                 "DAZZLING_GLEAM",
                 "HYPER_BEAM",
                 "ICE_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "DISARMING_VOICE",
+                "ICY_WIND",
+                "SWIFT"
             ]
         },
         "tags": [],
@@ -2367,9 +2394,6 @@ export const POKEMONS: Pokemon[] =
                 "DIG",
                 "MUD_BOMB",
                 "ROCK_TOMB"
-            ],
-            "legacyMoves": [
-                "MUD_SHOT"
             ]
         },
         "tags": [
@@ -2399,7 +2423,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SLAP"
+                "MUD_SLAP",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -2408,7 +2433,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2440,9 +2466,6 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "MUD_BOMB",
                 "STONE_EDGE"
-            ],
-            "legacyMoves": [
-                "MUD_SHOT"
             ]
         },
         "tags": [
@@ -2472,7 +2495,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "MUD_SLAP"
+                "MUD_SLAP",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -2481,7 +2505,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2549,7 +2574,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DARK_PULSE",
                 "FOUL_PLAY",
-                "NIGHT_SLASH"
+                "NIGHT_SLASH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2583,7 +2609,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "NIGHT_SLASH",
                 "GYRO_BALL",
-                "DIG"
+                "DIG",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2657,7 +2684,8 @@ export const POKEMONS: Pokemon[] =
                 "DARK_PULSE",
                 "FOUL_PLAY",
                 "PLAY_ROUGH",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -2728,7 +2756,8 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC",
                 "BUBBLE_BEAM",
                 "SYNCHRONOISE",
-                "CROSS_CHOP"
+                "CROSS_CHOP",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -2765,7 +2794,9 @@ export const POKEMONS: Pokemon[] =
                 "LOW_SWEEP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "include1500"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -2844,6 +2875,41 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "growlithe_hisuian",
+        "dexNumber": 58,
+        "name": "Growlithe (Hisuian)",
+        "stats": {
+            "atk": 142,
+            "def": 92,
+            "sta": 155
+        },
+        "types": [
+            "fire",
+            "rock"
+        ],
+        "family": {
+            "id": "growlithe_hisuian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "EMBER"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "CRUNCH",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "arcanine",
         "dexNumber": 59,
         "name": "Arcanine",
@@ -2871,7 +2937,9 @@ export const POKEMONS: Pokemon[] =
                 "CRUNCH",
                 "FIRE_BLAST",
                 "FLAMETHROWER",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "PSYCHIC_FANGS",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "BITE",
@@ -2880,6 +2948,43 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "arcanine_hisuian",
+        "dexNumber": 59,
+        "name": "Arcanine (Hisuian)",
+        "stats": {
+            "atk": 232,
+            "def": 165,
+            "sta": 216
+        },
+        "types": [
+            "fire",
+            "rock"
+        ],
+        "family": {
+            "id": "growlithe_hisuian",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "FIRE_FANG",
+                "SNARL",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "WILD_CHARGE",
+                "CRUNCH",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -2978,7 +3083,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "BUBBLE",
                 "MUD_SHOT",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "COUNTER"
             ],
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
@@ -2986,10 +3092,12 @@ export const POKEMONS: Pokemon[] =
                 "ICE_PUNCH",
                 "SUBMISSION",
                 "POWER_UP_PUNCH",
-                "SCALD"
+                "SCALD",
+                "ICY_WIND"
             ],
             "eliteMoves": [
-                "SUBMISSION"
+                "SUBMISSION",
+                "COUNTER"
             ]
         },
         "tags": [
@@ -3061,7 +3169,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "shadoweligible"
+            "shadoweligible",
+            "include1500"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3105,6 +3214,50 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "alakazam_mega",
+        "dexNumber": 65,
+        "name": "Alakazam (Mega)",
+        "stats": {
+            "atk": 367,
+            "def": 193,
+            "sta": 146
+        },
+        "types": [
+            "psychic"
+        ],
+        "family": {
+            "id": "abra",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "CONFUSION",
+                "PSYCHO_CUT",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FIRE_PUNCH",
+                "FOCUS_BLAST",
+                "FUTURE_SIGHT",
+                "PSYCHIC",
+                "SHADOW_BALL"
+            ],
+            "eliteMoves": [
+                "COUNTER",
+                "DAZZLING_GLEAM",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3326,7 +3479,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ACID",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
@@ -3334,6 +3488,9 @@ export const POKEMONS: Pokemon[] =
                 "SOLAR_BEAM",
                 "ACID_SPRAY",
                 "LEAF_TORNADO"
+            ],
+            "eliteMoves": [
+                "MAGICAL_LEAF"
             ]
         },
         "tags": [
@@ -3371,7 +3528,9 @@ export const POKEMONS: Pokemon[] =
                 "WRAP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -3402,10 +3561,13 @@ export const POKEMONS: Pokemon[] =
                 "BLIZZARD",
                 "HYDRO_PUMP",
                 "SLUDGE_WAVE",
-                "ACID_SPRAY"
+                "ACID_SPRAY",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -3438,7 +3600,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3472,7 +3636,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3510,14 +3675,13 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE",
                 "STONE_EDGE"
             ],
-            "legacyMoves": [
-                "MUD_SHOT"
-            ],
             "eliteMoves": [
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3554,7 +3718,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3588,12 +3753,11 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "ROCK_BLAST",
                 "STONE_EDGE"
-            ],
-            "legacyMoves": [
-                "MUD_SHOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -3618,16 +3782,21 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ROCK_THROW",
-                "VOLT_SWITCH"
+                "VOLT_SWITCH",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "ROCK_BLAST",
                 "STONE_EDGE",
                 "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "ROLLOUT"
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -3730,7 +3899,8 @@ export const POKEMONS: Pokemon[] =
                 "DRILL_RUN",
                 "FIRE_BLAST",
                 "HEAT_WAVE",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "EMBER"
@@ -3761,13 +3931,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "PSYCHO_CUT"
+                "PSYCHO_CUT",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "PLAY_ROUGH",
                 "PSYCHIC",
                 "BODY_SLAM",
-                "MEGAHORN"
+                "MEGAHORN",
+                "HIGH_HORSEPOWER"
             ]
         },
         "tags": [
@@ -3871,7 +4043,12 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ICE_BEAM",
                 "PSYCHIC",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -3906,7 +4083,12 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "PSYCHIC",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -3941,11 +4123,17 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ICE_BEAM",
                 "PSYCHIC",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -3971,7 +4159,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -4007,7 +4197,9 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "CHARGE_BEAM",
                 "SPARK",
-                "THUNDER_SHOCK"
+                "THUNDER_SHOCK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "DISCHARGE",
@@ -4236,7 +4428,9 @@ export const POKEMONS: Pokemon[] =
                 "AURORA_BEAM",
                 "BLIZZARD",
                 "ICY_WIND",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "DRILL_RUN",
+                "LIQUIDATION"
             ],
             "eliteMoves": [
                 "ICE_SHARD",
@@ -4320,7 +4514,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4407,7 +4602,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -4437,7 +4633,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "ICY_WIND",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [
@@ -4474,7 +4671,9 @@ export const POKEMONS: Pokemon[] =
                 "AVALANCHE",
                 "BLIZZARD",
                 "HYDRO_PUMP",
-                "ICY_WIND"
+                "ICY_WIND",
+                "LIQUIDATION",
+                "RAZOR_SHELL"
             ],
             "eliteMoves": [
                 "BLIZZARD"
@@ -4521,7 +4720,9 @@ export const POKEMONS: Pokemon[] =
                 "OMINOUS_WIND"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4553,13 +4754,16 @@ export const POKEMONS: Pokemon[] =
                 "DARK_PULSE",
                 "SHADOW_BALL",
                 "SHADOW_PUNCH",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "ICE_PUNCH"
             ],
             "eliteMoves": [
                 "LICK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4605,7 +4809,9 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -4685,14 +4891,17 @@ export const POKEMONS: Pokemon[] =
                 "IRON_HEAD",
                 "ROCK_SLIDE",
                 "SAND_TOMB",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BREAKING_SWIPE"
             ],
             "eliteMoves": [
                 "IRON_HEAD",
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -4797,7 +5006,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "VICE_GRIP",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
@@ -4831,7 +5041,8 @@ export const POKEMONS: Pokemon[] =
                 "VICE_GRIP",
                 "WATER_PULSE",
                 "X_SCISSOR",
-                "CRABHAMMER"
+                "CRABHAMMER",
+                "RAZOR_SHELL"
             ],
             "eliteMoves": [
                 "MUD_SHOT"
@@ -4913,7 +5124,7 @@ export const POKEMONS: Pokemon[] =
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "electrode",
@@ -4980,9 +5191,6 @@ export const POKEMONS: Pokemon[] =
                 "SWIFT",
                 "WILD_CHARGE",
                 "ENERGY_BALL"
-            ],
-            "eliteMoves": [
-                "TACKLE"
             ]
         },
         "tags": [
@@ -5168,7 +5376,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BONE_CLUB",
                 "DIG",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -5216,7 +5425,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "alolan"
+            "alolan",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
@@ -5241,14 +5451,16 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "CLOSE_COMBAT",
                 "LOW_SWEEP",
                 "STOMP",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BLAZE_KICK"
             ],
             "eliteMoves": [
                 "STOMP",
@@ -5439,13 +5651,15 @@ export const POKEMONS: Pokemon[] =
         ],
         "moves": {
             "fastMoves": [
-                "TACKLE"
+                "TACKLE",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "SLUDGE",
                 "HYPER_BEAM",
                 "PLAY_ROUGH",
-                "OVERHEAT"
+                "OVERHEAT",
+                "BRUTAL_SWING"
             ]
         },
         "tags": [
@@ -5483,7 +5697,9 @@ export const POKEMONS: Pokemon[] =
                 "STOMP"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -5514,13 +5730,16 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "MEGAHORN",
                 "STONE_EDGE",
-                "SURF"
+                "SURF",
+                "BREAKING_SWIPE"
             ],
             "eliteMoves": [
                 "MEGAHORN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -5910,8 +6129,7 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER"
             ],
             "legacyMoves": [
-                "QUICK_ATTACK",
-                "PSYBEAM"
+                "QUICK_ATTACK"
             ],
             "eliteMoves": [
                 "TACKLE"
@@ -5942,7 +6160,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -5982,7 +6202,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "PSYBEAM",
                 "PSYCHIC",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -6019,7 +6240,8 @@ export const POKEMONS: Pokemon[] =
                 "AERIAL_ACE",
                 "BUG_BUZZ",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ],
             "eliteMoves": [
                 "STEEL_WING",
@@ -6131,7 +6353,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -6182,6 +6405,47 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "pinsir_mega",
+        "dexNumber": 127,
+        "name": "Pinsir (Mega)",
+        "stats": {
+            "atk": 305,
+            "def": 231,
+            "sta": 163
+        },
+        "types": [
+            "bug"
+        ],
+        "family": {
+            "id": "pinsir",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "FURY_CUTTER",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "SUBMISSION",
+                "VICE_GRIP",
+                "X_SCISSOR",
+                "SUPER_POWER"
+            ],
+            "eliteMoves": [
+                "SUBMISSION"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
         "id": "tauros",
         "dexNumber": 128,
         "name": "Tauros",
@@ -6205,7 +6469,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "EARTHQUAKE",
                 "HORN_ATTACK",
-                "IRON_HEAD"
+                "IRON_HEAD",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -6411,7 +6676,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": true
+        "released": false
     },
     {
         "id": "eevee",
@@ -6475,7 +6740,8 @@ export const POKEMONS: Pokemon[] =
                 "HYDRO_PUMP",
                 "LAST_RESORT",
                 "WATER_PULSE",
-                "SCALD"
+                "SCALD",
+                "LIQUIDATION"
             ],
             "eliteMoves": [
                 "LAST_RESORT",
@@ -6853,7 +7119,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -6931,7 +7198,8 @@ export const POKEMONS: Pokemon[] =
                 "HURRICANE",
                 "ICE_BEAM",
                 "ICY_WIND",
-                "ANCIENT_POWER"
+                "ANCIENT_POWER",
+                "TRIPLE_AXEL"
             ],
             "eliteMoves": [
                 "HURRICANE"
@@ -6940,6 +7208,42 @@ export const POKEMONS: Pokemon[] =
         "tags": [
             "legendary",
             "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "articuno_galarian",
+        "dexNumber": 144,
+        "name": "Articuno (Galarian)",
+        "stats": {
+            "atk": 250,
+            "def": 197,
+            "sta": 207
+        },
+        "types": [
+            "psychic",
+            "flying"
+        ],
+        "family": {
+            "id": "articuno_galarian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "CONFUSION",
+                "PSYCHO_CUT"
+            ],
+            "chargedMoves": [
+                "FUTURE_SIGHT",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -6987,6 +7291,41 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "zapdos_galarian",
+        "dexNumber": 145,
+        "name": "Zapdos (Galarian)",
+        "stats": {
+            "atk": 252,
+            "def": 189,
+            "sta": 207
+        },
+        "types": [
+            "fighting",
+            "flying"
+        ],
+        "family": {
+            "id": "zapdos_galarian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "moltres",
         "dexNumber": 146,
         "name": "Moltres",
@@ -7022,6 +7361,42 @@ export const POKEMONS: Pokemon[] =
         "tags": [
             "legendary",
             "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "moltres_galarian",
+        "dexNumber": 146,
+        "name": "Moltres (Galarian)",
+        "stats": {
+            "atk": 202,
+            "def": 231,
+            "sta": 207
+        },
+        "types": [
+            "dark",
+            "flying"
+        ],
+        "family": {
+            "id": "moltres_galarian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "SUCKER_PUNCH",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "PAYBACK",
+                "ANCIENT_POWER",
+                "BRAVE_BIRD"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "galarian"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -7085,7 +7460,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AQUA_TAIL",
                 "DRAGON_PULSE",
-                "WRAP"
+                "WRAP",
+                "BODY_SLAM"
             ]
         },
         "tags": [
@@ -7127,7 +7503,8 @@ export const POKEMONS: Pokemon[] =
                 "DRAGON_PULSE",
                 "HURRICANE",
                 "HYPER_BEAM",
-                "OUTRAGE"
+                "OUTRAGE",
+                "SUPER_POWER"
             ],
             "eliteMoves": [
                 "DRACO_METEOR",
@@ -7231,96 +7608,6 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
-        "id": "mewtwo_mega_x",
-        "dexNumber": 150,
-        "name": "Mewtwo (Mega X, 3% nerf)",
-        "stats": {
-            "atk": 399,
-            "def": 215,
-            "sta": 228
-        },
-        "types": [
-            "psychic"
-        ],
-        "floor": 1,
-        "family": {
-            "id": "mewtwo",
-            "stage": 2
-        },
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ],
-            "eliteMoves": [
-                "PSYSTRIKE",
-                "SHADOW_BALL",
-                "HYPER_BEAM"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
-        "id": "mewtwo_mega_y",
-        "dexNumber": 150,
-        "name": "Mewtwo (Mega Y, 3% nerf)",
-        "stats": {
-            "atk": 413,
-            "def": 223,
-            "sta": 228
-        },
-        "types": [
-            "psychic"
-        ],
-        "floor": 1,
-        "family": {
-            "id": "mewtwo",
-            "stage": 2
-        },
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "PSYCHO_CUT"
-            ],
-            "chargedMoves": [
-                "FLAMETHROWER",
-                "FOCUS_BLAST",
-                "HYPER_BEAM",
-                "ICE_BEAM",
-                "PSYCHIC",
-                "SHADOW_BALL",
-                "THUNDERBOLT",
-                "PSYSTRIKE"
-            ],
-            "eliteMoves": [
-                "PSYSTRIKE",
-                "SHADOW_BALL",
-                "HYPER_BEAM"
-            ]
-        },
-        "tags": [
-            "legendary",
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
         "id": "mew",
         "dexNumber": 151,
         "name": "Mew",
@@ -7409,7 +7696,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -7444,7 +7732,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "TACKLE"
+                "TACKLE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ANCIENT_POWER",
@@ -7479,7 +7768,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "VINE_WHIP"
+                "VINE_WHIP",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -7595,7 +7885,8 @@ export const POKEMONS: Pokemon[] =
                 "BLAST_BURN",
                 "FIRE_BLAST",
                 "OVERHEAT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "THUNDER_PUNCH"
             ],
             "eliteMoves": [
                 "BLAST_BURN"
@@ -7604,6 +7895,43 @@ export const POKEMONS: Pokemon[] =
         "tags": [
             "starter",
             "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "typhlosion_hisuian",
+        "dexNumber": 157,
+        "name": "Typhlosion (Hisuian)",
+        "stats": {
+            "atk": 238,
+            "def": 172,
+            "sta": 177
+        },
+        "types": [
+            "fire",
+            "ghost"
+        ],
+        "family": {
+            "id": "cyndaquil",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "WILD_CHARGE",
+                "SHADOW_BALL",
+                "OVERHEAT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -7703,7 +8031,8 @@ export const POKEMONS: Pokemon[] =
                 "BITE",
                 "WATER_GUN",
                 "WATERFALL",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
                 "CRUNCH",
@@ -7883,7 +8212,9 @@ export const POKEMONS: Pokemon[] =
                 "SWIFT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -7913,10 +8244,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BUG_BUZZ",
-                "SILVER_WIND"
+                "SILVER_WIND",
+                "DYNAMIC_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -7980,7 +8314,8 @@ export const POKEMONS: Pokemon[] =
                 "CROSS_POISON",
                 "MEGAHORN",
                 "SHADOW_SNEAK",
-                "LUNGE"
+                "LUNGE",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -8084,7 +8419,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "HYDRO_PUMP",
                 "THUNDER",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "SURF"
             ]
         },
         "tags": [],
@@ -8153,7 +8489,8 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT",
                 "PSYCHIC",
                 "PSYSHOCK",
-                "SIGNAL_BEAM"
+                "SIGNAL_BEAM",
+                "SWIFT"
             ],
             "eliteMoves": [
                 "PSYCHIC",
@@ -8191,7 +8528,8 @@ export const POKEMONS: Pokemon[] =
                 "BODY_SLAM",
                 "PSYCHIC",
                 "SHADOW_BALL",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "SWIFT"
             ],
             "eliteMoves": [
                 "BODY_SLAM"
@@ -8272,6 +8610,7 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
+                "FAIRY_WIND",
                 "EXTRASENSORY",
                 "HIDDEN_POWER_BUG",
                 "HIDDEN_POWER_DARK",
@@ -8335,7 +8674,9 @@ export const POKEMONS: Pokemon[] =
                 "PSYSHOCK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -8368,7 +8709,9 @@ export const POKEMONS: Pokemon[] =
                 "OMINOUS_WIND"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -8397,7 +8740,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BODY_SLAM",
                 "DISCHARGE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8431,7 +8775,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DISCHARGE",
                 "POWER_GEM",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8468,7 +8813,9 @@ export const POKEMONS: Pokemon[] =
                 "POWER_GEM",
                 "THUNDER",
                 "ZAP_CANNON",
-                "THUNDER_PUNCH"
+                "THUNDER_PUNCH",
+                "BRUTAL_SWING",
+                "TRAILBLAZE"
             ],
             "eliteMoves": [
                 "DRAGON_PULSE"
@@ -8509,7 +8856,9 @@ export const POKEMONS: Pokemon[] =
                 "POWER_GEM",
                 "THUNDER",
                 "ZAP_CANNON",
-                "THUNDER_PUNCH"
+                "THUNDER_PUNCH",
+                "BRUTAL_SWING",
+                "TRAILBLAZE"
             ],
             "eliteMoves": [
                 "DRAGON_PULSE"
@@ -8543,7 +8892,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "ACID",
                 "RAZOR_LEAF",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -8649,7 +8999,9 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "ROCK_SLIDE",
                 "STONE_EDGE",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -8685,10 +9037,13 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "HYDRO_PUMP",
                 "SURF",
-                "WEATHER_BALL_WATER"
+                "WEATHER_BALL_WATER",
+                "ICE_BEAM",
+                "SCALD"
             ],
             "eliteMoves": [
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "ICE_BEAM"
             ]
         },
         "tags": [
@@ -8788,7 +9143,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "BULLET_SEED",
-                "INFESTATION"
+                "INFESTATION",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -8976,6 +9332,41 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "wooper_paldean",
+        "dexNumber": 194,
+        "name": "Wooper (Paldean)",
+        "stats": {
+            "atk": 75,
+            "def": 66,
+            "sta": 146
+        },
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "family": {
+            "id": "wooper_paldean",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "DIG",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [
+            "paldean"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "quagsire",
         "dexNumber": 195,
         "name": "Quagsire",
@@ -9001,7 +9392,12 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "SLUDGE_BOMB",
                 "STONE_EDGE",
-                "ACID_SPRAY"
+                "ACID_SPRAY",
+                "MUD_BOMB",
+                "AQUA_TAIL"
+            ],
+            "eliteMoves": [
+                "AQUA_TAIL"
             ]
         },
         "tags": [
@@ -9037,7 +9433,8 @@ export const POKEMONS: Pokemon[] =
                 "LAST_RESORT",
                 "PSYBEAM",
                 "PSYCHIC",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "PSYCHIC_FANGS"
             ],
             "eliteMoves": [
                 "LAST_RESORT",
@@ -9146,7 +9543,12 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BLIZZARD",
                 "FIRE_BLAST",
-                "PSYCHIC"
+                "PSYCHIC",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -9182,7 +9584,12 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FUTURE_SIGHT",
                 "SHADOW_BALL",
-                "SLUDGE_WAVE"
+                "SLUDGE_WAVE",
+                "SURF",
+                "SCALD"
+            ],
+            "eliteMoves": [
+                "SURF"
             ]
         },
         "tags": [
@@ -9211,7 +9618,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "HEX"
+                "HEX",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -9323,12 +9731,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "TACKLE"
+                "TACKLE",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "MIRROR_COAT",
                 "PSYCHIC",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "PSYCHIC_FANGS",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -9428,7 +9839,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "BITE"
+                "BITE",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "DIG",
@@ -9502,10 +9914,14 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "EARTHQUAKE",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "PSYCHIC_FANGS",
+                "BREAKING_SWIPE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -9536,11 +9952,14 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "EARTHQUAKE",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "PSYCHIC_FANGS",
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [
-            "mega"
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -9642,10 +10061,51 @@ export const POKEMONS: Pokemon[] =
                 "ICE_BEAM",
                 "SLUDGE_WAVE",
                 "ACID_SPRAY",
-                "FELL_STINGER"
+                "FELL_STINGER",
+                "SCALD"
             ]
         },
         "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "qwilfish_hisuian",
+        "dexNumber": 211,
+        "name": "Qwilfish (Hisuian)",
+        "stats": {
+            "atk": 184,
+            "def": 151,
+            "sta": 163
+        },
+        "types": [
+            "dark",
+            "poison"
+        ],
+        "family": {
+            "id": "qwilfish_hisuian",
+            "stage": 1
+        },
+        "aliases": [
+            "hqwil"
+        ],
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AQUA_TAIL",
+                "ICE_BEAM",
+                "SLUDGE_BOMB",
+                "DARK_PULSE",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -9675,11 +10135,49 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "IRON_HEAD",
                 "NIGHT_SLASH",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "scizor_mega",
+        "dexNumber": 212,
+        "name": "Scizor (Mega)",
+        "stats": {
+            "atk": 279,
+            "def": 250,
+            "sta": 172
+        },
+        "types": [
+            "bug",
+            "steel"
+        ],
+        "family": {
+            "id": "scyther",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "BULLET_PUNCH",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "IRON_HEAD",
+                "NIGHT_SLASH",
+                "X_SCISSOR",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -9757,6 +10255,43 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "heracross_mega",
+        "dexNumber": 214,
+        "name": "Heracross (Mega)",
+        "stats": {
+            "atk": 334,
+            "def": 223,
+            "sta": 190
+        },
+        "types": [
+            "bug",
+            "fighting"
+        ],
+        "family": {
+            "id": "heracross",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "EARTHQUAKE",
+                "MEGAHORN",
+                "ROCK_BLAST"
+            ]
+        },
+        "tags": [
+            "regional",
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "sneasel",
         "dexNumber": 215,
         "name": "Sneasel",
@@ -9781,10 +10316,47 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AVALANCHE",
                 "FOUL_PLAY",
-                "ICE_PUNCH"
+                "ICE_PUNCH",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "sneasel_hisuian",
+        "dexNumber": 215,
+        "name": "Sneasel (Hisuian)",
+        "stats": {
+            "atk": 189,
+            "def": 146,
+            "sta": 146
+        },
+        "types": [
+            "fighting",
+            "poison"
+        ],
+        "family": {
+            "id": "sneasel_hisuian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "hisuian",
             "shadoweligible"
         ],
         "buddyDistance": 3,
@@ -9815,7 +10387,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CROSS_CHOP",
                 "CRUNCH",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9850,7 +10424,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "HYPER_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "TRAILBLAZE",
+                "SWIFT"
             ]
         },
         "tags": [
@@ -9987,7 +10563,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AVALANCHE",
                 "BULLDOZE",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "HIGH_HORSEPOWER"
             ]
         },
         "tags": [
@@ -10124,7 +10701,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AERIAL_ACE",
                 "ICE_PUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "FLY",
+                "TRIPLE_AXEL"
             ],
             "legacyMoves": [
                 "QUICK_ATTACK"
@@ -10379,10 +10958,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BODY_SLAM",
                 "BULLDOZE",
-                "ROCK_SLIDE"
+                "ROCK_SLIDE",
+                "TRAILBLAZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -10414,10 +10996,13 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "HEAVY_SLAM",
                 "PLAY_ROUGH",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "TRAILBLAZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -10824,10 +11409,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "GYRO_BALL",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "TRIPLE_AXEL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -10960,7 +11548,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "ROLLOUT"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -10999,7 +11588,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "HYPER_BEAM",
-                "PSYCHIC"
+                "PSYCHIC",
+                "WILD_CHARGE"
+            ],
+            "eliteMoves": [
+                "WILD_CHARGE"
             ]
         },
         "tags": [],
@@ -11071,7 +11664,8 @@ export const POKEMONS: Pokemon[] =
                 "FLAMETHROWER",
                 "IRON_HEAD",
                 "OVERHEAT",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -11125,7 +11719,8 @@ export const POKEMONS: Pokemon[] =
                 "BUBBLE_BEAM",
                 "HYDRO_PUMP",
                 "ICE_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
             ],
             "eliteMoves": [
                 "HIDDEN_POWER_BUG",
@@ -11250,7 +11845,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "FIRE_BLAST",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BRUTAL_SWING"
             ],
             "eliteMoves": [
                 "SMACK_DOWN"
@@ -11258,6 +11854,47 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "tyranitar_mega",
+        "dexNumber": 248,
+        "name": "Tyranitar (Mega)",
+        "stats": {
+            "atk": 309,
+            "def": 276,
+            "sta": 225
+        },
+        "types": [
+            "rock",
+            "dark"
+        ],
+        "family": {
+            "id": "larvitar",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "IRON_TAIL",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "FIRE_BLAST",
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "SMACK_DOWN"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -11435,7 +12072,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11469,7 +12107,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11501,14 +12140,58 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "LEAF_BLADE",
                 "FRENZY_PLANT",
-                "DRAGON_CLAW"
+                "DRAGON_CLAW",
+                "BREAKING_SWIPE"
             ],
             "eliteMoves": [
                 "FRENZY_PLANT"
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "sceptile_mega",
+        "dexNumber": 254,
+        "name": "Sceptile (Mega)",
+        "stats": {
+            "atk": 320,
+            "def": 186,
+            "sta": 172
+        },
+        "types": [
+            "grass"
+        ],
+        "family": {
+            "id": "treecko",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "BULLET_SEED",
+                "FURY_CUTTER"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "EARTHQUAKE",
+                "LEAF_BLADE",
+                "FRENZY_PLANT",
+                "DRAGON_CLAW",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
+            ]
+        },
+        "tags": [
+            "starter",
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11542,7 +12225,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11577,7 +12261,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11619,7 +12304,52 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "blaziken_mega",
+        "dexNumber": 257,
+        "name": "Blaziken (Mega)",
+        "stats": {
+            "atk": 329,
+            "def": 168,
+            "sta": 190
+        },
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "family": {
+            "id": "torchic",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "FIRE_SPIN"
+            ],
+            "chargedMoves": [
+                "BRAVE_BIRD",
+                "FOCUS_BLAST",
+                "OVERHEAT",
+                "STONE_EDGE",
+                "BLAST_BURN",
+                "BLAZE_KICK"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN",
+                "STONE_EDGE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "mega",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -11737,6 +12467,48 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "swampert_mega",
+        "dexNumber": 260,
+        "name": "Swampert (Mega)",
+        "stats": {
+            "atk": 283,
+            "def": 218,
+            "sta": 225
+        },
+        "types": [
+            "water",
+            "ground"
+        ],
+        "family": {
+            "id": "mudkip",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "SLUDGE_WAVE",
+                "SURF",
+                "HYDRO_CANNON",
+                "MUDDY_WATER"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
+            ]
+        },
+        "tags": [
+            "starter",
+            "shadoweligible",
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
         "id": "poochyena",
         "dexNumber": 261,
         "name": "Poochyena",
@@ -11825,7 +12597,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ROCK_SMASH",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -11892,7 +12665,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "SHADOW_CLAW",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DIG",
@@ -12120,7 +12894,8 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "BUBBLE_BEAM",
-                "ENERGY_BALL"
+                "ENERGY_BALL",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -12153,7 +12928,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BUBBLE_BEAM",
                 "GRASS_KNOT",
-                "ICE_BEAM"
+                "ICE_BEAM",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -12189,7 +12965,8 @@ export const POKEMONS: Pokemon[] =
                 "ENERGY_BALL",
                 "ICE_BEAM",
                 "SOLAR_BEAM",
-                "LEAF_STORM"
+                "LEAF_STORM",
+                "SCALD"
             ]
         },
         "tags": [],
@@ -12493,15 +13270,17 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "CONFUSION"
+                "CONFUSION",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DISARMING_VOICE",
                 "PSYCHIC",
                 "SHADOW_SNEAK",
-                "DRAINING_KISS"
+                "DRAINING_KISS",
+                "TRIPLE_AXEL"
             ],
-            "eliteMoves": [
+            "legacyMoves": [
                 "DRAINING_KISS"
             ]
         },
@@ -12533,13 +13312,15 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "CHARGE_BEAM",
                 "CONFUSION",
-                "CHARM"
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
                 "PSYCHIC",
                 "SHADOW_BALL",
-                "SYNCHRONOISE"
+                "SYNCHRONOISE",
+                "TRIPLE_AXEL"
             ],
             "eliteMoves": [
                 "SYNCHRONOISE"
@@ -12547,6 +13328,49 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gardevoir_mega",
+        "dexNumber": 282,
+        "name": "Gardevoir (Mega)",
+        "stats": {
+            "atk": 326,
+            "def": 229,
+            "sta": 169
+        },
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "family": {
+            "id": "ralts",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "CHARGE_BEAM",
+                "CONFUSION",
+                "CHARM",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "PSYCHIC",
+                "SHADOW_BALL",
+                "SYNCHRONOISE",
+                "TRIPLE_AXEL"
+            ],
+            "eliteMoves": [
+                "SYNCHRONOISE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -12744,7 +13568,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BODY_SLAM",
                 "BRICK_BREAK",
-                "BULLDOZE"
+                "BULLDOZE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [],
@@ -12888,7 +13713,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": true
+        "released": false
     },
     {
         "id": "whismur",
@@ -12982,7 +13807,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "DISARMING_VOICE",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "BOOMBURST"
             ]
         },
         "tags": [
@@ -13229,6 +14055,42 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "sableye_mega",
+        "dexNumber": 302,
+        "name": "Sableye (Mega)",
+        "stats": {
+            "atk": 151,
+            "def": 216,
+            "sta": 137
+        },
+        "types": [
+            "dark",
+            "ghost"
+        ],
+        "family": {
+            "id": "sableye",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "FEINT_ATTACK",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "FOUL_PLAY",
+                "POWER_GEM",
+                "SHADOW_SNEAK"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
         "id": "mawile",
         "dexNumber": 303,
         "name": "Mawile",
@@ -13250,7 +14112,8 @@ export const POKEMONS: Pokemon[] =
                 "ASTONISH",
                 "BITE",
                 "FIRE_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "IRON_HEAD",
@@ -13265,44 +14128,6 @@ export const POKEMONS: Pokemon[] =
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
-    },
-    {
-        "id": "mawile_mega",
-        "dexNumber": 303,
-        "name": "Mawile (Mega)",
-        "stats": {
-            "atk": 188,
-            "def": 217,
-            "sta": 137
-        },
-        "types": [
-            "steel",
-            "fairy"
-        ],
-        "family": {
-            "id": "mawile",
-            "stage": 2
-        },
-        "moves": {
-            "fastMoves": [
-                "ASTONISH",
-                "BITE",
-                "FIRE_FANG",
-                "ICE_FANG",
-                "FAIRY_WIND"
-            ],
-            "chargedMoves": [
-                "IRON_HEAD",
-                "PLAY_ROUGH",
-                "VICE_GRIP",
-                "POWER_UP_PUNCH"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "aron",
@@ -13402,11 +14227,51 @@ export const POKEMONS: Pokemon[] =
                 "HEAVY_SLAM",
                 "STONE_EDGE",
                 "THUNDER",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "METEOR_BEAM"
             ]
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "aggron_mega",
+        "dexNumber": 306,
+        "name": "Aggron (Mega)",
+        "stats": {
+            "atk": 247,
+            "def": 331,
+            "sta": 172
+        },
+        "types": [
+            "steel",
+            "rock"
+        ],
+        "family": {
+            "id": "aron",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "IRON_TAIL",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "HEAVY_SLAM",
+                "STONE_EDGE",
+                "THUNDER",
+                "ROCK_TOMB",
+                "METEOR_BEAM"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
@@ -13480,6 +14345,42 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "medicham_mega",
+        "dexNumber": 308,
+        "name": "Medicham (Mega)",
+        "stats": {
+            "atk": 205,
+            "def": 179,
+            "sta": 155
+        },
+        "types": [
+            "fighting",
+            "psychic"
+        ],
+        "family": {
+            "id": "meditite",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "COUNTER",
+                "PSYCHO_CUT"
+            ],
+            "chargedMoves": [
+                "DYNAMIC_PUNCH",
+                "ICE_PUNCH",
+                "PSYCHIC",
+                "POWER_UP_PUNCH"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "electrike",
         "dexNumber": 309,
         "name": "Electrike",
@@ -13539,7 +14440,8 @@ export const POKEMONS: Pokemon[] =
                 "FLAME_BURST",
                 "THUNDER",
                 "WILD_CHARGE",
-                "OVERHEAT"
+                "OVERHEAT",
+                "PSYCHIC_FANGS"
             ]
         },
         "tags": [
@@ -13575,10 +14477,12 @@ export const POKEMONS: Pokemon[] =
                 "FLAME_BURST",
                 "THUNDER",
                 "WILD_CHARGE",
-                "OVERHEAT"
+                "OVERHEAT",
+                "PSYCHIC_FANGS"
             ]
         },
         "tags": [
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 3,
@@ -13739,7 +14643,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -13803,7 +14708,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "INFESTATION",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "GUNK_SHOT",
@@ -13889,40 +14795,6 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
-        "id": "sharpedo_mega",
-        "dexNumber": 319,
-        "name": "Sharpedo (Mega)",
-        "stats": {
-            "atk": 289,
-            "def": 144,
-            "sta": 172
-        },
-        "types": [
-            "water",
-            "dark"
-        ],
-        "family": {
-            "id": "carvanha",
-            "stage": 3
-        },
-        "moves": {
-            "fastMoves": [
-                "BITE",
-                "WATERFALL"
-            ],
-            "chargedMoves": [
-                "CRUNCH",
-                "HYDRO_PUMP",
-                "POISON_FANG"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
         "id": "wailmer",
         "dexNumber": 320,
         "name": "Wailmer",
@@ -13946,10 +14818,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BODY_SLAM",
                 "HEAVY_SLAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -13978,10 +14853,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BLIZZARD",
                 "HYPER_BEAM",
-                "SURF"
+                "SURF",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -14041,7 +14919,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "EMBER",
-                "ROCK_SMASH"
+                "ROCK_SMASH",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "EARTHQUAKE",
@@ -14056,39 +14935,6 @@ export const POKEMONS: Pokemon[] =
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
-    },
-    {
-        "id": "camerupt_mega",
-        "dexNumber": 323,
-        "name": "Camerupt (Mega)",
-        "stats": {
-            "atk": 253,
-            "def": 183,
-            "sta": 172
-        },
-        "types": [
-            "fire",
-            "ground"
-        ],
-        "family": {
-            "id": "numel",
-            "stage": 3
-        },
-        "moves": {
-            "fastMoves": [
-                "EMBER",
-                "ROCK_SMASH",
-                "INCINERATE"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "OVERHEAT",
-                "SOLAR_BEAM",
-                "EARTH_POWER"
-            ]
-        },
-        "tags": [],
-        "thirdMoveCost": 10000
     },
     {
         "id": "torkoal",
@@ -14151,7 +14997,9 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -14183,7 +15031,9 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -14239,12 +15089,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "MUD_SHOT",
-                "STRUGGLE_BUG"
+                "STRUGGLE_BUG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "DIG",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -14274,12 +15126,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "DRAGON_BREATH",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
                 "BULLDOZE",
-                "SAND_TOMB"
+                "SAND_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -14309,13 +15163,16 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "DRAGON_TAIL",
-                "MUD_SHOT"
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "EARTHQUAKE",
                 "STONE_EDGE",
-                "EARTH_POWER"
+                "EARTH_POWER",
+                "BOOMBURST",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "EARTH_POWER"
@@ -14347,13 +15204,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POISON_STING",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
                 "GRASS_KNOT",
                 "SEED_BOMB",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -14383,13 +15242,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
                 "DYNAMIC_PUNCH",
                 "GRASS_KNOT",
-                "PAYBACK"
+                "PAYBACK",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -14596,7 +15457,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ROCK_THROW"
+                "ROCK_THROW",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -14631,7 +15493,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "ROCK_THROW"
+                "ROCK_THROW",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYCHIC",
@@ -14671,10 +15534,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AQUA_TAIL",
                 "ICE_BEAM",
-                "MUD_BOMB"
+                "MUD_BOMB",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -14704,10 +15570,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BLIZZARD",
                 "MUD_BOMB",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -14736,10 +15605,14 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AQUA_JET",
                 "BUBBLE_BEAM",
-                "VICE_GRIP"
+                "VICE_GRIP",
+                "RAZOR_SHELL",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -14770,10 +15643,14 @@ export const POKEMONS: Pokemon[] =
                 "BUBBLE_BEAM",
                 "NIGHT_SLASH",
                 "VICE_GRIP",
-                "CRABHAMMER"
+                "CRABHAMMER",
+                "RAZOR_SHELL",
+                "SCALD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -14841,7 +15718,8 @@ export const POKEMONS: Pokemon[] =
                 "EARTH_POWER",
                 "ICE_BEAM",
                 "SHADOW_BALL",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
@@ -14876,9 +15754,6 @@ export const POKEMONS: Pokemon[] =
                 "ANCIENT_POWER",
                 "GRASS_KNOT",
                 "MIRROR_COAT"
-            ],
-            "legacyMoves": [
-                "BULLET_SEED"
             ]
         },
         "tags": [
@@ -14914,7 +15789,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BULLDOZE",
                 "GRASS_KNOT",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "ROCK_SLIDE"
             ]
         },
         "tags": [
@@ -14984,7 +15860,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CROSS_POISON",
                 "ROCK_BLAST",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "LIQUIDATION"
             ]
         },
         "tags": [
@@ -15218,7 +16095,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "shuppet",
@@ -15289,6 +16166,41 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "banette_mega",
+        "dexNumber": 354,
+        "name": "Banette (Mega)",
+        "stats": {
+            "atk": 312,
+            "def": 160,
+            "sta": 162
+        },
+        "types": [
+            "ghost"
+        ],
+        "family": {
+            "id": "shuppet",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "SHADOW_BALL",
+                "THUNDER"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
         "id": "duskull",
         "dexNumber": 355,
         "name": "Duskull",
@@ -15346,7 +16258,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FIRE_PUNCH",
                 "ICE_PUNCH",
-                "SHADOW_PUNCH"
+                "SHADOW_PUNCH",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -15487,6 +16400,7 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 5,
@@ -15550,7 +16464,9 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -15582,7 +16498,43 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "glalie_mega",
+        "dexNumber": 362,
+        "name": "Glalie (Mega)",
+        "stats": {
+            "atk": 252,
+            "def": 168,
+            "sta": 190
+        },
+        "types": [
+            "ice"
+        ],
+        "family": {
+            "id": "snorunt",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "FROST_BREATH",
+                "ICE_SHARD"
+            ],
+            "chargedMoves": [
+                "AVALANCHE",
+                "GYRO_BALL",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -15955,7 +16907,8 @@ export const POKEMONS: Pokemon[] =
                 "DRACO_METEOR",
                 "FIRE_BLAST",
                 "HYDRO_PUMP",
-                "OUTRAGE"
+                "OUTRAGE",
+                "FLY"
             ],
             "eliteMoves": [
                 "OUTRAGE"
@@ -15963,6 +16916,48 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "salamence_mega",
+        "dexNumber": 373,
+        "name": "Salamence (Mega)",
+        "stats": {
+            "atk": 310,
+            "def": 251,
+            "sta": 216
+        },
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "family": {
+            "id": "bagon",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "DRAGON_TAIL",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "FIRE_BLAST",
+                "HYDRO_PUMP",
+                "OUTRAGE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "OUTRAGE"
+            ]
+        },
+        "tags": [
+            "shadoweligible",
+            "mega"
         ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
@@ -16075,44 +17070,6 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
-        "id": "metagross_mega",
-        "dexNumber": 376,
-        "name": "Metagross (Mega)",
-        "stats": {
-            "atk": 300,
-            "def": 289,
-            "sta": 190
-        },
-        "types": [
-            "steel",
-            "psychic"
-        ],
-        "family": {
-            "id": "beldum",
-            "stage": 4
-        },
-        "moves": {
-            "fastMoves": [
-                "BULLET_PUNCH",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "EARTHQUAKE",
-                "FLASH_CANNON",
-                "METEOR_MASH",
-                "PSYCHIC"
-            ],
-            "eliteMoves": [
-                "METEOR_MASH"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
-    },
-    {
         "id": "regirock",
         "dexNumber": 377,
         "name": "Regirock",
@@ -16146,7 +17103,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16186,7 +17144,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16226,7 +17185,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16310,6 +17270,7 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "legendary",
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 20,
@@ -16350,7 +17311,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16391,6 +17353,7 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "legendary",
+            "shadoweligible",
             "mega"
         ],
         "buddyDistance": 20,
@@ -16422,11 +17385,56 @@ export const POKEMONS: Pokemon[] =
                 "BLIZZARD",
                 "HYDRO_PUMP",
                 "THUNDER",
-                "SURF"
+                "SURF",
+                "ORIGIN_PULSE"
+            ],
+            "eliteMoves": [
+                "ORIGIN_PULSE"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "kyogre_primal",
+        "dexNumber": 382,
+        "name": "Kyogre (Primal)",
+        "stats": {
+            "atk": 353,
+            "def": 268,
+            "sta": 218
+        },
+        "types": [
+            "water"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "kyogre",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "WATERFALL"
+            ],
+            "chargedMoves": [
+                "BLIZZARD",
+                "HYDRO_PUMP",
+                "THUNDER",
+                "SURF",
+                "ORIGIN_PULSE"
+            ],
+            "eliteMoves": [
+                "ORIGIN_PULSE"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16458,14 +17466,60 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "FIRE_BLAST",
                 "SOLAR_BEAM",
-                "FIRE_PUNCH"
+                "FIRE_PUNCH",
+                "PRECIPICE_BLADES"
             ],
             "eliteMoves": [
+                "PRECIPICE_BLADES",
                 "FIRE_PUNCH"
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "groudon_primal",
+        "dexNumber": 383,
+        "name": "Groudon (Primal)",
+        "stats": {
+            "atk": 353,
+            "def": 268,
+            "sta": 218
+        },
+        "types": [
+            "ground",
+            "fire"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "groudon",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "SOLAR_BEAM",
+                "FIRE_PUNCH",
+                "PRECIPICE_BLADES"
+            ],
+            "eliteMoves": [
+                "PRECIPICE_BLADES",
+                "FIRE_PUNCH"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16498,14 +17552,63 @@ export const POKEMONS: Pokemon[] =
                 "AERIAL_ACE",
                 "ANCIENT_POWER",
                 "OUTRAGE",
-                "HURRICANE"
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
             ],
             "eliteMoves": [
-                "HURRICANE"
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
             ]
         },
         "tags": [
             "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "rayquaza_mega",
+        "dexNumber": 384,
+        "name": "Rayquaza (Mega)",
+        "stats": {
+            "atk": 377,
+            "def": 210,
+            "sta": 227
+        },
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "rayquaza",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "AIR_SLASH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "ANCIENT_POWER",
+                "OUTRAGE",
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
+            ],
+            "eliteMoves": [
+                "HURRICANE",
+                "BREAKING_SWIPE",
+                "DRAGON_ASCENT"
+            ]
+        },
+        "tags": [
+            "legendary",
+            "mega"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -16834,7 +17937,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -16869,7 +17973,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -16908,7 +18013,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -16942,7 +18048,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -16976,7 +18083,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -17002,7 +18110,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "WATERFALL"
+                "WATERFALL",
+                "STEEL_WING"
             ],
             "chargedMoves": [
                 "BLIZZARD",
@@ -17016,7 +18125,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "starter"
+            "starter",
+            "shadoweligible"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -17042,11 +18152,13 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
-                "BRAVE_BIRD"
+                "BRAVE_BIRD",
+                "FLY"
             ]
         },
         "tags": [
@@ -17076,12 +18188,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BRAVE_BIRD",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
             ]
         },
         "tags": [
@@ -17111,12 +18225,18 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "WING_ATTACK"
+                "WING_ATTACK",
+                "GUST",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BRAVE_BIRD",
                 "CLOSE_COMBAT",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "GUST"
             ]
         },
         "tags": [
@@ -17294,7 +18414,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17326,7 +18448,9 @@ export const POKEMONS: Pokemon[] =
                 "WILD_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17378,7 +18502,9 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC_FANGS"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17451,7 +18577,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "POISON_JAB",
                 "RAZOR_LEAF",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "DAZZLING_GLEAM",
@@ -17498,7 +18625,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17530,7 +18659,10 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "include1500",
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17563,7 +18695,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17596,7 +18730,9 @@ export const POKEMONS: Pokemon[] =
                 "STONE_EDGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -17777,7 +18913,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "BUG_BITE",
-                "CONFUSION"
+                "CONFUSION",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
@@ -17980,7 +19117,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AQUA_JET",
                 "HYDRO_PUMP",
-                "SWIFT"
+                "SWIFT",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -18174,9 +19312,6 @@ export const POKEMONS: Pokemon[] =
                 "WATER_PULSE",
                 "EARTH_POWER",
                 "EARTHQUAKE"
-            ],
-            "legacyMoves": [
-                "EARTHQUAKE"
             ]
         },
         "tags": [
@@ -18248,7 +19383,9 @@ export const POKEMONS: Pokemon[] =
                 "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -18278,10 +19415,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ICY_WIND",
                 "OMINOUS_WIND",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "MYSTICAL_FIRE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -18336,12 +19476,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "POUND"
+                "POUND",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_PUNCH",
                 "FOCUS_BLAST",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -18369,7 +19511,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "LOW_KICK",
-                "POUND"
+                "POUND",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_PUNCH",
@@ -18403,7 +19546,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "HEX",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "MAGICAL_LEAF",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "DARK_PULSE",
@@ -18481,7 +19626,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -18513,7 +19660,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -18575,7 +19724,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -18610,7 +19760,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "CRUNCH",
                 "FLAMETHROWER",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "TRAILBLAZE"
             ]
         },
         "tags": [
@@ -18674,7 +19825,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CONFUSION",
-                "FEINT_ATTACK"
+                "FEINT_ATTACK",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "FLASH_CANNON",
@@ -18882,7 +20034,9 @@ export const POKEMONS: Pokemon[] =
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -18915,7 +20069,9 @@ export const POKEMONS: Pokemon[] =
                 "TWISTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -18953,7 +20109,49 @@ export const POKEMONS: Pokemon[] =
                 "EARTH_POWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "garchomp_mega",
+        "dexNumber": 445,
+        "name": "Garchomp (Mega)",
+        "stats": {
+            "atk": 339,
+            "def": 222,
+            "sta": 239
+        },
+        "types": [
+            "dragon",
+            "ground"
+        ],
+        "family": {
+            "id": "gible",
+            "stage": 4
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTHQUAKE",
+                "FIRE_BLAST",
+                "OUTRAGE",
+                "SAND_TOMB",
+                "EARTH_POWER"
+            ],
+            "eliteMoves": [
+                "EARTH_POWER"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -19014,7 +20212,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BRICK_BREAK",
                 "CROSS_CHOP",
-                "LOW_SWEEP"
+                "LOW_SWEEP",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -19042,17 +20242,66 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "BULLET_PUNCH",
-                "COUNTER"
+                "COUNTER",
+                "FORCE_PALM"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
                 "FLASH_CANNON",
                 "SHADOW_BALL",
                 "POWER_UP_PUNCH",
-                "AURA_SPHERE"
+                "AURA_SPHERE",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FORCE_PALM"
             ]
         },
         "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "lucario_mega",
+        "dexNumber": 448,
+        "name": "Lucario (Mega)",
+        "stats": {
+            "atk": 310,
+            "def": 175,
+            "sta": 172
+        },
+        "types": [
+            "fighting",
+            "steel"
+        ],
+        "family": {
+            "id": "riolu",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "BULLET_PUNCH",
+                "COUNTER",
+                "FORCE_PALM"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "FLASH_CANNON",
+                "SHADOW_BALL",
+                "POWER_UP_PUNCH",
+                "AURA_SPHERE",
+                "BLAZE_KICK",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FORCE_PALM"
+            ]
+        },
+        "tags": [
+            "mega"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -19076,7 +20325,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "BITE",
-                "TACKLE"
+                "TACKLE",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
@@ -19112,14 +20362,16 @@ export const POKEMONS: Pokemon[] =
                 "BITE",
                 "FIRE_FANG",
                 "THUNDER_FANG",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
                 "EARTHQUAKE",
                 "STONE_EDGE",
                 "EARTH_POWER",
-                "WEATHER_BALL_ROCK"
+                "WEATHER_BALL_ROCK",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [
@@ -19222,7 +20474,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POISON_JAB",
-                "POISON_STING"
+                "POISON_STING",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
@@ -19230,7 +20483,9 @@ export const POKEMONS: Pokemon[] =
                 "SLUDGE_BOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19255,15 +20510,19 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "COUNTER",
-                "POISON_JAB"
+                "POISON_JAB",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
                 "MUD_BOMB",
-                "SLUDGE_BOMB"
+                "SLUDGE_BOMB",
+                "SHADOW_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19419,7 +20678,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ICE_SHARD",
-                "POWDER_SNOW"
+                "POWDER_SNOW",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
@@ -19454,13 +20714,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POWDER_SNOW",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "BLIZZARD",
                 "ENERGY_BALL",
                 "OUTRAGE",
-                "WEATHER_BALL_ICE"
+                "WEATHER_BALL_ICE",
+                "ICY_WIND"
             ]
         },
         "tags": [
@@ -19490,13 +20752,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "POWDER_SNOW",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "BLIZZARD",
                 "ENERGY_BALL",
                 "OUTRAGE",
-                "WEATHER_BALL_ICE"
+                "WEATHER_BALL_ICE",
+                "ICY_WIND"
             ]
         },
         "tags": [
@@ -19533,7 +20797,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AVALANCHE",
                 "FOCUS_BLAST",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [
@@ -19563,7 +20828,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CHARGE_BEAM",
-                "SPARK"
+                "SPARK",
+                "VOLT_SWITCH",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "FLASH_CANNON",
@@ -19644,13 +20911,16 @@ export const POKEMONS: Pokemon[] =
                 "SURF",
                 "SKULL_BASH",
                 "SUPER_POWER",
-                "ROCK_WRECKER"
+                "ROCK_WRECKER",
+                "BREAKING_SWIPE"
             ],
             "eliteMoves": [
                 "ROCK_WRECKER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -19756,7 +21026,8 @@ export const POKEMONS: Pokemon[] =
                 "FIRE_BLAST",
                 "FIRE_PUNCH",
                 "PSYCHIC",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "SCORCHING_SANDS"
             ],
             "eliteMoves": [
                 "THUNDERBOLT"
@@ -19814,7 +21085,11 @@ export const POKEMONS: Pokemon[] =
                 "AERIAL_ACE",
                 "ANCIENT_POWER",
                 "DAZZLING_GLEAM",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "AURA_SPHERE"
+            ],
+            "eliteMoves": [
+                "AURA_SPHERE"
             ]
         },
         "tags": [],
@@ -19993,7 +21268,8 @@ export const POKEMONS: Pokemon[] =
                 "AVALANCHE",
                 "BULLDOZE",
                 "STONE_EDGE",
-                "ANCIENT_POWER"
+                "ANCIENT_POWER",
+                "HIGH_HORSEPOWER"
             ],
             "eliteMoves": [
                 "ANCIENT_POWER"
@@ -20082,7 +21358,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "CONFUSION",
                 "LOW_KICK",
-                "CHARM"
+                "CHARM",
+                "PSYCHO_CUT"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
@@ -20100,45 +21377,6 @@ export const POKEMONS: Pokemon[] =
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
-    },
-    {
-        "id": "gallade_mega",
-        "dexNumber": 475,
-        "name": "Gallade (Mega)",
-        "stats": {
-            "atk": 326,
-            "def": 230,
-            "sta": 169
-        },
-        "types": [
-            "psychic",
-            "fighting"
-        ],
-        "family": {
-            "id": "ralts",
-            "stage": 4
-        },
-        "moves": {
-            "fastMoves": [
-                "CONFUSION",
-                "LOW_KICK",
-                "CHARM"
-            ],
-            "chargedMoves": [
-                "CLOSE_COMBAT",
-                "LEAF_BLADE",
-                "PSYCHIC",
-                "SYNCHRONOISE"
-            ],
-            "eliteMoves": [
-                "SYNCHRONOISE"
-            ]
-        },
-        "tags": [
-            "shadoweligible",
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "probopass",
@@ -20165,7 +21403,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "MAGNET_BOMB",
                 "ROCK_SLIDE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "ZAP_CANNON"
             ]
         },
         "tags": [
@@ -20200,7 +21439,8 @@ export const POKEMONS: Pokemon[] =
                 "DARK_PULSE",
                 "OMINOUS_WIND",
                 "PSYCHIC",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "POLTERGEIST"
             ],
             "eliteMoves": [
                 "SHADOW_BALL"
@@ -20238,10 +21478,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AVALANCHE",
                 "CRUNCH",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "TRIPLE_AXEL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -20277,7 +21520,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "uxie",
@@ -20418,6 +21661,46 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "dialga_origin",
+        "dexNumber": 483,
+        "name": "Dialga (Origin)",
+        "stats": {
+            "atk": 270,
+            "def": 225,
+            "sta": 205
+        },
+        "types": [
+            "steel",
+            "dragon"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "dialga",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "IRON_HEAD",
+                "THUNDER",
+                "ROAR_OF_TIME"
+            ],
+            "legacyMoves": [
+                "ROAR_OF_TIME"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "palkia",
         "dexNumber": 484,
         "name": "Palkia",
@@ -20455,6 +21738,47 @@ export const POKEMONS: Pokemon[] =
         "released": true
     },
     {
+        "id": "palkia_origin",
+        "dexNumber": 484,
+        "name": "Palkia (Origin)",
+        "stats": {
+            "atk": 286,
+            "def": 223,
+            "sta": 189
+        },
+        "types": [
+            "water",
+            "dragon"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "palkia",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "DRACO_METEOR",
+                "FIRE_BLAST",
+                "HYDRO_PUMP",
+                "AQUA_TAIL",
+                "SPACIAL_REND"
+            ],
+            "legacyMoves": [
+                "SPACIAL_REND"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "heatran",
         "dexNumber": 485,
         "name": "Heatran",
@@ -20481,7 +21805,12 @@ export const POKEMONS: Pokemon[] =
                 "FIRE_BLAST",
                 "IRON_HEAD",
                 "STONE_EDGE",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "EARTH_POWER",
+                "MAGMA_STORM"
+            ],
+            "eliteMoves": [
+                "MAGMA_STORM"
             ]
         },
         "tags": [
@@ -20535,7 +21864,8 @@ export const POKEMONS: Pokemon[] =
             ]
         },
         "tags": [
-            "legendary"
+            "legendary",
+            "shadoweligible"
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
@@ -20570,7 +21900,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ANCIENT_POWER",
                 "DRAGON_CLAW",
-                "SHADOW_SNEAK"
+                "SHADOW_SNEAK",
+                "SHADOW_FORCE"
+            ],
+            "eliteMoves": [
+                "SHADOW_FORCE"
             ]
         },
         "tags": [
@@ -20609,7 +21943,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "OMINOUS_WIND",
                 "DRAGON_PULSE",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "SHADOW_FORCE"
+            ],
+            "eliteMoves": [
+                "SHADOW_FORCE"
             ]
         },
         "tags": [
@@ -20799,18 +22137,25 @@ export const POKEMONS: Pokemon[] =
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
                 "HIDDEN_POWER_WATER",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
                 "GRASS_KNOT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "SEED_FLARE"
+            ],
+            "eliteMoves": [
+                "SEED_FLARE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "shaymin_sky",
@@ -20848,18 +22193,25 @@ export const POKEMONS: Pokemon[] =
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
                 "HIDDEN_POWER_WATER",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "ENERGY_BALL",
                 "GRASS_KNOT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "SEED_FLARE"
+            ],
+            "eliteMoves": [
+                "SEED_FLARE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "arceus",
@@ -21241,7 +22593,8 @@ export const POKEMONS: Pokemon[] =
                 "BLIZZARD",
                 "MEGAHORN",
                 "RAZOR_SHELL",
-                "HYDRO_CANNON"
+                "HYDRO_CANNON",
+                "LIQUIDATION"
             ],
             "eliteMoves": [
                 "HYDRO_CANNON"
@@ -21249,6 +22602,44 @@ export const POKEMONS: Pokemon[] =
         },
         "tags": [
             "starter"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "samurott_hisuian",
+        "dexNumber": 503,
+        "name": "Samurott (Hisuian)",
+        "stats": {
+            "atk": 218,
+            "def": 152,
+            "sta": 207
+        },
+        "types": [
+            "water",
+            "dark"
+        ],
+        "family": {
+            "id": "oshawott",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "FURY_CUTTER",
+                "WATERFALL",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "RAZOR_SHELL",
+                "ICY_WIND",
+                "X_SCISSOR",
+                "DARK_PULSE"
+            ]
+        },
+        "tags": [
+            "starter",
+            "hisuian"
         ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
@@ -21281,7 +22672,9 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21313,7 +22706,9 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21337,7 +22732,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "THUNDERBOLT",
@@ -21369,7 +22765,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "LICK",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "THUNDERBOLT",
@@ -21402,7 +22799,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "LICK",
                 "TAKE_DOWN",
-                "ICE_FANG"
+                "ICE_FANG",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "WILD_CHARGE",
@@ -21442,7 +22840,9 @@ export const POKEMONS: Pokemon[] =
                 "DARK_PULSE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21475,7 +22875,9 @@ export const POKEMONS: Pokemon[] =
                 "PAYBACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21776,7 +23178,9 @@ export const POKEMONS: Pokemon[] =
                 "AIR_CUTTER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21809,7 +23213,9 @@ export const POKEMONS: Pokemon[] =
                 "SKY_ATTACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21842,7 +23248,9 @@ export const POKEMONS: Pokemon[] =
                 "SKY_ATTACK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -21874,7 +23282,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDERBOLT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -21906,7 +23316,9 @@ export const POKEMONS: Pokemon[] =
                 "WILD_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -22000,7 +23412,11 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE",
                 "SOLAR_BEAM",
                 "SUPER_POWER",
-                "HEAVY_SLAM"
+                "HEAVY_SLAM",
+                "METEOR_BEAM"
+            ],
+            "eliteMoves": [
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
@@ -22066,7 +23482,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "PSYCHIC",
                 "AERIAL_ACE",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "PSYCHIC_FANGS",
+                "FLY"
             ]
         },
         "tags": [],
@@ -22101,7 +23519,9 @@ export const POKEMONS: Pokemon[] =
                 "DRILL_RUN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -22133,10 +23553,13 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE",
                 "EARTHQUAKE",
                 "DRILL_RUN",
-                "IRON_HEAD"
+                "IRON_HEAD",
+                "SCORCHING_SANDS"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -22172,38 +23595,6 @@ export const POKEMONS: Pokemon[] =
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
-    },
-    {
-        "id": "audino_mega",
-        "dexNumber": 531,
-        "name": "Audino (Mega)",
-        "stats": {
-            "atk": 147,
-            "def": 239,
-            "sta": 230
-        },
-        "types": [
-            "normal"
-        ],
-        "family": {
-            "id": "audino",
-            "stage": 2
-        },
-        "moves": {
-            "fastMoves": [
-                "POUND",
-                "ZEN_HEADBUTT"
-            ],
-            "chargedMoves": [
-                "DISARMING_VOICE",
-                "DAZZLING_GLEAM",
-                "HYPER_BEAM"
-            ]
-        },
-        "tags": [
-            "mega"
-        ],
-        "thirdMoveCost": 10000
     },
     {
         "id": "timburr",
@@ -22293,7 +23684,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DYNAMIC_PUNCH",
                 "FOCUS_BLAST",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "BRUTAL_SWING"
             ]
         },
         "tags": [],
@@ -22423,10 +23818,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "LOW_SWEEP",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "BRICK_BREAK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -22455,10 +23853,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FOCUS_BLAST",
                 "LOW_SWEEP",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "BRICK_BREAK"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -22716,12 +24117,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "CHARM",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "GRASS_KNOT",
                 "HURRICANE",
-                "MOONBLAST"
+                "MOONBLAST",
+                "SEED_BOMB"
             ]
         },
         "tags": [],
@@ -22809,7 +24212,8 @@ export const POKEMONS: Pokemon[] =
                 "HIDDEN_POWER_PSYCHIC",
                 "HIDDEN_POWER_ROCK",
                 "HIDDEN_POWER_STEEL",
-                "HIDDEN_POWER_WATER"
+                "HIDDEN_POWER_WATER",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "PETAL_BLIZZARD",
@@ -22947,7 +24351,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "EARTHQUAKE",
                 "CRUNCH",
-                "OUTRAGE"
+                "OUTRAGE",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
@@ -22981,7 +24386,9 @@ export const POKEMONS: Pokemon[] =
                 "FLAME_CHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23119,7 +24526,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23144,7 +24553,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "FIRE_FANG"
+                "FIRE_FANG",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "OVERHEAT",
@@ -23220,7 +24630,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_TOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -23253,7 +24665,9 @@ export const POKEMONS: Pokemon[] =
                 "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
         "released": true
@@ -23283,7 +24697,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ACID_SPRAY",
                 "BRICK_BREAK",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -23316,7 +24731,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ACID_SPRAY",
                 "POWER_UP_PUNCH",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -23516,7 +24932,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "SURF",
                 "ANCIENT_POWER",
-                "BODY_SLAM"
+                "BODY_SLAM",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -23613,8 +25030,7 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "GUNK_SHOT",
-                "SEED_BOMB",
-                "GUNK_SHOT"
+                "SEED_BOMB"
             ]
         },
         "tags": [],
@@ -23685,7 +25101,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "zoroark",
@@ -23717,7 +25133,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "minccino",
@@ -23810,7 +25226,9 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23842,7 +25260,9 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23874,7 +25294,9 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23921,7 +25343,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -23968,7 +25392,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24015,7 +25441,9 @@ export const POKEMONS: Pokemon[] =
                 "THUNDER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24048,7 +25476,9 @@ export const POKEMONS: Pokemon[] =
                 "BRAVE_BIRD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24078,10 +25508,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ICE_BEAM",
                 "BUBBLE_BEAM",
-                "HURRICANE"
+                "HURRICANE",
+                "FLY"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24207,7 +25640,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ENERGY_BALL",
                 "SEED_BOMB",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24241,7 +25675,8 @@ export const POKEMONS: Pokemon[] =
                 "MEGAHORN",
                 "SOLAR_BEAM",
                 "WILD_CHARGE",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -24274,7 +25709,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DISCHARGE",
                 "AERIAL_ACE",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -24377,7 +25813,9 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24410,7 +25848,9 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24473,7 +25913,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "SHADOW_BALL",
                 "ICE_BEAM",
-                "BUBBLE_BEAM"
+                "BUBBLE_BEAM",
+                "SURF"
             ]
         },
         "tags": [],
@@ -24556,7 +25997,9 @@ export const POKEMONS: Pokemon[] =
                 "DISCHARGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24591,7 +26034,9 @@ export const POKEMONS: Pokemon[] =
                 "LUNGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -24624,7 +26069,9 @@ export const POKEMONS: Pokemon[] =
                 "IRON_HEAD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
         "released": true
@@ -24659,7 +26106,9 @@ export const POKEMONS: Pokemon[] =
                 "MIRROR_SHOT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
         "released": true
@@ -24683,7 +26132,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "VOLT_SWITCH",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "VICE_GRIP",
@@ -24715,7 +26165,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "VICE_GRIP",
@@ -24747,7 +26198,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "CHARGE_BEAM"
+                "CHARGE_BEAM",
+                "METAL_SOUND"
             ],
             "chargedMoves": [
                 "HYPER_BEAM",
@@ -24842,13 +26294,18 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ACID",
-                "SPARK"
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
                 "CRUNCH",
                 "THUNDERBOLT",
                 "ACID_SPRAY",
-                "DRAGON_CLAW"
+                "DRAGON_CLAW",
+                "LIQUIDATION"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
@@ -24945,10 +26402,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "FLAME_CHARGE",
                 "FLAME_BURST",
-                "HEAT_WAVE"
+                "HEAT_WAVE",
+                "MYSTICAL_FIRE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -24981,7 +26441,9 @@ export const POKEMONS: Pokemon[] =
                 "HEAT_WAVE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -25013,10 +26475,16 @@ export const POKEMONS: Pokemon[] =
                 "ENERGY_BALL",
                 "SHADOW_BALL",
                 "OVERHEAT",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "POLTERGEIST"
+            ],
+            "eliteMoves": [
+                "POLTERGEIST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -25110,7 +26578,11 @@ export const POKEMONS: Pokemon[] =
                 "DRAGON_CLAW",
                 "SURF",
                 "NIGHT_SLASH",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "BREAKING_SWIPE"
+            ],
+            "eliteMoves": [
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [],
@@ -25174,7 +26646,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "ICE_PUNCH",
                 "SURF",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "LIQUIDATION"
             ]
         },
         "tags": [],
@@ -25207,7 +26680,8 @@ export const POKEMONS: Pokemon[] =
                 "AURORA_BEAM",
                 "NIGHT_SLASH",
                 "SOLAR_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -25266,7 +26740,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ACID",
-                "INFESTATION"
+                "INFESTATION",
+                "WATER_SHURIKEN"
             ],
             "chargedMoves": [
                 "BUG_BUZZ",
@@ -25408,7 +26883,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BRICK_BREAK",
                 "GRASS_KNOT",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "BLAZE_KICK"
             ]
         },
         "tags": [],
@@ -25476,7 +26952,9 @@ export const POKEMONS: Pokemon[] =
                 "NIGHT_SHADE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -25506,10 +26984,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "SHADOW_PUNCH",
                 "DYNAMIC_PUNCH",
-                "EARTH_POWER"
+                "EARTH_POWER",
+                "POLTERGEIST"
             ]
         },
-        "tags": [],
+        "tags": [
+            "shadoweligible"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -25641,7 +27122,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AERIAL_ACE",
                 "BRAVE_BIRD",
-                "ROCK_TOMB"
+                "ROCK_TOMB",
+                "FLY"
             ]
         },
         "tags": [],
@@ -25675,10 +27157,48 @@ export const POKEMONS: Pokemon[] =
                 "HEAT_WAVE",
                 "BRAVE_BIRD",
                 "ROCK_SLIDE",
-                "CLOSE_COMBAT"
+                "CLOSE_COMBAT",
+                "FLY"
             ]
         },
         "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "braviary_hisuian",
+        "dexNumber": 628,
+        "name": "Braviary (Hisuian)",
+        "stats": {
+            "atk": 213,
+            "def": 137,
+            "sta": 242
+        },
+        "types": [
+            "psychic",
+            "flying"
+        ],
+        "family": {
+            "id": "rufflet",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "ZEN_HEADBUTT",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "BRAVE_BIRD",
+                "PSYCHIC",
+                "OMINOUS_WIND",
+                "FLY"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
         "released": true
@@ -25910,7 +27430,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DRAGON_PULSE",
                 "DARK_PULSE",
-                "FLASH_CANNON"
+                "FLASH_CANNON",
+                "BRUTAL_SWING"
+            ],
+            "eliteMoves": [
+                "BRUTAL_SWING"
             ]
         },
         "tags": [],
@@ -25949,7 +27473,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "volcarona",
@@ -25983,7 +27507,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "cobalion",
@@ -26006,7 +27530,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "METAL_CLAW",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
@@ -26046,7 +27571,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "SMACK_DOWN",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
@@ -26086,7 +27612,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "QUICK_ATTACK",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "CLOSE_COMBAT",
@@ -26167,7 +27694,11 @@ export const POKEMONS: Pokemon[] =
                 "HEAT_WAVE",
                 "PSYCHIC",
                 "FOCUS_BLAST",
-                "HURRICANE"
+                "HURRICANE",
+                "BLEAKWIND_STORM"
+            ],
+            "eliteMoves": [
+                "BLEAKWIND_STORM"
             ]
         },
         "tags": [
@@ -26241,7 +27772,11 @@ export const POKEMONS: Pokemon[] =
                 "SLUDGE_WAVE",
                 "THUNDER",
                 "FOCUS_BLAST",
-                "THUNDERBOLT"
+                "THUNDERBOLT",
+                "WILDBOLT_STORM"
+            ],
+            "eliteMoves": [
+                "WILDBOLT_STORM"
             ]
         },
         "tags": [
@@ -26278,7 +27813,11 @@ export const POKEMONS: Pokemon[] =
                 "CRUNCH",
                 "OVERHEAT",
                 "DRACO_METEOR",
-                "STONE_EDGE"
+                "STONE_EDGE",
+                "FUSION_FLARE"
+            ],
+            "eliteMoves": [
+                "FUSION_FLARE"
             ]
         },
         "tags": [
@@ -26315,7 +27854,11 @@ export const POKEMONS: Pokemon[] =
                 "OUTRAGE",
                 "WILD_CHARGE",
                 "FLASH_CANNON",
-                "CRUNCH"
+                "CRUNCH",
+                "FUSION_BOLT"
+            ],
+            "eliteMoves": [
+                "FUSION_BOLT"
             ]
         },
         "tags": [
@@ -26395,7 +27938,11 @@ export const POKEMONS: Pokemon[] =
                 "EARTHQUAKE",
                 "STONE_EDGE",
                 "SUPER_POWER",
-                "BULLDOZE"
+                "BULLDOZE",
+                "SANDSEAR_STORM"
+            ],
+            "eliteMoves": [
+                "SANDSEAR_STORM"
             ]
         },
         "tags": [
@@ -26431,7 +27978,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "BLIZZARD",
-                "DRACO_METEOR"
+                "DRACO_METEOR",
+                "GLACIATE"
+            ],
+            "eliteMoves": [
+                "GLACIATE"
             ]
         },
         "tags": [
@@ -26541,13 +28092,17 @@ export const POKEMONS: Pokemon[] =
                 "AQUA_JET",
                 "CLOSE_COMBAT",
                 "HYDRO_PUMP",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "SACRED_SWORD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "keldeo_resolute",
@@ -26575,10 +28130,17 @@ export const POKEMONS: Pokemon[] =
                 "AQUA_JET",
                 "CLOSE_COMBAT",
                 "HYDRO_PUMP",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "SACRED_SWORD"
+            ],
+            "eliteMoves": [
+                "SACRED_SWORD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": false
@@ -26683,7 +28245,11 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "X_SCISSOR",
                 "MAGNET_BOMB",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "TECHNO_BLAST_NORMAL"
+            ],
+            "eliteMoves": [
+                "TECHNO_BLAST_NORMAL"
             ]
         },
         "tags": [
@@ -26789,7 +28355,12 @@ export const POKEMONS: Pokemon[] =
                 "GYRO_BALL",
                 "ENERGY_BALL",
                 "SUPER_POWER",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "FRENZY_PLANT",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
         "tags": [
@@ -26894,7 +28465,12 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC",
                 "FLAMETHROWER",
                 "FLAME_CHARGE",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "BLAST_BURN",
+                "MYSTICAL_FIRE"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
         "tags": [
@@ -26992,13 +28568,18 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "FEINT_ATTACK",
-                "BUBBLE"
+                "BUBBLE",
+                "WATER_SHURIKEN"
             ],
             "chargedMoves": [
                 "NIGHT_SLASH",
                 "AERIAL_ACE",
                 "SURF",
-                "HYDRO_PUMP"
+                "HYDRO_PUMP",
+                "HYDRO_CANNON"
+            ],
+            "eliteMoves": [
+                "HYDRO_CANNON"
             ]
         },
         "tags": [
@@ -27066,7 +28647,8 @@ export const POKEMONS: Pokemon[] =
                 "DIG",
                 "HYPER_BEAM",
                 "EARTHQUAKE",
-                "FIRE_PUNCH"
+                "FIRE_PUNCH",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
@@ -27099,7 +28681,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AERIAL_ACE",
                 "HEAT_WAVE",
-                "SWIFT"
+                "SWIFT",
+                "FLY"
             ]
         },
         "tags": [],
@@ -27133,7 +28716,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "AERIAL_ACE",
                 "HEAT_WAVE",
-                "FLAME_CHARGE"
+                "FLAME_CHARGE",
+                "FLY"
             ]
         },
         "tags": [],
@@ -27169,7 +28753,8 @@ export const POKEMONS: Pokemon[] =
                 "BRAVE_BIRD",
                 "FIRE_BLAST",
                 "FLAME_CHARGE",
-                "HURRICANE"
+                "HURRICANE",
+                "FLY"
             ],
             "eliteMoves": [
                 "INCINERATE"
@@ -27208,7 +28793,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "spewpa",
@@ -27228,8 +28813,7 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "BUG_BITE",
-                "TACKLE"
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -27259,7 +28843,6 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "BUG_BITE",
                 "GUST",
                 "STRUGGLE_BUG"
             ],
@@ -27273,7 +28856,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "litleo",
@@ -27296,7 +28879,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "FIRE_FANG",
                 "TACKLE",
-                "EMBER"
+                "EMBER",
+                "INCINERATE"
             ],
             "chargedMoves": [
                 "FLAME_CHARGE",
@@ -27329,7 +28913,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "FIRE_FANG",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "INCINERATE",
+                "EMBER"
             ],
             "chargedMoves": [
                 "FLAME_CHARGE",
@@ -27427,7 +29013,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "VINE_WHIP",
                 "TACKLE",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -27471,7 +29058,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "gogoat",
@@ -27497,7 +29084,6 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "BRICK_BREAK",
-                "ROCK_SLIDE",
                 "LEAF_BLADE",
                 "SEED_BOMB"
             ]
@@ -27505,7 +29091,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "pancham",
@@ -27594,7 +29180,8 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "TAKE_DOWN",
                 "BITE",
-                "SUCKER_PUNCH"
+                "SUCKER_PUNCH",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
                 "SURF",
@@ -27881,7 +29468,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "CHARM"
+                "CHARM",
+                "FAIRY_WIND"
             ],
             "chargedMoves": [
                 "PLAY_ROUGH",
@@ -27915,7 +29503,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "PECK",
-                "TACKLE"
+                "TACKLE",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -27947,7 +29536,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "PECK",
-                "PSYCHO_CUT"
+                "PSYCHO_CUT",
+                "PSYWAVE"
             ],
             "chargedMoves": [
                 "PSYBEAM",
@@ -28021,7 +29611,8 @@ export const POKEMONS: Pokemon[] =
                 "SKULL_BASH",
                 "CROSS_CHOP",
                 "STONE_EDGE",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
@@ -28223,7 +29814,8 @@ export const POKEMONS: Pokemon[] =
                 "PARABOLIC_CHARGE",
                 "BULLDOZE",
                 "THUNDERBOLT",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "BREAKING_SWIPE"
             ]
         },
         "tags": [],
@@ -28262,7 +29854,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "tyrantrum",
@@ -28291,13 +29883,14 @@ export const POKEMONS: Pokemon[] =
                 "CRUNCH",
                 "STONE_EDGE",
                 "OUTRAGE",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "amaura",
@@ -28331,7 +29924,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "aurorus",
@@ -28361,13 +29954,14 @@ export const POKEMONS: Pokemon[] =
                 "ANCIENT_POWER",
                 "BLIZZARD",
                 "THUNDERBOLT",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "METEOR_BEAM"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "sylveon",
@@ -28426,21 +30020,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "WING_ATTACK",
                 "LOW_KICK",
                 "POISON_JAB"
             ],
             "chargedMoves": [
                 "FLYING_PRESS",
-                "SKY_ATTACK",
+                "AERIAL_ACE",
                 "X_SCISSOR",
                 "POWER_UP_PUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "regional"
+        ],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "dedenne",
@@ -28466,7 +30061,8 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "DISCHARGE",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "PARABOLIC_CHARGE"
             ]
         },
         "tags": [],
@@ -28505,7 +30101,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "goomy",
@@ -28597,7 +30193,12 @@ export const POKEMONS: Pokemon[] =
                 "DRACO_METEOR",
                 "SLUDGE_WAVE",
                 "MUDDY_WATER",
-                "POWER_WHIP"
+                "POWER_WHIP",
+                "AQUA_TAIL",
+                "THUNDER_PUNCH"
+            ],
+            "eliteMoves": [
+                "THUNDER_PUNCH"
             ]
         },
         "tags": [],
@@ -28871,7 +30472,8 @@ export const POKEMONS: Pokemon[] =
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -28907,7 +30509,8 @@ export const POKEMONS: Pokemon[] =
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -28943,7 +30546,8 @@ export const POKEMONS: Pokemon[] =
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [
@@ -28979,7 +30583,8 @@ export const POKEMONS: Pokemon[] =
                 "SEED_BOMB",
                 "SHADOW_BALL",
                 "FOUL_PLAY",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "POLTERGEIST"
             ]
         },
         "tags": [],
@@ -29010,7 +30615,8 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "CRUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "MIRROR_COAT"
             ]
         },
         "tags": [],
@@ -29044,10 +30650,48 @@ export const POKEMONS: Pokemon[] =
                 "AVALANCHE",
                 "EARTHQUAKE",
                 "BODY_SLAM",
-                "MIRROR_COAT"
+                "MIRROR_COAT",
+                "ICY_WIND"
             ]
         },
         "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "avalugg_hisuian",
+        "dexNumber": 713,
+        "name": "Avalugg (Hisuian)",
+        "stats": {
+            "atk": 214,
+            "def": 238,
+            "sta": 216
+        },
+        "types": [
+            "ice",
+            "rock"
+        ],
+        "family": {
+            "id": "bergmite",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "ROCK_SLIDE",
+                "BLIZZARD",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [
+            "hisuian"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
         "released": true
@@ -29111,7 +30755,11 @@ export const POKEMONS: Pokemon[] =
                 "DRACO_METEOR",
                 "HURRICANE",
                 "HEAT_WAVE",
-                "PSYCHIC"
+                "PSYCHIC",
+                "BOOMBURST"
+            ],
+            "eliteMoves": [
+                "BOOMBURST"
             ]
         },
         "tags": [],
@@ -29139,7 +30787,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "ZEN_HEADBUTT"
+                "ZEN_HEADBUTT",
+                "GEOMANCY"
             ],
             "chargedMoves": [
                 "MOONBLAST",
@@ -29147,6 +30796,9 @@ export const POKEMONS: Pokemon[] =
                 "CLOSE_COMBAT",
                 "GIGA_IMPACT",
                 "THUNDER"
+            ],
+            "eliteMoves": [
+                "GEOMANCY"
             ]
         },
         "tags": [
@@ -29185,7 +30837,87 @@ export const POKEMONS: Pokemon[] =
                 "HURRICANE",
                 "FOCUS_BLAST",
                 "HYPER_BEAM",
-                "PSYCHIC"
+                "PSYCHIC",
+                "OBLIVION_WING"
+            ],
+            "eliteMoves": [
+                "OBLIVION_WING"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "zygarde_10",
+        "dexNumber": 718,
+        "name": "Zygarde (10%)",
+        "stats": {
+            "atk": 205,
+            "def": 173,
+            "sta": 144
+        },
+        "types": [
+            "dragon",
+            "ground"
+        ],
+        "family": {
+            "id": "zygarde",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "BITE",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "EARTHQUAKE",
+                "CRUNCH",
+                "HYPER_BEAM",
+                "BULLDOZE"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "zygarde_complete",
+        "dexNumber": 718,
+        "name": "Zygarde (Complete)",
+        "stats": {
+            "atk": 184,
+            "def": 207,
+            "sta": 389
+        },
+        "types": [
+            "dragon",
+            "ground"
+        ],
+        "family": {
+            "id": "zygarde",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "BITE",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "EARTHQUAKE",
+                "CRUNCH",
+                "HYPER_BEAM",
+                "BULLDOZE"
             ]
         },
         "tags": [
@@ -29224,10 +30956,51 @@ export const POKEMONS: Pokemon[] =
                 "POWER_GEM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
+    },
+    {
+        "id": "diancie_mega",
+        "dexNumber": 719,
+        "name": "Diancie (Mega)",
+        "stats": {
+            "atk": 342,
+            "def": 235,
+            "sta": 137
+        },
+        "types": [
+            "rock",
+            "fairy"
+        ],
+        "floor": 10,
+        "family": {
+            "id": "diancie",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "MOONBLAST",
+                "POWER_GEM"
+            ]
+        },
+        "tags": [
+            "mythical",
+            "untradeable",
+            "mega"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
     },
     {
         "id": "hoopa_confined",
@@ -29355,14 +31128,18 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SEED_BOMB",
                 "ENERGY_BALL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29387,7 +31164,9 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "PECK",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SEED_BOMB",
@@ -29395,7 +31174,9 @@ export const POKEMONS: Pokemon[] =
                 "BRAVE_BIRD"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29420,15 +31201,59 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "ASTONISH",
-                "RAZOR_LEAF"
+                "RAZOR_LEAF",
+                "LEAFAGE",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
                 "SHADOW_SNEAK",
                 "ENERGY_BALL",
-                "BRAVE_BIRD"
+                "BRAVE_BIRD",
+                "FRENZY_PLANT",
+                "SPIRIT_SHACKLE"
+            ],
+            "eliteMoves": [
+                "FRENZY_PLANT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "decidueye_hisuian",
+        "dexNumber": 724,
+        "name": "Decidueye (Hisuian)",
+        "stats": {
+            "atk": 213,
+            "def": 174,
+            "sta": 204
+        },
+        "types": [
+            "grass",
+            "fighting"
+        ],
+        "family": {
+            "id": "rowlet",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "MAGICAL_LEAF",
+                "PSYCHO_CUT"
+            ],
+            "chargedMoves": [
+                "AURA_SPHERE",
+                "ENERGY_BALL",
+                "AERIAL_ACE"
+            ]
+        },
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29460,7 +31285,9 @@ export const POKEMONS: Pokemon[] =
                 "CRUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29492,7 +31319,9 @@ export const POKEMONS: Pokemon[] =
                 "CRUNCH"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29517,15 +31346,24 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "SNARL",
-                "FIRE_FANG"
+                "FIRE_FANG",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "FIRE_BLAST",
                 "FLAME_CHARGE",
-                "DARK_PULSE"
+                "DARK_PULSE",
+                "BLAZE_KICK",
+                "BLAST_BURN",
+                "DARKEST_LARIAT"
+            ],
+            "eliteMoves": [
+                "BLAST_BURN"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29557,7 +31395,9 @@ export const POKEMONS: Pokemon[] =
                 "AQUA_TAIL"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29589,7 +31429,9 @@ export const POKEMONS: Pokemon[] =
                 "DISARMING_VOICE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29619,10 +31461,13 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "PSYCHIC",
                 "HYDRO_PUMP",
-                "MOONBLAST"
+                "MOONBLAST",
+                "DISARMING_VOICE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "starter"
+        ],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
         "released": true
@@ -29809,16 +31654,19 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "VICE_GRIP",
+                "CRUNCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "charjabug",
@@ -29839,16 +31687,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "DISCHARGE",
+                "CRUNCH"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "vikavolt",
@@ -29869,16 +31724,25 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "SPARK",
+                "MUD_SLAP",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "DISCHARGE",
+                "CRUNCH",
+                "FLY"
+            ],
+            "eliteMoves": [
+                "VOLT_SWITCH"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "crabrawler",
@@ -29898,16 +31762,20 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_SMASH",
+                "BUBBLE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "CRABHAMMER",
+                "PAYBACK",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "crabominable",
@@ -29928,16 +31796,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_SMASH",
+                "BUBBLE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "CRABHAMMER",
+                "PAYBACK",
+                "ICE_PUNCH",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "oricorio_baile",
@@ -30090,16 +31963,18 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FAIRY_WIND",
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "ribombee",
@@ -30120,16 +31995,18 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FAIRY_WIND",
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "rockruff",
@@ -30155,7 +32032,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "STONE_EDGE",
                 "ROCK_TOMB",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30181,16 +32059,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "SUCKER_PUNCH",
+                "ROCK_THROW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "STONE_EDGE",
+                "IRON_HEAD",
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "lycanroc_midday",
@@ -30216,7 +32099,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "STONE_EDGE",
                 "DRILL_RUN",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30248,7 +32132,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "STONE_EDGE",
                 "PSYCHIC_FANGS",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30274,10 +32159,14 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "WATERFALL",
+                "IRON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "SURF",
+                "AQUA_TAIL"
             ]
         },
         "tags": [],
@@ -30303,10 +32192,14 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "WATERFALL",
+                "IRON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "SURF",
+                "AQUA_TAIL"
             ]
         },
         "tags": [],
@@ -30333,16 +32226,19 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_STING",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "GUNK_SHOT",
+                "SLUDGE_WAVE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "toxapex",
@@ -30366,16 +32262,19 @@ export const POKEMONS: Pokemon[] =
         ],
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRINE",
+                "GUNK_SHOT",
+                "SLUDGE_WAVE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "mudbray",
@@ -30395,10 +32294,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "MUD_SLAP",
+                "ROCK_SMASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BULLDOZE",
+                "BODY_SLAM",
+                "EARTHQUAKE"
             ]
         },
         "tags": [],
@@ -30424,10 +32326,14 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "MUD_SLAP",
+                "ROCK_SMASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BULLDOZE",
+                "BODY_SLAM",
+                "EARTHQUAKE",
+                "HEAVY_SLAM"
             ]
         },
         "tags": [],
@@ -30466,7 +32372,7 @@ export const POKEMONS: Pokemon[] =
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "araquanid",
@@ -30493,13 +32399,14 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "BUG_BUZZ",
                 "BUBBLE_BEAM",
-                "MIRROR_COAT"
+                "MIRROR_COAT",
+                "WATER_PULSE"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "fomantis",
@@ -30520,12 +32427,14 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "FURY_CUTTER"
+                "FURY_CUTTER",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
                 "ENERGY_BALL",
-                "GRASS_KNOT"
+                "GRASS_KNOT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30552,13 +32461,15 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "RAZOR_LEAF",
-                "FURY_CUTTER"
+                "FURY_CUTTER",
+                "LEAFAGE"
             ],
             "chargedMoves": [
                 "LEAF_BLADE",
                 "LEAF_STORM",
                 "SUPER_POWER",
-                "X_SCISSOR"
+                "X_SCISSOR",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30585,16 +32496,17 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DAZZLING_GLEAM",
+                "SEED_BOMB"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "shiinotic",
@@ -30615,16 +32527,18 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MOONBLAST",
+                "SEED_BOMB",
+                "SLUDGE_BOMB"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "salandit",
@@ -30782,16 +32696,18 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "steenee",
@@ -30811,16 +32727,20 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS",
+                "GRASS_KNOT",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "tsareena",
@@ -30840,16 +32760,26 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "RAZOR_LEAF",
+                "CHARM",
+                "MAGICAL_LEAF"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "ENERGY_BALL",
+                "DRAINING_KISS",
+                "GRASS_KNOT",
+                "STOMP",
+                "TRIPLE_AXEL",
+                "HIGH_JUMP_KICK"
+            ],
+            "eliteMoves": [
+                "HIGH_JUMP_KICK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "comfey",
@@ -30926,7 +32856,8 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "PSYCHIC",
                 "FOUL_PLAY",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -30952,16 +32883,20 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "ROCK_SMASH",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRICK_BREAK",
+                "CLOSE_COMBAT",
+                "SUPER_POWER"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "wimpod",
@@ -30982,16 +32917,16 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "STRUGGLE_BUG"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BUG_BUZZ"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "golisopod",
@@ -31012,16 +32947,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "FURY_CUTTER",
+                "METAL_CLAW",
+                "WATERFALL",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "X_SCISSOR",
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION",
+                "RAZOR_SHELL"
             ]
         },
         "tags": [],
         "buddyDistance": 1,
         "thirdMoveCost": 10000,
-        "released": false
+        "released": true
     },
     {
         "id": "sandygast",
@@ -31042,16 +32984,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SAND_TOMB",
+                "SHADOW_BALL",
+                "EARTH_POWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "palossand",
@@ -31072,16 +33019,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "MUD_SHOT",
+                "SAND_ATTACK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SAND_TOMB",
+                "SHADOW_BALL",
+                "EARTH_POWER",
+                "SCORCHING_SANDS"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "pyukumuku",
@@ -31101,10 +33053,10 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MIRROR_COAT"
             ]
         },
         "tags": [],
@@ -31130,10 +33082,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE"
             ]
         },
         "tags": [],
@@ -31159,10 +33114,15 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "TACKLE",
+                "TAKE_DOWN",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "TRI_ATTACK",
+                "IRON_HEAD",
+                "AERIAL_ACE",
+                "X_SCISSOR"
             ]
         },
         "tags": [],
@@ -31189,10 +33149,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "ANCIENT_POWER",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -31219,10 +33182,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "ANCIENT_POWER",
+                "ACROBATICS"
             ]
         },
         "tags": [],
@@ -31248,16 +33214,19 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROLLOUT",
+                "YAWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "PLAY_ROUGH",
+                "BULLDOZE",
+                "PAYBACK"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "turtonator",
@@ -31278,16 +33247,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "EMBER",
+                "FIRE_SPIN",
+                "INCINERATE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "OVERHEAT",
+                "FLAMETHROWER",
+                "DRAGON_PULSE",
+                "FLASH_CANNON"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "togedemaru",
@@ -31308,16 +33282,19 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "THUNDER_SHOCK",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FELL_STINGER",
+                "WILD_CHARGE",
+                "GYRO_BALL"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "mimikyu",
@@ -31338,10 +33315,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SHADOW_CLAW",
+                "CHARM"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SHADOW_SNEAK",
+                "PLAY_ROUGH",
+                "SHADOW_BALL"
             ]
         },
         "tags": [],
@@ -31368,16 +33348,20 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "WATER_GUN",
+                "CONFUSION",
+                "BITE"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "PSYCHIC_FANGS",
+                "AQUA_TAIL",
+                "CRUNCH"
             ]
         },
         "tags": [],
         "buddyDistance": 3,
         "thirdMoveCost": 50000,
-        "released": false
+        "released": true
     },
     {
         "id": "drampa",
@@ -31398,16 +33382,19 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "DRAGON_BREATH",
+                "EXTRASENSORY"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "OUTRAGE",
+                "DRAGON_PULSE",
+                "FLY"
             ]
         },
         "tags": [],
         "buddyDistance": 5,
         "thirdMoveCost": 75000,
-        "released": false
+        "released": true
     },
     {
         "id": "dhelmise",
@@ -31428,10 +33415,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ASTONISH",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_WHIP",
+                "SHADOW_BALL",
+                "HEAVY_SLAM"
             ]
         },
         "tags": [],
@@ -31529,7 +33519,9 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "DRAGON_CLAW",
                 "CLOSE_COMBAT",
-                "FLAMETHROWER"
+                "FLAMETHROWER",
+                "BOOMBURST",
+                "BRICK_BREAK"
             ]
         },
         "tags": [],
@@ -31567,7 +33559,11 @@ export const POKEMONS: Pokemon[] =
                 "THUNDERBOLT",
                 "DAZZLING_GLEAM",
                 "BRAVE_BIRD",
-                "THUNDER"
+                "THUNDER",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -31607,7 +33603,11 @@ export const POKEMONS: Pokemon[] =
                 "PSYSHOCK",
                 "MOONBLAST",
                 "FOCUS_BLAST",
-                "FUTURE_SIGHT"
+                "FUTURE_SIGHT",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -31647,7 +33647,11 @@ export const POKEMONS: Pokemon[] =
                 "GRASS_KNOT",
                 "DAZZLING_GLEAM",
                 "MEGAHORN",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -31702,7 +33706,11 @@ export const POKEMONS: Pokemon[] =
                 "SURF",
                 "MOONBLAST",
                 "ICE_BEAM",
-                "HYDRO_PUMP"
+                "HYDRO_PUMP",
+                "NATURES_MADNESS"
+            ],
+            "eliteMoves": [
+                "NATURES_MADNESS"
             ]
         },
         "tags": [
@@ -31710,7 +33718,7 @@ export const POKEMONS: Pokemon[] =
         ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "cosmog",
@@ -31731,7 +33739,7 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPLASH"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -31761,7 +33769,7 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPLASH"
             ],
             "chargedMoves": [
                 "STRUGGLE"
@@ -31792,16 +33800,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ZEN_HEADBUTT",
+                "FIRE_SPIN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "IRON_HEAD",
+                "PSYCHIC_FANGS",
+                "SOLAR_BEAM",
+                "FLAMETHROWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "lunala",
@@ -31823,16 +33837,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "CONFUSION",
+                "AIR_SLASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SHADOW_BALL",
+                "PSYCHIC",
+                "MOONBLAST",
+                "FUTURE_SIGHT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "nihilego",
@@ -31854,16 +33874,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ACID",
+                "POUND",
+                "POISON_JAB"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_GEM",
+                "GUNK_SHOT",
+                "SLUDGE_BOMB",
+                "ROCK_SLIDE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "buzzwole",
@@ -31885,16 +33912,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "COUNTER",
+                "POISON_JAB"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "POWER_UP_PUNCH",
+                "FELL_STINGER",
+                "LUNGE",
+                "SUPER_POWER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "pheromosa",
@@ -31916,16 +33949,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "BUG_BITE",
+                "LOW_KICK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FOCUS_BLAST",
+                "BUG_BUZZ",
+                "LUNGE",
+                "CLOSE_COMBAT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "xurkitree",
@@ -31946,16 +33985,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "THUNDER_SHOCK",
+                "SPARK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DISCHARGE",
+                "THUNDER",
+                "POWER_WHIP",
+                "DAZZLING_GLEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "celesteela",
@@ -31977,16 +34022,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "AIR_SLASH",
+                "SMACK_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "IRON_HEAD",
+                "BODY_SLAM",
+                "HEAVY_SLAM",
+                "BULLDOZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "kartana",
@@ -32008,16 +34059,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "AIR_SLASH",
+                "RAZOR_LEAF"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "LEAF_BLADE",
+                "X_SCISSOR",
+                "NIGHT_SLASH",
+                "AERIAL_ACE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast",
+            "include1500"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "guzzlord",
@@ -32039,16 +34097,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SNARL",
+                "DRAGON_TAIL"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "BRUTAL_SWING",
+                "DRAGON_CLAW",
+                "CRUNCH",
+                "SLUDGE_BOMB"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma",
@@ -32069,16 +34133,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_dawn_wings",
@@ -32100,16 +34171,27 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE",
+                "MOONGEIST_BEAM"
+            ],
+            "eliteMoves": [
+                "MOONGEIST_BEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_dusk_mane",
@@ -32131,16 +34213,27 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE",
+                "SUNSTEEL_STRIKE"
+            ],
+            "eliteMoves": [
+                "SUNSTEEL_STRIKE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "necrozma_ultra",
@@ -32162,13 +34255,20 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "METAL_CLAW",
+                "PSYCHO_CUT",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "DARK_PULSE",
+                "FUTURE_SIGHT",
+                "IRON_HEAD",
+                "OUTRAGE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
         "released": false
@@ -32205,6 +34305,46 @@ export const POKEMONS: Pokemon[] =
         "released": false
     },
     {
+        "id": "marshadow",
+        "dexNumber": 802,
+        "name": "Marshadow",
+        "stats": {
+            "atk": 265,
+            "def": 190,
+            "sta": 207
+        },
+        "types": [
+            "fighting",
+            "ghost"
+        ],
+        "floor": 10,
+        "family": {
+            "id": "marshadow",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "SUCKER_PUNCH",
+                "COUNTER",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "FIRE_PUNCH",
+                "THUNDER_PUNCH",
+                "ICE_PUNCH",
+                "ROCK_SLIDE"
+            ]
+        },
+        "tags": [
+            "mythical",
+            "untradeable"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
         "id": "poipole",
         "dexNumber": 803,
         "name": "Poipole",
@@ -32223,16 +34363,22 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "PECK"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SLUDGE_BOMB",
+                "SLUDGE_WAVE",
+                "FELL_STINGER"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast",
+            "untradeable"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "naganadel",
@@ -32254,16 +34400,23 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "POISON_JAB",
+                "AIR_SLASH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "SLUDGE_BOMB",
+                "ACROBATICS",
+                "FELL_STINGER",
+                "DRAGON_PULSE",
+                "DRAGON_CLAW"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "stakataka",
@@ -32285,16 +34438,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "ROCK_THROW",
+                "TAKE_DOWN"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "FLASH_CANNON",
+                "STONE_EDGE",
+                "BULLDOZE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "blacephalon",
@@ -32316,16 +34474,21 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "INCINERATE",
+                "ASTONISH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "MYSTICAL_FIRE",
+                "SHADOW_BALL",
+                "OVERHEAT"
             ]
         },
-        "tags": [],
+        "tags": [
+            "ultrabeast"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "zeraora",
@@ -32346,10 +34509,13 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "STRUGGLE"
+                "SPARK",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "STRUGGLE"
+                "THUNDER_PUNCH",
+                "DISCHARGE",
+                "WILD_CHARGE"
             ]
         },
         "tags": [],
@@ -32415,7 +34581,11 @@ export const POKEMONS: Pokemon[] =
                 "HYPER_BEAM",
                 "ROCK_SLIDE",
                 "THUNDERBOLT",
-                "SUPER_POWER"
+                "SUPER_POWER",
+                "DOUBLE_IRON_BASH"
+            ],
+            "eliteMoves": [
+                "DOUBLE_IRON_BASH"
             ]
         },
         "tags": [
@@ -32731,7 +34901,8 @@ export const POKEMONS: Pokemon[] =
             ],
             "chargedMoves": [
                 "BODY_SLAM",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -32759,11 +34930,13 @@ export const POKEMONS: Pokemon[] =
             "fastMoves": [
                 "TACKLE",
                 "BITE",
-                "BULLET_SEED"
+                "BULLET_SEED",
+                "MUD_SHOT"
             ],
             "chargedMoves": [
                 "BODY_SLAM",
-                "CRUNCH"
+                "CRUNCH",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -33134,7 +35307,8 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "TACKLE",
-                "TAKE_DOWN"
+                "TAKE_DOWN",
+                "DOUBLE_KICK"
             ],
             "chargedMoves": [
                 "WILD_CHARGE",
@@ -34121,7 +36295,11 @@ export const POKEMONS: Pokemon[] =
                 "CROSS_CHOP",
                 "NIGHT_SLASH",
                 "HYPER_BEAM",
-                "GUNK_SHOT"
+                "GUNK_SHOT",
+                "OBSTRUCT"
+            ],
+            "eliteMoves": [
+                "OBSTRUCT"
             ]
         },
         "tags": [],
@@ -34154,7 +36332,8 @@ export const POKEMONS: Pokemon[] =
                 "IRON_HEAD",
                 "CLOSE_COMBAT",
                 "PLAY_ROUGH",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "TRAILBLAZE"
             ]
         },
         "tags": [],
@@ -34255,7 +36434,8 @@ export const POKEMONS: Pokemon[] =
                 "PSYBEAM",
                 "PSYCHIC",
                 "ICE_PUNCH",
-                "ICY_WIND"
+                "ICY_WIND",
+                "TRIPLE_AXEL"
             ]
         },
         "tags": [],
@@ -34282,7 +36462,8 @@ export const POKEMONS: Pokemon[] =
         },
         "moves": {
             "fastMoves": [
-                "ASTONISH"
+                "ASTONISH",
+                "SHADOW_CLAW"
             ],
             "chargedMoves": [
                 "SHADOW_BALL",
@@ -35348,18 +37529,21 @@ export const POKEMONS: Pokemon[] =
         "moves": {
             "fastMoves": [
                 "THUNDER_SHOCK",
-                "LOCK_ON"
+                "LOCK_ON",
+                "VOLT_SWITCH"
             ],
             "chargedMoves": [
-                "THUNDERBOLT",
+                "ZAP_CANNON",
                 "THUNDER",
                 "HYPER_BEAM"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "regidrago",
@@ -35385,13 +37569,16 @@ export const POKEMONS: Pokemon[] =
             "chargedMoves": [
                 "HYPER_BEAM",
                 "OUTRAGE",
-                "DRAGON_PULSE"
+                "DRAGON_PULSE",
+                "BREAKING_SWIPE"
             ]
         },
-        "tags": [],
+        "tags": [
+            "legendary"
+        ],
         "buddyDistance": 20,
         "thirdMoveCost": 100000,
-        "released": false
+        "released": true
     },
     {
         "id": "glastrier",
@@ -35521,6 +37708,3234 @@ export const POKEMONS: Pokemon[] =
                 "PSYCHIC",
                 "ENERGY_BALL",
                 "AVALANCHE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "wyrdeer",
+        "dexNumber": 899,
+        "name": "Wyrdeer",
+        "stats": {
+            "atk": 206,
+            "def": 145,
+            "sta": 230
+        },
+        "types": [
+            "normal",
+            "psychic"
+        ],
+        "family": {
+            "id": "stantler",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ZEN_HEADBUTT",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "MEGAHORN",
+                "STOMP",
+                "WILD_CHARGE",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "kleavor",
+        "dexNumber": 900,
+        "name": "Kleavor",
+        "stats": {
+            "atk": 253,
+            "def": 174,
+            "sta": 172
+        },
+        "types": [
+            "bug",
+            "rock"
+        ],
+        "family": {
+            "id": "scyther",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "QUICK_ATTACK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "ROCK_SLIDE",
+                "STONE_EDGE",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "ursaluna",
+        "dexNumber": 901,
+        "name": "Ursaluna",
+        "stats": {
+            "atk": 243,
+            "def": 181,
+            "sta": 277
+        },
+        "types": [
+            "normal",
+            "ground"
+        ],
+        "family": {
+            "id": "teddiursa",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "FIRE_PUNCH",
+                "THUNDER_PUNCH",
+                "AERIAL_ACE",
+                "HIGH_HORSEPOWER",
+                "ICE_PUNCH",
+                "TRAILBLAZE",
+                "SWIFT"
+            ],
+            "eliteMoves": [
+                "HIGH_HORSEPOWER"
+            ]
+        },
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "basculegion_male",
+        "dexNumber": 902,
+        "name": "Basculegion (Male)",
+        "stats": {
+            "atk": 217,
+            "def": 144,
+            "sta": 260
+        },
+        "types": [
+            "water",
+            "ghost"
+        ],
+        "family": {
+            "id": "basculin_hisuian",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "basculegion_female",
+        "dexNumber": 902,
+        "name": "Basculegion (Female)",
+        "stats": {
+            "atk": 199,
+            "def": 144,
+            "sta": 260
+        },
+        "types": [
+            "water",
+            "ghost"
+        ],
+        "family": {
+            "id": "basculin_hisuian",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "SPLASH"
+            ],
+            "chargedMoves": [
+                "STRUGGLE"
+            ]
+        },
+        "tags": [],
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "sneasler",
+        "dexNumber": 903,
+        "name": "Sneasler",
+        "stats": {
+            "atk": 259,
+            "def": 158,
+            "sta": 190
+        },
+        "types": [
+            "fighting",
+            "poison"
+        ],
+        "family": {
+            "id": "sneasel_hisuian",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "POISON_JAB",
+                "SHADOW_CLAW"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "CLOSE_COMBAT",
+                "X_SCISSOR"
+            ]
+        },
+        "tags": [
+            "shadoweligible"
+        ],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "overqwil",
+        "dexNumber": 904,
+        "name": "Overqwil",
+        "stats": {
+            "atk": 222,
+            "def": 171,
+            "sta": 198
+        },
+        "types": [
+            "dark",
+            "poison"
+        ],
+        "family": {
+            "id": "qwilfish_hisuian",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "AQUA_TAIL",
+                "ICE_BEAM",
+                "SLUDGE_BOMB",
+                "DARK_PULSE",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "enamorus_incarnate",
+        "dexNumber": 905,
+        "name": "Enamorus (Incarnate)",
+        "stats": {
+            "atk": 281,
+            "def": 162,
+            "sta": 179
+        },
+        "types": [
+            "fairy",
+            "flying"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "enamorus_incarnate",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "ZEN_HEADBUTT",
+                "FAIRY_WIND"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FLY",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": true
+    },
+    {
+        "id": "enamorus_therian",
+        "dexNumber": 905,
+        "name": "Enamorus (Therian)",
+        "stats": {
+            "atk": 250,
+            "def": 201,
+            "sta": 179
+        },
+        "types": [
+            "fairy",
+            "flying"
+        ],
+        "floor": 1,
+        "family": {
+            "id": "enamorus_therian",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "ZEN_HEADBUTT",
+                "FAIRY_WIND"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "FLY",
+                "GRASS_KNOT"
+            ]
+        },
+        "tags": [
+            "legendary"
+        ],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "sprigatito",
+        "dexNumber": 906,
+        "name": "Sprigatito",
+        "stats": {
+            "atk": 116,
+            "def": 99,
+            "sta": 120
+        },
+        "types": [
+            "grass"
+        ],
+        "family": {
+            "id": "sprigatito",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "floragato",
+        "dexNumber": 907,
+        "name": "Floragato",
+        "stats": {
+            "atk": 157,
+            "def": 128,
+            "sta": 156
+        },
+        "types": [
+            "grass"
+        ],
+        "family": {
+            "id": "sprigatito",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "meowscarada",
+        "dexNumber": 908,
+        "name": "Meowscarada",
+        "stats": {
+            "atk": 233,
+            "def": 153,
+            "sta": 183
+        },
+        "types": [
+            "grass",
+            "dark"
+        ],
+        "family": {
+            "id": "sprigatito",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "GRASS_KNOT",
+                "PLAY_ROUGH",
+                "ENERGY_BALL",
+                "NIGHT_SLASH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "fuecoco",
+        "dexNumber": 909,
+        "name": "Fuecoco",
+        "stats": {
+            "atk": 112,
+            "def": 96,
+            "sta": 167
+        },
+        "types": [
+            "fire"
+        ],
+        "family": {
+            "id": "fuecoco",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "crocalor",
+        "dexNumber": 910,
+        "name": "Crocalor",
+        "stats": {
+            "atk": 162,
+            "def": 134,
+            "sta": 191
+        },
+        "types": [
+            "fire"
+        ],
+        "family": {
+            "id": "fuecoco",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "skeledirge",
+        "dexNumber": 911,
+        "name": "Skeledirge",
+        "stats": {
+            "atk": 207,
+            "def": 178,
+            "sta": 232
+        },
+        "types": [
+            "fire",
+            "ghost"
+        ],
+        "family": {
+            "id": "fuecoco",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "FLAMETHROWER",
+                "DISARMING_VOICE",
+                "CRUNCH",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaxly",
+        "dexNumber": 912,
+        "name": "Quaxly",
+        "stats": {
+            "atk": 120,
+            "def": 86,
+            "sta": 146
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "quaxly",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaxwell",
+        "dexNumber": 913,
+        "name": "Quaxwell",
+        "stats": {
+            "atk": 162,
+            "def": 123,
+            "sta": 172
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "quaxly",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "quaquaval",
+        "dexNumber": 914,
+        "name": "Quaquaval",
+        "stats": {
+            "atk": 236,
+            "def": 159,
+            "sta": 198
+        },
+        "types": [
+            "water",
+            "fighting"
+        ],
+        "family": {
+            "id": "quaxly",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "WING_ATTACK"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "AERIAL_ACE",
+                "LIQUIDATION",
+                "CLOSE_COMBAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "lechonk",
+        "dexNumber": 915,
+        "name": "Lechonk",
+        "stats": {
+            "atk": 81,
+            "def": 79,
+            "sta": 144
+        },
+        "types": [
+            "normal"
+        ],
+        "family": {
+            "id": "lechonk",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "oinkologne_female",
+        "dexNumber": 916,
+        "name": "Oinkologne (Female)",
+        "stats": {
+            "atk": 169,
+            "def": 162,
+            "sta": 251
+        },
+        "types": [
+            "normal"
+        ],
+        "family": {
+            "id": "lechonk",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BODY_SLAM",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "tarountula",
+        "dexNumber": 917,
+        "name": "Tarountula",
+        "stats": {
+            "atk": 70,
+            "def": 77,
+            "sta": 111
+        },
+        "types": [
+            "bug"
+        ],
+        "family": {
+            "id": "tarountula",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "GRASS_KNOT",
+                "LUNGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "spidops",
+        "dexNumber": 918,
+        "name": "Spidops",
+        "stats": {
+            "atk": 139,
+            "def": 166,
+            "sta": 155
+        },
+        "types": [
+            "bug"
+        ],
+        "family": {
+            "id": "tarountula",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "GRASS_KNOT",
+                "LUNGE",
+                "ROCK_TOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "nymble",
+        "dexNumber": 919,
+        "name": "Nymble",
+        "stats": {
+            "atk": 81,
+            "def": 65,
+            "sta": 107
+        },
+        "types": [
+            "bug"
+        ],
+        "family": {
+            "id": "nymble",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "BUG_BUZZ",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "lokix",
+        "dexNumber": 920,
+        "name": "Lokix",
+        "stats": {
+            "atk": 199,
+            "def": 144,
+            "sta": 174
+        },
+        "types": [
+            "bug",
+            "dark"
+        ],
+        "family": {
+            "id": "nymble",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "SUCKER_PUNCH",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "X_SCISSOR",
+                "BUG_BUZZ",
+                "DARK_PULSE",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "pawmi",
+        "dexNumber": 921,
+        "name": "Pawmi",
+        "stats": {
+            "atk": 95,
+            "def": 45,
+            "sta": 128
+        },
+        "types": [
+            "electric"
+        ],
+        "family": {
+            "id": "pawmi",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "pawmo",
+        "dexNumber": 922,
+        "name": "Pawmo",
+        "stats": {
+            "atk": 147,
+            "def": 82,
+            "sta": 155
+        },
+        "types": [
+            "electric",
+            "fighting"
+        ],
+        "family": {
+            "id": "pawmi",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE",
+                "THUNDER_PUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "pawmot",
+        "dexNumber": 923,
+        "name": "Pawmot",
+        "stats": {
+            "atk": 232,
+            "def": 141,
+            "sta": 172
+        },
+        "types": [
+            "electric",
+            "fighting"
+        ],
+        "family": {
+            "id": "pawmi",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "SPARK",
+                "CHARGE_BEAM",
+                "LOW_KICK"
+            ],
+            "chargedMoves": [
+                "THUNDERBOLT",
+                "DISCHARGE",
+                "WILD_CHARGE",
+                "CLOSE_COMBAT",
+                "THUNDER_PUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "tandemaus",
+        "dexNumber": 924,
+        "name": "Tandemaus",
+        "stats": {
+            "atk": 98,
+            "def": 90,
+            "sta": 137
+        },
+        "types": [
+            "normal"
+        ],
+        "family": {
+            "id": "tandemaus",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "maushold",
+        "dexNumber": 925,
+        "name": "Maushold",
+        "stats": {
+            "atk": 159,
+            "def": 157,
+            "sta": 179
+        },
+        "types": [
+            "normal"
+        ],
+        "family": {
+            "id": "tandemaus",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "MUD_SHOT",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SWIFT",
+                "PLAY_ROUGH",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "fidough",
+        "dexNumber": 926,
+        "name": "Fidough",
+        "stats": {
+            "atk": 102,
+            "def": 126,
+            "sta": 114
+        },
+        "types": [
+            "fairy"
+        ],
+        "family": {
+            "id": "fidough",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "PLAY_ROUGH",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dachsbun",
+        "dexNumber": 927,
+        "name": "Dachsbun",
+        "stats": {
+            "atk": 159,
+            "def": 212,
+            "sta": 149
+        },
+        "types": [
+            "fairy"
+        ],
+        "family": {
+            "id": "fidough",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "CHARM",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "PLAY_ROUGH",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "smoliv",
+        "dexNumber": 928,
+        "name": "Smoliv",
+        "stats": {
+            "atk": 100,
+            "def": 89,
+            "sta": 121
+        },
+        "types": [
+            "grass",
+            "normal"
+        ],
+        "family": {
+            "id": "smoliv",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "dolliv",
+        "dexNumber": 929,
+        "name": "Dolliv",
+        "stats": {
+            "atk": 137,
+            "def": 131,
+            "sta": 141
+        },
+        "types": [
+            "grass",
+            "normal"
+        ],
+        "family": {
+            "id": "smoliv",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "arboliva",
+        "dexNumber": 930,
+        "name": "Arboliva",
+        "stats": {
+            "atk": 219,
+            "def": 189,
+            "sta": 186
+        },
+        "types": [
+            "grass",
+            "normal"
+        ],
+        "family": {
+            "id": "smoliv",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "RAZOR_LEAF",
+                "TACKLE",
+                "MAGICAL_LEAF"
+            ],
+            "chargedMoves": [
+                "SEED_BOMB",
+                "ENERGY_BALL",
+                "EARTH_POWER",
+                "TRAILBLAZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "squawkabilly",
+        "dexNumber": 931,
+        "name": "Squawkabilly",
+        "stats": {
+            "atk": 185,
+            "def": 105,
+            "sta": 193
+        },
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "family": {
+            "id": "squawkabilly",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "nacli",
+        "dexNumber": 932,
+        "name": "Nacli",
+        "stats": {
+            "atk": 95,
+            "def": 108,
+            "sta": 146
+        },
+        "types": [
+            "rock"
+        ],
+        "family": {
+            "id": "nacli",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "naclstack",
+        "dexNumber": 933,
+        "name": "Naclstack",
+        "stats": {
+            "atk": 105,
+            "def": 160,
+            "sta": 155
+        },
+        "types": [
+            "rock"
+        ],
+        "family": {
+            "id": "nacli",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "SMACK_DOWN",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_BLAST",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "garganacl",
+        "dexNumber": 934,
+        "name": "Garganacl",
+        "stats": {
+            "atk": 171,
+            "def": 212,
+            "sta": 225
+        },
+        "types": [
+            "rock"
+        ],
+        "family": {
+            "id": "nacli",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "SMACK_DOWN",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "ROCK_TOMB",
+                "ANCIENT_POWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "charcadet",
+        "dexNumber": 935,
+        "name": "Charcadet",
+        "stats": {
+            "atk": 92,
+            "def": 74,
+            "sta": 120
+        },
+        "types": [
+            "fire"
+        ],
+        "family": {
+            "id": "charcadet",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "armarouge",
+        "dexNumber": 936,
+        "name": "Armarouge",
+        "stats": {
+            "atk": 234,
+            "def": 185,
+            "sta": 198
+        },
+        "types": [
+            "fire",
+            "psychic"
+        ],
+        "family": {
+            "id": "charcadet",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER",
+                "PSYSHOCK"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "ceruledge",
+        "dexNumber": 937,
+        "name": "Ceruledge",
+        "stats": {
+            "atk": 239,
+            "def": 189,
+            "sta": 181
+        },
+        "types": [
+            "fire",
+            "ghost"
+        ],
+        "family": {
+            "id": "charcadet",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "EMBER",
+                "INCINERATE"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "HEAT_WAVE",
+                "FLAMETHROWER",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "tadbulb",
+        "dexNumber": 938,
+        "name": "Tadbulb",
+        "stats": {
+            "atk": 104,
+            "def": 73,
+            "sta": 156
+        },
+        "types": [
+            "electric"
+        ],
+        "family": {
+            "id": "tadbulb",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "PARABOLIC_CHARGE",
+                "DISCHARGE",
+                "ZAP_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "bellibolt",
+        "dexNumber": 939,
+        "name": "Bellibolt",
+        "stats": {
+            "atk": 184,
+            "def": 165,
+            "sta": 240
+        },
+        "types": [
+            "electric"
+        ],
+        "family": {
+            "id": "tadbulb",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "PARABOLIC_CHARGE",
+                "DISCHARGE",
+                "ZAP_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "wattrel",
+        "dexNumber": 940,
+        "name": "Wattrel",
+        "stats": {
+            "atk": 105,
+            "def": 75,
+            "sta": 120
+        },
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "family": {
+            "id": "wattrel",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "PECK"
+            ],
+            "chargedMoves": [
+                "ACROBATICS",
+                "AERIAL_ACE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "kilowattrel",
+        "dexNumber": 941,
+        "name": "Kilowattrel",
+        "stats": {
+            "atk": 221,
+            "def": 132,
+            "sta": 172
+        },
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "family": {
+            "id": "wattrel",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "AIR_SLASH"
+            ],
+            "chargedMoves": [
+                "ACROBATICS",
+                "AERIAL_ACE",
+                "THUNDERBOLT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 1,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "maschiff",
+        "dexNumber": 942,
+        "name": "Maschiff",
+        "stats": {
+            "atk": 140,
+            "def": 108,
+            "sta": 155
+        },
+        "types": [
+            "dark"
+        ],
+        "family": {
+            "id": "maschiff",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "PAYBACK",
+                "DIG"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "mabosstiff",
+        "dexNumber": 943,
+        "name": "Mabosstiff",
+        "stats": {
+            "atk": 230,
+            "def": 168,
+            "sta": 190
+        },
+        "types": [
+            "dark"
+        ],
+        "family": {
+            "id": "maschiff",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "CRUNCH",
+                "PAYBACK",
+                "DIG"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "shroodle",
+        "dexNumber": 944,
+        "name": "Shroodle",
+        "stats": {
+            "atk": 124,
+            "def": 70,
+            "sta": 120
+        },
+        "types": [
+            "poison",
+            "normal"
+        ],
+        "family": {
+            "id": "shroodle",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "POISON_FANG",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "grafaiai",
+        "dexNumber": 945,
+        "name": "Grafaiai",
+        "stats": {
+            "atk": 199,
+            "def": 149,
+            "sta": 160
+        },
+        "types": [
+            "poison",
+            "normal"
+        ],
+        "family": {
+            "id": "shroodle",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "POISON_FANG",
+                "SLUDGE_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "bramblin",
+        "dexNumber": 946,
+        "name": "Bramblin",
+        "stats": {
+            "atk": 121,
+            "def": 64,
+            "sta": 120
+        },
+        "types": [
+            "grass",
+            "ghost"
+        ],
+        "family": {
+            "id": "bramblin",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SHADOW_SNEAK",
+                "NIGHT_SHADE",
+                "POWER_WHIP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "brambleghast",
+        "dexNumber": 947,
+        "name": "Brambleghast",
+        "stats": {
+            "atk": 228,
+            "def": 144,
+            "sta": 146
+        },
+        "types": [
+            "grass",
+            "ghost"
+        ],
+        "family": {
+            "id": "bramblin",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "HEX",
+                "BULLET_SEED"
+            ],
+            "chargedMoves": [
+                "SHADOW_SNEAK",
+                "NIGHT_SHADE",
+                "POWER_WHIP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "toedscool",
+        "dexNumber": 948,
+        "name": "Toedscool",
+        "stats": {
+            "atk": 97,
+            "def": 149,
+            "sta": 120
+        },
+        "types": [
+            "ground",
+            "grass"
+        ],
+        "family": {
+            "id": "toedscool",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTH_POWER",
+                "SEED_BOMB",
+                "WRAP"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "toedscruel",
+        "dexNumber": 949,
+        "name": "Toedscruel",
+        "stats": {
+            "atk": 166,
+            "def": 209,
+            "sta": 190
+        },
+        "types": [
+            "ground",
+            "grass"
+        ],
+        "family": {
+            "id": "toedscool",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SLAP",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "EARTH_POWER",
+                "SEED_BOMB",
+                "ACID_SPRAY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "klawf",
+        "dexNumber": 950,
+        "name": "Klawf",
+        "stats": {
+            "atk": 184,
+            "def": 185,
+            "sta": 172
+        },
+        "types": [
+            "rock"
+        ],
+        "family": {
+            "id": "klawf",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "ROCK_SLIDE",
+                "ROCK_TOMB",
+                "BULLDOZE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "capsakid",
+        "dexNumber": 951,
+        "name": "Capsakid",
+        "stats": {
+            "atk": 118,
+            "def": 76,
+            "sta": 137
+        },
+        "types": [
+            "grass"
+        ],
+        "family": {
+            "id": "capsakid",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "RAZOR_LEAF"
+            ],
+            "chargedMoves": [
+                "LEAF_STORM",
+                "GRASS_KNOT",
+                "SEED_BOMB"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "scovillain",
+        "dexNumber": 952,
+        "name": "Scovillain",
+        "stats": {
+            "atk": 216,
+            "def": 130,
+            "sta": 163
+        },
+        "types": [
+            "grass",
+            "fire"
+        ],
+        "family": {
+            "id": "capsakid",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "LEAFAGE",
+                "FIRE_FANG"
+            ],
+            "chargedMoves": [
+                "LEAF_STORM",
+                "GRASS_KNOT",
+                "OVERHEAT",
+                "FLAMETHROWER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 10000,
+        "released": false
+    },
+    {
+        "id": "rellor",
+        "dexNumber": 953,
+        "name": "Rellor",
+        "stats": {
+            "atk": 86,
+            "def": 108,
+            "sta": 121
+        },
+        "types": [
+            "bug"
+        ],
+        "family": {
+            "id": "rellor",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "STRUGGLE_BUG"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BUG_BUZZ",
+                "LUNGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "rabsca",
+        "dexNumber": 954,
+        "name": "Rabsca",
+        "stats": {
+            "atk": 201,
+            "def": 178,
+            "sta": 181
+        },
+        "types": [
+            "bug",
+            "psychic"
+        ],
+        "family": {
+            "id": "rellor",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BUG_BITE",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "BUG_BUZZ",
+                "LUNGE",
+                "PSYBEAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "flittle",
+        "dexNumber": 955,
+        "name": "Flittle",
+        "stats": {
+            "atk": 105,
+            "def": 60,
+            "sta": 102
+        },
+        "types": [
+            "psychic"
+        ],
+        "family": {
+            "id": "flittle",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "PSYSHOCK",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "espathra",
+        "dexNumber": 956,
+        "name": "Espathra",
+        "stats": {
+            "atk": 204,
+            "def": 127,
+            "sta": 216
+        },
+        "types": [
+            "psychic"
+        ],
+        "family": {
+            "id": "flittle",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "PECK",
+                "CONFUSION"
+            ],
+            "chargedMoves": [
+                "PSYBEAM",
+                "PSYSHOCK",
+                "PSYCHIC"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "tinkatink",
+        "dexNumber": 957,
+        "name": "Tinkatink",
+        "stats": {
+            "atk": 85,
+            "def": 110,
+            "sta": 137
+        },
+        "types": [
+            "fairy",
+            "steel"
+        ],
+        "family": {
+            "id": "tinkatink",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tinkatuff",
+        "dexNumber": 958,
+        "name": "Tinkatuff",
+        "stats": {
+            "atk": 109,
+            "def": 145,
+            "sta": 163
+        },
+        "types": [
+            "fairy",
+            "steel"
+        ],
+        "family": {
+            "id": "tinkatink",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tinkaton",
+        "dexNumber": 959,
+        "name": "Tinkaton",
+        "stats": {
+            "atk": 155,
+            "def": 196,
+            "sta": 198
+        },
+        "types": [
+            "fairy",
+            "steel"
+        ],
+        "family": {
+            "id": "tinkatink",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "FAIRY_WIND",
+                "ROCK_SMASH"
+            ],
+            "chargedMoves": [
+                "PLAY_ROUGH",
+                "BRUTAL_SWING",
+                "FLASH_CANNON",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "wiglett",
+        "dexNumber": 960,
+        "name": "Wiglett",
+        "stats": {
+            "atk": 109,
+            "def": 52,
+            "sta": 67
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "wiglett",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "LIQUIDATION",
+                "DIG",
+                "SURF"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "wugtrio",
+        "dexNumber": 961,
+        "name": "Wugtrio",
+        "stats": {
+            "atk": 205,
+            "def": 136,
+            "sta": 111
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "wiglett",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "WATER_GUN",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "LIQUIDATION",
+                "DIG",
+                "SURF"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "bombirdier",
+        "dexNumber": 962,
+        "name": "Bombirdier",
+        "stats": {
+            "atk": 198,
+            "def": 172,
+            "sta": 172
+        },
+        "types": [
+            "flying",
+            "dark"
+        ],
+        "family": {
+            "id": "bombirdier",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WING_ATTACK",
+                "ROCK_THROW"
+            ],
+            "chargedMoves": [
+                "PAYBACK",
+                "AERIAL_ACE",
+                "FLY"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "finizen",
+        "dexNumber": 963,
+        "name": "Finizen",
+        "stats": {
+            "atk": 90,
+            "def": 80,
+            "sta": 172
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "finizen",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "palafin_zero",
+        "dexNumber": 964,
+        "name": "Palafin (Zero)",
+        "stats": {
+            "atk": 143,
+            "def": 144,
+            "sta": 225
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "finizen",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND",
+                "DRAIN_PUNCH",
+                "ACROBATICS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "palafin_hero",
+        "dexNumber": 964,
+        "name": "Palafin (Hero)",
+        "stats": {
+            "atk": 293,
+            "def": 179,
+            "sta": 205
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "finizen",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "CHARM",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "AQUA_JET",
+                "WATER_PULSE",
+                "ICY_WIND",
+                "DRAIN_PUNCH",
+                "ACROBATICS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "varoom",
+        "dexNumber": 965,
+        "name": "Varoom",
+        "stats": {
+            "atk": 123,
+            "def": 107,
+            "sta": 128
+        },
+        "types": [
+            "steel",
+            "poison"
+        ],
+        "family": {
+            "id": "varoom",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "GUNK_SHOT",
+                "GYRO_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "revavroom",
+        "dexNumber": 966,
+        "name": "Revavroom",
+        "stats": {
+            "atk": 229,
+            "def": 168,
+            "sta": 190
+        },
+        "types": [
+            "steel",
+            "poison"
+        ],
+        "family": {
+            "id": "varoom",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "POISON_JAB"
+            ],
+            "chargedMoves": [
+                "ACID_SPRAY",
+                "GUNK_SHOT",
+                "GYRO_BALL",
+                "OVERHEAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "cyclizar",
+        "dexNumber": 967,
+        "name": "Cyclizar",
+        "stats": {
+            "atk": 205,
+            "def": 142,
+            "sta": 172
+        },
+        "types": [
+            "dragon",
+            "normal"
+        ],
+        "family": {
+            "id": "cyclizar",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_TAIL",
+                "TAKE_DOWN"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "BODY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "orthworm",
+        "dexNumber": 968,
+        "name": "Orthworm",
+        "stats": {
+            "atk": 161,
+            "def": 219,
+            "sta": 172
+        },
+        "types": [
+            "steel"
+        ],
+        "family": {
+            "id": "orthworm",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "IRON_TAIL",
+                "MUD_SLAP"
+            ],
+            "chargedMoves": [
+                "ROCK_TOMB",
+                "EARTHQUAKE",
+                "IRON_HEAD"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "glimmet",
+        "dexNumber": 969,
+        "name": "Glimmet",
+        "stats": {
+            "atk": 187,
+            "def": 104,
+            "sta": 134
+        },
+        "types": [
+            "rock",
+            "poison"
+        ],
+        "family": {
+            "id": "glimmet",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "ROCK_SLIDE",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "glimmora",
+        "dexNumber": 970,
+        "name": "Glimmora",
+        "stats": {
+            "atk": 246,
+            "def": 177,
+            "sta": 195
+        },
+        "types": [
+            "rock",
+            "poison"
+        ],
+        "family": {
+            "id": "glimmet",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_THROW",
+                "SMACK_DOWN"
+            ],
+            "chargedMoves": [
+                "DAZZLING_GLEAM",
+                "ROCK_SLIDE",
+                "SLUDGE_WAVE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "greavard",
+        "dexNumber": 971,
+        "name": "Greavard",
+        "stats": {
+            "atk": 105,
+            "def": 106,
+            "sta": 137
+        },
+        "types": [
+            "ghost"
+        ],
+        "family": {
+            "id": "greavard",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DIG",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "houndstone",
+        "dexNumber": 972,
+        "name": "Houndstone",
+        "stats": {
+            "atk": 186,
+            "def": 195,
+            "sta": 176
+        },
+        "types": [
+            "ghost"
+        ],
+        "family": {
+            "id": "greavard",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "LICK",
+                "BITE"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DIG",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "flamigo",
+        "dexNumber": 973,
+        "name": "Flamigo",
+        "stats": {
+            "atk": 227,
+            "def": 145,
+            "sta": 193
+        },
+        "types": [
+            "flying",
+            "fighting"
+        ],
+        "family": {
+            "id": "flamigo",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WING_ATTACK",
+                "DOUBLE_KICK"
+            ],
+            "chargedMoves": [
+                "AERIAL_ACE",
+                "BRAVE_BIRD",
+                "CLOSE_COMBAT"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "cetoddle",
+        "dexNumber": 974,
+        "name": "Cetoddle",
+        "stats": {
+            "atk": 119,
+            "def": 80,
+            "sta": 239
+        },
+        "types": [
+            "ice"
+        ],
+        "family": {
+            "id": "cetoddle",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ICE_SHARD",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "AVALANCHE",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "cetitan",
+        "dexNumber": 975,
+        "name": "Cetitan",
+        "stats": {
+            "atk": 208,
+            "def": 123,
+            "sta": 347
+        },
+        "types": [
+            "ice"
+        ],
+        "family": {
+            "id": "cetoddle",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "ICE_SHARD",
+                "TACKLE",
+                "POWDER_SNOW"
+            ],
+            "chargedMoves": [
+                "BODY_SLAM",
+                "AVALANCHE",
+                "HEAVY_SLAM"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "veluza",
+        "dexNumber": 976,
+        "name": "Veluza",
+        "stats": {
+            "atk": 196,
+            "def": 139,
+            "sta": 207
+        },
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "family": {
+            "id": "veluza",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ICE_FANG",
+                "ZEN_HEADBUTT"
+            ],
+            "chargedMoves": [
+                "WATER_PULSE",
+                "PSYCHIC_FANGS",
+                "DRILL_RUN",
+                "CRUNCH"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "dondozo",
+        "dexNumber": 977,
+        "name": "Dondozo",
+        "stats": {
+            "atk": 176,
+            "def": 178,
+            "sta": 312
+        },
+        "types": [
+            "water"
+        ],
+        "family": {
+            "id": "dondozo",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "WATERFALL",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "LIQUIDATION"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "tatsugiri",
+        "dexNumber": 978,
+        "name": "Tatsugiri",
+        "stats": {
+            "atk": 226,
+            "def": 166,
+            "sta": 169
+        },
+        "types": [
+            "dragon",
+            "water"
+        ],
+        "family": {
+            "id": "tatsugiri",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "TAKE_DOWN",
+                "WATER_GUN"
+            ],
+            "chargedMoves": [
+                "OUTRAGE",
+                "SURF",
+                "HYDRO_PUMP",
+                "MUDDY_WATER"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "annihilape",
+        "dexNumber": 979,
+        "name": "Annihilape",
+        "stats": {
+            "atk": 220,
+            "def": 178,
+            "sta": 242
+        },
+        "types": [
+            "fighting",
+            "ghost"
+        ],
+        "family": {
+            "id": "mankey",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "LOW_KICK",
+                "COUNTER"
+            ],
+            "chargedMoves": [
+                "CLOSE_COMBAT",
+                "LOW_SWEEP",
+                "NIGHT_SLASH",
+                "ICE_PUNCH",
+                "SHADOW_BALL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "clodsire",
+        "dexNumber": 980,
+        "name": "Clodsire",
+        "stats": {
+            "atk": 127,
+            "def": 151,
+            "sta": 277
+        },
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "family": {
+            "id": "wooper_paldean",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "POISON_STING",
+                "MUD_SHOT"
+            ],
+            "chargedMoves": [
+                "SLUDGE_BOMB",
+                "EARTHQUAKE",
+                "STONE_EDGE",
+                "ACID_SPRAY",
+                "WATER_PULSE",
+                "MEGAHORN"
+            ],
+            "eliteMoves": [
+                "MEGAHORN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": true
+    },
+    {
+        "id": "farigiraf",
+        "dexNumber": 981,
+        "name": "Farigiraf",
+        "stats": {
+            "atk": 209,
+            "def": 136,
+            "sta": 260
+        },
+        "types": [
+            "normal",
+            "psychic"
+        ],
+        "family": {
+            "id": "girafarig",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "TACKLE",
+                "CONFUSION",
+                "DOUBLE_KICK"
+            ],
+            "chargedMoves": [
+                "PSYCHIC",
+                "THUNDERBOLT",
+                "MIRROR_COAT",
+                "PSYCHIC_FANGS"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "dudunsparce",
+        "dexNumber": 982,
+        "name": "Dudunsparce",
+        "stats": {
+            "atk": 188,
+            "def": 150,
+            "sta": 268
+        },
+        "types": [
+            "normal"
+        ],
+        "family": {
+            "id": "dunsparce",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "BITE",
+                "ASTONISH",
+                "ROLLOUT"
+            ],
+            "chargedMoves": [
+                "DIG",
+                "ROCK_SLIDE",
+                "DRILL_RUN"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 3,
+        "thirdMoveCost": 50000,
+        "released": false
+    },
+    {
+        "id": "kingambit",
+        "dexNumber": 983,
+        "name": "Kingambit",
+        "stats": {
+            "atk": 238,
+            "def": 203,
+            "sta": 225
+        },
+        "types": [
+            "dark",
+            "steel"
+        ],
+        "family": {
+            "id": "pawniard",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "SNARL",
+                "METAL_CLAW"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "IRON_HEAD",
+                "X_SCISSOR",
+                "FOCUS_BLAST"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": false
+    },
+    {
+        "id": "frigibax",
+        "dexNumber": 996,
+        "name": "Frigibax",
+        "stats": {
+            "atk": 134,
+            "def": 86,
+            "sta": 163
+        },
+        "types": [
+            "dragon",
+            "ice"
+        ],
+        "family": {
+            "id": "frigibax",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "arctibax",
+        "dexNumber": 997,
+        "name": "Arctibax",
+        "stats": {
+            "atk": 173,
+            "def": 128,
+            "sta": 207
+        },
+        "types": [
+            "dragon",
+            "ice"
+        ],
+        "family": {
+            "id": "frigibax",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "baxcalibur",
+        "dexNumber": 998,
+        "name": "Baxcalibur",
+        "stats": {
+            "atk": 254,
+            "def": 168,
+            "sta": 229
+        },
+        "types": [
+            "dragon",
+            "ice"
+        ],
+        "family": {
+            "id": "frigibax",
+            "stage": 3
+        },
+        "moves": {
+            "fastMoves": [
+                "DRAGON_BREATH",
+                "ICE_FANG"
+            ],
+            "chargedMoves": [
+                "DRAGON_CLAW",
+                "AVALANCHE",
+                "OUTRAGE",
+                "BLIZZARD",
+                "ICY_WIND"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 75000,
+        "released": true
+    },
+    {
+        "id": "gholdengo",
+        "dexNumber": 1000,
+        "name": "Gholdengo",
+        "stats": {
+            "atk": 252,
+            "def": 190,
+            "sta": 202
+        },
+        "types": [
+            "steel",
+            "ghost"
+        ],
+        "family": {
+            "id": "gimmighoul",
+            "stage": 2
+        },
+        "moves": {
+            "fastMoves": [
+                "ASTONISH",
+                "HEX"
+            ],
+            "chargedMoves": [
+                "SHADOW_BALL",
+                "DAZZLING_GLEAM",
+                "FOCUS_BLAST"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 5,
+        "thirdMoveCost": 10000,
+        "released": true
+    },
+    {
+        "id": "chien_pao",
+        "dexNumber": 1002,
+        "name": "Chien-Pao",
+        "stats": {
+            "atk": 261,
+            "def": 167,
+            "sta": 190
+        },
+        "types": [
+            "dark",
+            "ice"
+        ],
+        "family": {
+            "id": "chien_pao",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "POWDER_SNOW",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "AVALANCHE",
+                "BLIZZARD"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "ting_lu",
+        "dexNumber": 1003,
+        "name": "Ting-Lu",
+        "stats": {
+            "atk": 193,
+            "def": 210,
+            "sta": 321
+        },
+        "types": [
+            "dark",
+            "ground"
+        ],
+        "family": {
+            "id": "ting_lu",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "MUD_SHOT",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "DARK_PULSE",
+                "BULLDOZE",
+                "EARTHQUAKE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "chi_yu",
+        "dexNumber": 1004,
+        "name": "Chi-Yu",
+        "stats": {
+            "atk": 269,
+            "def": 221,
+            "sta": 146
+        },
+        "types": [
+            "dark",
+            "fire"
+        ],
+        "family": {
+            "id": "chi_yu",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "INCINERATE",
+                "SNARL"
+            ],
+            "chargedMoves": [
+                "FLAME_CHARGE",
+                "DARK_PULSE",
+                "FLAME_WHEEL"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "koraidon",
+        "dexNumber": 1007,
+        "name": "Koraidon",
+        "stats": {
+            "atk": 263,
+            "def": 223,
+            "sta": 205
+        },
+        "types": [
+            "fighting",
+            "dragon"
+        ],
+        "family": {
+            "id": "koraidon",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "ROCK_SMASH",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "GIGA_IMPACT",
+                "DRAGON_CLAW",
+                "CLOSE_COMBAT",
+                "OUTRAGE"
+            ]
+        },
+        "tags": [],
+        "buddyDistance": 20,
+        "thirdMoveCost": 100000,
+        "released": false
+    },
+    {
+        "id": "miraidon",
+        "dexNumber": 1008,
+        "name": "Miraidon",
+        "stats": {
+            "atk": 263,
+            "def": 223,
+            "sta": 205
+        },
+        "types": [
+            "electric",
+            "dragon"
+        ],
+        "family": {
+            "id": "miraidon",
+            "stage": 1
+        },
+        "moves": {
+            "fastMoves": [
+                "THUNDER_SHOCK",
+                "DRAGON_TAIL"
+            ],
+            "chargedMoves": [
+                "HYPER_BEAM",
+                "DRAGON_PULSE",
+                "THUNDER",
+                "OUTRAGE"
             ]
         },
         "tags": [],

@@ -1,5 +1,5 @@
 import type { Move } from "@/@types/move";
-// Last Update at: 2024-08-28T22:01:10.942Z
+// Last Update at: 2024-08-29T13:35:29.735Z
 // From {@ local file} 
 export const MOVES: Move[] = [
     {

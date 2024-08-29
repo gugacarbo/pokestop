@@ -17,6 +17,8 @@ import {CompareModes} from '@/@types/compare-modes';
 import {SingleLevelCapSelector} from './components/single-level-cap-selector';
 import {Candidate} from '../candidate/use-candidate';
 import {KnownMoves} from './known-moves';
+import {getWeaknessesAndResistances} from '../pokedex/get-types-effectiveness';
+import { EffectivenessDisplay } from './components/effectiveness-display';
 
 const defaultPokemon = {
 	name: 'Medicham',
@@ -100,7 +102,10 @@ export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
 			/>
 			<CpLeagueSelector league={league} setLeague={setLeague} />
 			<SingleLevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
-			<ResultTable matchingSpreads={filtered} />
+			<div className="flex flex-col gap-4 col-span-1 md:col-span-2">
+				<EffectivenessDisplay pokemon={pokemon} />
+				<ResultTable matchingSpreads={filtered} />
+			</div>
 			<div className="flex flex-col gap-4 col-span-1 md:col-span-3">
 				<KnownMoves pokemon={pokemon} />
 				<ScatterPokemonChart matchingSpreads={filtered} />
