@@ -21,7 +21,7 @@ export const moveArcheTypeIcons: Record<MoveArcheType, React.ReactElement> = {
 	'low-quality': <OctagonXIcon className="" />,
 	debuff: <OctagonXIcon />,
 	'boost-nuke': <RadiationIcon className="fill-white" />,
-	'high-energy': <ArrowsUpFromLineIcon className="scale-75" />,
+	'high-energy': <ArrowsUpFromLineIcon className="scale-90" />,
 	general: <OctagonXIcon />,
 	boost: <OctagonXIcon />,
 	spam_bait: <OctagonXIcon />,
@@ -112,7 +112,7 @@ export function MoveArcheTypeIcon({
 		<div className="flex items-center gap-1">
 			{label && (
 				<small className="font-bold">
-					{t(`rankings.moves.arche-types.${type}`)}
+					{t(`moves.arche-types.${type}`)}
 				</small>
 			)}
 
@@ -129,7 +129,7 @@ export function MoveArcheTypeIcon({
 						</Button>
 					</TooltipTrigger>
 					<TooltipContent className="max-w-sm">
-						<p>{t(`rankings.moves.arche-types.${type}`)}</p>
+						<p>{t(`moves.arche-types.${type}`)}</p>
 					</TooltipContent>
 				</Tooltip>
 			</TooltipProvider>

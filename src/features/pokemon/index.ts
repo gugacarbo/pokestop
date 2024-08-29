@@ -1,4 +1,6 @@
+import {Move} from '@/@types/move';
 import {Pokemon, PokemonID, PokemonName} from '@/@types/pokemon';
+import {MOVES} from '@/data/moves';
 import {POKEMONS} from '@/data/pokemons';
 import {isSubsequence} from '@/utils/isSubsequence';
 
@@ -49,4 +51,42 @@ export function getPokemonFamilyMembers(
 	list: Pokemon[] = POKEMONS,
 ) {
 	return list.filter(pokemon => pokemon.family.id === familyID);
+}
+
+export function getMoveById(id: string) {
+	return MOVES.find(move => move.id === id);
+}
+
+function parseMoves(moves?: (string | Move)[]) {
+	if (!moves) return [];
+	return moves
+		.map(moveId => {
+			if (typeof moveId === 'string') {
+				const move = getMoveById(moveId);
+				if (!move) {
+					console.warn(`Move not found: ${moveId}`);
+					return undefined;
+				}
+				return move;
+			}
+			return moveId;
+		})
+		.filter(move => move !== undefined && typeof move !== 'string');
+}
+
+export function getMoves(pokemon: string | Pokemon | null): Pokemon | null {
+	if (!pokemon) return null;
+
+	const poke = typeof pokemon === 'string' ? getPokemonByID(pokemon) : pokemon;
+	if (!poke) return null;
+
+	return {
+		...poke,
+		moves: {
+			fastMoves: parseMoves(poke.moves?.fastMoves),
+			chargedMoves: parseMoves(poke.moves?.chargedMoves),
+			legacyMoves: parseMoves(poke.moves?.legacyMoves),
+			eliteMoves: parseMoves(poke.moves?.eliteMoves),
+		},
+	};
 }

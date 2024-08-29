@@ -75,7 +75,7 @@ export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
 	}, [matchingSpreads, hp, anyHp, cp, anyCp, hpFilterMode, cpFilterMode]);
 
 	return (
-		<div className="items-start gap-6 space-y-0 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-0 w-full">
+		<div className="items-start gap-4 space-y-0 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-0 w-full">
 			<SpeciesDropdown
 				pokemon={pokemon}
 				onChange={setPokemon}
@@ -101,8 +101,10 @@ export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
 			<CpLeagueSelector league={league} setLeague={setLeague} />
 			<SingleLevelCapSelector levelCap={levelCap} setLevelCap={setLevelCap} />
 			<ResultTable matchingSpreads={filtered} />
-			<KnownMoves pokemon={pokemon} />
-			<ScatterPokemonChart matchingSpreads={filtered} />
+			<div className="flex flex-col gap-4 col-span-1 md:col-span-3">
+				<KnownMoves pokemon={pokemon} />
+				<ScatterPokemonChart matchingSpreads={filtered} />
+			</div>
 		</div>
 	);
 }

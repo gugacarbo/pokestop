@@ -31,6 +31,27 @@ export const typeBackgrounds = {
 	water: 'bg-blue-400',
 };
 
+export const typeBackgroundsGradients = {
+	bug: 'bg-gradient-to-r from-lime-500 to-lime-600',
+	dark: 'bg-gradient-to-r from-zinc-600 to-zinc-700',
+	dragon: 'bg-gradient-to-r from-sky-600 to-sky-700',
+	electric: 'bg-gradient-to-r from-yellow-400 to-yellow-500',
+	fire: 'bg-gradient-to-r from-orange-400 to-orange-500',
+	fairy: 'bg-gradient-to-r from-fuchsia-400 to-fuchsia-500',
+	fighting: 'bg-gradient-to-r from-rose-500 to-rose-600',
+	flying: 'bg-gradient-to-r from-indigo-400 to-indigo-500',
+	ghost: 'bg-gradient-to-r from-indigo-500 to-indigo-600',
+	grass: 'bg-gradient-to-r from-green-500 to-green-600',
+	ground: 'bg-gradient-to-r from-orange-400 to-orange-500',
+	ice: 'bg-gradient-to-r from-emerald-400 to-emerald-500',
+	normal: 'bg-gradient-to-r from-neutral-400 to-neutral-500',
+	poison: 'bg-gradient-to-r from-purple-500 to-purple-600',
+	psychic: 'bg-gradient-to-r from-rose-400 to-rose-500',
+	rock: 'bg-gradient-to-r from-stone-400 to-stone-500',
+	steel: 'bg-gradient-to-r from-cyan-600 to-cyan-700',
+	water: 'bg-gradient-to-r from-blue-400 to-blue-500',
+};
+
 export const typeBorders = {
 	bug: 'border-lime-500',
 	dark: 'border-zinc-600',
@@ -119,7 +140,7 @@ export function PokemonTypeIcon({
 				<TooltipTrigger disabled={!tooltip}>
 					<div
 						// title={type.charAt(0).toUpperCase() + type.slice(1)}
-						className={cn(typeClasses({color: type, size}),className)}
+						className={cn(typeClasses({color: type, size}), className)}
 					>
 						<Image
 							src={`/types/${type}.svg`}

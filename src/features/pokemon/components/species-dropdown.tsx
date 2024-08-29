@@ -85,23 +85,29 @@ export function SpeciesDropdown({
 				</TooltipProvider>
 				<Popover open={open} onOpenChange={setOpen}>
 					<PopoverTrigger asChild>
-						<Button
-							variant="outline"
-							role="combobox"
-							aria-expanded={open}
-							className="gap-1 w-[200px]"
-						>
-							{pokemon.types && <SpeciesTypeIcons types={pokemon.types} />}
-							{pokemon.name ?? 'Select Pokémon...'}
-							<ChevronsUpDown className="opacity-50 ml-auto w-4 h-4 shrink-0" />
-						</Button>
+						<div className="relative flex items-center place-items-center">
+							<div className="right-2 absolute">
+								{pokemon.types && <SpeciesTypeIcons types={pokemon.types} />}
+							</div>
+							<Input
+								value={input}
+								className="rounded-sm outline-none"
+								onChange={e => {
+									setInput(e.target.value);
+								}}
+								placeholder="Search pokemon..."
+							/>
+						</div>
 					</PopoverTrigger>
 					<PopoverContent className="p-0">
 						<Input
 							onKeyDown={(event: React.KeyboardEvent) => {
 								if (event.key === 'Enter' && fuzzy[0]) {
-									handleOnChange(fuzzy[0].item);
-									setOpen(false);
+									const p = pokedex.pokemon.byName(fuzzy[0].item.name);
+									if (p) {
+										setInput(p.name);
+										handleOnChange(p);
+									}
 								}
 							}}
 							value={input}
