@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/popover";
 
 import { useState } from "react";
-import { Pokemon } from "@/features/_pokemon/@types";
+import { Pokemon } from "@/@types/pokemon";
 import { useFormContext } from "react-hook-form";
 import { FormField } from "@/components/ui/form";
 import { SearchFilter } from "../schemas/search-filter-schema";
@@ -27,7 +27,7 @@ import { useTranslations } from "next-intl";
 function NamesListSelector({
   pokemons,
 }: {
-  pokemons: Pick<Pokemon, "speciesName" | "dex" | "speciesId">[];
+  pokemons: Pick<Pokemon, "name" | "dexNumber" | "id">[];
 }) {
   const { control } = useFormContext<SearchFilter>();
   const t = useTranslations("filters.text.pokemon_name");
@@ -74,35 +74,35 @@ function NamesListSelector({
                       onSelect={() => {
                         if (
                           field.value.find(
-                            (val) => val.value === String(pokemon.dex)
+                            (val) => val.value === String(pokemon.dexNumber)
                           )
                         ) {
                           field.onChange(
                             field.value.filter(
-                              (val) => val.value !== String(pokemon.dex)
+                              (val) => val.value !== String(pokemon.dexNumber)
                             )
                           );
                         } else {
                           field.onChange([
                             ...field.value,
-                            { value: String(pokemon.dex), not: false },
+                            { value: String(pokemon.dexNumber), not: false },
                           ]);
                         }
                       }}
-                      key={pokemon.dex}
-                      value={String(pokemon.speciesName)}
+                      key={pokemon.dexNumber}
+                      value={String(pokemon.name)}
                     >
                       <Check
                         className={cn(
                           "mr-2 h-4 w-4",
                           field.value.find(
-                            (val) => val.value === String(pokemon.dex)
+                            (val) => val.value === String(pokemon.dexNumber)
                           )
                             ? "opacity-100"
                             : "opacity-0"
                         )}
                       />
-                      {pokemon.speciesName}
+                      {pokemon.name}
                     </CommandItem>
                   ))}
                 </CommandGroup>
