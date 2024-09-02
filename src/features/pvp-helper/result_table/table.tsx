@@ -12,6 +12,7 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import {useDataTable} from '@/features/data-table/useDataTable';
+import {ChartAccordion} from './rank-chart/chart-accordion';
 
 function ResultTable({matchingSpreads}: {matchingSpreads: RankedSpread[]}) {
 	const table = useDataTable({
@@ -19,6 +20,11 @@ function ResultTable({matchingSpreads}: {matchingSpreads: RankedSpread[]}) {
 		columns: rankSpreadColumns,
 		getCoreRowModel: getCoreRowModel(),
 		initialSorting: 'rank',
+		initialState: {
+			pagination: {
+				pageSize: 5,
+			},
+		},
 		initialVisibility: {
 			level: false,
 			product_percentOfMax: false,
@@ -39,9 +45,10 @@ function ResultTable({matchingSpreads}: {matchingSpreads: RankedSpread[]}) {
 				<ToggleVisibleColumns table={table} />
 			</CardHeader>
 			<DataTable cardClassName="rounded-none border-none " table={table} />
-			<CardFooter className="pt-4">
-				<TablePageSizeSelect className="mt" table={table} />
-			</CardFooter>
+			<CardContent className="mt-4">
+				<TablePageSizeSelect table={table} />
+			</CardContent>
+			<ChartAccordion matchingSpreads={matchingSpreads} />
 		</Card>
 	);
 }

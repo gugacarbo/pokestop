@@ -12,16 +12,16 @@ export function FastMove({move, typeBoost}: {move: Move; typeBoost: boolean}) {
 	}
 	const dmg = (move.power * (typeBoost ? 1.2 : 1)) / getTurns(move.cooldown);
 	return (
-		<div className={'flex justify-between gap-2 w-full'}>
-			<div className="flex flex-col items-center">
+		<div className={'flex justify-between gap-1 w-full'}>
+			<div className="flex flex-col items-center leading-tight">
 				<small>{t('rankings.moves.damage')} </small>
 				<small>{dmg.toFixed(2)}</small>
 			</div>
-			<div className="flex flex-col items-center">
+			<div className="flex flex-col items-center leading-tight">
 				<small>{t('rankings.moves.energy')} </small>
 				<small>{(move.energyGain / getTurns(move.cooldown)).toFixed(2)}</small>
 			</div>
-			<div className="flex flex-col items-center">
+			<div className="flex flex-col items-center leading-tight">
 				<small>{t('rankings.moves.turns')} </small>
 				<small>{getTurns(move.cooldown)}</small>
 			</div>

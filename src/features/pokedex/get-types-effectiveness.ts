@@ -8,11 +8,10 @@ import {
 interface EffectivenessResult {
 	weaknesses: Partial<Effectiveness>;
 	resistances: Partial<Effectiveness>;
+	strengths?: Partial<Effectiveness>;
 }
 
-export function getWeaknessesAndResistances(
-	pokemon: Pokemon,
-): EffectivenessResult {
+export function getTypesEffectiveness(pokemon: Pokemon): EffectivenessResult {
 	const type_1 = pokemon.types[0];
 	const type_2 = pokemon.types[1] && pokemon.types[1];
 
@@ -43,12 +42,37 @@ export function getWeaknessesAndResistances(
 		}
 	}
 
+	const strengths_1 = typesEffectiveness[type_1];
+	const strengths_2 = type_2 && typesEffectiveness[type_2];
+
+	const strengths: Partial<Effectiveness> = {};
+
+	for (const attackingType in typesEffectiveness) {
+		const type_1_multiplier = strengths_1[attackingType as PokemonType] ?? 1;
+
+		const type_2_multiplier = strengths_2
+			? strengths_2[attackingType as PokemonType] ?? 1
+			: 1;
+
+		const multiplier = parseFloat(
+			(type_1_multiplier * type_2_multiplier).toFixed(4),
+		);
+
+		if (Number(multiplier.toFixed(1)) > 1) {
+			strengths[attackingType as PokemonType] =
+				multiplier as EffectivenessValue;
+		}
+	}
+
 	return {
 		weaknesses: Object.fromEntries(
 			Object.entries(weaknesses).sort(([_, v], [__, v2]) => v2 - v),
 		),
 		resistances: Object.fromEntries(
 			Object.entries(resistances).sort(([_, v], [__, v2]) => v - v2),
+		),
+		strengths: Object.fromEntries(
+			Object.entries(strengths).sort(([_, v], [__, v2]) => v2 - v),
 		),
 	};
 }

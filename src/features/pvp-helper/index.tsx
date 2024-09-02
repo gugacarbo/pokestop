@@ -1,13 +1,12 @@
 'use client';
 
 import {useMemo, useState} from 'react';
-import {LeagueCPCap, leagueCPKeysSchema} from '@/@types/league';
-import {LevelCap, levelCapNumberSchema} from '@/@types/level-cap';
+import {LeagueCPCap} from '@/@types/league';
+import {LevelCap} from '@/@types/level-cap';
 import {Pokemon} from '@/@types/pokemon';
 import {SpeciesDropdown} from '@/features/pokemon/components/species-dropdown';
 import {usePokedex} from '@/features/pokedex/use-pokedex';
 
-import {ScatterPokemonChart} from './rank-chart/scatter-ranking.chart';
 import {CpSelector} from './components/cp-selector';
 import {HpSelector} from './components/hp-selector';
 import {CpLeagueSelector} from '../candidate/builder/components/league-selector';
@@ -17,8 +16,7 @@ import {CompareModes} from '@/@types/compare-modes';
 import {SingleLevelCapSelector} from './components/single-level-cap-selector';
 import {Candidate} from '../candidate/use-candidate';
 import {KnownMoves} from './known-moves';
-import {getWeaknessesAndResistances} from '../pokedex/get-types-effectiveness';
-import { EffectivenessDisplay } from './components/effectiveness-display';
+import {EffectivenessDisplay} from './components/effectiveness-display';
 
 const defaultPokemon = {
 	name: 'Medicham',
@@ -108,7 +106,6 @@ export function PvpHelper({candidate}: {candidate?: Candidate | null}) {
 			</div>
 			<div className="flex flex-col gap-4 col-span-1 md:col-span-3">
 				<KnownMoves pokemon={pokemon} />
-				<ScatterPokemonChart matchingSpreads={filtered} />
 			</div>
 		</div>
 	);

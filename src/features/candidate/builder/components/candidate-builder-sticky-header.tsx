@@ -6,7 +6,7 @@ import { RANKABLE_METRICS } from "@/@types/stat";
 
 import { useCandidate } from "@/features/candidate/use-candidate";
 import { useSettings } from "@/features/settings/use-settings";
-import SpeciesTypeIcons from "@/features/pokemon/components/species-type-icons";
+import {SpeciesTypeIcons} from "@/features/pokemon/components/species-type-icons";
 import { PencilIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";

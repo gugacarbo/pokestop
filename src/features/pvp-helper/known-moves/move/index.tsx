@@ -39,7 +39,7 @@ export function PokeMove({
 	return (
 		<div
 			className={cn(
-				'flex flex-col gap-2 bg-popover p-2 border-2 rounded-md w-full cursor-pointer',
+				'flex flex-col gap-0.5 bg-popover p-2 border-2 rounded-md w-full cursor-pointer',
 				`${typeBackgrounds[move.type]} bg-opacity-20`,
 				typeBorders[move.type],
 				moveType === 'fast' &&
@@ -48,15 +48,16 @@ export function PokeMove({
 			)}
 			onClick={onClick}
 		>
-			<MoveTitle move={move} isLegacy={isLegacy} isElite={isElite} />
+			<MoveTitle
+				move={move}
+				isLegacy={isLegacy}
+				isElite={isElite}
+				currentFastMove={moveType === 'charged' ? selectedFast : undefined}
+			/>
 			{moveType === 'fast' ? (
 				<FastMove move={move} typeBoost={typeBoost} />
 			) : (
-				<ChargedMove
-					move={move}
-					typeBoost={typeBoost}
-					currentFastMove={selectedFast}
-				/>
+				<ChargedMove move={move} typeBoost={typeBoost} />
 			)}
 		</div>
 	);

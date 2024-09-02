@@ -8,7 +8,7 @@ import {
 } from '@/features/candidate/use-candidate';
 import {usePokedex} from '@/features/pokedex/use-pokedex';
 
-import SpeciesTypeIcons from '@/features/pokemon/components/species-type-icons';
+import {SpeciesTypeIcons} from '@/features/pokemon/components/species-type-icons';
 
 import {Label} from '@/components/ui/label';
 import {Button} from '@/components/ui/button';

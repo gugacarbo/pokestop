@@ -18,7 +18,7 @@ import {cloneElement} from 'react';
 import {Button} from '@/components/ui/button';
 
 export const moveArcheTypeIcons: Record<MoveArcheType, React.ReactElement> = {
-	'low-quality': <OctagonXIcon className="" />,
+	'low-quality': <OctagonXIcon className="text-red-500/80" />,
 	debuff: <OctagonXIcon />,
 	'boost-nuke': <RadiationIcon className="fill-white" />,
 	'high-energy': <ArrowsUpFromLineIcon className="scale-90" />,
@@ -41,7 +41,7 @@ export const moveArcheTypeIcons: Record<MoveArcheType, React.ReactElement> = {
 };
 
 export const typeBackgrounds = {
-	'low-quality': '',
+	'low-quality': 'bg-muted',
 	debuff: '',
 	'boost-nuke': 'bg-red-600',
 	'high-energy': 'bg-orange-700',
@@ -111,9 +111,7 @@ export function MoveArcheTypeIcon({
 	return (
 		<div className="flex items-center gap-1">
 			{label && (
-				<small className="font-bold">
-					{t(`moves.arche-types.${type}`)}
-				</small>
+				<small className="font-bold">{t(`moves.arche-types.${type}`)}</small>
 			)}
 
 			<TooltipProvider delayDuration={500} disableHoverableContent={true}>
