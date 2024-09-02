@@ -4,7 +4,7 @@ export default createMiddleware({
 	// A list of all locales that are supported
 	locales: [
 		'en',
-		//  'pt-br'
+		'pt-br'
 	],
 
 	// Used when no locale matches
@@ -13,5 +13,5 @@ export default createMiddleware({
 
 export const config = {
 	// Match only internationalized pathnames
-	matcher: ['/', '/(en)/:path*'],
+	matcher: ['/', '/(pt-br|en)/:path*'],
 };
