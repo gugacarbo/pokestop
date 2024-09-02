@@ -129,7 +129,7 @@ export function PokemonTypeIcon({
 	size?: IconSize;
 	tooltip?: boolean;
 }) {
-	const imgSize = size === 'lg' ? 18 : size === 'md' ? 14 : 10;
+	const imgSize = size === 'lg' ? 18 : size === 'md' ? 14 : 12;
 	const t = useTranslations();
 
 	return (

@@ -17,20 +17,20 @@ function EffectivenessDisplay({pokemon}: {pokemon: Pokemon}) {
 				<CardTitle>Effectiveness</CardTitle>
 			</CardHeader>
 			<CardContent className="flex flex-col gap-4 w-full">
-				<div className="flex flex-col gap-1 w-full">
+				{/* <div className="flex flex-col gap-1 w-full">
 					<div className="flex gap-1">
 						<SwordsIcon /> <h3>Strengths</h3>
 					</div>
 					<EffectsContainer>
 						{Object.entries(strengths ?? {}).map(([type, multiplier]) => (
-							<Effect
+							<EffectBadge
 								key={type}
 								type={type as PokemonType}
 								multiplier={multiplier}
 							/>
 						))}
 					</EffectsContainer>
-				</div>
+				</div> */}
 				<div className="flex flex-col gap-1 w-full">
 					<div className="flex gap-1">
 						<HeartCrackIcon />
@@ -38,7 +38,7 @@ function EffectivenessDisplay({pokemon}: {pokemon: Pokemon}) {
 					</div>
 					<EffectsContainer>
 						{Object.entries(weaknesses).map(([type, multiplier]) => (
-							<Effect
+							<EffectBadge
 								key={type}
 								type={type as PokemonType}
 								multiplier={multiplier}
@@ -53,7 +53,7 @@ function EffectivenessDisplay({pokemon}: {pokemon: Pokemon}) {
 					</div>
 					<EffectsContainer>
 						{Object.entries(resistances).map(([type, multiplier]) => (
-							<Effect
+							<EffectBadge
 								key={type}
 								type={type as PokemonType}
 								multiplier={multiplier}
@@ -68,11 +68,25 @@ function EffectivenessDisplay({pokemon}: {pokemon: Pokemon}) {
 
 export {EffectivenessDisplay};
 
-const EffectsContainer = ({children}: {children?: ReactNode}) => (
-	<div className="flex flex-wrap gap-1 w-full">{children}</div>
+export const EffectsContainer = ({
+	children,
+	className,
+}: {
+	children?: ReactNode;
+	className?: string;
+}) => (
+	<div className={cn('flex flex-wrap gap-1 w-full', className)}>{children}</div>
 );
 
-function Effect({type, multiplier}: {type: PokemonType; multiplier: number}) {
+export function EffectBadge({
+	type,
+	multiplier,
+	sm,
+}: {
+	type: PokemonType;
+	multiplier: number;
+	sm?: boolean;
+}) {
 	const t = useTranslations();
 
 	const variant =
@@ -85,14 +99,20 @@ function Effect({type, multiplier}: {type: PokemonType; multiplier: number}) {
 				'bg-opacity-50 text-sm border-none p-0 pr-2 flex gap-1 items-center',
 			)}
 		>
-			<PokemonTypeIcon size="md" type={type} className="scale-105" />
-			<span>
+			<PokemonTypeIcon
+				size={sm ? 'sm' : 'md'}
+				type={type}
+				className="scale-105"
+			/>
+			<span className={sm ? 'text-xs' : ''}>
 				<small className="text-xs">x</small>
 				{multiplier}
-				<small className="text-xs">
-					{' '}
-					{t(`filters.tags.type.${type}.name`)}
-				</small>
+				{!sm && ' '}
+				{!sm && (
+					<small className="text-xs">
+						{t(`filters.tags.type.${type}.name`)}
+					</small>
+				)}
 			</span>
 		</Badge>
 	);

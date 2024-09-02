@@ -5,9 +5,14 @@ import {
 } from '@/features/pokemon/components/species-type-icons';
 import {cn} from '@/lib/utils';
 import {MoveTitle} from './move-title';
-import {Pokemon} from '@/@types/pokemon';
+import {Pokemon, PokemonType} from '@/@types/pokemon';
 import {FastMove} from './fast-move';
 import {ChargedMove} from './charged-move';
+import {
+	EffectBadge,
+	EffectsContainer,
+} from '../../components/effectiveness-display';
+import {typesEffectiveness} from '@/@types/type-effectiveness';
 
 export function PokeMove({
 	move,
@@ -15,13 +20,17 @@ export function PokeMove({
 	moveType,
 	selectedFastMove,
 	onClick,
+	showEffectiveness,
 }: {
 	move: Move;
 	pokemon: Pokemon;
 	moveType: 'fast' | 'charged';
 	selectedFastMove?: Move | string;
 	onClick?: () => void;
+	showEffectiveness?: boolean;
 }) {
+	const effectiveness = typesEffectiveness[move.type];
+
 	const isLegacy = !!pokemon.moves?.legacyMoves?.find(
 		m => typeof m !== 'string' && m?.id === move.id,
 	);
@@ -58,6 +67,23 @@ export function PokeMove({
 				<FastMove move={move} typeBoost={typeBoost} />
 			) : (
 				<ChargedMove move={move} typeBoost={typeBoost} />
+			)}
+			{showEffectiveness && (
+				<EffectsContainer className="mt-1">
+					{Object.entries(effectiveness)
+						.filter(([_, multiplier]) => multiplier !== 1)
+						.sort(([, a], [, b]) => b - a)
+						.map(([type, multiplier], i) => {
+							return (
+								<EffectBadge
+									sm
+									key={type + i}
+									type={type as PokemonType}
+									multiplier={multiplier as number}
+								/>
+							);
+						})}
+				</EffectsContainer>
 			)}
 		</div>
 	);

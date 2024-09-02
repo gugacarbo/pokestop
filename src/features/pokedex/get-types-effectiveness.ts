@@ -11,7 +11,9 @@ interface EffectivenessResult {
 	strengths?: Partial<Effectiveness>;
 }
 
-export function getTypesEffectiveness(pokemon: Pokemon): EffectivenessResult {
+export function getTypesEffectiveness(pokemon: {
+	types: PokemonType[];
+}): EffectivenessResult {
 	const type_1 = pokemon.types[0];
 	const type_2 = pokemon.types[1] && pokemon.types[1];
 
